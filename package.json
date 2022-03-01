@@ -8,8 +8,11 @@
     "url": "https://github.com/gatsbyjs/gatsby/issues"
   },
   "dependencies": {
+    "@emotion/react": "^11.8.1",
+    "@emotion/styled": "^11.8.1",
     "@fontsource/open-sans": "^4.5.5",
     "gatsby": "^4.8.0",
+    "gatsby-plugin-emotion": "^7.8.0",
     "gatsby-plugin-feed": "^4.8.0",
     "gatsby-plugin-gatsby-cloud": "^4.8.0",
     "gatsby-plugin-google-analytics": "^4.8.0",
@@ -31,6 +34,7 @@
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-helmet": "^6.1.0",
+    "react-transition-group": "^4.4.2",
     "typeface-merriweather": "0.0.72",
     "typeface-montserrat": "0.0.75"
   },

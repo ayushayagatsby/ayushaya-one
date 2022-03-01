@@ -1,0 +1,39 @@
+.slide-one-scale-enter {
+    transform: scale(1);
+}
+.slide-one-scale-enter-active {
+    transform: scale(1.5);
+    transition: transform 1s;
+}
+.slide-one-scale-enter-done {
+    transform: scale(1.5);
+}
+.slide-one-scale-exit {
+    transform: scale(1.5);
+}
+.slide-one-scale-exit-active {
+    opacity: 0;
+    transition: opacity 1000s;
+}
+
+
+
+.slide-one-fade-up-enter {
+    opacity: 1;
+}
+.slide-one-fade-up-enter-active {
+    opacity: 0;
+    transition: opacity 1000ms;
+}
+
+.slide-one-fade-up-enter-done {
+    opacity: 0;
+}
+
+.slide-one-fade-up-exit {
+    transform: scale(1.5);
+}
+.slide-one-fade-up-active {
+    opacity: 0;
+    transition: opacity 3000ms;
+}

@@ -1,60 +1,24 @@
 import * as React from "react"
-import { Link, graphql } from "gatsby"
-import IcArrowDown from "../assets/IcArrowDown.svg"
+import {Link, graphql} from "gatsby"
+
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-
-const BlogIndex = ({ data, location }) => {
-  const siteTitle = data.site.siteMetadata?.title || `Title`
-  const posts = data.allMarkdownRemark.nodes
+import HomeAnimation from "../components/HomeAnimation"
 
 
 
-  if (posts.length === 0) {
+
+
+const BlogIndex = ({location}) => {
+
     return (
-      <Layout location={location} title={siteTitle}>
-        <Seo title="All posts" />
-        <Bio />
-        <p>
-          No blog posts found. Add markdown posts to "content/blog" (or the
-          directory you specified for the "gatsby-source-filesystem" plugin in
-          gatsby-config.js).
-        </p>
-      </Layout>
+        <Layout>
+            <Seo title="All posts"/>
+            <HomeAnimation />
+        </Layout>
     )
-  }
-
-  return (
-    <Layout location={location} title={siteTitle}>
-      <Seo title="All posts" />
-      <Bio />
-      <div className="arrow-down-test"><IcArrowDown /></div>
-    </Layout>
-  )
 }
 
 export default BlogIndex
 
-export const pageQuery = graphql`
-  query {
-    site {
-      siteMetadata {
-        title
-      }
-    }
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
-      nodes {
-        excerpt
-        fields {
-          slug
-        }
-        frontmatter {
-          date(formatString: "MMMM DD, YYYY")
-          title
-          description
-        }
-      }
-    }
-  }
-`

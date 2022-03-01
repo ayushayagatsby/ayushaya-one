@@ -1,36 +1,39 @@
 import * as React from "react"
-import { Link } from "gatsby"
+import {Link} from "gatsby"
+import Logo from "./Logo"
+import MenuButton from "./MenuButton"
+import IcNaviIcon from "../assets/IcNaviIcon.svg"
+import styled from "@emotion/styled";
+import {css, jsx} from '@emotion/react'
 
-const Layout = ({ location, title, children }) => {
-  const rootPath = `${__PATH_PREFIX__}/`
-  const isRootPath = location.pathname === rootPath
-  let header
+const NavBar = styled("nav")`
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 140px;
+  position: fixed;
+`
 
-  if (isRootPath) {
-    header = (
-      <h1 className="main-heading">
-        <Link to="/">{title}</Link>
-      </h1>
+const MainContainer = styled("main")`
+  padding-top: 5%
+`
+
+const Layout = ({children}) => {
+
+    return (
+        <div>
+            <NavBar>
+                <Logo/>
+                <MenuButton/>
+            </NavBar>
+            <MainContainer>{children}</MainContainer>
+            <footer>
+                © {new Date().getFullYear()}, Built with {` `}
+                <a href="https://www.gatsbyjs.com">Gatsby</a>
+            </footer>
+        </div>
     )
-  } else {
-    header = (
-      <Link className="header-link-home" to="/">
-        {title}
-      </Link>
-    )
-  }
-
-  return (
-    <div className="global-wrapper" data-is-root-path={isRootPath}>
-      <header className="global-header">{header}</header>
-      <main>{children}</main>
-      <footer>
-        © {new Date().getFullYear()}, Built with
-        {` `}
-        <a href="https://www.gatsbyjs.com">Gatsby</a>
-      </footer>
-    </div>
-  )
 }
 
 export default Layout
