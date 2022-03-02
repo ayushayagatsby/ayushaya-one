@@ -49,7 +49,7 @@
   --lineHeight-relaxed: 1.625;
   /* 1.200 Minor Third Type Scale */
   --fontSize-0: 0.833rem;
-  --fontSize-1: 1rem;
+  --fontSize-1: 1.125rem;
   --fontSize-2: 1.375rem;
   --fontSize-3: 1.875rem;
   --fontSize-4: 2.5rem;
@@ -144,7 +144,7 @@ h5 {
   font-size: var(--fontSize-2);
 }
 
-h6 {
+.p-small {
   font-size: var(--fontSize-1);
 }
 
@@ -353,6 +353,6 @@ a:focus {
 
 @media screen and (min-width: 960px) and (max-width: 1600px) {
 html {
-  font-size: 10px;
+  font-size: 8px;
 }
 }
