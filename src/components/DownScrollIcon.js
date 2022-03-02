@@ -14,7 +14,12 @@ const Wrapper = styled("div")`
   justify-content: center;
   align-items: center;
   box-shadow: 0px 10px 20px #D1C2BB4D;
-  transition: transform 1s, box-shadow 1s;
+  transition: transform 1s, box-shadow 1s;  
+  &:hover {
+    transform: scale(90%);
+    box-shadow: 0px 2px 10px #D1C2BB4D;
+  }
+
 `
 
 export default function DownScrollIcon(props) {
