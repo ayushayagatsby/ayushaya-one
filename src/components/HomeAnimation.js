@@ -45,8 +45,8 @@ export default function HomeAnimation() {
     const [fadeOut,
         setFadeOut] = useState(false);
 
-        const [slideTwoOff,
-            setSlideTwoOff] = useState(false);
+    const [slideTwoOff,
+        setSlideTwoOff] = useState(false);
 
     return (
         <TransitionGroup>
@@ -60,7 +60,7 @@ export default function HomeAnimation() {
                 </CSSTransition>
 
                 <CSSTransition
-                    timeout={1000}
+                    timeout={1500}
                     in={slideTwoOff}
                     classNames="slide-three-slide-up"
                     onEnter={() => setSlideThreeOn(true)}>
@@ -117,7 +117,7 @@ export default function HomeAnimation() {
 
             </Wrapper>
 
-            {slideThreeOn && <Wrapper>
+            {slideThreeOn && <Wrapper css={css `flex-direction: column`}>
                 <CSSTransition
                     timeout={2000}
                     in={slideThreeOn}
@@ -125,6 +125,15 @@ export default function HomeAnimation() {
                     mountOnEnter>
                     <CentralWrapper css={css `margin-top: -20%;`}>
                         <LogoIllustrationBig css={css `width: 25vw; max-width: 600px; height: auto;`}/>
+                    </CentralWrapper>
+                </CSSTransition>
+
+                <CSSTransition
+                    timeout={2000}
+                    in={slideThreeOn}
+                    classNames="slide-three-slide-down"
+                    mountOnEnter>
+                    <CentralWrapper>
                         <h2>The offer of Ayurveda</h2>
                         <p className='p-small' css={css `width: 50%;`}>a holistic approach to health and wellbeing by caring about the way of living.</p>
                         <div onClick={() => setSlideThreeOn(true)}>
