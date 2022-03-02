@@ -324,6 +324,16 @@ a:focus {
   margin-bottom: var(--spacing-8);
 }
 
+::-moz-selection { /* Code for Firefox */
+  color: #FBF4F0;
+  background: #6E665A;
+}
+
+::selection {
+  color: #FBF4F0;
+  background: #6E665A;
+}
+
 
 
 
