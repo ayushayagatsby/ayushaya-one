@@ -8,6 +8,7 @@ import {css, jsx} from '@emotion/react'
 
 const NavBar = styled("nav")`
   width: 100vw;
+  height: 15%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -15,8 +16,9 @@ const NavBar = styled("nav")`
   position: fixed;
 `
 
-const MainContainer = styled("main")`
-  padding-top: 5%
+const Spacer = styled("div")`
+width: 100vw;
+height: 10vh;
 `
 
 const Layout = ({children}) => {
@@ -27,11 +29,12 @@ const Layout = ({children}) => {
                 <Logo/>
                 <MenuButton/>
             </NavBar>
-            <MainContainer>{children}</MainContainer>
-            <footer>
+            <Spacer />
+            <main>{children}</main>
+            {/* <footer>
                 © {new Date().getFullYear()}, Built with {` `}
                 <a href="https://www.gatsbyjs.com">Gatsby</a>
-            </footer>
+            </footer> */}
         </div>
     )
 }

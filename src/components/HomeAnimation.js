@@ -6,6 +6,7 @@ import styled from "@emotion/styled"
 import {css, jsx} from '@emotion/react'
 import {CSSTransition, TransitionGroup} from 'react-transition-group'
 import "./HomeAnimation.css"
+import bgGradient from "./bgGradient.jpeg"
 
 const Wrapper = styled("div")`
   width: 100vw;
@@ -35,7 +36,8 @@ export default function HomeAnimation() {
     const [slideOneOn,
         setSlideOneOn] = useState(false);
 
-    const [slideTwoOn, setSlideTwoOn] = useState(false)
+    const [slideTwoOn,
+        setSlideTwoOn] = useState(false)
 
     const [fadeOut,
         setFadeOut] = useState(false);
@@ -55,7 +57,9 @@ export default function HomeAnimation() {
                         in={slideOneOn}
                         classNames="slide-one-scale"
                         onEnter={() => setFadeOut(true)}>
-                        <MaskGateShape css={css `margin-bottom: 50px; width: 18vw; max-width: 500px;`}/>
+                        {/* <MaskGateShape css={css `margin-bottom: 50px; width: 18vw; max-width: 500px;`}/> */}
+                        <div
+                            css={css `background-image: url(${bgGradient}); background-size: cover; overflow: hidden; margin-bottom: 50px; height: 300px; width: 18vw; max-width: 500px; border-top-left-radius: 48%; border-top-right-radius: 48%;`}></div>
                     </CSSTransition>
 
                     <CSSTransition timeout={200} in={fadeOut} classNames="slide-one-fade">
@@ -64,7 +68,11 @@ export default function HomeAnimation() {
                         </div>
                     </CSSTransition>
 
-                    <CSSTransition timeout={3000} in={fadeOut} classNames="slide-two-fade" mountOnEnter>
+                    <CSSTransition
+                        timeout={3000}
+                        in={fadeOut}
+                        classNames="slide-two-fade"
+                        mountOnEnter>
                         <div onClick={() => setSlideTwoOn(true)}>
                             <DownScrollIcon size={"4vw"}/>
                         </div>
