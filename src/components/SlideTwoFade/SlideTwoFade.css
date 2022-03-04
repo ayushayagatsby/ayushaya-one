@@ -1,0 +1,25 @@
+.slide-two-fade-enter {
+    opacity: 0;
+    
+}
+.slide-two-fade-enter-active {
+    opacity: 1;
+    transition: opacity 3000ms ease;
+}
+
+.slide-two-fade-enter-done {
+    opacity: 1;
+}
+
+.slide-two-fade-exit {
+    opacity: 1;
+    
+}
+.slide-two-fade-exit-active {
+    opacity: 0;
+    transition: opacity 3000ms ease;
+}
+
+.slide-two-fade-exit-done {
+    opacity: 0;
+}

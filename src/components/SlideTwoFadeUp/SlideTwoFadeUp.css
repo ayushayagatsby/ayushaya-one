@@ -1,0 +1,29 @@
+.slide-two-fade-up-enter {
+    opacity: 0;
+    transform: translateY(50px);
+    
+}
+.slide-two-fade-up-enter-active {
+    opacity: 1;
+    transform: translateY(-50px);
+    transition: opacity 2s ease, transform 2s ease;
+}
+
+.slide-two-fade-up-enter-done {
+    opacity: 1;
+    transform: translateY(-50px);
+}
+
+.slide-two-fade-up-exit {
+    opacity: 1;
+    transform: translateY(-50px);
+}
+
+.slide-two-fade-up-exit-active {
+    opacity: 0;
+    transition: opacity 2s ease;
+}
+
+.slide-two-fade-up-exit-done {
+    opacity: 0;
+}

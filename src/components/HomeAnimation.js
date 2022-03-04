@@ -7,7 +7,13 @@ import styled from "@emotion/styled"
 import {css, jsx} from '@emotion/react'
 import {CSSTransition, TransitionGroup} from 'react-transition-group'
 import "./HomeAnimation.css"
-import bgGradient from "./bgGradient.jpeg"
+import SlideOneFadeUpLeft from './SlideOneFadeUp/SlideOneFadeUpLeft'
+import SlideOneFadeUpRight from './SlideOneFadeUp/SlideOneFadeUpRight'
+import SlideOneScale from './SlideOneScale/SlideOneScale'
+import SlideOneFade from './SlideOneFade/SlideOneFade'
+import SlideTwoFade from './SlideTwoFade/SlideTwoFade'
+import SlideTwoFadeUp from './SlideTwoFadeUp/SlideTwoFadeUp'
+import AllOffers from './OfferComponent/AllOffers'
 
 const Wrapper = styled("div")`
   width: 100vw;
@@ -45,75 +51,41 @@ export default function HomeAnimation() {
     const [fadeOut,
         setFadeOut] = useState(false);
 
+    const [secondFade, setSecondFade] = useState(false);
+
     const [slideTwoOff,
         setSlideTwoOff] = useState(false);
+
+    const animatioHelper = () => {
+        setSlideOneOn(false);
+        setSecondFade(false);
+
+    }
+
+    const animatioHelperTwo = () => {
+        setSecondFade(true);
+
+    }
 
     return (
         <TransitionGroup>
             <Wrapper>
 
-                {/* Slide one and two */}
-                <CSSTransition timeout={1000} in={fadeOut} classNames="slide-one-fade-up">
-                    <SideWrapper>
-                        <BrandType css={css ` width: 60%; max-width: 440px; margin-left: 50px;`}/>
-                    </SideWrapper>
-                </CSSTransition>
+                <SlideOneFadeUpLeft in={fadeOut}/>
 
-                <CSSTransition
-                    timeout={1500}
-                    in={slideTwoOff}
-                    classNames="slide-three-slide-up"
-                    onEnter={() => setSlideThreeOn(true)}>
-                    <CentralWrapper>
+                <CentralWrapper>
 
-                        <CSSTransition
-                            timeout={1500}
-                            in={slideOneOn}
-                            classNames="slide-one-scale"
-                            onEnter={() => setFadeOut(true)}>
-                            {/* <MaskGateShape css={css `margin-bottom: 50px; width: 18vw; max-width: 500px;`}/> */}
-                            <div
-                                css={css `background-image: url(${bgGradient}); background-size: cover; overflow: hidden; margin-bottom: 50px; height: 300px; width: 18vw; max-width: 500px; border-top-left-radius: 48%; border-top-right-radius: 48%;`}></div>
-                        </CSSTransition>
+                    <SlideOneScale in={slideOneOn} onEnter={setFadeOut} onExited={setSlideThreeOn}/>
 
-                        <CSSTransition timeout={200} in={fadeOut} classNames="slide-one-fade">
-                            <div onClick={() => setSlideOneOn(true)}>
-                                <DownScrollIcon size={"6vw"}/>
-                            </div>
-                        </CSSTransition>
+                    <SlideOneFade in={fadeOut} scrollDown={setSlideOneOn} onEnter={animatioHelperTwo}/>
 
-                        <CSSTransition
-                            timeout={3000}
-                            in={fadeOut}
-                            classNames="slide-two-fade"
-                            mountOnEnter>
-                            <div onClick={() => setSlideTwoOff(true)}>
-                                <DownScrollIcon size={"4vw"}/>
-                            </div>
-                        </CSSTransition>
+                    <SlideTwoFade in={secondFade} scrollDown={animatioHelper}/>
 
-                        <CSSTransition
-                            timeout={2000}
-                            in={fadeOut}
-                            classNames="slide-two-fade-up"
-                            mountOnEnter>
-                            <div
-                                css={css `display: flex; flex-direction: column; justify-content: center; align-items: center; position: absolute; text-align: center; width: 50%; min-width: 600px; max-width: 750px;`}>
+                    <SlideTwoFadeUp in={secondFade}/>
 
-                                <h1>Sustaining the body’s innate intelligence to get to health through balance</h1>
+                </CentralWrapper>
 
-                            </div>
-                        </CSSTransition>
-                    </CentralWrapper>
-                </CSSTransition>
-
-                <CSSTransition timeout={1000} in={fadeOut} classNames="slide-one-fade-up">
-                    <SideWrapper>
-                        <h3>A path to full life by the art of holistic healthcare.</h3>
-                        <p className='p-small'>Professional Ayurvedic consultations for human and their
-                            animal friends by Dr. Juliane Merckens, MD.</p>
-                    </SideWrapper>
-                </CSSTransition>
+                <SlideOneFadeUpRight in={fadeOut}/>
 
             </Wrapper>
 
@@ -125,6 +97,7 @@ export default function HomeAnimation() {
                     mountOnEnter>
                     <CentralWrapper css={css `margin-top: -20%;`}>
                         <LogoIllustrationBig css={css `width: 25vw; max-width: 600px; height: auto;`}/>
+                        <AllOffers/>
                     </CentralWrapper>
                 </CSSTransition>
 
@@ -133,10 +106,10 @@ export default function HomeAnimation() {
                     in={slideThreeOn}
                     classNames="slide-three-slide-down"
                     mountOnEnter>
-                    <CentralWrapper>
+                    <CentralWrapper css={css`margin-top: 5%;`}>
                         <h2>The offer of Ayurveda</h2>
                         <p className='p-small' css={css `width: 50%;`}>a holistic approach to health and wellbeing by caring about the way of living.</p>
-                        <div onClick={() => setSlideThreeOn(true)}>
+                        <div onClick={() => console.log("hello")}>
                             <DownScrollIcon size={"4vw"}/>
                         </div>
                     </CentralWrapper>

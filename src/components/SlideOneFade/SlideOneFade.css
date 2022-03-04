@@ -1,0 +1,11 @@
+.slide-one-fade-enter {
+    opacity: 1;
+}
+.slide-one-fade-enter-active {
+    opacity: 0;
+    transition: opacity 200ms;
+}
+
+.slide-one-fade-enter-done {
+    opacity: 0;
+}

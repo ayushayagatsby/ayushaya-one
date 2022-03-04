@@ -121,7 +121,16 @@
 .slide-three-zoom-in-enter-done {
     transform: scale(1);
 }
-
+.slide-three-zoom-in-exit {
+    transform: scale(1);
+}
+.slide-three-zoom-in-exit-active {
+    transform: scale(1.5);
+    transition: transform 2s ease;
+}
+.slide-three-zoom-in-exit-done {
+    transform: scale(1.5);
+}
 
 
 .slide-three-slide-down-enter {
