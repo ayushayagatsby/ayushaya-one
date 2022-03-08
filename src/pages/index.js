@@ -14,7 +14,7 @@ const BlogIndex = ({location}) => {
 
     return (
         <Layout>
-            <Seo title="All posts"/>
+            <Seo title="Home page"/>
             <HomeAnimation />
         </Layout>
     )
