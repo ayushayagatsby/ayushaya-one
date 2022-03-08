@@ -11,18 +11,18 @@ const DoorShape = styled("div")`
   height: 25vw; 
   width: 18vw; 
   max-width: 500px; 
-  border-top-left-radius: 45%; 
-  border-top-right-radius: 45%;
+  border-top-left-radius: 50%; 
+  border-top-right-radius: 50%;
 `
 
 export default function SlideOneScale(props) {
     return (
         <CSSTransition
             timeout={1500}
-            in={props. in}
+            in={props.in}
             classNames="slide-one-scale"
             onEnter={() => props.onEnter(true)}
-            onExited={() => props.onExited(true)}>
+            onExited={() => props.onExited()}>
             {/* <MaskGateShape css={css `margin-bottom: 50px; width: 18vw; max-width: 500px;`}/> */}
             <DoorShape/>
         </CSSTransition>

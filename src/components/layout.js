@@ -7,35 +7,43 @@ import styled from "@emotion/styled";
 import {css, jsx} from '@emotion/react'
 
 const NavBar = styled("nav")`
-  width: 100vw;
-  height: 15%;
+  width: 100%;
   display: flex;
+  padding: 0 5%;
   justify-content: space-between;
   align-items: center;
-  padding: 0 140px;
   position: fixed;
+  background-color: transparent;
 `
 
+
+const Main = styled("main") `
+width: 100%;
+`
+
+
+
+
 const Spacer = styled("div")`
-width: 100vw;
+width: 100%;
 height: 10vh;
 `
 
 const Layout = ({children}) => {
 
     return (
-        <div>
+        <React.Fragment>
             <NavBar>
                 <Logo/>
                 <MenuButton/>
             </NavBar>
-            <Spacer />
-            <main>{children}</main>
+            
+            <Main>{children}</Main>
             {/* <footer>
                 © {new Date().getFullYear()}, Built with {` `}
                 <a href="https://www.gatsbyjs.com">Gatsby</a>
             </footer> */}
-        </div>
+        </React.Fragment>
     )
 }
 

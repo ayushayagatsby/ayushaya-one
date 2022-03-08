@@ -12,7 +12,7 @@ export default function SlideTwoFadeUp(props) {
         classNames="slide-two-fade-up"
         mountOnEnter>
         <div
-            css={css `display: flex; flex-direction: column; justify-content: center; align-items: center; position: absolute; text-align: center; width: 50%; min-width: 600px; max-width: 750px;`}>
+            css={css `display: flex; flex-direction: column; justify-content: center; align-items: center; position: absolute; text-align: center; width: 40vw; min-width: 600px; max-width: 900px;`}>
 
             <h1>Sustaining the body’s innate intelligence to get to health through balance</h1>
 

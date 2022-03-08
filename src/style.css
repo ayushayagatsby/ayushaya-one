@@ -73,7 +73,6 @@ html {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     overflow-x: hidden;
-    overflow-y: hidden;
 }
 
 body {
@@ -339,6 +338,31 @@ a:hover {
     background: #6E665A;
 }
 
+
+button {
+    display: inline-block;
+    border: none;
+    width: 20vw;
+    max-width: 352px;
+    height: 60px;
+    border-radius: 54px;
+    margin: 0;
+    text-decoration: none;
+    background: #F5EEE9;
+    color: #6C665A;
+    font-family: var(--font-body);
+    font-size: var(--fontSize-1);
+    font-weight: var(--fontWeight-semibold);
+    line-height: 1;
+    cursor: pointer;
+    text-align: center;
+}
+
+button:hover,
+button:focus {
+    background: linear-gradient(rgba(212, 193, 186, 0.2), rgba(212, 193, 186, 0.2));
+}
+
 /* Media queries */
 @media (max-width: 42rem) {
     blockquote {
@@ -352,6 +376,12 @@ a:hover {
 }
 @media screen and (min-width: 960px) and (max-width: 1600px) {
     html {
-        font-size: 8px;
+        font-size: 9px;
+    }
+}
+
+@media screen and  (min-width: 1600px) {
+    html {
+        font-size: 14px;
     }
 }
