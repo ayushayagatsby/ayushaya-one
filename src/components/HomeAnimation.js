@@ -35,7 +35,6 @@ const Wrapper = styled("div")`
   position: absolute;
   left: 0;
   right: 0;
-  padding: 0 10%;
   width: 100vw;
 `
 const CentralWrapper = styled("div")`

@@ -19,6 +19,7 @@ const NavBar = styled("nav")`
 
 const Main = styled("main") `
 width: 100%;
+padding: 0 10%;
 `
 
 

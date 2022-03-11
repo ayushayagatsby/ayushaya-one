@@ -5,6 +5,7 @@ import {css, jsx} from '@emotion/react'
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import AboutTopSection from "../components/AboutPage/AboutTopSection"
+import CurriculumSection from "../components/AboutPage/CurriculumSection"
 
 
 
@@ -17,6 +18,7 @@ const About = ({location}) => {
         <Layout>
             <Seo title="About page"/>
             <AboutTopSection />
+            <CurriculumSection />
 
         </Layout>
     )

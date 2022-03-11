@@ -5,10 +5,13 @@ import TextAndButton from "./TextAndButton"
 import {css, jsx} from '@emotion/react'
 
 const InnerWrapper = styled("div")`
-
     display: flex;
     justify-content: center;
   `
+
+const OuterWrapper = styled("div")`
+width: 100%;
+`
 
 const content = {
     humans: {
@@ -27,8 +30,8 @@ const content = {
 
 export default function CtaSection() {
     return (
-        <div>
-            <InnerWrapper css={css `position: relative; right: 8%;`}>
+        <OuterWrapper>
+            <InnerWrapper css={css `position: relative; right: 12%;`}>
                 <TextAndButton
                     heading={content.humans.heading}
                     text={content.humans.text}
@@ -40,11 +43,11 @@ export default function CtaSection() {
                     layout="constrained"
                     width={378}
                     height={511}
-                    css={css `width: 20%; position: relative; top: 50px; max-width: 378px; margin-left: 5%; `}/>
+                    css={css `width: 25%; position: relative; top: 50px; max-width: 378px; margin-left: 5%; `}/>
 
             </InnerWrapper>
 
-            <InnerWrapper css={css `position: relative; left: 8%;`}>
+            <InnerWrapper css={css `position: relative; left: 12%;`}>
                 <StaticImage
                     src="../../images/DogSide.png"
                     alt="A dog face"
@@ -52,7 +55,7 @@ export default function CtaSection() {
                     layout="constrained"
                     width={489}
                     height={488}
-                    css={css `width: 25%; position: relative; bottom: 50px; max-width: 489px; margin-right: 5%;`}/>
+                    css={css `width: 32%; position: relative; bottom: 50px; max-width: 489px; margin-right: 5%;`}/>
                 <TextAndButton
                     heading={content.animals.heading}
                     text={content.animals.text}
@@ -60,6 +63,6 @@ export default function CtaSection() {
                     alignSelf={"flex-end"}
                     />
             </InnerWrapper>
-        </div>
+        </OuterWrapper>
     )
 }
