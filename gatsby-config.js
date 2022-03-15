@@ -13,14 +13,13 @@ module.exports = {
     },
     plugins: [
         {
-            'gatsby-plugin-breakpoints',
             resolve: "gatsby-plugin-react-svg",
             options: {
                 rule: {
                     include: /assets/ // See below to configure properly
                 }
             }
-        },
+        }, 'gatsby-plugin-breakpoints',
         `gatsby-plugin-emotion`,
         `gatsby-plugin-image`, {
             resolve: `gatsby-source-filesystem`,
