@@ -1,6 +1,7 @@
 import React from 'react'
 import SlideOneFadeUp from './SlideOneFadeUp'
 
+
 export default function SlideOneFadeUpRight(props) {
     return (
         <SlideOneFadeUp in={props.in}>

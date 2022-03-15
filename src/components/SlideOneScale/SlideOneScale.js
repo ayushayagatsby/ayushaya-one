@@ -3,6 +3,9 @@ import styled from "@emotion/styled"
 import {CSSTransition} from 'react-transition-group'
 import "./SlideOneScale.css"
 import bgGradient from "./bgGradient.jpeg"
+import Door from './Door'
+import {css, jsx} from '@emotion/react'
+
 
 const DoorShape = styled("div")`
   background-image: url(${bgGradient}); 
@@ -24,7 +27,7 @@ export default function SlideOneScale(props) {
             onEnter={() => props.onEnter(true)}
             onExited={() => props.onExited()}>
             {/* <MaskGateShape css={css `margin-bottom: 50px; width: 18vw; max-width: 500px;`}/> */}
-            <DoorShape/>
+            <Door />
         </CSSTransition>
     )
 }

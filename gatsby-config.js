@@ -13,6 +13,7 @@ module.exports = {
     },
     plugins: [
         {
+            'gatsby-plugin-breakpoints',
             resolve: "gatsby-plugin-react-svg",
             options: {
                 rule: {

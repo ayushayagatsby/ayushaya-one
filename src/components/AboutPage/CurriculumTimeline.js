@@ -97,15 +97,21 @@ const TimelineYear = styled("h3")`
     left: -100px;
 `
 
+const TimelineDescription = styled("div")`
+margin:0; 
+max-width: 70%; 
+position:relative; 
+top:-3px;
+`
+
 export default function CurriculumTimeline() {
 
     const listItems = content.map(item => <TimelineItem>
-
-        <p
-            class="p-big"
-            css={css `margin:0; max-width: 70%; position:relative; top:-3px;`}>
-            {item.description}
-        </p>
+        <TimelineDescription>
+            <p class="p-big">
+                {item.description}
+            </p>
+        </TimelineDescription>
 
         <TimelineYear>{item.year}</TimelineYear>
 

@@ -6,6 +6,7 @@ const SideWrapper = styled("div")`
   flex-direction: column;
   width: 40%;
   margin-top: -10%;
+  padding: 5%;
 `
 export default function SideWrapperComponet({children}) {
 
