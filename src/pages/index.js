@@ -53,12 +53,13 @@ text-decoration: none;
 const BlogIndex = () => {
     const breakpoints = useBreakpoint();
 
-    return ({
-        breakpoints.sm
-            ? <Wrapper>
-                    <h1>Suca</h1>
-                </Wrapper>
-            : <Wrapper>
+    return (
+        <div>
+            {breakpoints.sm
+                ? <Wrapper>
+                        <h1>Suca</h1>
+                    </Wrapper>
+                : <Wrapper>
                     <Door/>
                     <DoorShape>
                         <BrandMark css={css `width: 15%; height: auto; margin-bottom: 15%;`}/>
@@ -74,8 +75,10 @@ const BlogIndex = () => {
 
                         </Button>
                     </DoorShape>
-                </Wrapper>
-    })
+                </Wrapper>}
+        </div>
+
+    )
 }
 
 export default BlogIndex
