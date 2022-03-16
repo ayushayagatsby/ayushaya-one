@@ -54,7 +54,6 @@ export default function QuoteSection() {
                     <StaticImage
                         src="../../images/AboutPicture.png"
                         alt="Dr. Juliane Merckens"
-                        placeholder="blurred"
                         layout="constrained"
                         width={623}
                         height={670}

@@ -13,6 +13,7 @@ import WorkingSection from "../components/AboutPage/WorkingSection"
 import EducationSection from "../components/AboutPage/EducationSection"
 import QuoteSection from "../components/QuoteSection/QuoteSection"
 import BottomSection from "../components/AboutPage/BottomSection"
+import AboutCta from "../components/AboutPage/AboutCta"
 
 const About = () => {
 
@@ -25,6 +26,7 @@ const About = () => {
             <EducationSection />
             <QuoteSection quote="Rather sustaining health than treating diseases." small={false}/>
             <BottomSection />
+            <AboutCta />
         </Layout>
     )
 }

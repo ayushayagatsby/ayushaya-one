@@ -83,7 +83,6 @@ export default function BottomSection() {
                 <StaticImage
                     src="../../images/JulianeAndDog.png"
                     alt="Juliane with a dog"
-                    placeholder="blurred"
                     layout="constrained"
                     width={950}
                     height={711}
@@ -105,7 +104,6 @@ export default function BottomSection() {
             <StaticImage
                 src="../../images/JulianeAndTwoDogs.png"
                 alt="Juliane with two dogs"
-                placeholder="blurred"
                 layout="constrained"
                 width={1364}
                 height={911}

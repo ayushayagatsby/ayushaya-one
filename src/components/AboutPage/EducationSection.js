@@ -47,7 +47,6 @@ export default function EducationSection() {
                 <StaticImage
                     src="../../images/CityImageOne.png"
                     alt="The facade of a Church"
-                    placeholder="blurred"
                     layout="constrained"
                     width={950}
                     height={633}
@@ -66,7 +65,6 @@ export default function EducationSection() {
                 <StaticImage
                     src="../../images/CityImageTwo.png"
                     alt="Another facade of a Church"
-                    placeholder="blurred"
                     layout="constrained"
                     width={950}
                     height={633}
