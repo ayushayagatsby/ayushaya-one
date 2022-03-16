@@ -27,7 +27,7 @@ export default function SlideOneScale(props) {
             onEnter={() => props.onEnter(true)}
             onExited={() => props.onExited()}>
             {/* <MaskGateShape css={css `margin-bottom: 50px; width: 18vw; max-width: 500px;`}/> */}
-            <Door />
+            <Door width="22vw" mb="50px"/>
         </CSSTransition>
     )
 }

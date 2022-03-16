@@ -6,6 +6,7 @@ import {css, jsx} from '@emotion/react'
 const Wrapper = styled("div")`
   width: ${props => props.size};
   height: ${props => props.size};
+  margin-top: ${props => props.mt};
   max-width: 120px;
   max-height: 120px;
   border-radius: 100%;
@@ -25,6 +26,6 @@ const Wrapper = styled("div")`
 export default function DownScrollIcon(props) {
 
     return (
-        <Wrapper onClick={props.click} size={props.size}><IcArrowDown css={css ` width: 22%; transform: translateY(5%);`}/></Wrapper>
+        <Wrapper onClick={props.click} size={props.size} mt={props.mt}><IcArrowDown css={css ` width: 22%; transform: translateY(5%);`}/></Wrapper>
     )
 }

@@ -4,6 +4,6 @@ import {css, jsx} from '@emotion/react'
 
 export default function MenuButton() {
   return (
-    <IcNaviIcon css={css ` width: 2vw; max-width: 40px;`}/>
+    <IcNaviIcon css={css ` width: 2vw; max-width: 40px; min-width: 30px;`}/>
   )
 }

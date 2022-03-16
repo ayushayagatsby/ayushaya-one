@@ -13,7 +13,6 @@ justify-content: center;
 position: absolute;
 left: 0;
 right: 0;
-padding: 0 10%;
 `
 
 const SectionHeading = styled("h2")`
@@ -23,7 +22,7 @@ text-align: center;
 
 const InnerWrapper = styled("div")`
 display: flex;
-justify-content: space-around;
+justify-content: center;
 align-items: center;
 `
 
@@ -36,6 +35,7 @@ display: flex;
 flex-direction: column;
 justify-content: space-around;
 align-items: center;
+margin:0 5%;
 `
 
 const CardHeading = styled("h4")`

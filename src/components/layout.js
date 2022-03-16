@@ -5,40 +5,40 @@ import MenuButton from "./MenuButton"
 import IcNaviIcon from "../assets/IcNaviIcon.svg"
 import styled from "@emotion/styled";
 import {css, jsx} from '@emotion/react'
+import {useBreakpoint} from 'gatsby-plugin-breakpoints';
 
 const NavBar = styled("nav")`
   width: 100%;
   display: flex;
   padding: 0 5%;
+  height: 20vh;
   justify-content: space-between;
   align-items: center;
   position: fixed;
   background-color: transparent;
 `
 
-
-const Main = styled("main") `
+const Main = styled("main")`
 width: 100%;
 padding: 0 10%;
 `
 
-
-
-
 const Spacer = styled("div")`
 width: 100%;
-height: 10vh;
+height: 20vh;
 `
 
 const Layout = ({children}) => {
-
+    const breakpoints = useBreakpoint();
     return (
         <React.Fragment>
             <NavBar>
                 <Logo/>
                 <MenuButton/>
             </NavBar>
-            
+
+            {breakpoints.sm && <Spacer />}
+
             <Main>{children}</Main>
             {/* <footer>
                 © {new Date().getFullYear()}, Built with {` `}

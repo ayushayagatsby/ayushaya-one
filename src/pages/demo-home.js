@@ -5,17 +5,32 @@ import Bio from "../components/bio"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import HomeAnimation from "../components/HomeAnimation"
+import {useBreakpoint} from 'gatsby-plugin-breakpoints';
+import MobileHome from "../components/MobileHome"
+
 
 
 
 
 
 const DemoHome = () => {
+    const breakpoints = useBreakpoint();
 
     return (
         <Layout>
             <Seo title="Home page"/>
-            <HomeAnimation />
+            
+            {breakpoints.sm && 
+                <MobileHome />
+            }
+
+            {(!breakpoints.sm && breakpoints.md) &&
+                <h1>Prova</h1>
+            }
+
+            {(!breakpoints.md && breakpoints.l) && <HomeAnimation />}
+        
+
         </Layout>
     )
 }

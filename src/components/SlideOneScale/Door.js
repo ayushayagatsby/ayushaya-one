@@ -3,9 +3,9 @@ import bgGradient from "../../images/bgGradient.jpeg"
 import {css, jsx} from '@emotion/react'
 
 
-export default function Door() {
+export default function Door({width, mb}) {
     return (
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 944.78 1277.58" css={css `width: 22vw; margin-bottom: 50px;`}>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 944.78 1277.58" css={css `width: ${width}; margin-bottom: ${mb};`}>
                 <defs>
                     <clipPath id="door">
                         <path
