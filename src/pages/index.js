@@ -56,11 +56,11 @@ const BlogIndex = () => {
     return (
         <div>
             {breakpoints.sm && <Wrapper>
-                <h1>Suca</h1>
+                <h1>Prova</h1>
             </Wrapper>}
 
             {(!breakpoints.sm && breakpoints.md) && <Wrapper>
-                <h1>Millo</h1>
+                <h1>Prova</h1>
             </Wrapper>}
 
             {(!breakpoints.md && breakpoints.l) && <Wrapper>

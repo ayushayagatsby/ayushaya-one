@@ -2,7 +2,6 @@ import React from 'react'
 import styled from "@emotion/styled"
 import {css, jsx} from '@emotion/react'
 
-
 const OuterWrapper = styled("div")`
 width: 100%;
 height: 100vh;
@@ -42,12 +41,14 @@ font-size: 1.875rem;
 color: #D4C1BA;
 `
 
-export default function QuoteSection() {
+export default function QuoteSection({small, quote}) {
     return (
         <OuterWrapper>
             <MiddleWrapper>
                 <InnerWrapper>
-                    <h3 css={css`padding-bottom: 30px; text-align: center;`}>Much can be done by choosing how to nurture body, mind and soul.</h3>
+                    {small
+                        ? <h3 css={css `padding-bottom: 30px; text-align: center;`}>{quote}</h3>
+                        : <h2 css={css `padding-bottom: 30px; text-align: center;`}>{quote}</h2>}
                     <Signature>DR. Juliane Merckens</Signature>
                 </InnerWrapper>
             </MiddleWrapper>

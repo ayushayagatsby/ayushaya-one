@@ -10,6 +10,9 @@ import MaskGateShape from "../assets/MaskGateShape.svg"
 import bgGradient from "../images/bgGradient.jpeg"
 import Door from "../components/SlideOneScale/Door"
 import WorkingSection from "../components/AboutPage/WorkingSection"
+import EducationSection from "../components/AboutPage/EducationSection"
+import QuoteSection from "../components/QuoteSection/QuoteSection"
+import BottomSection from "../components/AboutPage/BottomSection"
 
 const About = () => {
 
@@ -19,6 +22,9 @@ const About = () => {
             <AboutTopSection/>
             <CurriculumSection/>
             <WorkingSection />
+            <EducationSection />
+            <QuoteSection quote="Rather sustaining health than treating diseases." small={false}/>
+            <BottomSection />
         </Layout>
     )
 }

@@ -167,7 +167,7 @@ export default function HomeAnimation() {
                 <Spacer h="100vh"/>
                 <CtaSection />
                 <Spacer h="20vh"/>
-                <QuoteSection />
+                <QuoteSection quote="Much can be done by choosing how to nurture body, mind and soul." small="true"/>
                 <AboutSection />
             </React.Fragment>}
         </OuterWrapper>
