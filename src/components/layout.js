@@ -18,10 +18,17 @@ const NavBar = styled("nav")`
   background-color: transparent;
 `
 
-const Main = styled("main")`
+const MainDesktop = styled("main")`
 width: 100%;
 padding: 0 10%;
 `
+
+const MainMobile = styled("main")`
+width: 100%;
+padding: 0 5%;
+`
+
+
 
 const Spacer = styled("div")`
 width: 100%;
@@ -39,7 +46,8 @@ const Layout = ({children}) => {
 
             {breakpoints.sm && <Spacer />}
 
-            <Main>{children}</Main>
+            {breakpoints.sm && <MainMobile>{children}</MainMobile>}
+            {!breakpoints.sm && <MainDesktop>{children}</MainDesktop>}
             {/* <footer>
                 © {new Date().getFullYear()}, Built with {` `}
                 <a href="https://www.gatsbyjs.com">Gatsby</a>

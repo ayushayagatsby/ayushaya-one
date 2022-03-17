@@ -101,7 +101,7 @@ const QuoteOuterWrapper = styled("div")`
 display: flex;
 flex-direction: column;
 width: 100%;
-border-radius: 10px;
+border-radius: 20px;
 height: 100vh;
 display: flex;
 justify-content: space-around;
@@ -131,6 +131,34 @@ font-size: 1.875rem;
 color: #D4C1BA;
 margin-top: 5% ;
 `
+
+const AboutContainer = styled("div")`
+display: flex;
+flex-direction: column;
+width: 100%;
+padding:0 5%;
+border-radius: 20px;
+justify-content: space-around;
+align-items: center;
+background-color: white;
+text-align: center;
+margin-top: 20%;
+`
+
+const AboutSpecialHeader = styled('span')`
+font-family:"Open Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+font-size: 30px;
+font-weight: 400;
+margin-bottom: 12%;
+`
+
+const AboutSignature = styled("h4")`
+margin-bottom: 12%;
+`
+
+const AboutButton = styled("button")`
+margin: 12% 0;
+width: 90%;`
 
 export default function MobileHome() {
     return (
@@ -175,7 +203,7 @@ export default function MobileHome() {
             <OfferSecondHeader>Professional consultations by Dr. Juliane Merckens</OfferSecondHeader>
 
             <StaticImage
-                src="../../images/HumanSide.png"
+                src="../images/HumanSide.png"
                 alt="A human face"
                 layout="constrained"
                 width={378}
@@ -192,7 +220,7 @@ export default function MobileHome() {
             <CtaButton>HUMAN BEINGS</CtaButton>
 
             <StaticImage
-                src="../../images/DogSide.png"
+                src="../images/DogSide.png"
                 alt="A dog face"
                 layout="constrained"
                 width={489}
@@ -217,6 +245,22 @@ export default function MobileHome() {
 
                 <DownScrollIcon size={"18vw"}/>
             </QuoteOuterWrapper>
+
+            <AboutContainer>
+                <StaticImage
+                    src="../images/AboutPicture.png"
+                    alt="Dr. Juliane Merckens"
+                    layout="constrained"
+                    width={623}
+                    height={670}
+                    css={css `width: 75%; margin-top: -10%; margin-bottom: 20%;`}/>
+                <AboutSpecialHeader>The best approach to health is prevention</AboutSpecialHeader>
+                <AboutSignature>Dr. Juliane Merckens</AboutSignature>
+                <p class="p-big">Optimizing lifestyle in areas such as nutrition, living
+                    conditions, daily routine, physical activity, support in specific situations of
+                    unease or old age.</p>
+                <AboutButton>ABOUT</AboutButton>
+            </AboutContainer>
         </MainWrapper>
     )
 }
