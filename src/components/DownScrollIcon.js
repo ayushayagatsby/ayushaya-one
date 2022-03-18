@@ -26,6 +26,6 @@ const Wrapper = styled("div")`
 export default function DownScrollIcon(props) {
 
     return (
-        <Wrapper onClick={props.click} size={props.size} mt={props.mt}><IcArrowDown css={css ` width: 22%; transform: translateY(5%);`}/></Wrapper>
+        <Wrapper onClick={props.click} size={props.size} mt={props.mt}><IcArrowDown css={css ` width: 22%; height:auto; transform: translateY(5%);`}/></Wrapper>
     )
 }
