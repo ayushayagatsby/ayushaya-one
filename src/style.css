@@ -96,10 +96,7 @@ hr {
 
 h1,
 h2,
-h3,
-h4,
-h5,
-h6 {
+h3 {
     font-family: var(--font-heading);
     margin-top: var(--spacing-0);
     margin-bottom: var(--spacing-0);
@@ -133,6 +130,11 @@ h3 {
 }
 
 h4 {
+    margin-top: var(--spacing-0);
+    margin-bottom: var(--spacing-0);
+    line-height: var(--lineHeight-tight);
+    letter-spacing: -0.025em;
+    font-family: var(--font-body);
     font-weight: var(--fontWeight-regular);
     font-size: var(--fontSize-3);
 }

@@ -23,7 +23,7 @@ const OuterWrapper = styled("div")`
 
 `
 const Spacer = styled("div")`
-  height: ${props => props.h}
+  height: ${props => props.h};
 `
 
 const Wrapper = styled("div")`
@@ -150,9 +150,9 @@ export default function HomeAnimation() {
                         in={lastSlide}
                         classNames="slide-three-slide-down"
                         mountOnEnter>
-                        <CentralWrapper css={css `margin-top: 5%;`}>
-                            <h2>The offer of Ayurveda</h2>
-                            <p className='p-small' css={css `width: 50%;`}>a holistic approach to health and wellbeing by caring about the way of living.</p>
+                        <CentralWrapper>
+                            <h2 css={css `margin-bottom: 3%;`}>The offer of Ayurveda</h2>
+                            <p css={css `width: 70%; margin-bottom: 5%;`}>a holistic approach to health and wellbeing by caring about the way of living.</p>
                             <div onClick={() => setLastSlide(false)}>
                                 <DownScrollIcon size={"4vw"}/>
                             </div>

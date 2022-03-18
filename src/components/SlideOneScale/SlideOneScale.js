@@ -6,7 +6,6 @@ import bgGradient from "./bgGradient.jpeg"
 import Door from './Door'
 import {css, jsx} from '@emotion/react'
 
-
 const DoorShape = styled("div")`
   background-image: url(${bgGradient}); 
   background-size: cover; overflow: hidden; 
@@ -21,8 +20,11 @@ const DoorShape = styled("div")`
 export default function SlideOneScale(props) {
     return (
         <CSSTransition
-            timeout={1500}
-            in={props.in}
+            timeout={{
+            enter: 1500,
+            exit: 1000
+        }}
+            in={props. in}
             classNames="slide-one-scale"
             onEnter={() => props.onEnter(true)}
             onExited={() => props.onExited()}>

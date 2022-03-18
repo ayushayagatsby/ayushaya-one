@@ -8,17 +8,20 @@ const Wrapper = styled("div")`
   max-width: 500px;
   display: flex;
   flex-direction: column;
+`
 
+const Button = styled("button")`
+height: 6vh;
 `
 
 export default function TextAndButton({heading, text, buttonText, alignSelf}) {
     return (
-        <Wrapper css={css`align-self: ${alignSelf}`}>
+        <Wrapper css={css`align-self: ${alignSelf};`}>
             <h3 css={css`margin-bottom: 40px;`}>
                 {heading}
             </h3>
             <p class="p-small" css={css`margin-bottom: 40px;`}>{text}</p>
-            <button>{buttonText}</button>
+            <Button>{buttonText}</Button>
         </Wrapper>
     )
 }
