@@ -9,7 +9,7 @@ import IcActivity from '../../assets/IcActivity.svg'
 
 export default function AllOffers() {
     return (
-        <div css={css `display:flex; justify-content: space-between; position: absolute; bottom: -20%; width: 50vw;`}>
+        <div css={css `display:flex; justify-content: space-between; position: absolute; bottom: -30%; width: 50vw;`}>
 
             <SingleOffer text="routine"><IcRoutine css={css`width: 6vw; max-width: 160px; height: auto;`}/></SingleOffer>
             <SingleOffer margin="10% 0 0 0" text="lifestyle"><IcLifestyle css={css`width: 6vw; max-width: 160px; height: auto;`}/></SingleOffer>

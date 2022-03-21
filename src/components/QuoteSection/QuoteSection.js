@@ -11,7 +11,7 @@ align-items: center;
 `
 
 const MiddleWrapper = styled("div")`
-width: 80%;
+width: 100%;
 height: 80%;
 background-color: #F5EEE9;
 border-radius: 10px;
@@ -41,15 +41,27 @@ font-size: 1.875rem;
 color: #D4C1BA;
 `
 
-export default function QuoteSection({small, quote}) {
+export default function QuoteSection({
+    small,
+    quote,
+    signature = true
+}) {
     return (
         <OuterWrapper>
             <MiddleWrapper>
                 <InnerWrapper>
                     {small
-                        ? <h3 css={css `padding-bottom: 30px; text-align: center;`}>{quote}</h3>
-                        : <h2 css={css `padding-bottom: 30px; text-align: center;`}>{quote}</h2>}
-                    <Signature>DR. Juliane Merckens</Signature>
+                        ? <h3
+                                css={css `padding-bottom: ${signature
+                                ? "30px"
+                                : "0"}; text-align: center;`}>{quote}</h3>
+                        : <h2
+                            css={css `padding-bottom: ${signature
+                            ? "30px"
+                            : "0"}; text-align: center;`}>{quote}</h2>}
+                    {signature
+                        ? <Signature>DR. Juliane Merckens</Signature>
+                        : ""}
                 </InnerWrapper>
             </MiddleWrapper>
         </OuterWrapper>

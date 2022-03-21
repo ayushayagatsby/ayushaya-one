@@ -16,6 +16,7 @@ const NavBar = styled("nav")`
   align-items: center;
   position: fixed;
   background-color: transparent;
+  z-index: 4;
 `
 
 const MainDesktop = styled("main")`
