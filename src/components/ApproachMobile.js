@@ -150,7 +150,8 @@ top: 0;
 left: 0;
 right: 0;
 display: flex;
-justify-content: center;`
+justify-content: center;
+`
 
 export default function ApproachDesktop() {
     return (
@@ -305,7 +306,7 @@ export default function ApproachDesktop() {
                 <h4 css={css `margin-bottom: 10%; text-align: center;`}>One of the classics, the Charaka Samhita, states:</h4>
                 <DoorContainer>
                     <AbsoluteDoor>
-                        <Door width="80%"/>
+                        <Door width="80vw"/>
                     </AbsoluteDoor>
                     <DoorContent>
                         <h3>“Ogni sé vivente unisce sé stesso alla vita in tutte le specie”</h3>
