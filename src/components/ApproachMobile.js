@@ -119,7 +119,6 @@ width: 80%;
 `
 
 const DoorContainer = styled("div")`
-height: 55vh;
 position: relative;
 `
 
