@@ -119,8 +119,7 @@ width: 80%;
 `
 
 const DoorContainer = styled("div")`
-width: 80%;
-height: 45vh;
+height: 55vh;
 position: relative;
 `
 
@@ -246,20 +245,20 @@ export default function ApproachDesktop() {
                 <p css={css `width: 75%; margin-bottom: 15%;`}>these are described by sanscrit terms which have a whole range of significations</p>
 
                 <SingleQuality>
-                    <IcSattva css={css `width: 50%; height: auto; margin-bottom: 12%;`}/>
+                    <IcSattva css={css `width: 40%; height: auto; margin-bottom: 12%;`}/>
                     <h3 css={css `margin-bottom: 12%;`}>Sattva</h3>
                     <p class="p-big">Describes pure consciousness, daytime, being awake, and a balanced state.</p>
                 </SingleQuality>
 
-                <SingleQuality css={css `margin-top: 10vh;`}>
-                    <IcRajas css={css `width: 50%; height: auto; margin-bottom: 12%;`}/>
+                <SingleQuality>
+                    <IcRajas css={css `width: 40%; height: auto; margin-bottom: 12%;`}/>
                     <h3 css={css `margin-bottom: 12%;`}>Rajas</h3>
                     <p class="p-big">Describes the energy that moves sattva and tamas, but also dusk
                         and dawn, dreams, and an imbalanced state.</p>
                 </SingleQuality>
 
                 <SingleQuality>
-                    <IcTamas css={css `width: 50%; height: auto; margin-bottom: 12%;`}/>
+                    <IcTamas css={css `width: 40%; height: auto; margin-bottom: 12%;`}/>
                     <h3 css={css `margin-bottom: 12%;`}>Tamas</h3>
                     <p class="p-big">Describes unconsciousness, nighttime, sleep, and inertia.</p>
                 </SingleQuality>
@@ -282,7 +281,7 @@ export default function ApproachDesktop() {
                 quote="In fact, the aim of Ayurveda is to help live a long and healthy
                 life as a basic prerequisite for the best possible spiritual evolution."/>
 
-            <TextImageWrapper css={css `margin: 20% 0 10% 0;`}>
+            <TextImageWrapper css={css `margin: 20% 0 20% 0;`}>
                 <TextImageTextbox>
                     <h4 css={css `margin-bottom: 5%;`}>Ayurveda is known in the Western countries as
                         an approach to beauty, wellbeing and health for humans.</h4>
@@ -304,13 +303,12 @@ export default function ApproachDesktop() {
             </TextImageWrapper>
 
             <BottomSection>
-
+                <h4 css={css `margin-bottom: 10%; text-align: center;`}>One of the classics, the Charaka Samhita, states:</h4>
                 <DoorContainer>
                     <AbsoluteDoor>
-                        <Door width="90%"/>
+                        <Door width="80%"/>
                     </AbsoluteDoor>
                     <DoorContent>
-                        <h4>One of the classics, the Charaka Samhita, states:</h4>
                         <h3>“Ogni sé vivente unisce sé stesso alla vita in tutte le specie”</h3>
 
                     </DoorContent>

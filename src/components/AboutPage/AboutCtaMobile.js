@@ -31,7 +31,7 @@ align-items: center;
 
 const CardContainer = styled("div")`
 width: 80%;
-height: 50vh;
+height: 40vh;
 background-color: #fff;
 border-radius: 10px;
 display: flex;
