@@ -119,6 +119,7 @@ width: 80%;
 `
 
 const DoorContainer = styled("div")`
+width: 100%;
 position: relative;
 `
 
@@ -306,7 +307,7 @@ export default function ApproachDesktop() {
                 <h4 css={css `margin-bottom: 10%; text-align: center;`}>One of the classics, the Charaka Samhita, states:</h4>
                 <DoorContainer>
                     <AbsoluteDoor>
-                        <Door width="80vw"/>
+                        <Door width="80%"/>
                     </AbsoluteDoor>
                     <DoorContent>
                         <h3>“Ogni sé vivente unisce sé stesso alla vita in tutte le specie”</h3>
