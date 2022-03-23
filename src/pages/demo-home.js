@@ -28,7 +28,7 @@ const DemoHome = () => {
                 <h1>Prova</h1>
             }
 
-            {(!breakpoints.md && breakpoints.l) && <HomeAnimation />}
+            {(!breakpoints.md) && <HomeAnimation />}
         
 
         </Layout>
