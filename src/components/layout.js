@@ -6,6 +6,7 @@ import IcNaviIcon from "../assets/IcNaviIcon.svg"
 import styled from "@emotion/styled";
 import {css, jsx} from '@emotion/react'
 import {useBreakpoint} from 'gatsby-plugin-breakpoints';
+import LanguageStore from '../context/LanguageStore'
 
 const NavBar = styled("nav")`
   width: 100%;
@@ -39,7 +40,7 @@ height: 20vh;
 const Layout = ({children}) => {
     const breakpoints = useBreakpoint();
     return (
-        <React.Fragment>
+        <LanguageStore>
             <NavBar>
                 <Logo/>
                 <MenuButton/>
@@ -53,7 +54,7 @@ const Layout = ({children}) => {
                 © {new Date().getFullYear()}, Built with {` `}
                 <a href="https://www.gatsbyjs.com">Gatsby</a>
             </footer> */}
-        </React.Fragment>
+        </LanguageStore>
     )
 }
 

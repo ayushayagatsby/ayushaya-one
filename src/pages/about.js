@@ -1,4 +1,4 @@
-import * as React from "react"
+import React, { useContext } from 'react';
 import {Link, graphql} from "gatsby"
 import styled from "@emotion/styled"
 import {css, jsx} from '@emotion/react'
@@ -14,20 +14,21 @@ import EducationSection from "../components/AboutPage/EducationSection"
 import QuoteSection from "../components/QuoteSection/QuoteSection"
 import BottomSection from "../components/AboutPage/BottomSection"
 import AboutCta from "../components/AboutPage/AboutCta"
+import LanguageContext from "../context/LanguageContext"
 
 const About = () => {
-
+    const {language} = useContext(LanguageContext)
     return (
-        <Layout>
+        <>
             <Seo title="About page"/>
-            <AboutTopSection/>
-            <CurriculumSection/>
-            <WorkingSection />
-            <EducationSection />
-            <QuoteSection quote="Rather sustaining health than treating diseases." small={false}/>
-            <BottomSection />
-            <AboutCta />
-        </Layout>
+            <AboutTopSection lan={language}/>
+            <CurriculumSection lan={language}/>
+            <WorkingSection lan={language}/>
+            <EducationSection lan={language}/>
+            <QuoteSection quote="Rather sustaining health than treating diseases." small={false} lan={language}/>
+            <BottomSection lan={language}/>
+            <AboutCta lan={language}/>
+        </>
     )
 }
 

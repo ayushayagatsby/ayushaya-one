@@ -3,6 +3,7 @@ import styled from "@emotion/styled"
 import bgGradient from "./bgGradient.jpeg"
 import {css, jsx} from '@emotion/react'
 import AboutSection from '../../content/AboutContent.json'
+import LanguageSelect from '../LanguageSelect/LanguageSelect'
 
 const TopSectionWrapper = styled("div")`
 width: 100%;
@@ -35,18 +36,42 @@ display: flex;
 flex-direction: column;
 `
 
-export default function AboutTopSection() {
+export default function AboutTopSection({lan}) {
+
+    const englishContent = AboutSection.content.en;
+    const italianContent = AboutSection.content.it;
+    const germanContent = AboutSection.content.de;
+
+    let handleCurrentLanguage = (language) => {
+        switch (language) {
+            case 'it':
+                return italianContent
+                break;
+            case 'en':
+                return englishContent
+                break;
+
+            case 'de':
+                return germanContent
+                break;
+
+            default:
+                break;
+        }
+    }
+
+    let currentLanguage = handleCurrentLanguage(lan)
+    console.log(currentLanguage)
+
     return (
         <TopSectionWrapper>
             <CircleWrapper><GradientCircle/></CircleWrapper>
             <InnerTextWrapper>
-                <h1>{AboutSection.title}</h1>
-                <h1 css={css `position: relative; right: 60%; margin-bottom: 8%;`}>Dr. Juliane Merckens, MD</h1>
-                <h3 css={css `margin-bottom: 8%; width: 70%;`}>Specialist for health and disease prevention</h3>
-                <p class="p-big" css={css `width: 70%;`}>With the Experience of almost 20 years
-                    as a medical doctor, I have an in-depth comprehension of health and disease.</p>
+                <h1 css={css `position: relative; right: 60%; margin-bottom: 8%;`}>{currentLanguage.heroHeader}</h1>
+                <h3 css={css `margin-bottom: 8%; width: 70%;`}>{currentLanguage.heroSubHeader}</h3>
+                <p class="p-big" css={css `width: 70%;`}>{currentLanguage.heroText}</p>
             </InnerTextWrapper>
-
+            <LanguageSelect/>
         </TopSectionWrapper>
     )
 }

@@ -1,17 +1,20 @@
 {
-    "title": "JSON content used at build time with Gatsby",
-    "content": [
-      {
-        "item": "Cupcake ipsum dolor. Sit amet marshmallow topping cheesecake muffin. Halvah croissant candy canes bonbon candy. Apple pie jelly beans topping carrot cake danish tart cake cheesecake. Muffin danish chocolate soufflé pastry icing bonbon oat cake. Powder cake jujubes oat cake. Lemon drops tootsie roll marshmallow halvah carrot cake."
-      },
-      {
-        "item": "Doggo ipsum borkdrive much ruin diet you are doing me the shock the neighborhood pupper doggorino length boy many pats, boofers heckin shooberino wrinkler. Very good spot very jealous pupper very hand that feed shibe smol, shoob. Long bois pupper doggo you are doin me a concern big ol yapper, smol boof most angery pupper I have ever seen puggorino. Mlem blep wow very biscit dat tungg tho wow very biscit, thicc ur givin me a spook. Many pats heckin you are doing me the shock corgo ur givin me a spook very hand that feed shibe shooberino, big ol pupper doge pats borkdrive. Such treat what a nice floof super chub such treat, smol thicc. Puggorino very good spot most angery pupper I have ever seen you are doing me the shock big ol pupper porgo corgo shoober, heckin good boys lotsa pats noodle horse very taste wow thicc. What a nice floof long doggo blep length boy borking doggo, much ruin diet floofs borkf."
-      },
-      {
-        "item": 192.33
-      },
-      {
-        "item": 111111
-      }
-    ]
-  }
+    "title": "About Page",
+    "content": {
+        "en": {
+            "heroHeader": "Dr. Juliane Merckens, MD",
+            "heroSubHeader": "Specialist for health and disease prevention",
+            "heroText": "With the Experience of almost 20 years as a medical doctor, I have an in-depth comprehension of health and disease."
+        },
+        "it": {
+            "heroHeader": "Dr.ssa Juliane Merckens",
+            "heroSubHeader": "Specialista per la salute e la prevenzione delle malattie",
+            "heroText": "Con quasi 20 anni di esperienza come medico, ho una profonda comprensione di salute e malattia"
+        }, 
+        "de": {
+            "heroHeader": "Zur Person Dr Juliane Merckens",
+            "heroSubHeader": "Spezialistin für Gesundheit und Vorbeugung von Krankheiten",
+            "heroText": "Mit einer fast 20-jährigen Erfahrung als Ärztin habe ich ein tiefgründiges Verständnis von Gesundheit und Krankheit."
+        }
+    }
+}
