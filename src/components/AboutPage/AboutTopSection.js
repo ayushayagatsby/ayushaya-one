@@ -2,6 +2,7 @@ import React from 'react'
 import styled from "@emotion/styled"
 import bgGradient from "./bgGradient.jpeg"
 import {css, jsx} from '@emotion/react'
+import AboutSection from '../../content/AboutContent.json'
 
 const TopSectionWrapper = styled("div")`
 width: 100%;
@@ -39,10 +40,11 @@ export default function AboutTopSection() {
         <TopSectionWrapper>
             <CircleWrapper><GradientCircle/></CircleWrapper>
             <InnerTextWrapper>
-                <h1 css={css`position: relative; right: 60%; margin-bottom: 8%;`}>Dr. Juliane Merckens, MD</h1>
-                <h3 css={css`margin-bottom: 8%; width: 70%`}>Specialist for health and disease prevention</h3>
-                <p class="p-big" css={css`width: 70%`}>With the Experience of almost 20 years as a medical doctor, I
-                    have an in-depth comprehension of health and disease.</p>
+                <h1>{AboutSection.title}</h1>
+                <h1 css={css `position: relative; right: 60%; margin-bottom: 8%;`}>Dr. Juliane Merckens, MD</h1>
+                <h3 css={css `margin-bottom: 8%; width: 70%;`}>Specialist for health and disease prevention</h3>
+                <p class="p-big" css={css `width: 70%;`}>With the Experience of almost 20 years
+                    as a medical doctor, I have an in-depth comprehension of health and disease.</p>
             </InnerTextWrapper>
 
         </TopSectionWrapper>
