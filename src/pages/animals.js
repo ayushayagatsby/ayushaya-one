@@ -9,7 +9,7 @@ export default function Animals() {
     const breakpoints = useBreakpoint();
 
     return (
-        <Layout>
+        <>
             <Seo title="Animals page"/> {breakpoints.sm && <AnimalsMobile/>
 }
 
@@ -18,6 +18,6 @@ export default function Animals() {
 
             {(!breakpoints.md && breakpoints.l) && <AnimalsDesktop />}
 
-        </Layout>
+        </>
     )
 }

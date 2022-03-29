@@ -16,7 +16,7 @@ const DemoHome = () => {
     const breakpoints = useBreakpoint();
 
     return (
-        <Layout>
+        <>
             <Seo title="Home page"/>
             
             {breakpoints.sm && 
@@ -30,7 +30,7 @@ const DemoHome = () => {
             {(!breakpoints.md) && <HomeAnimation />}
         
 
-        </Layout>
+        </>
     )
 }
 

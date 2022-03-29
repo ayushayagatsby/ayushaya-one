@@ -9,7 +9,7 @@ export default function Approach() {
     const breakpoints = useBreakpoint();
 
     return (
-        <Layout>
+        <>
             <Seo title="Approach page"/> {breakpoints.sm && <ApproachMobile/>
 }
 
@@ -18,6 +18,6 @@ export default function Approach() {
 
             {(!breakpoints.md && breakpoints.l) && <ApproachDesktop/>}
 
-        </Layout>
+        </>
     )
 }

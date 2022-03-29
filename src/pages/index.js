@@ -54,7 +54,7 @@ const BlogIndex = () => {
     const breakpoints = useBreakpoint();
 
     return (
-        <div>
+        <>
             {breakpoints.sm && <Wrapper>
                 <h1>Prova</h1>
             </Wrapper>}
@@ -79,7 +79,7 @@ const BlogIndex = () => {
                     </Button>
                 </DoorShape>
             </Wrapper>}
-        </div>
+        </>
 
     )
 }
