@@ -44,7 +44,7 @@ text-align: center;
 
 const ParagraphWrapper = styled("div")`
 width: 90%;
-margin-bottom: 5%;
+margin-bottom: 8%;
 display: flex;
 justify-content: center;
 `
@@ -54,6 +54,7 @@ display: flex;
 flex-direction: column;
 justify-content: space-around;
 align-items: center;
+padding-top: 10%;
 `
 
 const TextImageTextbox = styled("div")`
@@ -93,7 +94,7 @@ width: 85%;
 margin-bottom: 5%;
 `
 const OfferTitleBox = styled("div")`
-width: %;
+width: 80%;
 `
 
 const OfferDescriptionBox = styled("div")`
@@ -152,7 +153,7 @@ text-align: center;
 margin-bottom: 5%;
 `
 
-export default function AnimalsDesktop() {
+export default function AnimalsMobile() {
     return (
         <React.Fragment>
             <HeroOuterWrapper>
@@ -170,7 +171,7 @@ export default function AnimalsDesktop() {
                         layout="constrained"
                         width={954}
                         height={1365}
-                        css={css `width: 80%; position: absolute; z-index: -1;`}/>
+                        css={css `width: 80%; position: absolute; z-index: -1; transform: translateY(-20%);`}/>
                 </HeroInnerWrapper>
 
                 <DownScrollIcon size="15vw" mt="20%"/>
@@ -204,12 +205,12 @@ export default function AnimalsDesktop() {
                 </TextImageTextbox>
 
                 <StaticImage
-                    src="../images/DogSitting.png"
-                    alt="A dog sitting"
+                    src="../images/JulianeCat.png"
+                    alt="Juliane with a cat"
                     layout="constrained"
-                    width={812}
-                    height={812}
-                    css={css `width: 100%;`}/>
+                    width={811}
+                    height={811}
+                    css={css `width: 100%; margin: 10% 0;`}/>
             </TextImageWrapper>
 
             <TextImageWrapper css={css ``}>
@@ -221,16 +222,10 @@ export default function AnimalsDesktop() {
                             and manual treatments such as massage</p>
                     </TextImageParagraphBox>
                 </TextImageTextbox>
-                <StaticImage
-                    src="../images/JulianeCat.png"
-                    alt="Juliane with a cat"
-                    layout="constrained"
-                    width={811}
-                    height={811}
-                    css={css `width: 100%;`}/>
+
             </TextImageWrapper>
 
-            <WhiteWrapper css={css `margin-top: 30%;`}>
+            <WhiteWrapper css={css `margin-top: 50%;`}>
                 <StaticImage
                     src="../images/DogSide.png"
                     alt="A humane face sideways"
@@ -239,14 +234,14 @@ export default function AnimalsDesktop() {
                     height={488}
                     css={css `width: 50%; margin-top: -30%; margin-bottom: 4%;`}/>
 
-                <h2 css={css `margin-bottom: 3%;`}>My offer for animals</h2>
-                <h3 css={css `margin-bottom: 4%;`}>Consultaions in person or online</h3>
+                <h3 css={css `margin: 10% 0 5% 0; padding: 0 3%;`}>My offer for animals</h3>
+                <h4 css={css `margin-bottom: 10%;`}>Consultaions in person or online</h4>
                 <CtaParagraph>
                     <p class="p-big">At first contact, I’ll get to know your animal friend. This can
                         be done online or meeting personally.</p>
                 </CtaParagraph>
 
-                <h3>Prices:</h3>
+                <h3 css={css `margin: 10% 0 5% 0;`}>Prices:</h3>
 
                 <OfferColumns>
                     <OfferTitleBox>

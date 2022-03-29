@@ -10,9 +10,6 @@ background-color: rgba(212, 193, 186, .1);
 display: flex;
 flex-direction: column;
 justify-content: center;
-position: absolute;
-left: 0;
-right: 0;
 `
 
 const SectionHeading = styled("h2")`

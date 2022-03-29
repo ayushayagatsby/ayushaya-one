@@ -71,7 +71,6 @@ export default function AboutTopSection({lan}) {
                 <h3 css={css `margin-bottom: 8%; width: 70%;`}>{currentLanguage.heroSubHeader}</h3>
                 <p class="p-big" css={css `width: 70%;`}>{currentLanguage.heroText}</p>
             </InnerTextWrapper>
-            <LanguageSelect/>
         </TopSectionWrapper>
     )
 }
