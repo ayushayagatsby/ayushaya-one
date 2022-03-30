@@ -176,13 +176,13 @@ export default function MobileHome() {
                 </HeroInnerWrapper>
 
                 <HeroParagraphContainer>
-                    <p class="p-small">A path to full life by the art of holistic healthcare.</p>
+                    <p className="p-small">A path to full life by the art of holistic healthcare.</p>
                 </HeroParagraphContainer>
             </HeroOuterWrapper>
 
             <OfferTextbox>
                 <OfferHeader>The offer of Ayurveda</OfferHeader>
-                <p class="p-small">a holistic approach to health and wellbeing by caring about the way of living.</p>
+                <p className="p-small">a holistic approach to health and wellbeing by caring about the way of living.</p>
             </OfferTextbox>
 
             <LogoIllustrationBig css={css `width: 89%; height: auto;`}/>
@@ -212,7 +212,7 @@ export default function MobileHome() {
 
             <CtaTextbox>
                 <CtaHeading>For yourself</CtaHeading>
-                <p class="p-small">Focused on optimizing lifestyle, in areas such as nutrition
+                <p className="p-small">Focused on optimizing lifestyle, in areas such as nutrition
                     and optimizing body weight, daily routine and sleep, tobacco and alcohol use,
                     and physical activity.</p>
             </CtaTextbox>
@@ -229,7 +229,7 @@ export default function MobileHome() {
 
             <CtaTextbox>
                 <CtaHeading>For your companion</CtaHeading>
-                <p class="p-small">Focused on optimizing lifestyle to support wellbeing and on
+                <p className="p-small">Focused on optimizing lifestyle to support wellbeing and on
                     helping in specific situations of unease and old age.</p>
             </CtaTextbox>
 
@@ -256,7 +256,7 @@ export default function MobileHome() {
                     css={css `width: 75%; margin-top: -10%; margin-bottom: 20%;`}/>
                 <AboutSpecialHeader>The best approach to health is prevention</AboutSpecialHeader>
                 <AboutSignature>Dr. Juliane Merckens</AboutSignature>
-                <p class="p-big">Optimizing lifestyle in areas such as nutrition, living
+                <p className="p-big">Optimizing lifestyle in areas such as nutrition, living
                     conditions, daily routine, physical activity, support in specific situations of
                     unease or old age.</p>
                 <AboutButton>ABOUT</AboutButton>

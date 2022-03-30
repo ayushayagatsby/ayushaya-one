@@ -24,7 +24,7 @@ export default function SlideOneScale(props) {
             enter: 1500,
             exit: 1000
         }}
-            in={props. in}
+            in={props.in}
             classNames="slide-one-scale"
             onEnter={() => props.onEnter(true)}
             onExited={() => props.onExited()}>

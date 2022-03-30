@@ -241,7 +241,7 @@ table thead tr th {
 /* Link */
 
 a {
-    color: var(--color-primary);
+    color: inherit;
 }
 a:focus,
 a:hover {
@@ -363,6 +363,10 @@ button {
 button:hover,
 button:focus {
     background: linear-gradient(rgba(212, 193, 186, 0.2), rgba(212, 193, 186, 0.2));
+}
+
+.internal-link {
+    text-decoration: none;
 }
 
 /* Media queries */

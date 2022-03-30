@@ -61,7 +61,6 @@ export default function AboutTopSection({lan}) {
     }
 
     let currentLanguage = handleCurrentLanguage(lan)
-    console.log(currentLanguage)
 
     return (
         <TopSectionWrapper>
@@ -69,7 +68,7 @@ export default function AboutTopSection({lan}) {
             <InnerTextWrapper>
                 <h1 css={css `position: relative; right: 60%; margin-bottom: 8%;`}>{currentLanguage.heroHeader}</h1>
                 <h3 css={css `margin-bottom: 8%; width: 70%;`}>{currentLanguage.heroSubHeader}</h3>
-                <p class="p-big" css={css `width: 70%;`}>{currentLanguage.heroText}</p>
+                <p className="p-big" css={css `width: 70%;`}>{currentLanguage.heroText}</p>
             </InnerTextWrapper>
         </TopSectionWrapper>
     )

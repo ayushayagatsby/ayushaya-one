@@ -72,7 +72,7 @@ export default function WorkingSection() {
             <h3>{item.year}</h3>
         </Year><Hr/>
         <Description>
-            <p class="p-big">{item.description}</p>
+            <p className="p-big">{item.description}</p>
         </Description>
     </ListItemWrapper>);
 

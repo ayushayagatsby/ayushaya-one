@@ -29,7 +29,7 @@ const customStyles = {
         backgroundColor: state.selectProps.bg,
         width: state.selectProps.width,
         minWidth: "200px",
-        borderColor: "#DAC9C3",
+        borderColor: state.selectProps.bg,
         boxShadow: "none",
         "&:hover": {
             border: "none"
@@ -45,18 +45,22 @@ const customStyles = {
     }),
     option: (provided, state) => ({
         ...provided,
-        backgroundColor: state.isSelected
-            ? "rgba(218,201,195, .5)"
-            : "#DAC9C3"
+        backgroundColor: state.selectProps.bg,
+        color: state.menuColor
+    }),
+    indicatorSeparator: (provided, state) => ({
+        ...provided,
+        display: "none"
     })
 }
 
-export default function LanguageSelect() {
+export default function LanguageSelect( {darkMode, menuPos} ) {
     const [selectedOption,
         setSelectedOption] = useState(options[0]);
 
     const [newSelect,
-        setNewSelect] = useState(options[0]);
+        setNewSelect] = useState(options.filter(option => option.value === language)[0]);
+        
 
     const handleSelection = () => {
         const newSelection = options.filter(option => option.value === language)[0];
@@ -70,16 +74,12 @@ export default function LanguageSelect() {
         switch (item.value) {
             case 'it':
                 onChangeToIt();
-                setNewSelect(item);
-
                 break;
             case 'de':
                 onChangeToDe();
-                setNewSelect(item);
                 break;
             case 'en':
                 onChangeToEn();
-                setNewSelect(item);
                 break;
             default:
                 return null
@@ -89,10 +89,11 @@ export default function LanguageSelect() {
     return (<Select
         styles={customStyles}
         width='14vw'
-        menuColor='#FAF5F1'
-        bg="#DAC9C3"
-        defaultValue={selectedOption}
-        value={newSelect}
+        menuColor={darkMode ? "#6B665B" : '#FAF5F1'}
+        bg={darkMode? "#F5EEEB" : "#DAC9C3"}
+        singleBg={darkMode? "#F5EEEB" : "#DAC9C3"}
+        menuPlacement={menuPos ?? "bottom"}
+        value={options.filter(option => option.value === language)[0]}
         onChange={onChangeSelect}
         options={options}
         isSearchable={false}/>);

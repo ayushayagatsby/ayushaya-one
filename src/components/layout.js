@@ -1,4 +1,4 @@
-import * as React from "react"
+import React, {useState} from "react"
 import {Link} from "gatsby"
 import Logo from "./Logo"
 import MenuButton from "./MenuButton"
@@ -10,12 +10,16 @@ import LanguageStore from '../context/LanguageStore'
 import BrandMark from '../assets/BrandMark.svg'
 import LanguageSelect from './LanguageSelect/LanguageSelect'
 import BurgerMenu from "./BurgerMenu/BurgerMenu"
+import InternalLink from "./InternalLink"
+import MetaNav from "./Menu/MetaNav"
+import DekstopMenu from "./Menu/DekstopMenu"
+import {TransitionGroup} from 'react-transition-group'
 
 const NavBar = styled("nav")`
   width: 100%;
   display: flex;
   padding: 0 5%;
-  height: 20vh;
+  height: 15vh;
   justify-content: space-between;
   align-items: center;
   position: fixed;
@@ -44,21 +48,31 @@ background-color: #D4C1BA;
 display: flex;
 padding-top: 7%;
 flex-wrap: wrap;
+justify-content: space-between;
 `
 
 const FooterMetaNav = styled("nav")`
 width: 34%;
+display: flex;
 justify-content: space-between;
+font-size: 22px;
+font-weight: 400;
+color: #F9F5F1;
+text-transform: uppercase;
 `
 const FooterMetaNavMobile = styled("nav")`
 width: 80%;
 display: flex;
 justify-content: space-between;
 margin: 0 auto;
+font-size: 18px;
+font-weight: 400;
+color: #F9F5F1;
+text-transform: uppercase;
 `
 
-const MetaNavType = styled("span")`
-font-size: 18px;
+const MetaNavType = styled("div")`
+font-size: 22px;
 font-weight: 400;
 color: #F9F5F1;
 text-transform: uppercase;
@@ -68,11 +82,11 @@ const FooterLeft = styled("div")`
 display: flex;
 justify-content: start;
 padding-left: 5%;
-width: 50%;
+width: 33%;
 `
 
 const FooterRight = styled("div")`
-width: 50%;
+width: 33%;
 display: flex;
 flex-direction: column;
 align-items: flex-end;
@@ -84,54 +98,47 @@ const Layout = ({children}) => {
     const metaTypes = [
         {
             text: "Imprint",
-            link: ""
+            link: "/imprint"
         }, {
             text: "Privacy",
-            link: ""
+            link: "/privacy"
         }, {
             text: "Contact",
-            link: ""
+            link: "/contact"
         }
     ]
 
-    const metaTypesMapped = metaTypes.map(item => <MetaNavType href={item.link} children={item.text}/>);
+    const metaTypesMapped = metaTypes.map(item => <InternalLink href={item.link} children={item.text}/>);
+
+    const [showMenu,
+        setShowMenu] = useState(false);
+
+    const [showContent,
+        setShowContent] = useState(true);
+
+    const handleShowMenu = () => {
+        setShowMenu(!showMenu);
+        setShowContent(!showContent)
+    }
     return (
         <LanguageStore>
-            <NavBar>
-                <Logo/>
-                <BurgerMenu />
-            </NavBar>
+            <TransitionGroup>
+                <NavBar>
+                    <Logo/>
+                    <BurgerMenu menuToggle={handleShowMenu} menuState={showMenu}/>
+                </NavBar>
 
-            {breakpoints.sm && <Spacer/>}
+                <DekstopMenu menuState={showMenu} menuToggle={handleShowMenu}/> {breakpoints.sm && <Spacer/>}
 
-            {breakpoints.sm && <MainMobile>{children}</MainMobile>}
-            {!breakpoints.sm && <MainDesktop>{children}</MainDesktop>}
-            {/* <footer>
-                © {new Date().getFullYear()}, Built with {` `}
-                <a href="https://www.gatsbyjs.com">Gatsby</a>
-            </footer> */}
+                {breakpoints.sm && <MainMobile>{children}</MainMobile>}
+                {!breakpoints.sm && <MainDesktop>{children}</MainDesktop>}
 
-            <Footer>
-                <FooterLeft>
-                    <BrandMark
-                        css={css ` width: ${breakpoints.sm
-                        ? "14vw"
-                        : "4vw"}; height: ${breakpoints.sm
-                            ? "14vw"
-                            : "4vw"}; filter: brightness(0) saturate(100%) invert(94%) sepia(68%) saturate(155%) hue-rotate(296deg) brightness(103%) contrast(95%); transform: translateY(-20%);`}/>
-                </FooterLeft>
-                {!breakpoints.sm && <FooterMetaNav>
-                    {metaTypesMapped}
-                </FooterMetaNav>}
+                <Footer>
 
-                <FooterRight>
-                    <LanguageSelect/>
-                </FooterRight>
+                    <MetaNav/>
 
-                <div css={css `flex-basis: 100%; height: 0;`}></div>
-                {breakpoints.sm && <FooterMetaNavMobile>{metaTypesMapped}</FooterMetaNavMobile>}
-
-            </Footer>
+                </Footer>
+            </TransitionGroup>
         </LanguageStore>
     )
 }

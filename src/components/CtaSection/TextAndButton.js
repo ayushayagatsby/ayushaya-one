@@ -20,7 +20,7 @@ export default function TextAndButton({heading, text, buttonText, alignSelf}) {
             <h3 css={css`margin-bottom: 40px;`}>
                 {heading}
             </h3>
-            <p class="p-small" css={css`margin-bottom: 40px;`}>{text}</p>
+            <p className="p-small" css={css`margin-bottom: 40px;`}>{text}</p>
             <Button>{buttonText}</Button>
         </Wrapper>
     )

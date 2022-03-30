@@ -160,7 +160,7 @@ export default function HumansDesktop() {
                         css={css `width: 36%; position: relative; left: 10%;`}/>
                     <HeroTextbox>
                         <HeroHeader>Life is not merely to be alive, but to be well.</HeroHeader>
-                        <p class="p-big">Mastering life means mastering it yourself. There are many
+                        <p className="p-big">Mastering life means mastering it yourself. There are many
                             possibilities to support you along the way.</p>
                     </HeroTextbox>
                 </HeroInnerWrapper>
@@ -174,7 +174,7 @@ export default function HumansDesktop() {
                 <TwoColumnTextbox>
                     <ShiftedHeader>Step by step towards your goals with the wisdom of Ayurveda.</ShiftedHeader>
                     <ParagraphWrapper>
-                        <p class="p-big">Improving areas like nutrition and body weight, daily routine
+                        <p className="p-big">Improving areas like nutrition and body weight, daily routine
                             and sleep, tobacco and alcohol use, and physical activity to achieve overall
                             wellness can be supported by natural remedies.</p>
                     </ParagraphWrapper>
@@ -192,7 +192,7 @@ export default function HumansDesktop() {
                 <TextImageTextbox>
                     <TextImageHeader>Non-judging is allowing real change.</TextImageHeader>
                     <TextImageParagraphBox>
-                        <p class="p-big">An in-depth initial interview, a personalized program, and
+                        <p className="p-big">An in-depth initial interview, a personalized program, and
                             subsequent regular follow-up can help a lot to improve various aspects of life,
                             health and wellbeing. Some suggestions regarding nutritional supplements or
                             energetic support through flower essences can be part of the individual program.</p>
@@ -220,7 +220,7 @@ export default function HumansDesktop() {
                         Consultations
                     </TextImageHeader>
                     <TextImageCtaParagraphBox>
-                        <p class="p-big">They can be done online via the common video call services.</p>
+                        <p className="p-big">They can be done online via the common video call services.</p>
                     </TextImageCtaParagraphBox>
                     <TextImageCtaButton>GET IN CONTACT</TextImageCtaButton>
                 </TextImageCtaTextbox>
@@ -241,7 +241,7 @@ export default function HumansDesktop() {
                 <OfferColumns>
                     <IcConsultations css={css `width: 17%; height: auto;`}/>
                     <OfferColumnParagraphContainer>
-                        <p class="p-big">At first contact, we will identify together the areas of your
+                        <p className="p-big">At first contact, we will identify together the areas of your
                             life that might benefit from optimization, and then define priorities.</p>
                     </OfferColumnParagraphContainer>
                 </OfferColumns>
@@ -249,7 +249,7 @@ export default function HumansDesktop() {
                 <OfferColumns>
                     <IcCalendar css={css `width: 14%; height: auto;`}/>
                     <OfferColumnParagraphContainer>
-                        <p class="p-big">“Meeting” again online every other week is often a good choice
+                        <p className="p-big">“Meeting” again online every other week is often a good choice
                             to favor implementation of changes, but we can define together what suits best
                             for you.</p>
                     </OfferColumnParagraphContainer>
@@ -258,7 +258,7 @@ export default function HumansDesktop() {
                 <OfferColumns>
                     <IcConsent css={css `width: 16%; height: auto;`}/>
                     <OfferColumnParagraphContainer>
-                        <p class="p-big">Please note that the informed consent sheet has to be filled in
+                        <p className="p-big">Please note that the informed consent sheet has to be filled in
                             and sent to me before the first consultation.</p>
                     </OfferColumnParagraphContainer>
                 </OfferColumns>
@@ -268,7 +268,7 @@ export default function HumansDesktop() {
                 </PriceBox>
 
                 <DisclaimerBox>
-                    <p class="p-small">For every bill exceeding 77,47 € a single supplementary tax
+                    <p className="p-small">For every bill exceeding 77,47 € a single supplementary tax
                         (“marca da bollo”) of 2€ has to be charged, as required by Italian law</p>
                 </DisclaimerBox>
 

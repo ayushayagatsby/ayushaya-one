@@ -108,7 +108,7 @@ export default function CurriculumTimeline() {
 
     const listItems = content.map(item => <TimelineItem>
         <TimelineDescription>
-            <p class="p-big">
+            <p className="p-big">
                 {item.description}
             </p>
         </TimelineDescription>

@@ -171,7 +171,7 @@ export default function AnimalsDesktop() {
                 <HeroInnerWrapper>
                     <HeroTextbox>
                         <HeroHeader>They are not our whole life, but they make our lives whole.</HeroHeader>
-                        <p class="p-big">Treating them right leads to a long and fulfilling life for them and for you.</p>
+                        <p className="p-big">Treating them right leads to a long and fulfilling life for them and for you.</p>
                     </HeroTextbox>
 
                     <StaticImage
@@ -190,7 +190,7 @@ export default function AnimalsDesktop() {
             <WhiteWrapper>
                 <h2 css={css `margin:5% 0 5% 0;`}>The best life we can offer them.</h2>
                 <ParagraphWrapper>
-                    <p class="p-big">For animals, my offer includes optimizing lifestyle and
+                    <p className="p-big">For animals, my offer includes optimizing lifestyle and
                         supporting them in specific situations of unease or old age.</p>
                 </ParagraphWrapper>
 
@@ -214,7 +214,7 @@ export default function AnimalsDesktop() {
                 <TextImageTextbox>
                     <TextImageHeader>Specific situations</TextImageHeader>
                     <TextImageParagraphBox>
-                        <p class="p-big">In some instances, an animal needs just some support to tackle
+                        <p className="p-big">In some instances, an animal needs just some support to tackle
                             a particular situation, such as recovering from surgery, changing home or
                             adapting to the arrival of a new family member.</p>
                     </TextImageParagraphBox>
@@ -225,7 +225,7 @@ export default function AnimalsDesktop() {
                 <TextImageTextbox>
                     <TextImageHeader>General health</TextImageHeader>
                     <TextImageParagraphBox>
-                        <p class="p-big">At any point of their life, animals can benefit from
+                        <p className="p-big">At any point of their life, animals can benefit from
                             nutritional supplements, suggestions about ideal living according to Ayurveda,
                             and manual treatments such as massage</p>
                     </TextImageParagraphBox>
@@ -251,7 +251,7 @@ export default function AnimalsDesktop() {
                 <h2 css={css `margin-bottom: 3%;`}>My offer for animals</h2>
                 <h3 css={css `margin-bottom: 4%;`}>Consultaions in person or online</h3>
                 <CtaParagraph>
-                    <p class="p-big">At first contact, I’ll get to know your animal friend. This can
+                    <p className="p-big">At first contact, I’ll get to know your animal friend. This can
                         be done online or meeting personally.</p>
                 </CtaParagraph>
 
@@ -260,10 +260,10 @@ export default function AnimalsDesktop() {
                 <OfferColumns>
                     <OfferTitleBox>
                         <h4 css={css `margin-bottom: 2%;`}>First encounter</h4>
-                        <p class="p-big">For general health issues</p>
+                        <p className="p-big">For general health issues</p>
                     </OfferTitleBox>
                     <OfferDescriptionBox>
-                        <p class="p-small">Includes sending you a treatment plan afterwards, answering
+                        <p className="p-small">Includes sending you a treatment plan afterwards, answering
                             questions about it and keeping in touch on how the health issue is evolving</p>
                     </OfferDescriptionBox>
                     <PriceBox>
@@ -274,10 +274,10 @@ export default function AnimalsDesktop() {
                 <OfferColumns>
                     <OfferTitleBox>
                         <h4 css={css `margin-bottom: 2%;`}>Additional Animal</h4>
-                        <p class="p-big">In the same first encounter</p>
+                        <p className="p-big">In the same first encounter</p>
                     </OfferTitleBox>
                     <OfferDescriptionBox>
-                        <p class="p-small">40 € for each supplementary animal in the same first
+                        <p className="p-small">40 € for each supplementary animal in the same first
                             encounter (includes sending you a treatment plan afterwards, answering any
                             question about it and keeping in touch for 3 months on how the health issue is
                             evolving)</p>
@@ -290,10 +290,10 @@ export default function AnimalsDesktop() {
                 <OfferColumns>
                     <OfferTitleBox>
                         <h4 css={css `margin-bottom: 2%;`}>New health issue</h4>
-                        <p class="p-big">Of known Animals</p>
+                        <p className="p-big">Of known Animals</p>
                     </OfferTitleBox>
                     <OfferDescriptionBox>
-                        <p class="p-small">For every new health issue of an animal friend already known
+                        <p className="p-small">For every new health issue of an animal friend already known
                             to me: 30 € (includes sending you a treatment plan afterwards, answering any
                             question about it and keeping in touch for 3 months on how the health issue is
                             evolving)</p>
@@ -306,10 +306,10 @@ export default function AnimalsDesktop() {
                 <OfferColumns>
                     <OfferTitleBox>
                         <h4 css={css `margin-bottom: 2%;`}>Specific treatments</h4>
-                        <p class="p-big">Massage, sustaining recovery, etc.</p>
+                        <p className="p-big">Massage, sustaining recovery, etc.</p>
                     </OfferTitleBox>
                     <OfferDescriptionBox>
-                        <p class="p-small">For specific treatments (such as massage, sustaining
+                        <p className="p-small">For specific treatments (such as massage, sustaining
                             recovery, etc.): 40 € per hour plus material costs (for example: ayurvedic oils
                             or bandages)</p>
                     </OfferDescriptionBox>
@@ -321,10 +321,10 @@ export default function AnimalsDesktop() {
                 <OfferColumns>
                     <OfferTitleBox>
                         <h4 css={css `margin-bottom: 2%;`}>Meeting in person</h4>
-                        <p class="p-big">Personally in your place</p>
+                        <p className="p-big">Personally in your place</p>
                     </OfferTitleBox>
                     <OfferDescriptionBox>
-                        <p class="p-small">Meeting personally in your place:
+                        <p className="p-small">Meeting personally in your place:
                             <br/>Travel costs for the province of Varese prices as calculated by
                                 ViaMichelin; for outside the province of Varese we will agree on the price for
                                 travel</p>
@@ -336,10 +336,10 @@ export default function AnimalsDesktop() {
                 <OfferColumns>
                     <OfferTitleBox>
                         <h4 css={css `margin-bottom: 2%;`}>First encounter</h4>
-                        <p class="p-big">For general health issues</p>
+                        <p className="p-big">For general health issues</p>
                     </OfferTitleBox>
                     <OfferDescriptionBox>
-                        <p class="p-small">Includes sending you a treatment plan afterwards, answering
+                        <p className="p-small">Includes sending you a treatment plan afterwards, answering
                             questions about it and keeping in touch on how the health issue is evolving</p>
                     </OfferDescriptionBox>
                     <PriceBox>
@@ -348,12 +348,12 @@ export default function AnimalsDesktop() {
                 </OfferColumns>
 
                 <DisclaimerBox>
-                    <p class="p-small">For every bill exceeding 77,47 € a single supplementary tax
+                    <p className="p-small">For every bill exceeding 77,47 € a single supplementary tax
                         (“marca da bollo”) of 2€ has to be charged, as required by Italian law</p>
                 </DisclaimerBox>
 
                 <ObersvationParagraph>
-                    <p class="p-big">You can help me a lot by filling in and sending me the general
+                    <p className="p-big">You can help me a lot by filling in and sending me the general
                         observation form, and the informed consent sheets beforehand.</p>
                 </ObersvationParagraph>
 

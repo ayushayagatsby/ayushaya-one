@@ -45,7 +45,7 @@ export default function QuoteSection() {
                 <TextWrapper>
                     <h4 css={css `margin-bottom: 3%;`}>The best approach to health is prevention</h4>
                     <h2 css={css `margin-bottom: 6%;`}>Dr. Juliane Merckens, MD</h2>
-                    <p class="p-big" css={css `margin-bottom: 5%;`}> Optimizing lifestyle in areas such as nutrition, living
+                    <p className="p-big" css={css `margin-bottom: 5%;`}> Optimizing lifestyle in areas such as nutrition, living
                         conditions, daily routine, physical activity, support in specific situations of
                         unease or old age.</p>
                     <button>ABOUT</button>

@@ -39,7 +39,7 @@ export default function EducationSection() {
             <FirstInnerWrapper>
                 <FirstTextbox>
                     <h2 css={css `margin-bottom: 5%;`}>Education</h2>
-                    <p class="p-big">For different reasons, at the end of school, I decided to study
+                    <p className="p-big">For different reasons, at the end of school, I decided to study
                         human medicine. Having part of my family in Switzerland, I ended up going to the
                         university of Lausanne.</p>
                 </FirstTextbox>
@@ -56,7 +56,7 @@ export default function EducationSection() {
 
             <SecodInnerWrapper>
                 <SecondTextbox>
-                    <p class="p-big">In the following years, I knew people from various parts of the
+                    <p className="p-big">In the following years, I knew people from various parts of the
                         world and travelled to different countries. I started to learn italian and also
                         spent a lot of time in Great Britain including several months of internship and
                         a year of research.</p>

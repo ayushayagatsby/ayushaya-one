@@ -67,9 +67,9 @@ const BlogIndex = () => {
                 <DoorShape>
                     <BrandMark css={css `width: 15%; height: auto; margin-bottom: 15%;`}/>
                     <BrandType css={css `width: 60%; height: auto; margin-bottom: 12%;`}/>
-                    <p class="p-big" css={css `margin-bottom: 20%;`}>Dr. Juliane Merckens</p>
+                    <p className="p-big" css={css `margin-bottom: 20%;`}>Dr. Juliane Merckens</p>
                     <h3 css={css `margin-bottom: 12%;`}>Keep calm</h3>
-                    <p class="p-big" css={css `margin-bottom: 25%;`}>I look forward to welcoming you
+                    <p className="p-big" css={css `margin-bottom: 25%;`}>I look forward to welcoming you
                         soon on my new website. In the meantime, feel free to contact me.</p>
                     <Button>
                         <MailTo target="_blank" href="mailto:juliane@ayushaya.coach">

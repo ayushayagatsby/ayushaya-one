@@ -110,7 +110,7 @@ export default function BottomSection() {
                 css={css `width: 71%; margin-bottom: 5%;`}/>
 
             <BottomText>
-                <p class="p-big">Presently, I am living in a small place in Northern Italy, with
+                <p className="p-big">Presently, I am living in a small place in Northern Italy, with
                     my husband, two old cats and 2 dogs. I enjoy nature, reading books on various
                     topics and writing.</p>
             </BottomText>
