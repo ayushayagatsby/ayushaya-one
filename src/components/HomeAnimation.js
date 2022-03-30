@@ -19,7 +19,9 @@ import QuoteSection from './QuoteSection/QuoteSection'
 import AboutSection from "./AboutSection/AboutSection"
 
 const OuterWrapper = styled("div")`
-
+min-height: 100vh;
+height: auto;
+width: 100%;
 
 `
 const Spacer = styled("div")`

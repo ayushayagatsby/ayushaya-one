@@ -9,6 +9,7 @@ import {useBreakpoint} from 'gatsby-plugin-breakpoints';
 import LanguageStore from '../context/LanguageStore'
 import BrandMark from '../assets/BrandMark.svg'
 import LanguageSelect from './LanguageSelect/LanguageSelect'
+import BurgerMenu from "./BurgerMenu/BurgerMenu"
 
 const NavBar = styled("nav")`
   width: 100%;
@@ -98,7 +99,7 @@ const Layout = ({children}) => {
         <LanguageStore>
             <NavBar>
                 <Logo/>
-                <MenuButton/>
+                <BurgerMenu />
             </NavBar>
 
             {breakpoints.sm && <Spacer/>}
