@@ -82,8 +82,8 @@ export default function MetaNav( {leftLogo, darkMode, menuPos} ) {
             </FooterMetaNav>}
 
             <FooterRight>
-                {/* <LanguageSelect darkMode={darkMode} menuPos={menuPos}/> */}
-                <DebugLS />
+                <LanguageSelect darkMode={darkMode} menuPos={menuPos}/>
+                {/* <DebugLS /> */}
             </FooterRight>
 
             {breakpoints.sm && <div css={css `flex-basis: 100%; height: 0;`}/>}
