@@ -122,21 +122,23 @@ const Layout = ({children}) => {
     }
     return (
         <TransitionGroup>
-            <NavBar>
-                <Logo/>
-                <BurgerMenu menuToggle={handleShowMenu} menuState={showMenu}/>
-            </NavBar>
+            <div id="layout-wrapper">
+                <NavBar>
+                    <Logo/>
+                    <BurgerMenu menuToggle={handleShowMenu} menuState={showMenu}/>
+                </NavBar>
 
-            <DekstopMenu menuState={showMenu} menuToggle={handleShowMenu}/> {breakpoints.sm && <Spacer/>}
+                <DekstopMenu menuState={showMenu} menuToggle={handleShowMenu}/> {breakpoints.sm && <Spacer/>}
 
-            {breakpoints.sm && <MainMobile>{children}</MainMobile>}
-            {!breakpoints.sm && <MainDesktop>{children}</MainDesktop>}
+                {breakpoints.sm && <MainMobile>{children}</MainMobile>}
+                {!breakpoints.sm && <MainDesktop>{children}</MainDesktop>}
 
-            <Footer>
+                <Footer>
 
-                {/* <MetaNav darkMode={false}/> */}
+                    {/* <MetaNav darkMode={false}/> */}
 
-            </Footer>
+                </Footer>
+            </div>
         </TransitionGroup>
     )
 }

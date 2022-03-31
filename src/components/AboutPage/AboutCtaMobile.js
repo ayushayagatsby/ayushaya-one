@@ -6,19 +6,15 @@ import {StaticImage} from "gatsby-plugin-image"
 const Wrapper = styled("div")`
 width: 100%;
 margin-top: 20%;
-background-color: rgba(212, 193, 186, .1);
 display: flex;
 flex-direction: column;
 justify-content: center;
-position: absolute;
-left: 0;
-right: 0;
 z-index: 0;
 margin-bottom: 15%;
 `
 
 const SectionHeading = styled("h3")`
-margin-bottom: 40%;
+margin-bottom: 50%;
 text-align: center;
 `
 

@@ -52,34 +52,36 @@ transform: translateY(10px);
 `
 
 const Year = styled("div")`
-width: 13vw;
 display: flex;
 justify-content: center;
+text-align: left;
+padding-right: 5%;
 `
 
 const Description = styled("div")`
-padding-left: 5%;
-width: 35vw;`
+text-align: left;
+padding-right: 5%;
+width: 70%;`
 
 const ListItemWrapper = styled("div")`
 display: flex;
 margin-bottom: 8%;
 align-items: flex-start;`
 
-export default function WorkingSection() {
+export default function WorkingSectionMobile() {
     const workingItems = content.map(item => <ListItemWrapper>
         <Year>
-            <h3>{item.year}</h3>
-        </Year><Hr/>
+            <h2 css={css `font-size: 15px; margin-top: 6px; margin-left: 10px;`}>{item.year}</h2>
+        </Year>
         <Description>
-            <p className="p-big">{item.description}</p>
+            <p className="p-small">{item.description}</p>
         </Description>
     </ListItemWrapper>);
 
     return (
         <Wrapper>
             <WHeading>
-                <h2 css={css `margin-bottom: 15%;`}>Working Experiences</h2>
+                <h3 css={css `margin-bottom: 15%;`}>Working Experiences</h3>
             </WHeading>
             {workingItems}
         </Wrapper>

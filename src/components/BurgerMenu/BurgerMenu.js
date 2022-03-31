@@ -11,12 +11,14 @@ export default function BurgerMenu({menuToggle, menuState}) {
 
     useEffect(() => {
 
+        const firstChild = document.getElementById("layout-wrapper");
+
         if (burgerState) {
-            document.body.style.height = '100vh';
-            document.body.style.overflow = 'hidden';
+            firstChild.style.height = '100vh';
+            firstChild.style.overflow = 'hidden';
         } else {
-            document.body.style.height = 'auto';
-            document.body.style.overflow = 'scroll';
+            firstChild.style.height = 'auto';
+            firstChild.style.overflow = 'scroll';
         }
     }, [burgerState]);
 

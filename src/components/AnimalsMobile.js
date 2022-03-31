@@ -174,7 +174,7 @@ export default function AnimalsMobile() {
                         css={css `width: 80%; position: absolute; z-index: -1; transform: translateY(-20%);`}/>
                 </HeroInnerWrapper>
 
-                <DownScrollIcon size="15vw" mt="20%"/>
+                <DownScrollIcon size="15vw" mt="10%"/>
 
             </HeroOuterWrapper>
 
