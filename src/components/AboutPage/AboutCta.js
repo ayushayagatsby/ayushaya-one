@@ -56,7 +56,7 @@ export default function AboutCta() {
                     <StaticImage
                         src="../../images/HumanSide.png"
                         alt="A human face"
-                        layout="constrained"
+                        layout="constrained"               placeholder="blurred"
                         width={378}
                         height={511}
                         css={css `width: 50%; margin-top: -50%;`}/>
@@ -68,7 +68,7 @@ export default function AboutCta() {
                     <StaticImage
                         src="../../images/DogSide.png"
                         alt="A dog face"
-                        layout="constrained"
+                        layout="constrained"               placeholder="blurred"
                         width={489}
                         height={488}
                         css={css `width: 65%; margin-top: -50%;`}/>

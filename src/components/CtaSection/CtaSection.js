@@ -39,7 +39,7 @@ export default function CtaSection() {
                 <StaticImage
                     src="../../images/HumanSide.png"
                     alt="A human face"
-                    layout="constrained"
+                    layout="constrained"               placeholder="blurred"
                     width={378}
                     height={511}
                     css={css `width: 25%; position: relative; top: 50px; max-width: 378px; margin-left: 5%; `}/>
@@ -50,7 +50,7 @@ export default function CtaSection() {
                 <StaticImage
                     src="../../images/DogSide.png"
                     alt="A dog face"
-                    layout="constrained"
+                    layout="constrained"               placeholder="blurred"
                     width={489}
                     height={488}
                     css={css `width: 32%; position: relative; bottom: 50px; max-width: 489px; margin-right: 5%;`}/>

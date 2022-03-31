@@ -177,7 +177,7 @@ export default function AnimalsDesktop() {
                     <StaticImage
                         src="../images/ShapeDogGradient.png"
                         alt="A dog face"
-                        layout="constrained"
+                        layout="constrained"               placeholder="blurred"
                         width={954}
                         height={1365}
                         css={css `width: 31%; position: relative; right: 10%; z-index: 0;`}/>
@@ -197,7 +197,7 @@ export default function AnimalsDesktop() {
                 <StaticImage
                     src="../images/DogBeach.png"
                     alt="A dog in the beach"
-                    layout="constrained"
+                    layout="constrained"               placeholder="blurred"
                     width={1364}
                     height={909}
                     css={css `width: 88%; margin-bottom: 10%;`}/>
@@ -207,7 +207,7 @@ export default function AnimalsDesktop() {
                 <StaticImage
                     src="../images/DogSitting.png"
                     alt="A dog sitting"
-                    layout="constrained"
+                    layout="constrained"               placeholder="blurred"
                     width={812}
                     height={812}
                     css={css `width: 53%; max-width: 812px; z-index: 0;`}/>
@@ -233,7 +233,7 @@ export default function AnimalsDesktop() {
                 <StaticImage
                     src="../images/JulianeCat.png"
                     alt="Juliane with a cat"
-                    layout="constrained"
+                    layout="constrained"               placeholder="blurred"
                     width={811}
                     height={811}
                     css={css `width: 53%; max-width: 811px; z-index: 1;`}/>
@@ -243,7 +243,7 @@ export default function AnimalsDesktop() {
                 <StaticImage
                     src="../images/DogSide.png"
                     alt="A humane face sideways"
-                    layout="constrained"
+                    layout="constrained"               placeholder="blurred"
                     width={489}
                     height={488}
                     css={css `width: 32%; margin-top: -20%; margin-bottom: 4%;`}/>

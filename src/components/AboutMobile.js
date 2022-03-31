@@ -253,7 +253,7 @@ export default function AboutMobile() {
                 <StaticImage
                     src="../images/curriculumPicture.png"
                     alt="A dog in the beach"
-                    layout="constrained"
+                    layout="constrained"               placeholder="blurred"
                     width={1640}
                     height={1093}
                     css={css `width: 88%; margin-bottom: 10%;`}/>
@@ -277,7 +277,7 @@ export default function AboutMobile() {
                 <StaticImage
                     src="../../images/CityImageTwo.png"
                     alt="Another facade of a Church"
-                    layout="constrained"
+                    layout="constrained"               placeholder="blurred"
                     width={950}
                     height={633}
                     css={css `width: 100%; margin: 10% 0;`}/>
@@ -330,7 +330,7 @@ export default function AboutMobile() {
                 <StaticImage
                     src="../../images/JulianeAndDog.png"
                     alt="Juliane with a dog"
-                    layout="constrained"
+                    layout="constrained"               placeholder="blurred"
                     width={950}
                     height={711}
                     css={css `width: 100%; margin: 10% 0;`}/>
@@ -352,7 +352,7 @@ export default function AboutMobile() {
                 <StaticImage
                     src="../../images/JulianeAndTwoDogs.png"
                     alt="Juliane with two dogs"
-                    layout="constrained"
+                    layout="constrained"               placeholder="blurred"
                     width={1364}
                     height={911}
                     css={css `width: 100%; margin: 10%;`}/>

@@ -168,7 +168,7 @@ export default function AnimalsMobile() {
                     <StaticImage
                         src="../images/ShapeDogGradient.png"
                         alt="A dog face"
-                        layout="constrained"
+                        layout="constrained"               placeholder="blurred"
                         width={954}
                         height={1365}
                         css={css `width: 80%; position: absolute; z-index: -1; transform: translateY(-20%);`}/>
@@ -188,7 +188,7 @@ export default function AnimalsMobile() {
                 <StaticImage
                     src="../images/DogBeach.png"
                     alt="A dog in the beach"
-                    layout="constrained"
+                    layout="constrained"               placeholder="blurred"
                     width={1364}
                     height={909}
                     css={css `width: 88%; margin-bottom: 10%;`}/>
@@ -207,7 +207,7 @@ export default function AnimalsMobile() {
                 <StaticImage
                     src="../images/JulianeCat.png"
                     alt="Juliane with a cat"
-                    layout="constrained"
+                    layout="constrained"               placeholder="blurred"
                     width={811}
                     height={811}
                     css={css `width: 100%; margin: 10% 0;`}/>
@@ -229,7 +229,7 @@ export default function AnimalsMobile() {
                 <StaticImage
                     src="../images/DogSide.png"
                     alt="A humane face sideways"
-                    layout="constrained"
+                    layout="constrained"               placeholder="blurred"
                     width={489}
                     height={488}
                     css={css `width: 50%; margin-top: -30%; margin-bottom: 4%;`}/>

@@ -83,7 +83,7 @@ export default function BottomSection() {
                 <StaticImage
                     src="../../images/JulianeAndDog.png"
                     alt="Juliane with a dog"
-                    layout="constrained"
+                    layout="constrained"               placeholder="blurred"
                     width={950}
                     height={711}
                     css={css `width: 48%; margin-right: 5%;`}/>
@@ -104,7 +104,7 @@ export default function BottomSection() {
             <StaticImage
                 src="../../images/JulianeAndTwoDogs.png"
                 alt="Juliane with two dogs"
-                layout="constrained"
+                layout="constrained"               placeholder="blurred"
                 width={1364}
                 height={911}
                 css={css `width: 71%; margin-bottom: 5%;`}/>
