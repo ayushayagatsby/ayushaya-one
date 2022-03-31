@@ -162,7 +162,7 @@ export default function AnimalsMobile() {
                 <HeroInnerWrapper>
                     <HeroTextbox>
                         <HeroHeader>They are not our whole life, but they make our lives whole.</HeroHeader>
-                        <p className="p-big">Treating them right leads to a long and fulfilling life for them and for you.</p>
+                        <p className="p">Treating them right leads to a long and fulfilling life for them and for you.</p>
                     </HeroTextbox>
 
                     <StaticImage
@@ -181,7 +181,7 @@ export default function AnimalsMobile() {
             <WhiteWrapper>
                 <h3 css={css `margin: 5% 0 5% 0;`}>The best life we can offer them.</h3>
                 <ParagraphWrapper>
-                    <p className="p-big">For animals, my offer includes optimizing lifestyle and
+                    <p className="p">For animals, my offer includes optimizing lifestyle and
                         supporting them in specific situations of unease or old age.</p>
                 </ParagraphWrapper>
 
@@ -198,7 +198,7 @@ export default function AnimalsMobile() {
                 <TextImageTextbox>
                     <TextImageHeader>Specific situations</TextImageHeader>
                     <TextImageParagraphBox>
-                        <p className="p-big">In some instances, an animal needs just some support to tackle
+                        <p className="p">In some instances, an animal needs just some support to tackle
                             a particular situation, such as recovering from surgery, changing home or
                             adapting to the arrival of a new family member.</p>
                     </TextImageParagraphBox>
@@ -217,7 +217,7 @@ export default function AnimalsMobile() {
                 <TextImageTextbox>
                     <TextImageHeader>General health</TextImageHeader>
                     <TextImageParagraphBox>
-                        <p className="p-big">At any point of their life, animals can benefit from
+                        <p className="p">At any point of their life, animals can benefit from
                             nutritional supplements, suggestions about ideal living according to Ayurveda,
                             and manual treatments such as massage</p>
                     </TextImageParagraphBox>
@@ -237,7 +237,7 @@ export default function AnimalsMobile() {
                 <h3 css={css `margin: 10% 0 5% 0; padding: 0 3%;`}>My offer for animals</h3>
                 <h4 css={css `margin-bottom: 10%;`}>Consultaions in person or online</h4>
                 <CtaParagraph>
-                    <p className="p-big">At first contact, I’ll get to know your animal friend. This can
+                    <p className="p">At first contact, I’ll get to know your animal friend. This can
                         be done online or meeting personally.</p>
                 </CtaParagraph>
 
@@ -246,7 +246,7 @@ export default function AnimalsMobile() {
                 <OfferColumns>
                     <OfferTitleBox>
                         <h4 css={css `margin-bottom: 2%;`}>First encounter</h4>
-                        <p className="p-big">For general health issues</p>
+                        <p className="p">For general health issues</p>
                     </OfferTitleBox>
                     <OfferDescriptionBox>
                         <p className="p-small">Includes sending you a treatment plan afterwards, answering
@@ -260,7 +260,7 @@ export default function AnimalsMobile() {
                 <OfferColumns>
                     <OfferTitleBox>
                         <h4 css={css `margin-bottom: 2%;`}>Additional Animal</h4>
-                        <p className="p-big">In the same first encounter</p>
+                        <p className="p">In the same first encounter</p>
                     </OfferTitleBox>
                     <OfferDescriptionBox>
                         <p className="p-small">40 € for each supplementary animal in the same first
@@ -276,7 +276,7 @@ export default function AnimalsMobile() {
                 <OfferColumns>
                     <OfferTitleBox>
                         <h4 css={css `margin-bottom: 2%;`}>New health issue</h4>
-                        <p className="p-big">Of known Animals</p>
+                        <p className="p">Of known Animals</p>
                     </OfferTitleBox>
                     <OfferDescriptionBox>
                         <p className="p-small">For every new health issue of an animal friend already known
@@ -292,7 +292,7 @@ export default function AnimalsMobile() {
                 <OfferColumns>
                     <OfferTitleBox>
                         <h4 css={css `margin-bottom: 2%;`}>Specific treatments</h4>
-                        <p className="p-big">Massage, sustaining recovery, etc.</p>
+                        <p className="p">Massage, sustaining recovery, etc.</p>
                     </OfferTitleBox>
                     <OfferDescriptionBox>
                         <p className="p-small">For specific treatments (such as massage, sustaining
@@ -307,7 +307,7 @@ export default function AnimalsMobile() {
                 <OfferColumns>
                     <OfferTitleBox>
                         <h4 css={css `margin-bottom: 2%;`}>Meeting in person</h4>
-                        <p className="p-big">Personally in your place</p>
+                        <p className="p">Personally in your place</p>
                     </OfferTitleBox>
                     <OfferDescriptionBox>
                         <p className="p-small">Meeting personally in your place:
@@ -322,7 +322,7 @@ export default function AnimalsMobile() {
                 <OfferColumns>
                     <OfferTitleBox>
                         <h4 css={css `margin-bottom: 2%;`}>First encounter</h4>
-                        <p className="p-big">For general health issues</p>
+                        <p className="p">For general health issues</p>
                     </OfferTitleBox>
                     <OfferDescriptionBox>
                         <p className="p-small">Includes sending you a treatment plan afterwards, answering
@@ -339,7 +339,7 @@ export default function AnimalsMobile() {
                 </DisclaimerBox>
 
                 <ObersvationParagraph>
-                    <p className="p-big">You can help me a lot by filling in and sending me the general
+                    <p className="p">You can help me a lot by filling in and sending me the general
                         observation form, and the informed consent sheets beforehand.</p>
                 </ObersvationParagraph>
 

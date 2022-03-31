@@ -163,7 +163,7 @@ export default function ApproachDesktop() {
                 <HeroInnerWrapper>
                     <HeroTextbox>
                         <h3 css={css `margin-bottom: 5%;`}>The science of life</h3>
-                        <p className="p-big">A scientific and modern approach to a thousand year old tradition.</p>
+                        <p className="p">A scientific and modern approach to a thousand year old tradition.</p>
                     </HeroTextbox>
                     <StaticImage
                         src="../images/ShapeStonesGradient.png"
@@ -180,7 +180,7 @@ export default function ApproachDesktop() {
             <WhiteWrapper>
                 <h3 css={css `margin:5% 0 5% 0;`}>Insights by the observation of Nature.</h3>
                 <ParagraphWrapper>
-                    <p className="p-big">Ayurveda is the traditional Indian medicine system which has
+                    <p className="p">Ayurveda is the traditional Indian medicine system which has
                         developed over several thousands of years. As other traditional systems, it is
                         based on a philosophical framework and on the observation of Nature.</p>
                 </ParagraphWrapper>
@@ -199,7 +199,7 @@ export default function ApproachDesktop() {
                 <h3 css={css `margin: 15% 0 10% 0;`}>About Ayuverda</h3>
                 <AboutParagraph>
 
-                    <p className="p-big">Ayurveda basically holds that the Universe develops out of pure
+                    <p className="p">Ayurveda basically holds that the Universe develops out of pure
                         consciousness which combines with primordial material energy, to form
                         bioenergetic principles allegorized as 5 Elements: Space (or Ether) represents
                         the principle of expansion and of providing a recipient to hold the Universe.
@@ -249,20 +249,20 @@ export default function ApproachDesktop() {
                 <SingleQuality>
                     <IcSattva css={css `width: 40%; height: auto; margin-bottom: 12%;`}/>
                     <h3 css={css `margin-bottom: 12%;`}>Sattva</h3>
-                    <p className="p-big">Describes pure consciousness, daytime, being awake, and a balanced state.</p>
+                    <p className="p">Describes pure consciousness, daytime, being awake, and a balanced state.</p>
                 </SingleQuality>
 
                 <SingleQuality>
                     <IcRajas css={css `width: 40%; height: auto; margin-bottom: 12%;`}/>
                     <h3 css={css `margin-bottom: 12%;`}>Rajas</h3>
-                    <p className="p-big">Describes the energy that moves sattva and tamas, but also dusk
+                    <p className="p">Describes the energy that moves sattva and tamas, but also dusk
                         and dawn, dreams, and an imbalanced state.</p>
                 </SingleQuality>
 
                 <SingleQuality>
                     <IcTamas css={css `width: 40%; height: auto; margin-bottom: 12%;`}/>
                     <h3 css={css `margin-bottom: 12%;`}>Tamas</h3>
-                    <p className="p-big">Describes unconsciousness, nighttime, sleep, and inertia.</p>
+                    <p className="p">Describes unconsciousness, nighttime, sleep, and inertia.</p>
                 </SingleQuality>
 
                 <IcLiveFlower css={css `width: 75%; height: auto; margin: 15% 0 10% 0;`}/>
@@ -271,7 +271,7 @@ export default function ApproachDesktop() {
 
                 <LastAboutParagraph css={css `margin-bottom: 4%;`}>
 
-                    <p className="p-big">Though all three qualities are important in life, Ayurveda
+                    <p className="p">Though all three qualities are important in life, Ayurveda
                         holds that the human being should develop mainly sattva, as this allows to
                         evolve spiritually.</p>
                 </LastAboutParagraph>
@@ -287,7 +287,7 @@ export default function ApproachDesktop() {
                 <TextImageTextbox>
                     <h4 css={css `margin-bottom: 5%;`}>Ayurveda is known in the Western countries as
                         an approach to beauty, wellbeing and health for humans.</h4>
-                    <p className="p-big">However, it has been classically used also for animals. Though
+                    <p className="p">However, it has been classically used also for animals. Though
                         most classical texts are about the human being, there are a few written sources
                         on horses, cows, and elephants (which were of high value in ancient India).
                         Besides the written tradition, there is also the practical experience of the

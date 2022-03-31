@@ -232,7 +232,7 @@ export default function AboutMobile() {
                     <HeroTextbox>
                         <HeroHeader>They are not our whole life, but they make our lives whole.</HeroHeader>
                         <h4>Provolone scientifico</h4>
-                        <p className="p-big">Treating them right leads to a long and fulfilling life for them and for you.</p>
+                        <p className="p">Treating them right leads to a long and fulfilling life for them and for you.</p>
                     </HeroTextbox>
 
                     <GradientCircle/>
@@ -245,7 +245,7 @@ export default function AboutMobile() {
             <WhiteWrapper>
                 <h3 css={css `margin: 5% 0 5% 0;`}>About myself</h3>
                 <ParagraphWrapper>
-                    <p className="p-big">Born in Berlin, I grew up in different parts of Germany,
+                    <p className="p">Born in Berlin, I grew up in different parts of Germany,
                         but mainly in Düren, a town halfway between Köln and Aachen. As a child, I
                         dreamed of working with animals.</p>
                 </ParagraphWrapper>
@@ -267,7 +267,7 @@ export default function AboutMobile() {
                 <TextImageTextbox>
                     <TextImageHeader>Education</TextImageHeader>
                     <TextImageParagraphBox>
-                        <p className="p-big">For different reasons, at the end of school, I decided to
+                        <p className="p">For different reasons, at the end of school, I decided to
                             study human medicine. Having part of my family in Switzerland, I ended up going
                             to the university of Lausanne.</p>
                     </TextImageParagraphBox>
@@ -283,7 +283,7 @@ export default function AboutMobile() {
                     css={css `width: 100%; margin: 10% 0;`}/>
 
                 <TextImageParagraphBox>
-                    <p className="p-big">In the following years, I knew people from various parts of
+                    <p className="p">In the following years, I knew people from various parts of
                         the world and travelled to different countries. I started to learn italian and
                         also spent a lot of time in Great Britain including several months of internship
                         and a year of research.</p>
@@ -305,7 +305,7 @@ export default function AboutMobile() {
                     <TextImageHeader>After graduation
                     </TextImageHeader>
                     <TextImageParagraphBox>
-                        <p className="p-big">I started working in the Italian speaking part of
+                        <p className="p">I started working in the Italian speaking part of
                             Switzerland. My initial idea was to work in palliative medicine. But working in
                             the field, I started doubting about this choice. Experiences in different other
                             fields led me eventually to become a family doctor and to help people change
@@ -319,7 +319,7 @@ export default function AboutMobile() {
                 <h4 css={css `text-align: center; margin-bottom: 5%;`}>Complementary approaches
                 </h4>
                 <TextImageParagraphBox>
-                    <p className="p-big">Alongside, my interest in complementary approaches grew and
+                    <p className="p">Alongside, my interest in complementary approaches grew and
                         led me to learn about possible ways to connect emotions and disease
                         (Metamedicina®), and to start training in Ayurveda. Always curious to learn new
                         things, I decided to spend a year learning about nutrition for health and
@@ -336,7 +336,7 @@ export default function AboutMobile() {
                     css={css `width: 100%; margin: 10% 0;`}/>
 
                 <TextImageParagraphBox>
-                    <p className="p-big">As time went by, I realized that I am much more interested
+                    <p className="p">As time went by, I realized that I am much more interested
                         in sustaining health rather than treating diseases. Thanks to the naturopathic
                         training, I rediscovered my passion for animals. So, while preparing the final
                         thesis, I started to think seriously about changing profession. The final

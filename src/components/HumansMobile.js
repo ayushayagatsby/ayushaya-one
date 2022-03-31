@@ -166,7 +166,7 @@ export default function HumansMobile() {
                 <HeroInnerWrapper>
                     <HeroTextbox>
                         <HeroHeader>Life is not merely to be alive, but to be well.</HeroHeader>
-                        <p classNameName="p-big">Mastering life means mastering it yourself. There are many
+                        <p classNameName="p">Mastering life means mastering it yourself. There are many
                             possibilities to support you along the way.</p>
                     </HeroTextbox>
 
@@ -187,7 +187,7 @@ export default function HumansMobile() {
                 <h3 css={css `margin: 5% 0 5% 0;`}>Small changes, big results.</h3>
                 <h4 css={css `margin: 5% 0 7% 0; padding: 0 5%;`}>Step by step towards your goals with the wisdom of Ayurveda.</h4>
                 <ParagraphWrapper>
-                    <p className="p-big">Improving areas like nutrition and body weight, daily routine
+                    <p className="p">Improving areas like nutrition and body weight, daily routine
                         and sleep, tobacco and alcohol use, and physical activity to achieve overall
                         wellness can be supported by natural remedies.</p>
                 </ParagraphWrapper>
@@ -205,7 +205,7 @@ export default function HumansMobile() {
                 <TextImageTextbox>
                     <TextImageHeader>Non-judging is allowing real change.</TextImageHeader>
                     <TextImageParagraphBox>
-                        <p className="p-big">An in-depth initial interview, a personalized program, and
+                        <p className="p">An in-depth initial interview, a personalized program, and
                             subsequent regular follow-up can help a lot to improve various aspects of life,
                             health and wellbeing. Some suggestions regarding nutritional supplements or
                             energetic support through flower essences can be part of the individual program.</p>
@@ -232,7 +232,7 @@ export default function HumansMobile() {
                 <TextImageTextbox>
                     <TextImageHeader>Consultations</TextImageHeader>
                     <TextImageParagraphBox>
-                        <p className="p-big">They can be done online via the common video call services.</p>
+                        <p className="p">They can be done online via the common video call services.</p>
                     </TextImageParagraphBox>
                 </TextImageTextbox>
                 
@@ -254,7 +254,7 @@ export default function HumansMobile() {
                 <OfferColumns>
                     <IcConsultations css={css `margin-bottom: 10%; width: 40%; height: auto;`}/>
                     <OfferColumnParagraphContainer>
-                        <p className="p-big">At first contact, we will identify together the areas of your
+                        <p className="p">At first contact, we will identify together the areas of your
                             life that might benefit from optimization, and then define priorities.</p>
                     </OfferColumnParagraphContainer>
                 </OfferColumns>
@@ -262,7 +262,7 @@ export default function HumansMobile() {
                 <OfferColumns>
                     <IcCalendar css={css `margin: 8% 0 10% 0; width: 40%; height: auto;`}/>
                     <OfferColumnParagraphContainer>
-                        <p className="p-big">“Meeting” again online every other week is often a good choice
+                        <p className="p">“Meeting” again online every other week is often a good choice
                             to favor implementation of changes, but we can define together what suits best
                             for you.</p>
                     </OfferColumnParagraphContainer>
@@ -271,7 +271,7 @@ export default function HumansMobile() {
                 <OfferColumns>
                     <IcConsent css={css `margin: 8% 0 10% 0; width: 40%; height: auto;`}/>
                     <OfferColumnParagraphContainer>
-                        <p className="p-big">Please note that the informed consent sheet has to be filled in
+                        <p className="p">Please note that the informed consent sheet has to be filled in
                             and sent to me before the first consultation.</p>
                     </OfferColumnParagraphContainer>
                 </OfferColumns>
