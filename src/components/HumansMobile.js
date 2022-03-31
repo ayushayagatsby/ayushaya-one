@@ -174,7 +174,7 @@ export default function HumansMobile() {
                         src="../images/ShapeHumanGradient.png"
                         alt="A human face"
                         layout="constrained"
-                        placeholder="blurred"
+                        
                         width={1110}
                         height={1400}
                         css={css `width: 80%; position: absolute; z-index: -1; transform: translateY(-20%);`}/>
@@ -197,7 +197,7 @@ export default function HumansMobile() {
                     src="../images/JulianeComputer.png"
                     alt="Juliane in front of a computer"
                     layout="constrained"
-                    placeholder="blurred"
+                    
                     width={1364}
                     height={909}
                     css={css `width: 88%; margin-bottom: 10%;`}/>
@@ -217,7 +217,7 @@ export default function HumansMobile() {
                 {/* <StaticImage
                     src="../images/JulianeFront.png"
                     alt="A photo of Juliane"
-                    layout="constrained"               placeholder="blurred"
+                    layout="constrained"               
                     width={674}
                     height={674}
                     css={css `width: 100%;`}/> */}
@@ -225,7 +225,7 @@ export default function HumansMobile() {
                     src="../images/JulianeBack.png"
                     alt="A photo of Juliane"
                     layout="constrained"
-                    placeholder="blurred"
+                    
                     width={948}
                     height={948}
                     css={css `width: 100%; margin-top: 10%;`}/>
@@ -248,7 +248,7 @@ export default function HumansMobile() {
                     src="../images/HumanSide.png"
                     alt="A humane face sideways"
                     layout="constrained"
-                    placeholder="blurred"
+                    
                     width={378}
                     height={511}
                     css={css `width: 50%; margin-top: -30%; margin-bottom: 4%;`}/>

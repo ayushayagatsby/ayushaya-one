@@ -169,7 +169,7 @@ export default function ApproachDesktop() {
                     <StaticImage
                         src="../images/ShapeStonesGradient.png"
                         alt="Some stones in balance"
-                        layout="constrained"               placeholder="blurred"
+                        layout="constrained"               
                         width={951}
                         height={1434}
                         css={css `width: 31%;`}/>
@@ -189,7 +189,7 @@ export default function ApproachDesktop() {
                 <StaticImage
                     src="../images/SomeSpices.png"
                     alt="Some spices on a table"
-                    layout="constrained"               placeholder="blurred"
+                    layout="constrained"               
                     width={1640}
                     height={1093}
                     css={css `width: 88%; margin-bottom: 10%;`}/>
@@ -297,7 +297,7 @@ export default function ApproachDesktop() {
                 <StaticImage
                     src="../images/DogBeachTwo.png"
                     alt="A dog at the beach"
-                    layout="constrained"               placeholder="blurred"
+                    layout="constrained"               
                     width={810}
                     height={672}
                     css={css `width: 53%;`}/>

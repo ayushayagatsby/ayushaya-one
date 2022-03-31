@@ -205,7 +205,7 @@ export default function MobileHome() {
             <StaticImage
                 src="../images/HumanSide.png"
                 alt="A human face"
-                layout="constrained"               placeholder="blurred"
+                layout="constrained"               
                 width={378}
                 height={511}
                 css={css `width: 52%; margin-top: 30%;`}/>
@@ -222,7 +222,7 @@ export default function MobileHome() {
             <StaticImage
                 src="../images/DogSide.png"
                 alt="A dog face"
-                layout="constrained"               placeholder="blurred"
+                layout="constrained"               
                 width={489}
                 height={488}
                 css={css `width: 66%; margin-top: 50%;`}/>
@@ -250,7 +250,7 @@ export default function MobileHome() {
                 <StaticImage
                     src="../images/AboutPicture.png"
                     alt="Dr. Juliane Merckens"
-                    layout="constrained"               placeholder="blurred"
+                    layout="constrained"               
                     width={623}
                     height={670}
                     css={css `width: 75%; margin-top: -10%; margin-bottom: 20%;`}/>

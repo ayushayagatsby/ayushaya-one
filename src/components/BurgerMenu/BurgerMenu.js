@@ -13,8 +13,10 @@ export default function BurgerMenu({menuToggle, menuState}) {
 
         const firstChild = document.getElementById("layout-wrapper");
 
+        let vh = window.innerHeight;
+
         if (burgerState) {
-            firstChild.style.height = '100vh';
+            firstChild.style.height = `${vh}px `;
             firstChild.style.overflow = 'hidden';
         } else {
             firstChild.style.height = 'auto';

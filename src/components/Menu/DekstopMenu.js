@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import styled from "@emotion/styled"
 import {css, jsx} from '@emotion/react'
 import InternalLink from '../InternalLink'
@@ -10,7 +10,7 @@ import LanguageSelect from '../LanguageSelect/LanguageSelect'
 
 const OuterWrapper = styled("div")`
 width: 100%;
-height: 100vh;
+height: 100%;
 overflow: hidden;
 background-color: #FAF5F1;
 position: absolute;
@@ -60,8 +60,6 @@ color: #6B665B;
 text-transform: uppercase;
 `
 
-
-
 const metaTypes = [
     {
         text: "Imprint",
@@ -98,7 +96,18 @@ const menuTypes = [
 ];
 
 export default function DekstopMenu({menuState, menuToggle}) {
+    // useEffect(() => {
+
+    //     const firstChild = document.getElementById("layout-wrapper");
+
+    //     let vh = window.innerHeight * 0.01;
+    //     document.documentElement.style.setProperty('--vh', `${vh}px`);
+
+    // }, []);
+
     const breakpoints = useBreakpoint();
+
+    const [viewportHeight, setViewportHeight] = useState("100")
 
     const metaTypesMapped = metaTypes.map(item => <InternalLink href={item.link} children={item.text}/>);
     const menuTypesMappedDekstop = menuTypes.map(item => <h1 onClick={menuToggle}><InternalLink href={item.link} children={item.text}/></h1>);

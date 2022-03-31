@@ -154,7 +154,7 @@ export default function HumansDesktop() {
                     <StaticImage
                         src="../images/ShapeHumanGradient.png"
                         alt="A human face"
-                        layout="constrained"               placeholder="blurred"
+                        layout="constrained"               
                         width={1110}
                         height={1400}
                         css={css `width: 36%; position: relative; left: 10%;`}/>
@@ -182,7 +182,7 @@ export default function HumansDesktop() {
                 <StaticImage
                     src="../images/JulianeComputer.png"
                     alt="Juliane in front of a computer"
-                    layout="constrained"               placeholder="blurred"
+                    layout="constrained"               
                     width={1364}
                     height={909}
                     css={css `width: 88%; margin-bottom: 10%;`}/>
@@ -201,7 +201,7 @@ export default function HumansDesktop() {
                 <StaticImage
                     src="../images/JulianeFront.png"
                     alt="A photo of Juliane"
-                    layout="constrained"               placeholder="blurred"
+                    layout="constrained"               
                     width={674}
                     height={674}
                     css={css `width: 43%; margin-bottom: -30%; z-index: 1;`}/>
@@ -211,7 +211,7 @@ export default function HumansDesktop() {
                 <StaticImage
                     src="../images/JulianeBack.png"
                     alt="A photo of Juliane"
-                    layout="constrained"               placeholder="blurred"
+                    layout="constrained"               
                     width={948}
                     height={948}
                     css={css `width: 61%; z-index: 0;`}/>
@@ -231,7 +231,7 @@ export default function HumansDesktop() {
                 <StaticImage
                     src="../images/HumanSide.png"
                     alt="A humane face sideways"
-                    layout="constrained"               placeholder="blurred"
+                    layout="constrained"               
                     width={378}
                     height={511}
                     css={css `width: 24%; margin-top: -20%; margin-bottom: 7%;`}/>
