@@ -45,7 +45,6 @@ export default function LanguageSelect( ) {
     };
 
     return (<Select
-        onChange={onChangeSelect}
         options={options}
         isSearchable={false}/>);
 }
