@@ -17,7 +17,7 @@ const options = [
 
 
 
-export default function LanguageSelect( {darkMode, menuPos} ) {
+export default function LanguageSelect( ) {
     const [selectedOption,
         setSelectedOption] = useState(options[0]);
 
@@ -45,7 +45,6 @@ export default function LanguageSelect( {darkMode, menuPos} ) {
     };
 
     return (<Select
-        value={options.filter(option => option.value === language)[0]}
         onChange={onChangeSelect}
         options={options}
         isSearchable={false}/>);
