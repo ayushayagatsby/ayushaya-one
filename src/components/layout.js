@@ -135,7 +135,7 @@ const Layout = ({children}) => {
 
                 <Footer>
 
-                    <MetaNav/>
+                    <MetaNav darkMode={false} />
 
                 </Footer>
             </TransitionGroup>
