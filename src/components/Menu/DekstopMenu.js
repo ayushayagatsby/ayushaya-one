@@ -90,7 +90,7 @@ export default function DekstopMenu({menuState, menuToggle}) {
                 <InnerWrapper>
                     <MenuContainer>{menuTypesMapped}</MenuContainer>
                     <MetaContainer>
-                        {/* <MetaNav leftLogo={false} darkMode={true} menuPos="top"/> */}
+                        <MetaNav leftLogo={false} darkMode={true} menuPos="top"/>
                     </MetaContainer>
                 </InnerWrapper>
             </OuterWrapper>
