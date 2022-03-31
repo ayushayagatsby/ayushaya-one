@@ -3,7 +3,6 @@ import styled from "@emotion/styled"
 import bgGradient from "./bgGradient.jpeg"
 import {css, jsx} from '@emotion/react'
 import AboutSection from '../../content/AboutContent.json'
-import LanguageSelect from '../LanguageSelect/LanguageSelect'
 
 const TopSectionWrapper = styled("div")`
 width: 100%;
@@ -66,9 +65,9 @@ export default function AboutTopSection({lan}) {
         <TopSectionWrapper>
             <CircleWrapper><GradientCircle/></CircleWrapper>
             <InnerTextWrapper>
-                <h1 css={css `position: relative; right: 60%; margin-bottom: 8%;`}>{currentLanguage.heroHeader}</h1>
-                <h3 css={css `margin-bottom: 8%; width: 70%;`}>{currentLanguage.heroSubHeader}</h3>
-                <p className="p-big" css={css `width: 70%;`}>{currentLanguage.heroText}</p>
+                <h1 css={css `position: relative; right: 60%; margin-bottom: 8%;`}>prova</h1>
+                <h3 css={css `margin-bottom: 8%; width: 70%;`}>prova</h3>
+                <p className="p-big" css={css `width: 70%;`}>prova</p>
             </InnerTextWrapper>
         </TopSectionWrapper>
     )
