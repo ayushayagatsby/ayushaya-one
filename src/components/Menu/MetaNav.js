@@ -5,7 +5,7 @@ import {useBreakpoint} from 'gatsby-plugin-breakpoints';
 import BrandMark from '../../assets/BrandMark.svg'
 import LanguageSelect from '../LanguageSelect/LanguageSelect'
 import InternalLink from "../InternalLink"
-import DebugLS from "../LanguageSelect/DebugLS "
+import DebugLS from "../LanguageSelect/DebugLS"
 
 
 const FooterMetaNav = styled("nav")`
