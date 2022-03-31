@@ -1,3 +1,5 @@
+require("dotenv").config({path: `.env.${process.env.NODE_ENV}`})
+
 module.exports = {
     siteMetadata: {
         title: `Gatsby Starter Blog`,
@@ -13,13 +15,24 @@ module.exports = {
     },
     plugins: [
         {
+            resolve: `gatsby-source-formium`,
+            options: {
+                // Get your projectId from https://dashboard.formium.io
+                projectId: process.env.GATSBY_FORMIUM_PROJECTID,
+                // Generate a personal access token by going to
+                // https://dashboard.formium.io/account#tokens and put it into a .env file (learn
+                // more about Gatsby environment variables here: https://gatsby.dev/env-vars).
+                accessToken: process.env.FORMIUM_ACCESS_TOKEN
+            }
+        }, {
             resolve: "gatsby-plugin-react-svg",
             options: {
                 rule: {
                     include: /assets/ // See below to configure properly
                 }
             }
-        }, 'gatsby-plugin-breakpoints',
+        },
+        'gatsby-plugin-breakpoints',
         `gatsby-plugin-emotion`,
         `gatsby-plugin-image`, {
             resolve: `gatsby-source-filesystem`,
@@ -131,5 +144,6 @@ module.exports = {
         `gatsby-plugin-react-helmet`,
         // this (optional) plugin enables Progressive Web App + Offline functionality To
         // learn more, visit: https://gatsby.dev/offline `gatsby-plugin-offline`,
+
     ]
 }

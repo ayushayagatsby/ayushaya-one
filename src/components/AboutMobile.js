@@ -275,7 +275,7 @@ export default function AboutMobile() {
                 </TextImageTextbox>
 
                 <StaticImage
-                    src="../../images/CityImageTwo.png"
+                    src="../images/CityImageTwo.png"
                     alt="Another facade of a Church"
                     layout="constrained"               
                     width={950}
@@ -328,7 +328,7 @@ export default function AboutMobile() {
                 </TextImageParagraphBox>
 
                 <StaticImage
-                    src="../../images/JulianeAndDog.png"
+                    src="../images/JulianeAndDog.png"
                     alt="Juliane with a dog"
                     layout="constrained"               
                     width={950}
@@ -350,7 +350,7 @@ export default function AboutMobile() {
                     in order to maintain health</ValueProposition>
 
                 <StaticImage
-                    src="../../images/JulianeAndTwoDogs.png"
+                    src="../images/JulianeAndTwoDogs.png"
                     alt="Juliane with two dogs"
                     layout="constrained"               
                     width={1364}
