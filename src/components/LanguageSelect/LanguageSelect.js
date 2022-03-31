@@ -93,8 +93,7 @@ export default function LanguageSelect( {darkMode, menuPos} ) {
         bg={darkMode? "#F5EEEB" : "#DAC9C3"}
         singleBg={darkMode? "#F5EEEB" : "#DAC9C3"}
         menuPlacement={menuPos ?? "bottom"}
-        // value={options.filter(option => option.value === language)[0]}
-        defaultValue={selectedOption}
+        value={options.filter(option => option.value === language)[0]}
         onChange={onChangeSelect}
         options={options}
         isSearchable={false}/>);

@@ -5,6 +5,7 @@ import {useBreakpoint} from 'gatsby-plugin-breakpoints';
 import BrandMark from '../../assets/BrandMark.svg'
 import LanguageSelect from '../LanguageSelect/LanguageSelect'
 import InternalLink from "../InternalLink"
+import DebugLS from "../LanguageSelect/DebugLS "
 
 
 const FooterMetaNav = styled("nav")`
@@ -81,7 +82,8 @@ export default function MetaNav( {leftLogo, darkMode, menuPos} ) {
             </FooterMetaNav>}
 
             <FooterRight>
-                <LanguageSelect darkMode={darkMode} menuPos={menuPos}/>
+                {/* <LanguageSelect darkMode={darkMode} menuPos={menuPos}/> */}
+                <DebugLS />
             </FooterRight>
 
             {breakpoints.sm && <div css={css `flex-basis: 100%; height: 0;`}/>}
