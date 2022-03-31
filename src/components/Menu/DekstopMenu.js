@@ -4,7 +4,9 @@ import {css, jsx} from '@emotion/react'
 import InternalLink from '../InternalLink'
 import MetaNav from './MetaNav'
 import {CSSTransition} from 'react-transition-group'
+import {useBreakpoint} from 'gatsby-plugin-breakpoints';
 import './DesktopMenu.css'
+import LanguageSelect from '../LanguageSelect/LanguageSelect'
 
 const OuterWrapper = styled("div")`
 width: 100%;
@@ -27,7 +29,7 @@ padding-top: 15vh;
 const MenuContainer = styled("nav")`
 display: flex;
 flex-direction: column;
-height: 70%;
+height: 85%;
 align-items: center;
 justify-content: space-evenly;
 `
@@ -36,8 +38,29 @@ const MetaContainer = styled("nav")`
 display: flex;
 align-items: flex-end;
 padding-bottom: 2%;
+height: 15%;
+`
+
+const MetaMobile = styled("nav")`
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+align-items: center;
 height: 30%;
 `
+
+const MobileMenuMeta = styled("nav")`
+width: 80%;
+display: flex;
+justify-content: space-between;
+margin: 0 auto;
+font-size: 18px;
+font-weight: 400;
+color: #6B665B;
+text-transform: uppercase;
+`
+
+
 
 const metaTypes = [
     {
@@ -75,9 +98,14 @@ const menuTypes = [
 ];
 
 export default function DekstopMenu({menuState, menuToggle}) {
+    const breakpoints = useBreakpoint();
 
     const metaTypesMapped = metaTypes.map(item => <InternalLink href={item.link} children={item.text}/>);
-    const menuTypesMapped = menuTypes.map(item => <h1 onClick={menuToggle}><InternalLink href={item.link} children={item.text}/></h1>);
+    const menuTypesMappedDekstop = menuTypes.map(item => <h1 onClick={menuToggle}><InternalLink href={item.link} children={item.text}/></h1>);
+    const menuTypesMappedMobile = menuTypes.map(item => <h3 onClick={menuToggle}><InternalLink href={item.link} children={item.text}/></h3>);
+    const menuTypesMapped = breakpoints.sm
+        ? menuTypesMappedMobile
+        : menuTypesMappedDekstop;
 
     return (
         <CSSTransition
@@ -90,8 +118,13 @@ export default function DekstopMenu({menuState, menuToggle}) {
                 <InnerWrapper>
                     <MenuContainer>{menuTypesMapped}</MenuContainer>
                     <MetaContainer>
-                        <MetaNav leftLogo={false} darkMode={true} menuPos="top"/>
+                        {!breakpoints.sm && <MetaNav leftLogo={false} darkMode={true} menuPos="top"/>}
                     </MetaContainer>
+
+                    {breakpoints.sm && <MetaMobile>
+                        <LanguageSelect darkMode={true} menuPos={"top"}/>
+                        <MobileMenuMeta>{metaTypesMapped}</MobileMenuMeta>
+                    </MetaMobile>}
                 </InnerWrapper>
             </OuterWrapper>
         </CSSTransition>
