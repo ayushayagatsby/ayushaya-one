@@ -157,7 +157,7 @@ text-align: center;
 margin-bottom: 5%;
 `
 
-export default function HumansMobile() {
+export default function HumansMobile({currentLanguage}) {
     return (
         <React.Fragment>
             <HeroOuterWrapper>
@@ -165,9 +165,8 @@ export default function HumansMobile() {
 
                 <HeroInnerWrapper>
                     <HeroTextbox>
-                        <HeroHeader>Life is not merely to be alive, but to be well.</HeroHeader>
-                        <p classNameName="p">Mastering life means mastering it yourself. There are many
-                            possibilities to support you along the way.</p>
+                        <HeroHeader>{currentLanguage.heroHeader}</HeroHeader>
+                        <p classNameName="p">{currentLanguage.heroText}</p>
                     </HeroTextbox>
 
                     <StaticImage
@@ -185,12 +184,10 @@ export default function HumansMobile() {
             </HeroOuterWrapper>
 
             <WhiteWrapper>
-                <h3 css={css `margin: 5% 0 5% 0;`}>Small changes, big results.</h3>
+                <h3 css={css `margin: 5% 0 5% 0;`}>{currentLanguage.imgHeader}</h3>
                 <h4 css={css `margin: 5% 0 7% 0; padding: 0 5%;`}>Step by step towards your goals with the wisdom of Ayurveda.</h4>
                 <ParagraphWrapper>
-                    <p className="p">Improving areas like nutrition and body weight, daily routine
-                        and sleep, tobacco and alcohol use, and physical activity to achieve overall
-                        wellness can be supported by natural remedies.</p>
+                    <p className="p">{currentLanguage.imgText}</p>
                 </ParagraphWrapper>
 
                 <StaticImage
@@ -205,12 +202,9 @@ export default function HumansMobile() {
 
             <TextImageWrapper>
                 <TextImageTextbox>
-                    <TextImageHeader>Non-judging is allowing real change.</TextImageHeader>
+                    <TextImageHeader>{currentLanguage.bottomSubheaderOne}</TextImageHeader>
                     <TextImageParagraphBox>
-                        <p className="p">An in-depth initial interview, a personalized program, and
-                            subsequent regular follow-up can help a lot to improve various aspects of life,
-                            health and wellbeing. Some suggestions regarding nutritional supplements or
-                            energetic support through flower essences can be part of the individual program.</p>
+                        <p className="p">{currentLanguage.bottomTextOne}</p>
                     </TextImageParagraphBox>
                 </TextImageTextbox>
 
@@ -225,7 +219,6 @@ export default function HumansMobile() {
                     src="../images/JulianeBack.png"
                     alt="A photo of Juliane"
                     layout="constrained"
-                    
                     width={948}
                     height={948}
                     css={css `width: 100%; margin-top: 10%;`}/>
@@ -233,13 +226,13 @@ export default function HumansMobile() {
 
             <TextImageWrapper css={css `margin-top: 8%;`}>
                 <TextImageTextbox>
-                    <TextImageHeader>Consultations</TextImageHeader>
+                    <TextImageHeader>{currentLanguage.bottomSubheaderTwo}</TextImageHeader>
                     <TextImageParagraphBox>
-                        <p className="p">They can be done online via the common video call services.</p>
+                        <p className="p">{currentLanguage.bottomTextTwo}</p>
                     </TextImageParagraphBox>
                 </TextImageTextbox>
 
-                <TextImageCtaButton>GET IN CONTACT</TextImageCtaButton>
+                <TextImageCtaButton>{currentLanguage.bottomCta}</TextImageCtaButton>
 
             </TextImageWrapper>
 
@@ -253,30 +246,26 @@ export default function HumansMobile() {
                     height={511}
                     css={css `width: 50%; margin-top: -30%; margin-bottom: 4%;`}/>
 
-                <h3 css={css `margin: 10% 0 5% 0; padding: 0 3%;`}>My offer for humans</h3>
-                <h4 css={css `margin-bottom: 10%;`}>Online consultations</h4>
+                <h3 css={css `margin: 10% 0 5% 0; padding: 0 3%;`}>{currentLanguage.offerMainHeader}</h3>
+                <h4 css={css `margin-bottom: 10%;`}>{currentLanguage.offerSubHeader}</h4>
                 <OfferColumns>
                     <IcConsultations css={css `margin-bottom: 10%; width: 40%; height: auto;`}/>
                     <OfferColumnParagraphContainer>
-                        <p className="p">At first contact, we will identify together the areas of your
-                            life that might benefit from optimization, and then define priorities.</p>
+                        <p className="p">{currentLanguage.offerList[0].offerText}</p>
                     </OfferColumnParagraphContainer>
                 </OfferColumns>
 
                 <OfferColumns>
                     <IcCalendar css={css `margin: 8% 0 10% 0; width: 40%; height: auto;`}/>
                     <OfferColumnParagraphContainer>
-                        <p className="p">“Meeting” again online every other week is often a good choice
-                            to favor implementation of changes, but we can define together what suits best
-                            for you.</p>
+                        <p className="p">{currentLanguage.offerList[1].offerText}</p>
                     </OfferColumnParagraphContainer>
                 </OfferColumns>
 
                 <OfferColumns>
                     <IcConsent css={css `margin: 8% 0 10% 0; width: 40%; height: auto;`}/>
                     <OfferColumnParagraphContainer>
-                        <p className="p">Please note that the informed consent sheet has to be filled in
-                            and sent to me before the first consultation.</p>
+                        <p className="p">{currentLanguage.offerList[1].offerText}</p>
                     </OfferColumnParagraphContainer>
                 </OfferColumns>
 
@@ -285,13 +274,12 @@ export default function HumansMobile() {
                 </PriceBox>
 
                 <DisclaimerBox>
-                    <p className="p-small">For every bill exceeding 77,47 € a single supplementary
-                        tax (“marca da bollo”) of 2€ has to be charged, as required by Italian law</p>
+                    <p className="p-small">{currentLanguage.offerList[2].offerText}</p>
                 </DisclaimerBox>
 
-                <OutlineButton>CONSENT SHEET</OutlineButton>
+                <OutlineButton>{currentLanguage.csButton}</OutlineButton>
 
-                <ContactButton>GET IN CONTACT</ContactButton>
+                <ContactButton>{currentLanguage.gicButton}</ContactButton>
 
             </WhiteWrapper>
 

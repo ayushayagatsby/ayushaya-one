@@ -4,7 +4,7 @@ import LanguageContext from "../context/LanguageContext"
 import AboutDesktop from '../components/AboutDesktop';
 import AboutMobile from '../components/AboutMobile';
 import {useBreakpoint} from 'gatsby-plugin-breakpoints';
-import AboutSection from '../content/AboutContent.json'
+import AboutContent from '../content/AboutContent.json'
 
 
 const About = () => {
@@ -12,9 +12,9 @@ const About = () => {
 
     const {language} = useContext(LanguageContext)
 
-    const englishContent = AboutSection.content.en;
-    const italianContent = AboutSection.content.it;
-    const germanContent = AboutSection.content.de;
+    const englishContent = AboutContent.content.en;
+    const italianContent = AboutContent.content.it;
+    const germanContent = AboutContent.content.de;
 
     let handleCurrentLanguage = (language) => {
         switch (language) {

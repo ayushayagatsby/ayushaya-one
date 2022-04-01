@@ -1,21 +1,50 @@
-import React from 'react'
+import React, {useContext} from 'react'
 import HumansDesktop from '../components/HumansDesktop'
 import HumansMobile from '../components/HumansMobile'
 import {useBreakpoint} from 'gatsby-plugin-breakpoints';
 import Seo from '../components/seo';
+import HumansContent from '../content/HumansContent.json';
+import LanguageContext from '../context/LanguageContext';
+
 
 
 export default function Humans() {
     const breakpoints = useBreakpoint();
+
+    const {language} = useContext(LanguageContext)
+
+    const englishContent = HumansContent.content.en;
+    const italianContent = HumansContent.content.it;
+    const germanContent = HumansContent.content.de;
+
+    let handleCurrentLanguage = (language) => {
+        switch (language) {
+            case 'it':
+                return italianContent
+                break;
+            case 'en':
+                return englishContent
+                break;
+
+            case 'de':
+                return germanContent
+                break;
+
+            default:
+                break;
+        }
+    }
+
+    let currentLanguage = handleCurrentLanguage(language);
     return (
         <>
-            <Seo title="Humans page"/> {breakpoints.sm && <HumansMobile/>
+            <Seo title="Humans page"/> {breakpoints.sm && <HumansMobile currentLanguage={currentLanguage}/>
 }
 
             {(!breakpoints.sm && breakpoints.md) && <h1>Prova</h1>
 }
 
-            {(!breakpoints.md && breakpoints.l) && <HumansDesktop />}
+            {(!breakpoints.md && breakpoints.l) && <HumansDesktop currentLanguage={currentLanguage}/>}
 
         </>
 

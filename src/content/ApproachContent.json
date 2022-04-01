@@ -1,0 +1,110 @@
+{
+    "title": "Approach Page",
+    "content": {
+        "en": {
+            "heroHeader": "",
+            "heroText": "",
+            "imgHeader": "",
+            "imgText": "",
+            "midSubheaderOne": "",
+            "midTextOne": "",
+            "FireElement": "",
+            "WaterElement": "",
+            "EtherElement": "",
+            "EarthElement": "",
+            "AirElement": "",
+            "midSubheaderTwo": "",
+            "midTextTwo": "",
+            "qualities": [
+                {
+                    "qualityHeader": "",
+                    "qualityText": ""
+                }, {
+                    "qualityHeader": "",
+                    "qualityText": ""
+                }, {
+                    "qualityHeader": "",
+                    "qualityText": ""
+                }
+            ],
+            "qualityClosingText": "",
+            "quote": "",
+            "bottomSubheaderOne": "",
+            "bottomTextOne": "",
+            "doorTopText": "",
+            "doorHeader": "",
+            "doorBottomText": ""
+        },
+
+        "it": {
+            "heroHeader": "",
+            "heroText": "",
+            "imgHeader": "",
+            "imgText": "",
+            "midSubheaderOne": "",
+            "midTextOne": "",
+            "FireElement": "",
+            "WaterElement": "",
+            "EtherElement": "",
+            "EarthElement": "",
+            "AirElement": "",
+            "midSubheaderTwo": "",
+            "midTextTwo": "",
+            "qualities": [
+                {
+                    "qualityHeader": "",
+                    "qualityText": ""
+                }, {
+                    "qualityHeader": "",
+                    "qualityText": ""
+                }, {
+                    "qualityHeader": "",
+                    "qualityText": ""
+                }
+            ],
+            "qualityClosingText": "",
+            "quote": "",
+            "bottomSubheaderOne": "",
+            "bottomTextOne": "",
+            "doorTopText": "",
+            "doorHeader": "",
+            "doorBottomText": ""
+        },
+
+        "de": {
+            "heroHeader": "",
+            "heroText": "",
+            "imgHeader": "",
+            "imgText": "",
+            "midSubheaderOne": "",
+            "midTextOne": "",
+            "FireElement": "",
+            "WaterElement": "",
+            "EtherElement": "",
+            "EarthElement": "",
+            "AirElement": "",
+            "midSubheaderTwo": "",
+            "midTextTwo": "",
+            "qualities": [
+                {
+                    "qualityHeader": "",
+                    "qualityText": ""
+                }, {
+                    "qualityHeader": "",
+                    "qualityText": ""
+                }, {
+                    "qualityHeader": "",
+                    "qualityText": ""
+                }
+            ],
+            "qualityClosingText": "",
+            "quote": "",
+            "bottomSubheaderOne": "",
+            "bottomTextOne": "",
+            "doorTopText": "",
+            "doorHeader": "",
+            "doorBottomText": ""
+        }
+    }
+
+}

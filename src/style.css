@@ -369,6 +369,17 @@ button:focus {
     text-decoration: none;
 }
 
+.form-container form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container form h1 {
+    text-align: center;
+}
+
 /* Media queries */
 @media (max-width: 42rem) {
     blockquote {

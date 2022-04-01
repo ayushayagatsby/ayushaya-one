@@ -1,0 +1,156 @@
+{
+    "title": "Animals Page",
+    "content": {
+        "en": {
+            "heroHeader" : "They are not our whole life, but they make our lives whole.",
+            "heroText" : "Treating them right leads to a long and fulfilling life for them and you.",
+            "imgHeader" : "The best life we can offer them.",
+            "imgText" : "For animals, my offer includes optimizing lifestyle and supporting them in specific situations of old age or unease.",
+            "bottomSubheaderOne" : "Specific situations",
+            "bottomTextOne" : "In some instances, an animal needs support to tackle a particular situation, such as recovering from surgery, changing home, or adapting to the arrival of a new family member.",
+            "bottomSubheaderTwo" : "General health",
+            "bottomTextTwo" : "At any point in their life, animals can benefit from nutritional supplements, suggestions about ideal living according to Ayurveda, and manual treatments such as massage.",
+            "offerMainHeader" : "My offer for animals",
+            "offerSubHeader" : "Ayurveda is not about instant radical change; it is about consciously moving in the right direction. For this reason, I mostly offer packages rather than single treatments. That way, you and your animal get the best possible support as my work can be done more in-depth and with a better follow-up.",
+            "offerMainHeaderText" : "According to the type of support your animal needs, we can meet personally or online.",
+            "prices": "Prices: ",
+            "offerList" : [
+                {
+                    "offerHeader": "(for general health issues)",
+                    "offerSubheader" : "Please note that the informed consent needs to be filled in and sent back before the first encounter.",
+                    "offerText": "Includes sending you a treatment plan, 2 follow-up calls within 2 months, and keeping in touch by text messages on how the health issue is evolving. ",
+                    "offerPrice": "80 € (+2 € “marca da bollo”)"
+                }, {
+                    "offerHeader": "Additional animal" ,
+                    "offerSubheader" : "(in the same first encounter)",
+                    "offerText": "Includes an individual treatment plan, 2 follow-up calls within 2 months, and keeping in touch by text messages on how the health issues are evolving, for each additional animal.",
+                    "offerPrice": "50 € each"
+                }, {
+                    "offerHeader": "New health issue", 
+                    "offerSubheader" : "(of known animals)",
+                    "offerText": "Includes sending you a new treatment plan, 2 follow-up calls within 2 months, and keeping in touch by text messages on how that health issue is evolving. ",
+                    "offerPrice": "50 €"
+                }, {
+                    "offerHeader": "Specific treatments",
+                    "offerSubheader" : "(massage or other manual treatments)",
+                    "offerText": "Includes evaluation of the specific needs of the animal, followed by several treatment sessions (usually between 3 and 6 sessions). Price excludes materials, for example ayurvedic oils and bandages. ",
+                    "offerPrice": "30 € per hour"
+                }, {
+                    "offerHeader": "Meeting in person at your place of residence. ",
+                    "offerText": "Travel costs for the province of Varese prices as calculated by Via Michelin.",
+                    "offerPrice": "For travels outside of Varese, prices are up for negotiation. "
+                }
+            ],
+            "disclaimerText" : "For every bill exceeding 77,47 €) a single supplementary tax (“marca da bollo”) of 2€ has to be charged, as required by Italian law. ",
+            "consentText" : "Please help me by filling in and sending the general observation form. ",
+            "goButton" : "General observation ",
+            "csButton" : "Consent sheet",
+            "gicButton" : "Get in contact"
+        },
+
+
+
+
+
+        "it": {
+            "heroHeader" : "Non sono l’unico aspetto della nostra vita, ma la rendono unica.",
+            "heroText" : "Trattarli nel modo giusto permette una vita lunga e piena a loro e a te.",
+            "imgHeader" : "La vita migliore che possiamo offrirgli.",
+            "imgText" : "Per animali, la mia offerta include ottimizzare lo stile di vita e sostenerli in situazioni particolari come invecchiamento o malessere.",
+            "bottomSubheaderOne" : "Situazioni particolari",
+            "bottomTextOne" : "A volte, l’animale necessita semplicemente di un piccolo sostegno per affrontare situazioni particolari come la convalescenza dopo un intervento, cambiare casa o adattarsi all’arrivo di un nuovo membro di famiglia.",
+            "bottomSubheaderTwo" : "Salute generale",
+            "bottomTextTwo" : "In qualsiasi momento della loro vita gli animali possono trarre beneficio dai fitonutraceutici, o da consigli riguardo al modo ottimale di vivere secondo l’Ayurveda, e terapie manuali come il massaggio. ",
+            "offerMainHeader" : "La mia offerta per animali",
+            "offerSubHeader" : "L’Ayurveda non consiglia cambiamenti radicali istantanei; cerca invece di indirizzare nella giusta direzione in modo consapevole. Per questo motivo offro soprattutto pacchetti, non tanto singoli trattamenti. In tal modo, tu e  l’animale ricevete il miglior sostegno possibile perché permette un lavoro approfondito e garantisce uno sviluppo migliore. ",
+            "offerMainHeaderText" : "A seconda del tipo di supporto di cui necessita il tuo animale, possiamo incontrarci di persona o online.",
+            "prices": "Prezzi: ",
+            "offerList" : [
+                {
+                    "offerHeader": "(per problemi di salute generale)",
+                    "offerSubheader" : "Si prega di prendere atto che il consenso informato deve essere compilato e rispedito prima del colloquio iniziale. ",
+                    "offerText": "Include l’invio di un piano di trattamenti, 2 chiamate di follow-up nei 2 mesi successivi, e mantenere il contatto via messaggi riguardo all’evoluzione del problema di salute.",
+                    "offerPrice": "80 € (+2 € di marca da bollo)"
+                }, {
+                    "offerHeader": "Animali supplementari", 
+                    "offerSubheader" : "(nello stesso colloquio iniziale)",
+                    "offerText": "Include l’invio di un piano di trattamenti, 2 chiamate di follow-up nei 2 mesi successivi, e mantenere il contatto via messaggi riguardo all’evoluzione del problema di salute  per ogni animale.",
+                    "offerPrice": " 50 € ciascuno"
+                }, {
+                    "offerHeader": "Nuovi problemi di salute", 
+                    "offerSubheader" : "(in animali che conosco)",
+                    "offerText": "Include l’invio di un nuovo piano di trattamento, 2 chiamate di follow-up nei 2 mesi successivi, e mantenere il contatto via messaggi riguardo all’evoluzione di quel problema di salute. ",
+                    "offerPrice": "50 €"
+                }, {
+                    "offerHeader": "Trattamenti specifici", 
+                    "offerSubheader" : "(massaggi o altri trattamenti manuali)",
+                    "offerText": "Include la valutazione dei bisogni specifici dell’animale, seguita da diverse sedute di trattamento (generalmente tra 3 e 6 sedute). Il prezzo esclude  il materiale, come oli ayurvedici e bendaggi. ",
+                    "offerPrice": "30 € all’ora"
+                }, {
+                    "offerHeader": "Incontri di persona nel tuo luogo di residenza", 
+                    "offerSubheader" : "",
+                    "offerText": "Costi di viaggio nella provincia di Varese come indicati da Via Michelin.",
+                    "offerPrice": "Per viaggi al di fuori dalla provincia di Varese secondo accordi presi individualmente"
+                }
+            ],
+            "disclaimerText" : "Ad ogni fattura superiore a 77, 47 € si aggiunge una marca da bollo di 2 €, conformemente alla legge italiana ",
+            "consentText" : "Ti prego di aiutarmi compilando e inviandomi il modulo “osservazione generale”",
+            "goButton" : "Osservazione generale",
+            "csButton" : "Consenso informato",
+            "gicButton" : "Prendere contatto"
+        },
+
+        
+
+
+
+        "de": {
+            "heroHeader" : "Sie sind nicht unser ganzes Leben, aber sie machen unser Leben ganz.",
+            "heroText" : "Sie richtig zu behandeln führt zu einem langen und erfüllten Leben für die Tiere und Sie selbst. ",
+            "imgHeader" : "Das beste Leben, das wir ihnen bieten können. ",
+            "imgText" : "Für Tiere schließt mein Angebot Lebensstilverbesserung und Unterstützung in besonderen Situationen wie Unwohlsein und hohes Alter ein. ",
+            "bottomSubheaderOne" : "Besondere Situationen",
+            "bottomTextOne" : "Manchmal braucht ein Tier nur etwas Unterstützung, um mit besonderen Situationen fertig zu werden - wie Erholung von chirurgischen Eingriffen, Umzug oder Ankunft eines neuen Familienmitglieds.",
+            "bottomSubheaderTwo" : "Allgemeine Gesundheit",
+            "bottomTextTwo" : "In jeder Lebensphase können Tiere von Nahrungsergänzungen, von ayurvedischen Tipps zu idealen Lebensbedingungen und von manuellen Behandlungen wie Massage profitieren. ",
+            "offerMainHeader" : "Mein Angebot für Tiere",
+            "offerSubHeader" : "Im Ayurveda geht es nicht um radikale sofortige Veränderung; es geht darum, bewusst in die richtige Richtung zu gehen. Aus diesem Grund biete ich hauptsächlich Behandlungspakete anstatt einzelner Termine an. Auf diese Art erhalten Sie und Ihr Tier die best mögliche Unterstützung, da ich mehr in die Tiefe gehen und die Entwickliungen besser mitverfolgen kann. ",
+            "offerMainHeaderText" : "Je nach Bedürfnis Ihres Tieres können wir uns persönlich oder online treffen. ",
+            "prices": "Preise: ",
+            "offerList" : [
+                {
+                    "offerHeader": "(für allgemeine Gesundheitsprobleme)", 
+                    "offerSubheader" : "Bitte beachten Sie, dass die Einverständniserklärung vor dem ersten Gespräch ausgefüllt und zurückgeschickt werden muss. ",
+                    "offerText": "Schließt folgendes ein: Sie erhalten einen Behandlungsplan, 2 weiterführende Gespräche innerhalb der folgenden 2 Monate und schriftlichen Kontakt, um die Entwicklung des Gesundheitsproblems zu verfolgen.",
+                    "offerPrice": "80 € (+ 2 € “marca da bollo”)"
+                }, {
+                    "offerHeader": "Zusätzliche Tiere", 
+                    "offerSubheader" : "(im selben Erstgespräch)",
+                    "offerText": "Schließt folgendes mit ein: Sie erhalten für jedes weitere Tier einen Behandlungsplan, 2 weiterführende Gespräche innerhalb der folgenden 2 Monate und schrifltichen Kontakt, um die Entwicklung des Gesundheitsproblems zu verfolgen.",
+                    "offerPrice": "50 € pro Tier"
+                }, {
+                    "offerHeader": "Neue Gesundheitsprobleme", 
+                    "offerSubheader" : "(in mir bekannten Tieren)",
+                    "offerText": "Schließt folgendes mit ein: Sie erhalten einen neuen Behandlungsplan, 2 weiterführende Gespräche innerhalb der folgenden 2 Monate und schrifltichen Kontakt, um die Entwicklung dieses Gesundheitsproblems zu verfolgen",
+                    "offerPrice": "50 €"
+                }, {
+                    "offerHeader": "Spezielle Behandlungen", 
+                    "offerSubheader" : "(Massage oder andere manuelle Behandlungen)",
+                    "offerText": "Schließt folgendes mit ein: Ermittlung der konkreten Bedürfnisse des Tieres, gefolgt von mehreren Behandlungsterminen (i. A. zwischen 3 und 6 Termine). Preise schließen Materialkosten aus z.B. ayurvedische Öle und Bandagen. ",
+                    "offerPrice": "30 € pro Stunde"
+                }, {
+                    "offerHeader": "Persönliches Treffen an Ihrem Wohnort", 
+                    "offerSubheader" : "",
+                    "offerText": "Reisekosten für die Provinz von Varese: gemäß der Berechnung durch Via Michelin.",
+                    "offerPrice": "Für Reisen außerhalb der Provinz Varese werden die Kosten persönlich vereinbart."
+                }
+            ],
+            "disclaimerText" : "Für jede Rechnung, die 77,47 € übersteigt, wird gemäß italienischem Gesetz eine Standard-Zusatzsteuer von 2 € verrechnet.",
+            "consentText" : "Das Ausfüllen und Zurückschicken des Formulars “Allgemeine Beobachtung” ist mir eine große Hilfe.",
+            "goButton" : "Allgemeine Beobachtung",
+            "csButton" : "Einverständniserklärung",
+            "gicButton" : "Kontakt aufnehmen"
+        }
+    }
+
+}

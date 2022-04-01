@@ -1,0 +1,97 @@
+{
+    "title": "Humans Page",
+    "content": {
+        "en": {
+            "heroHeader": "Life is not merely to be alive, but to be well.",
+            "heroText": "Mastering life means mastering yourself. There are many possibilities to support you along the way. ",
+            "imgHeader": "Small changes, big results",
+            "imgSubheader": "",
+            "imgText": "Improving areas like nutrition and body weight, daily routine and sleep, tobacco and alcohol use, and physical activity to achieve overall wellness can be supported by natural remedies. ",
+            "bottomSubheaderOne": "Freedom of judgment allows for real change",
+            "bottomTextOne": "An initial in-depth interview, a personalized program, and subsequent regular follow-up can help improve various aspects of life, health, and wellbeing. Some suggestions regarding nutritional supplements or energetic support through flower essences can be a part of the individual program. ",
+            "bottomSubheaderTwo": "Consultations",
+            "bottomTextTwo": "They can be done online via Skype, for example.",
+            "bottomCta": "Get in contact ",
+            "offerMainHeader": "My offer for humans",
+            "offerSubHeader": "Online consultations ",
+            "offerList": [
+                {
+                    "offerText": "At first contact, we will identify the areas of your life that might benefit from enhancement and then define priorities."
+                }, {
+                    "offerText": "Meeting again online fortnightly is often an excellent choice to favor implementing changes. Still, we can define together what suits you best."
+                }, {
+                    "offerText": "Please note that the informed consent sheet must be filled in and sent before the first consultation. "
+                }
+            ],
+            "offerPrice": "Price: 60 € per hour",
+            "disclaimerText": "For every bill exceeding 77, 47€) a single supplementary tax (“marca da bollo”) of 2€ has to be charged, as required by Italian law. ",
+            "csButton": "Consent sheet",
+            "gicButton": "Get in contact"
+        },
+
+
+
+
+
+        "it": {
+            "heroHeader": "La vita non è solo “essere in vita”, ma stare bene.",
+            "heroText": "Essere padrone della propria vita signfica prenderla in mano e ci sono molte possibilità per supportarti lungo questo cammino. ",
+            "imgHeader": "Piccoli cambiamenti, grandi risultati",
+            "imgSubheader": "",
+            "imgText": "Il miglioramento di aspetti quali la nutrizione e il peso, la routine giornaliera ed il sonno, il consumo di tabacco e alcol, e l’attività fisica per raggiungere un benessere generale può essere supportato da rimedi naturali.",
+            "bottomSubheaderOne": "Il non-giudizio permette un reale cambiamento",
+            "bottomTextOne": "Un colloquio iniziale approfondito, un programma personalizzato e successivi colloqui regolari per seguire i progressi possono aiutare a migliorare vari aspetti di vita, salute e benessere. Alcuni consigli riguardo a fitonutraceutici o un sostegno energetico con essenze floreali possono far parte del programma. ",
+            "bottomSubheaderTwo": "Consulenze",
+            "bottomTextTwo": "Si svolgono online, per esempio via Skype.",
+            "bottomCta": "Mettiti in contatto",
+            "offerMainHeader": "Cosa offro alle persone",
+            "offerSubHeader": "consulenze online",
+            "offerList": [
+                {
+                    "offerText": "Durante il colloquio iniziale, andiamo a identificare le aree della tua vita che potrebbero beneficiare di miglioramenti, per poi definiamo le priorità. "
+                }, {
+                    "offerText": "Generalmente è un’ottima scelta ritrovarsi online ogni due settimane, al fine di favorire l’implementazione dei cambiamenti. Tuttavia anche per questo aspetto possiamo definire insieme cosa è più adatto a te."
+                }, {
+                    "offerText": "Si prega di prendere atto che il consenso informato deve essere compilato e rispedito prima del colloquio iniziale."
+                }
+            ],
+            "offerPrice": "Prezzo: 60 € all’ora",
+            "disclaimerText": "Ad ogni fattura superiore a 77, 47€ si aggiunge una marca da bollo di 2€, conformemente alla legge italiana",
+            "csButton": "Consenso informato",
+            "gicButton": "Prendere contatto"
+        },
+
+
+
+
+
+        "de": {
+            "heroHeader": "Leben heißt nicht bloß, am Leben zu sein, sondern sich wohlzufühlen.",
+            "heroText": "Das Leben zu meistern bedeutet sich selbst zu meistern. Es gibt v viele Möglichkeiten Sie auf diesem Pfad zu unterstützen.",
+            "imgHeader": "Kleine Veränderungen, große Resultate",
+            "imgSubheader": "",
+            "imgText": "Die Verbesserung von Aspekten wie Ernährung und Körpergewicht, tägliche Routine und Schlaf, Tabak- und Alkoholkonsum und körperliche Betätigung für ein allgemeines Wohlbefinden, kann durch Naturpräparate unterstützt werden.",
+            "bottomSubheaderOne": "Urteilsfreiheit ermöglicht wahre Veränderungen",
+            "bottomTextOne": "Ein tiefgründiges Eingangsgespräch, ein personalisiertes Programm und regelmäßige weiterführende Gespräche können dabei helfen, verschiedene Aspekte von Leben, Gesundheit und Wohlbefinden zu verbessern. Auch können Hinweise zu Nahrungsergänzungsmitteln und energetische Unterstützung durch pflanzliche Essenzen Teil des Programms sein.",
+            "bottomSubheaderTwo": "Beratungen",
+            "bottomTextTwo": "Sie finden online, zum Beispiel über Skype statt.",
+            "bottomCta": "Kontakt aufnehmen",
+            "offerMainHeader": "Mein Angebot für Menschen",
+            "offerSubHeader": "Online-Beratungen",
+            "offerList": [
+                {
+                    "offerText": "Beim ersten Gespräch werden wir die Bereiche aufdecken, in denen eine Verbesserung sinnvoll wäre, um dann Prioritäten zu setzen."
+                }, {
+                    "offerText": "Oft ist es eine gute Wahl, alle zwei Wochen wieder miteinenader zu sprechen, um Veränderungen dauerhaft umzusetzen. Auch hier können wir gemeinsam entscheiden, was am Besten für Sie passt. "
+                }, {
+                    "offerText": "Bitte beachten Sie, dass vor dem ersten Gespräch die Einverständniserklärung ausgefüllt und zurückgeschickt werden muss. "
+                }
+            ],
+            "offerPrice": "Preis: 60 € pro Stunde",
+            "disclaimerText": "Für jede Rechnung, die höher als 77,47 € ist, kommt eine Standard-Zusatztsteuer (“marca da bollo”) von 2 € dazu, wie vom italienischen Gesetz verlangt.",
+            "csButton": "Einverständniserklärung",
+            "gicButton": "Kontakt aufnehmen"
+        }
+    }
+
+}
