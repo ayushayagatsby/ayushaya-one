@@ -39,19 +39,17 @@ color: white;
 
 
 
-export default function CurriculumSection() {
+export default function CurriculumSection({currentLanguage}) {
     return (
         <Wrapper>
             <ImageContainer>
                 <ImageContainerText>
-                    <h1 css={css `margin-bottom: 6%`}>About myself</h1>
-                    <h4 css={css `color: white;`}>Born in Berlin, I grew up in different parts of
-                        Germany, but mainly in Düren, a town halfway between Köln and Aachen. As a
-                        child, I dreamed of working with animals.</h4>
+                    <h1 css={css `margin-bottom: 6%;`}>{currentLanguage.imgHeader}</h1>
+                    <h4 css={css `color: white;`}>{currentLanguage.imgText}</h4>
                 </ImageContainerText>
             </ImageContainer>
 
-            <CurriculumTimeline />
+            <CurriculumTimeline currentLanguage={currentLanguage}/>
         </Wrapper>
     )
 }

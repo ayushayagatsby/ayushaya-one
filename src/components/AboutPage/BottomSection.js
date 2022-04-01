@@ -53,27 +53,18 @@ text-align: center;
 margin-bottom: 15%;
 `
 
-export default function BottomSection() {
+export default function BottomSection({currentLanguage}) {
     return (
         <OuterWrapper>
             <TopTextbox>
-                <MainHeader children="After graduation"/>
-                <p css={css `width: 42%; margin-bottom: 5%;`}>I started working in the Italian
-                    speaking part of Switzerland. My initial idea was to work in palliative
-                    medicine. But working in the field, I started doubting about this choice.
-                    Experiences in different other fields led me eventually to become a family
-                    doctor and to help people change their habits of smoking tobacco.</p>
+                <MainHeader children={currentLanguage.agHeader}/>
+                <p css={css `width: 42%; margin-bottom: 5%;`}>{currentLanguage.agText}</p>
             </TopTextbox>
 
             <FirstInnerWrapper>
                 <FirstInnerWrapperTextbox>
-                    <h3 children="Complementary approaches" css={css ` margin-bottom: 5%;`}/>
-                    <p>Alongside, my interest in complementary approaches grew and led me to learn
-                        about possible ways to connect emotions and disease (Metamedicina®), and to
-                        start training in Ayurveda. Always curious to learn new things, I decided to
-                        spend a year learning about nutrition for health and disease prevention (ETH
-                        Zurich), and then started to train in naturopathy, with focus on animal
-                        wellbeing.</p>
+                    <h3 children={currentLanguage.complementarySubheader} css={css ` margin-bottom: 5%;`}/>
+                    <p>{currentLanguage.complementaryTextOne}</p>
                 </FirstInnerWrapperTextbox>
 
                 <LogoIllustrationBig css={css `width: 45%; height: auto;`}/>
@@ -87,19 +78,11 @@ export default function BottomSection() {
                     width={950}
                     height={711}
                     css={css `width: 48%; margin-right: 5%;`}/>
-                <p css={css `width: 21%;`}>As time went by, I realized that I am much more
-                    interested in sustaining health rather than treating diseases. Thanks to the
-                    naturopathic training, I rediscovered my passion for animals. So, while
-                    preparing the final thesis, I started to think seriously about changing
-                    profession. The final decision came when I discovered an institute in Germany
-                    which offers a training to become an ayurvedic therapist for animals.</p>
+                <p css={css `width: 21%;`}>{currentLanguage.complementaryTextTwo}</p>
 
             </SecondInnerWrapper>
 
-            <ValueProposition>I want to help people optimize lifestyle
-                <br/>
-                – theirs or for their animal friends –<br/>
-                in order to maintain health</ValueProposition>
+            <ValueProposition>{currentLanguage.valueProp}</ValueProposition>
 
             <StaticImage
                 src="../../images/JulianeAndTwoDogs.png"
@@ -110,9 +93,7 @@ export default function BottomSection() {
                 css={css `width: 71%; margin-bottom: 5%;`}/>
 
             <BottomText>
-                <p className="p-big">Presently, I am living in a small place in Northern Italy, with
-                    my husband, two old cats and 2 dogs. I enjoy nature, reading books on various
-                    topics and writing.</p>
+                <p className="p-big">{currentLanguage.bottomText}</p>
             </BottomText>
 
         </OuterWrapper>

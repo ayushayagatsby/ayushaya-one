@@ -104,9 +104,9 @@ position:relative;
 top:-3px;
 `
 
-export default function CurriculumTimeline() {
+export default function CurriculumTimeline({currentLanguage}) {
 
-    const listItems = content.map(item => <TimelineItem>
+    const listItems = currentLanguage.cvItems.map(item => <TimelineItem>
         <TimelineDescription>
             <p className="p-big">
                 {item.description}
@@ -120,8 +120,8 @@ export default function CurriculumTimeline() {
         <React.Fragment>
 
             <CvHeading>
-                <h1 css={css `margin-bottom: 6%;`}>Curriculum Vitae</h1>
-                <h2 css={css `margin-bottom: 12%;`}>Training and education</h2>
+                <h1 css={css `margin-bottom: 6%;`}>{currentLanguage.cvHeader}</h1>
+                <h2 css={css `margin-bottom: 12%;`}>{currentLanguage.cvubheader}</h2>
             </CvHeading>
 
             <TimelineContainer>

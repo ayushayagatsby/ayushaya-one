@@ -68,8 +68,8 @@ display: flex;
 margin-bottom: 8%;
 align-items: flex-start;`
 
-export default function WorkingSectionMobile() {
-    const workingItems = content.map(item => <ListItemWrapper>
+export default function WorkingSectionMobile({currentLanguage}) {
+    const workingItems = currentLanguage.workingItems.map(item => <ListItemWrapper>
         <Year>
             <h2 css={css `font-size: 15px; margin-top: 6px; margin-left: 10px;`}>{item.year}</h2>
         </Year>
@@ -81,7 +81,7 @@ export default function WorkingSectionMobile() {
     return (
         <Wrapper>
             <WHeading>
-                <h3 css={css `margin-bottom: 15%;`}>Working Experiences</h3>
+                <h3 css={css `margin-bottom: 15%;`}>{currentLanguage.workingHeader}</h3>
             </WHeading>
             {workingItems}
         </Wrapper>

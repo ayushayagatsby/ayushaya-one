@@ -103,9 +103,9 @@ top:-3px;
 text-align: left;
 `
 
-export default function CurriculumTimelineMobile() {
+export default function CurriculumTimelineMobile({currentLanguage}) {
 
-    const listItems = content.map(item => <TimelineItem>
+    const listItems = currentLanguage.cvItems.map(item => <TimelineItem>
         <TimelineYear>{item.year}</TimelineYear>
         <TimelineDescription>
             <p className="p-small">
@@ -118,8 +118,8 @@ export default function CurriculumTimelineMobile() {
         <React.Fragment>
 
             <CvHeading>
-                <h3 css={css `margin-bottom: 6%;`}>Curriculum Vitae</h3>
-                <h4 css={css `margin-bottom: 12%;`}>Training and education</h4>
+                <h3 css={css `margin-bottom: 6%;`}>{currentLanguage.cvHeader}</h3>
+                <h4 css={css `margin-bottom: 12%;`}>{currentLanguage.cvubheader}</h4>
             </CvHeading>
 
             <TimelineContainer>

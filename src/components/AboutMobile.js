@@ -222,7 +222,7 @@ text-align: center;
 margin-bottom: 15%;
 `
 
-export default function AboutMobile() {
+export default function AboutMobile({currentLanguage}) {
     return (
         <React.Fragment>
             <HeroOuterWrapper>
@@ -230,9 +230,9 @@ export default function AboutMobile() {
 
                 <HeroInnerWrapper>
                     <HeroTextbox>
-                        <HeroHeader>They are not our whole life, but they make our lives whole.</HeroHeader>
-                        <h4>Provolone scientifico</h4>
-                        <p className="p">Treating them right leads to a long and fulfilling life for them and for you.</p>
+                        <HeroHeader>{currentLanguage.heroHeader}</HeroHeader>
+                        <h4>{currentLanguage.heroSubHeader}</h4>
+                        <p className="p">{currentLanguage.heroText}</p>
                     </HeroTextbox>
 
                     <GradientCircle/>
@@ -243,11 +243,9 @@ export default function AboutMobile() {
             </HeroOuterWrapper>
 
             <WhiteWrapper>
-                <h3 css={css `margin: 5% 0 5% 0;`}>About myself</h3>
+                <h3 css={css `margin: 5% 0 5% 0;`}>{currentLanguage.imgHeader}</h3>
                 <ParagraphWrapper>
-                    <p className="p">Born in Berlin, I grew up in different parts of Germany,
-                        but mainly in Düren, a town halfway between Köln and Aachen. As a child, I
-                        dreamed of working with animals.</p>
+                    <p className="p">{currentLanguage.imgText}</p>
                 </ParagraphWrapper>
 
                 <StaticImage
@@ -258,18 +256,16 @@ export default function AboutMobile() {
                     height={1093}
                     css={css `width: 88%; margin-bottom: 10%;`}/>
 
-                <CurriculumTimelineMobile/>
+                <CurriculumTimelineMobile currentLanguage={currentLanguage}/>
             </WhiteWrapper>
 
-            <WhiteWrapper><WorkingSectionMobile/></WhiteWrapper>
+            <WhiteWrapper><WorkingSectionMobile currentLanguage={currentLanguage}/></WhiteWrapper>
 
             <TextImageWrapper>
                 <TextImageTextbox>
-                    <TextImageHeader>Education</TextImageHeader>
+                    <TextImageHeader>{currentLanguage.educationHeader}</TextImageHeader>
                     <TextImageParagraphBox>
-                        <p className="p">For different reasons, at the end of school, I decided to
-                            study human medicine. Having part of my family in Switzerland, I ended up going
-                            to the university of Lausanne.</p>
+                        <p className="p">{currentLanguage.educationTextOne}</p>
                     </TextImageParagraphBox>
 
                 </TextImageTextbox>
@@ -283,48 +279,36 @@ export default function AboutMobile() {
                     css={css `width: 100%; margin: 10% 0;`}/>
 
                 <TextImageParagraphBox>
-                    <p className="p">In the following years, I knew people from various parts of
-                        the world and travelled to different countries. I started to learn italian and
-                        also spent a lot of time in Great Britain including several months of internship
-                        and a year of research.</p>
+                    <p className="p">{currentLanguage.educationTextTwo}</p>
                 </TextImageParagraphBox>
             </TextImageWrapper>
 
             <QuoteOuterWrapper>
                 <QuoteInnerWrapper>
-                    <h4>Rather sustaining health than treating diseases.
+                    <h4>{currentLanguage.quote}
                     </h4>
                     <Signature>
-                        Juliane Merckens
+                    {currentLanguage.quoteSignature}
                     </Signature>
                 </QuoteInnerWrapper>
             </QuoteOuterWrapper>
 
             <TextImageWrapper>
                 <TextImageTextbox>
-                    <TextImageHeader>After graduation
+                    <TextImageHeader>{currentLanguage.agHeader}
                     </TextImageHeader>
                     <TextImageParagraphBox>
-                        <p className="p">I started working in the Italian speaking part of
-                            Switzerland. My initial idea was to work in palliative medicine. But working in
-                            the field, I started doubting about this choice. Experiences in different other
-                            fields led me eventually to become a family doctor and to help people change
-                            their habits of smoking tobacco.
+                        <p className="p">{currentLanguage.agText}
                         </p>
                     </TextImageParagraphBox>
 
                 </TextImageTextbox>
 
                 <LogoIllustrationBig css={css `width: 100%; height:auto; margin: 10% 0;`}/>
-                <h4 css={css `text-align: center; margin-bottom: 5%;`}>Complementary approaches
+                <h4 css={css `text-align: center; margin-bottom: 5%;`}>{currentLanguage.complementarySubheader}
                 </h4>
                 <TextImageParagraphBox>
-                    <p className="p">Alongside, my interest in complementary approaches grew and
-                        led me to learn about possible ways to connect emotions and disease
-                        (Metamedicina®), and to start training in Ayurveda. Always curious to learn new
-                        things, I decided to spend a year learning about nutrition for health and
-                        disease prevention (ETH Zurich), and then started to train in naturopathy, with
-                        focus on animal wellbeing.</p>
+                    <p className="p">{currentLanguage.complementaryTextOne}</p>
                 </TextImageParagraphBox>
 
                 <StaticImage
@@ -336,18 +320,10 @@ export default function AboutMobile() {
                     css={css `width: 100%; margin: 10% 0;`}/>
 
                 <TextImageParagraphBox>
-                    <p className="p">As time went by, I realized that I am much more interested
-                        in sustaining health rather than treating diseases. Thanks to the naturopathic
-                        training, I rediscovered my passion for animals. So, while preparing the final
-                        thesis, I started to think seriously about changing profession. The final
-                        decision came when I discovered an institute in Germany which offers a training
-                        to become an ayurvedic therapist for animals.</p>
+                    <p className="p">{currentLanguage.complementaryTextTwo}</p>
                 </TextImageParagraphBox>
 
-                <ValueProposition>I want to help people optimize lifestyle
-                    <br/>
-                    – theirs or for their animal friends –<br/>
-                    in order to maintain health</ValueProposition>
+                <ValueProposition>{currentLanguage.valueProp}</ValueProposition>
 
                 <StaticImage
                     src="../images/JulianeAndTwoDogs.png"
@@ -358,9 +334,7 @@ export default function AboutMobile() {
                     css={css `width: 100%; margin: 10%;`}/>
 
                 <BottomText>
-                    <p className="p-small">Presently, I am living in a small place in Northern Italy,
-                        with my husband, two old cats and 2 dogs. I enjoy nature, reading books on
-                        various topics and writing.</p>
+                    <p className="p-small">{currentLanguage.bottomText}</p>
                 </BottomText>
             </TextImageWrapper>
 

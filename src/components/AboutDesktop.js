@@ -15,17 +15,17 @@ import QuoteSection from "./QuoteSection/QuoteSection"
 import BottomSection from "./AboutPage/BottomSection"
 import AboutCta from "./AboutPage/AboutCta"
 
-export default function AboutDesktop({language}) {
+export default function AboutDesktop({currentLanguage}) {
   return (
     <>
             <Seo title="About page"/>
-            <AboutTopSection lan={language}/>
-            <CurriculumSection lan={language}/>
-            <WorkingSection lan={language}/>
-            <EducationSection lan={language}/>
-            <QuoteSection quote="Rather sustaining health than treating diseases." small={false} lan={language}/>
-            <BottomSection lan={language}/>
-            <AboutCta lan={language}/>
+            <AboutTopSection currentLanguage={currentLanguage}/>
+            <CurriculumSection currentLanguage={currentLanguage}/>
+            <WorkingSection currentLanguage={currentLanguage}/>
+            <EducationSection currentLanguage={currentLanguage}/>
+            <QuoteSection quote={currentLanguage.quote} small={false} />
+            <BottomSection currentLanguage={currentLanguage}/>
+            <AboutCta currentLanguage={currentLanguage}/>
         </>
   )
 }

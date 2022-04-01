@@ -2,7 +2,6 @@ import React from 'react'
 import styled from "@emotion/styled"
 import bgGradient from "./bgGradient.jpeg"
 import {css, jsx} from '@emotion/react'
-import AboutSection from '../../content/AboutContent.json'
 
 const TopSectionWrapper = styled("div")`
 width: 100%;
@@ -35,31 +34,9 @@ display: flex;
 flex-direction: column;
 `
 
-export default function AboutTopSection({lan}) {
+export default function AboutTopSection({currentLanguage}) {
 
-    const englishContent = AboutSection.content.en;
-    const italianContent = AboutSection.content.it;
-    const germanContent = AboutSection.content.de;
 
-    let handleCurrentLanguage = (language) => {
-        switch (language) {
-            case 'it':
-                return italianContent
-                break;
-            case 'en':
-                return englishContent
-                break;
-
-            case 'de':
-                return germanContent
-                break;
-
-            default:
-                break;
-        }
-    }
-
-    let currentLanguage = handleCurrentLanguage(lan)
 
     return (
         <TopSectionWrapper>

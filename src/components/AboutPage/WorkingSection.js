@@ -66,8 +66,8 @@ display: flex;
 margin-bottom: 8%;
 align-items: flex-start;`
 
-export default function WorkingSection() {
-    const workingItems = content.map(item => <ListItemWrapper>
+export default function WorkingSection({currentLanguage}) {
+    const workingItems = currentLanguage.workingItems.map(item => <ListItemWrapper>
         <Year>
             <h3>{item.year}</h3>
         </Year><Hr/>
@@ -79,7 +79,7 @@ export default function WorkingSection() {
     return (
         <Wrapper>
             <WHeading>
-                <h2 css={css `margin-bottom: 15%;`}>Working Experiences</h2>
+                <h2 css={css `margin-bottom: 15%;`}>{currentLanguage.workingHeader}</h2>
             </WHeading>
             {workingItems}
         </Wrapper>
