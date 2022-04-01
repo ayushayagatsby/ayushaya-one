@@ -136,7 +136,7 @@ const Layout = ({children}) => {
 
                 <Footer>
 
-                    {/* <MetaNav darkMode={false}/> */}
+                    <MetaNav darkMode={false} menuPos={"bottom"}/>
 
                 </Footer>
             </div>
