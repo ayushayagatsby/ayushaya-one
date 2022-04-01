@@ -47,10 +47,9 @@ const About = () => {
             <Seo title="About page"/> {breakpoints.sm && <AboutMobile currentLanguage={currentLanguage}/>
 }
 
-            {(!breakpoints.sm && breakpoints.md) && <h1>Prova</h1>
-}
 
-            {(!breakpoints.md && breakpoints.l) && <AboutDesktop currentLanguage={currentLanguage} />}
+
+            {!breakpoints.sm && <AboutDesktop currentLanguage={currentLanguage} />}
 
         </>
     )

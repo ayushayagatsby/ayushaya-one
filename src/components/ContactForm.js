@@ -1,4 +1,7 @@
-import React, {useState} from "react"
+import React, {useState, useContext} from "react"
+import ContactForm from "../components/ContactForm"
+import LanguageContext from '../context/LanguageContext';
+import ContactContent from '../content/ContactContent.json';
 import {StaticQuery, graphql} from "gatsby"
 import {FormiumForm, defaultComponents} from '@formium/react';
 import {formium} from '../lib/formium';
@@ -17,6 +20,8 @@ background-color: white;
 border-radius: 10px;
 border: none;
 padding: 7px;
+margin-bottom: 10%;
+
 
 &:focus-visible {
   outline: none;
@@ -76,6 +81,7 @@ const myComponents = {
     FormControl,
     FieldWrapper,
     Textarea,
+    SubmitButton
     
 }
 
@@ -83,16 +89,10 @@ function ElementsWrapper(props) {
 
   const breakpoints = useBreakpoint();
 
-    const {
-        id,
-        label,
-        description,
-        type,
-        ...rest
-    } = props
+    
 
     return (
-        <CustomElementsWrapper w={breakpoints.sm? "90vw" : "50vw"}>
+        <CustomElementsWrapper {...props} w={breakpoints.sm? "90vw" : "50vw"}>
             {props.children}
         </CustomElementsWrapper>
     )
@@ -114,7 +114,7 @@ function ElementsWrapper(props) {
 function FieldWrapper(props) {
 
     return (
-        <CustomFieldWrapper>
+        <CustomFieldWrapper {...props}>
             {props.children}
         </CustomFieldWrapper>
     )
@@ -123,15 +123,44 @@ function FieldWrapper(props) {
 function Textarea(props) {
 
   const breakpoints = useBreakpoint();
+  const placeholder = "Your message"
+
+  
 
     return (
-        <CustomTextArea placeholder="Your message" h={breakpoints.sm? "50vh" : "20vh"}>
+        <CustomTextArea placeholder={placeholder} {...props} h={breakpoints.sm? "50vh" : "20vh"}>
             {props.children}
         </CustomTextArea>
     )
 }
 
 function FormControl(props) {
+
+  const {language} = useContext(LanguageContext)
+
+    const englishContent = ContactContent.content.en;
+    const italianContent = ContactContent.content.it;
+    const germanContent = ContactContent.content.de;
+
+    let handleCurrentLanguage = (language) => {
+        switch (language) {
+            case 'it':
+                return italianContent
+                break;
+            case 'en':
+                return englishContent
+                break;
+
+            case 'de':
+                return germanContent
+                break;
+
+            default:
+                break;
+        }
+    }
+
+    let currentLanguage = handleCurrentLanguage(language);
 
   const breakpoints = useBreakpoint();
     const {
@@ -152,7 +181,10 @@ function FormControl(props) {
 
     const vis = labelVisibility
         ? "visible"
-        : "hidden";
+        : "visible";
+
+
+        console.log(props)
 
         
 
@@ -160,16 +192,16 @@ function FormControl(props) {
             // Short Answer
         case ('First Name'):
             return (
-                <CustomFormControl id={id} w={breakpoints.sm? "40vw" : "23vw"}>
-                    <CustomLabel visibility={vis}>{label}</CustomLabel>
+                <CustomFormControl {...rest} id={id} w={breakpoints.sm? "40vw" : "23vw"}>
+                    <CustomLabel visibility={vis}>{currentLanguage.yN}</CustomLabel>
                     {children}
 
                 </CustomFormControl>
             )
             case ('Last Name'):
             return (
-                <CustomFormControl id={id} w={breakpoints.sm? "40vw" : "23vw"}>
-                    <CustomLabel visibility={vis}>{label}</CustomLabel>
+                <CustomFormControl {...rest} id={id} w={breakpoints.sm? "40vw" : "23vw"}>
+                    <CustomLabel visibility={vis}>{currentLanguage.lN}</CustomLabel>
                     {children}
 
                 </CustomFormControl>
@@ -177,16 +209,16 @@ function FormControl(props) {
             // Email
         case ('E-Mail Address'):
             return (
-              <CustomFormControl id={id} w={breakpoints.sm? "90vw" : "50vw"}>
-                    <CustomLabel visibility={vis}>{label}</CustomLabel>
+              <CustomFormControl {...rest} id={id} w={breakpoints.sm? "90vw" : "50vw"}>
+                    <CustomLabel visibility={vis}>{currentLanguage.eA}</CustomLabel>
                     {children}
 
                 </CustomFormControl>
             )
         case ("Your Message"):
             return (
-              <CustomFormControl id={id} w={breakpoints.sm? "90vw" : "50vw"}>
-                    <CustomLabel visibility={vis}>{label}</CustomLabel>
+              <CustomFormControl {...rest} id={id} w={breakpoints.sm? "90vw" : "50vw"}>
+                    <CustomLabel visibility={vis}>{currentLanguage.yM}</CustomLabel>
                     {children}
 
                 </CustomFormControl>
@@ -200,28 +232,24 @@ function FormControl(props) {
 
 function TextInput(props) {
 
-    const {
-        name,
 
-        ...rest
-    } = props
+  const {language} = useContext(LanguageContext)
 
-    const definePlaceholder = (name) => {
-        switch (name) {
-            case "yourMessage":
-                return "Your message"
+    const englishContent = ContactContent.content.en;
+    const italianContent = ContactContent.content.it;
+    const germanContent = ContactContent.content.de;
+
+    let handleCurrentLanguage = (language) => {
+        switch (language) {
+            case 'it':
+                return italianContent
+                break;
+            case 'en':
+                return englishContent
                 break;
 
-            case "eMail":
-                return "Your E-Mail"
-                break;
-
-            case "lastName":
-                return "Your last name"
-                break;
-
-            case "name":
-                return "Your name"
+            case 'de':
+                return germanContent
                 break;
 
             default:
@@ -229,12 +257,39 @@ function TextInput(props) {
         }
     }
 
-    const placeholder = definePlaceholder(name);
+    let currentLanguage = handleCurrentLanguage(language);
+
+    
+
+    const definePlaceholder = (name) => {
+        switch (name) {
+            case "yourMessage":
+                return currentLanguage.yM
+                break;
+
+            case "eMail":
+                return currentLanguage.yEA
+                break;
+
+            case "lastName":
+                return currentLanguage.lN
+                break;
+
+            case "name":
+                return currentLanguage.yN
+                break;
+
+            default:
+                break;
+        }
+    }
+
+    const placeholder = definePlaceholder(props.name);
 
     const breakpoints = useBreakpoint();
 
     return (<CustomTextInput
-        {...rest}
+        {...props}
         placeholder={placeholder} h={breakpoints.sm? "8vh" : "6vh"}/>)
 }
 

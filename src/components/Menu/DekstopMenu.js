@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react'
+import React, {useState, useEffect, useContext} from 'react'
 import styled from "@emotion/styled"
 import {css, jsx} from '@emotion/react'
 import InternalLink from '../InternalLink'
@@ -7,6 +7,9 @@ import {CSSTransition} from 'react-transition-group'
 import {useBreakpoint} from 'gatsby-plugin-breakpoints';
 import './DesktopMenu.css'
 import LanguageSelect from '../LanguageSelect/LanguageSelect'
+import MenuContent from '../../content/MenuContent.json';
+import LanguageContext from '../../context/LanguageContext'
+
 
 const OuterWrapper = styled("div")`
 width: 100%;
@@ -96,22 +99,41 @@ const menuTypes = [
 ];
 
 export default function DekstopMenu({menuState, menuToggle}) {
-    // useEffect(() => {
 
-    //     const firstChild = document.getElementById("layout-wrapper");
-
-    //     let vh = window.innerHeight * 0.01;
-    //     document.documentElement.style.setProperty('--vh', `${vh}px`);
-
-    // }, []);
 
     const breakpoints = useBreakpoint();
 
-    const [viewportHeight, setViewportHeight] = useState("100")
+    const {language} = useContext(LanguageContext)
+
+    const englishContent = MenuContent.content.en;
+    const italianContent = MenuContent.content.it;
+    const germanContent = MenuContent.content.de;
+
+    let handleCurrentLanguage = (language) => {
+        switch (language) {
+            case 'it':
+                return italianContent
+                break;
+            case 'en':
+                return englishContent
+                break;
+
+            case 'de':
+                return germanContent
+                break;
+
+            default:
+                break;
+        }
+    }
+
+    let currentLanguage = handleCurrentLanguage(language);
+    const [viewportHeight,
+        setViewportHeight] = useState("100")
 
     const metaTypesMapped = metaTypes.map(item => <InternalLink href={item.link} children={item.text}/>);
-    const menuTypesMappedDekstop = menuTypes.map(item => <h1 onClick={menuToggle}><InternalLink href={item.link} children={item.text}/></h1>);
-    const menuTypesMappedMobile = menuTypes.map(item => <h3 onClick={menuToggle}><InternalLink href={item.link} children={item.text}/></h3>);
+    const menuTypesMappedDekstop = currentLanguage.map(item => <h1 onClick={menuToggle}><InternalLink href={item.link} children={item.text}/></h1>);
+    const menuTypesMappedMobile = currentLanguage.map(item => <h3 onClick={menuToggle}><InternalLink href={item.link} children={item.text}/></h3>);
     const menuTypesMapped = breakpoints.sm
         ? menuTypesMappedMobile
         : menuTypesMappedDekstop;

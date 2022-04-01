@@ -2,108 +2,108 @@
     "title": "Approach Page",
     "content": {
         "en": {
-            "heroHeader": "",
-            "heroText": "",
-            "imgHeader": "",
-            "imgText": "",
-            "midSubheaderOne": "",
-            "midTextOne": "",
-            "FireElement": "",
-            "WaterElement": "",
-            "EtherElement": "",
-            "EarthElement": "",
-            "AirElement": "",
-            "midSubheaderTwo": "",
-            "midTextTwo": "",
+            "heroHeader": "The science of life ",
+            "heroText": "A scientific and modern approach to a thousand year old tradition ",
+            "imgHeader": "Insights by the observation of nature ",
+            "imgText": "Ayurveda is the traditional Indian medicine system developed over several thousands of years. Like other traditional systems, it is based on a philosophical framework and observation of nature.",
+            "midSubheaderOne": "About Ayurveda",
+            "midTextOne": "Ayurveda basically holds that the Universe develops out of pure consciousness, which combines with primordial material energy, to form bioenergetic principles allegorized as five elements: Space (or Ether) represents the principle of expansion and of providing a recipient to hold the Universe. Air represents the principle of movement. Fire represents the principle of transformation. Water represents the principle of nutrition and cohesion. Earth represents the principle of support and solidity. These principles can be observed everywhere in the Universe, in proportions that vary between human beings, birds, trees, or rocks. ",
+            "FireElement": "Fire",
+            "WaterElement": "Water",
+            "EtherElement": "Ether ",
+            "EarthElement": "Earth",
+            "AirElement": "Air",
+            "midSubheaderTwo": "The five elements combine with the three “qualities”",
+            "midTextTwo": "These are described by Sanscrit terms, which have a whole range of significations.",
             "qualities": [
                 {
-                    "qualityHeader": "",
-                    "qualityText": ""
+                    "qualityHeader": "Sattva",
+                    "qualityText": "Describes pure consciousness, daytime, being awake, and a balanced state. "
                 }, {
-                    "qualityHeader": "",
-                    "qualityText": ""
+                    "qualityHeader": "Rajas",
+                    "qualityText": "Describes the energy that moves sattva and tamas, but also dusk and dawn, dreams, and an imbalanced state. "
                 }, {
-                    "qualityHeader": "",
-                    "qualityText": ""
+                    "qualityHeader": "Tamas",
+                    "qualityText": "Describes unconsciousness, nighttime, sleep, and inertia. "
                 }
             ],
-            "qualityClosingText": "",
-            "quote": "",
-            "bottomSubheaderOne": "",
-            "bottomTextOne": "",
-            "doorTopText": "",
-            "doorHeader": "",
-            "doorBottomText": ""
+            "qualityClosingText": "Though all three qualities are essential in life, Ayurveda holds that humans should mainly develop sattva to allow spiritual evolution. ",
+            "quote": "In fact, Ayurveda aims to help live a long and healthy life as a fundamental prerequisite for the best possible spiritual evolution. ",
+            "bottomSubheaderOne": "Ayurveda is known in western countries as an approach to humans' beauty, well-being, and health. ",
+            "bottomTextOne": "However, it has been classically used also for animals. Though most classical texts are about human beings, there are a few written sources on horses, cows, and elephants (which were highly valued in ancient India). Besides the written tradition, there is also the practical experience of the traditional healers in the villages, passed on from one generation to the next, for many kinds of living beings. ",
+            "doorTopText": "One of the classics, the Charaka Samhita, states",
+            "doorHeader": "“Ogni sé vivente unisce sé stesso alla vita in tutte le specie.”",
+            "doorBottomText": "Ayurvedic concepts apply to all living beings (even though some therapeutical principles might not apply to them). "
         },
 
         "it": {
-            "heroHeader": "",
-            "heroText": "",
-            "imgHeader": "",
-            "imgText": "",
-            "midSubheaderOne": "",
-            "midTextOne": "",
-            "FireElement": "",
-            "WaterElement": "",
-            "EtherElement": "",
-            "EarthElement": "",
-            "AirElement": "",
-            "midSubheaderTwo": "",
-            "midTextTwo": "",
+            "heroHeader": "La Scienza della Vita",
+            "heroText": "Un approccio scientifico e moderno ad una tradizione millenaria",
+            "imgHeader": "Discernere osservando la natura",
+            "imgText": "L’Ayurveda è il sistema di medicina tradizionale dell’India che si è sviluppato nel corso di diversi millenni. Come altri sistemi di medicina, si basa su un modello filosofico e l’osservazione della natura.",
+            "midSubheaderOne": "Sull’Ayurveda",
+            "midTextOne": "L’Ayurveda ritiene che l’Universo si sviluppi dall’unione di coscienza pura ed energia materiale primordiale, dalla quale emergono dei principi bioenergetici descritti dall’allegoria dei cinque elementi: Lo Spazio (o Etere) rappresenta il principio dell’espansione e del contenitore in cui l’Universo è contenuto. L’Aria rappresenta il principio del movimento. Il Fuoco rappresenta il principio della trasformazione. L’Acqua rappresenta il principio del nutrimento e della coesione. La Terra rappresenta i principi del supporto e della solidità. Tali principi possono essere osservato ovunque nell’Universo, in proporzioni che variano tra esseri umani, uccelli, alberi o rocce. ",
+            "FireElement": "Fuoco",
+            "WaterElement": "Acqua",
+            "EtherElement": "Etere",
+            "EarthElement": "Terra",
+            "AirElement": "Aria",
+            "midSubheaderTwo": "I cinque elementi si combinano con le tre “qualità”",
+            "midTextTwo": "Esse sono descritte in termini sanscriti, i quali hanno una serie di significati.",
             "qualities": [
                 {
-                    "qualityHeader": "",
-                    "qualityText": ""
+                    "qualityHeader": "Sattva",
+                    "qualityText": "Descrive la coscienza pura, il giorno, la veglia ed uno stato di equilibrio."
                 }, {
-                    "qualityHeader": "",
-                    "qualityText": ""
+                    "qualityHeader": "Rajas",
+                    "qualityText": "Descrive l’energia che smuove sattva e tamas, ma anche l’alba e il tramonto, i sogni ed uno stato di squilibrio."
                 }, {
-                    "qualityHeader": "",
-                    "qualityText": ""
+                    "qualityHeader": "Tamas",
+                    "qualityText": "Descrive l’incoscienza, la notte, il sonno e l’inerzia."
                 }
             ],
-            "qualityClosingText": "",
-            "quote": "",
-            "bottomSubheaderOne": "",
-            "bottomTextOne": "",
-            "doorTopText": "",
-            "doorHeader": "",
-            "doorBottomText": ""
+            "qualityClosingText": "Anche se tutte e tre le qualità sono essenziali per la vita, l’Ayurveda considera sattva come la qualità da sviluppare principalmente, allo scopo di favorire la crescita spirituale. ",
+            "quote": "Infatti, l’Ayurveda ha lo scopo di aiutare a vivere una vita lunga ed in salute - prerequisito fondamentale per la massima crescita spirituale possibile.",
+            "bottomSubheaderOne": "L’Ayurveda è noto in Occidente come un approccio alla bellezza, il benessere e la salute dell’essere umano. ",
+            "bottomTextOne": "Tuttavia, è stato utilizzato tradizionalmente anche per gli animali. Anche se la maggior parte dei testi classici tratta dell’essere umano, ce ne sono alcuni scritti sulle mucche, i cavalli e gli elefanti (che avevano un grande valore nell’antica India). Accanto alle fonti scritte, esiste anche l’esperienza pratica dei guaritori tradizionali nei villaggi, tramandata di generazione in generazione ed applicata a molte specie diverse. ",
+            "doorTopText": "Una delle fonti classiche, la Charaka Samhita, afferma che ",
+            "doorHeader": "“Ogni sé vivente unisce sé stesso alla vita in tutte le specie.”",
+            "doorBottomText": "I concetti ayurvedici si applicano a tutti gli esseri viventi (anche se alcuni principi terapeutici non sono applicabili a tutti)."
         },
 
         "de": {
-            "heroHeader": "",
-            "heroText": "",
-            "imgHeader": "",
-            "imgText": "",
-            "midSubheaderOne": "",
-            "midTextOne": "",
-            "FireElement": "",
-            "WaterElement": "",
-            "EtherElement": "",
-            "EarthElement": "",
-            "AirElement": "",
-            "midSubheaderTwo": "",
-            "midTextTwo": "",
+            "heroHeader": "Die Wissenschaft des Lebens",
+            "heroText": "Eine wissenschaftlicher und moderner Ansatz einer jahrtausendalten Tradition",
+            "imgHeader": "Erkenntnisse durch die Beobachtung der Natur",
+            "imgText": "Ayurveda ist das traditionelle indische Medizinsystem, welches sich im Laufe von mehreren Tausend Jahren entwickelt hat. Wie auch andere traditionelle Systeme baut es auf ein philosophisches Modell und Beobachtung der Natur auf. ",
+            "midSubheaderOne": "Über Ayurveda",
+            "midTextOne": "Ayurveda geht davon aus, dass sich das Universum aus der Verbindung von purem Bewusstsein und ursprünglicher materieller Energie entwickelt, aus der bioenergetische Prinzipien entstehen, welche als die 5 Elemente versinnbildlicht werden: Raum (oder Äther) steht für das Prinzip der Ausdehnung und für den Raum, der das Universum in sich hält. Luft steht für das Prinzip der Bewegung. Feuer steht für das Prinzip der Umwandlung. Wasser steht für das Prinzip des Nährens und des Zusammenhalts. Erde steht für das Prinzip des Stützens und der Festigkeit. Diese Prinzipien können überall im Universum beobachtet werden, in unterschiedlichen Proportionen bei Menschen, Vögeln, Bäumen oder Felsen. ",
+            "FireElement": "Feuer",
+            "WaterElement": "Wasser",
+            "EtherElement": "Äther",
+            "EarthElement": "Erde",
+            "AirElement": "Luft",
+            "midSubheaderTwo": "Die fünf Elemente verbinden sich mit den drei “Eigenschaften” ",
+            "midTextTwo": "Diese werden mit Wörtern aus dem Sanskrit beschrieben, die für eine ganze Reihe an Bedeutungen stehen.",
             "qualities": [
                 {
-                    "qualityHeader": "",
-                    "qualityText": ""
+                    "qualityHeader": "Sattva",
+                    "qualityText": "Beschreibt das reine Bewusstsein, die Zeit des Tages, wach sein und einen ausgeglichenen Zustand."
                 }, {
-                    "qualityHeader": "",
-                    "qualityText": ""
+                    "qualityHeader": "Rajas",
+                    "qualityText": "Beschreibt die Energe, die Sattva und Tamas in Bewegung bringt, aber auch Sonnenauf- und -untergang, Träume und einen unausgeglichenen Zustand."
                 }, {
-                    "qualityHeader": "",
-                    "qualityText": ""
+                    "qualityHeader": "Tamas",
+                    "qualityText": "Beschreibt Unbewusstsein, die Nacht, den Schlaf und die Unbeweglichkeit."
                 }
             ],
-            "qualityClosingText": "",
-            "quote": "",
-            "bottomSubheaderOne": "",
-            "bottomTextOne": "",
-            "doorTopText": "",
-            "doorHeader": "",
-            "doorBottomText": ""
+            "qualityClosingText": "Obwohl alle drei Eigenschaften wichtig im Leben sind, wird im Ayurveda davon ausgegangen, dass der Mensch vor allem Sattva fördern solle, um sich spirituell weiterzuentwickeln.",
+            "quote": "Tatsächlich ist Ziel des Ayurveda, ein langes und gesundes Leben zu leben, als grundlegende Voraussetzung für die best mögliche spirituelle Entwicklung.",
+            "bottomSubheaderOne": "Ayurveda ist in westlichen Ländern als Ansatz für menschliche Schönheit, Wohlbefinden und Gesundheit bekannt. ",
+            "bottomTextOne": "Doch es wird traditionell auch bei Tieren angewandt. Obwohl es sich in den meisten klassischen Texten um den Menschen dreht, gibt es ein paar schriftliche Quellen über Pferde, Kühe und Elefanten (die im alten Indien von großem Wert waren). Neben der schriftlichen Überlieferung gibt es auch auch die praktischen Erfahrungen der traditionellen Dorfheiler in Bezug auf viele verschiedene Lebenwesen, welche von einer Generation zu nächsten weitergegeben werden. ",
+            "doorTopText": "Eine der klassischen Schrfiten, die Charaka Samhita, besagt:",
+            "doorHeader": " “Ogni sé vivente unisce sé stesso alla vita in tutte le specie.”",
+            "doorBottomText": "Ayurvedische Konzepte kann man auf alle Lebewesen übertragen (auch wenn einige Behandlungsprinzipien nicht auf sie zutreffen)."
         }
     }
 

@@ -1,0 +1,91 @@
+{
+    "title": "",
+    "content": {
+        "en": [
+            {
+
+                "text": "Animals",
+                "link": "/animals"
+
+            }, {
+
+                "text": "Humans",
+                "link": "/humans"
+
+            }, {
+
+                "text": "About",
+                "link": "/about"
+
+            }, {
+
+                "text": "Approach",
+                "link": "/approach"
+
+            }, {
+
+                "text": "Contact",
+                "link": "/contact"
+
+            }
+
+        ],
+        "it": [
+            {
+
+                "text": "Animali",
+                "link": "/animals"
+
+            }, {
+
+                "text": "Umani",
+                "link": "/humans"
+
+            }, {
+
+                "text": "Chi sono",
+                "link": "/about"
+
+            }, {
+
+                "text": "Approccio",
+                "link": "/approach"
+
+            }, {
+
+                "text": "Contatti",
+                "link": "/contact"
+
+            }
+        ],
+        "de": [
+            {
+
+                "text": "Tiere",
+                "link": "/animals"
+
+            }, {
+
+                "text": "Menschen",
+                "link": "/humans"
+
+            }, {
+
+                "text": "Zur Person",
+                "link": "/about"
+
+            }, {
+
+                "text": "Ansatz",
+                "link": "/approach"
+
+            }, {
+
+                "text": "Contact",
+                "link": "/contact"
+
+            }
+        ]
+    }
+
+}

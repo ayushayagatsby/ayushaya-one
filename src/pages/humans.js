@@ -41,10 +41,9 @@ export default function Humans() {
             <Seo title="Humans page"/> {breakpoints.sm && <HumansMobile currentLanguage={currentLanguage}/>
 }
 
-            {(!breakpoints.sm && breakpoints.md) && <h1>Prova</h1>
-}
+           
 
-            {(!breakpoints.md && breakpoints.l) && <HumansDesktop currentLanguage={currentLanguage}/>}
+            {!breakpoints.sm  && <HumansDesktop currentLanguage={currentLanguage}/>}
 
         </>
 

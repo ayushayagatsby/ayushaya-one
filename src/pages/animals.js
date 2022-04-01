@@ -42,10 +42,10 @@ export default function Animals() {
             <Seo title="Animals page"/> {breakpoints.sm && <AnimalsMobile currentLanguage={currentLanguage}/>
 }
 
-            {(!breakpoints.sm && breakpoints.md) && <h1>Prova</h1>
-}
+          
 
-            {(!breakpoints.md && breakpoints.l) && <AnimalsDesktop currentLanguage={currentLanguage}/>}
+
+            {!breakpoints.sm && <AnimalsDesktop currentLanguage={currentLanguage}/>}
 
         </>
     )

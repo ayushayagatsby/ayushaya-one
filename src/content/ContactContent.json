@@ -1,0 +1,45 @@
+{
+    "title": "Contact page",
+    "content": {
+        "en": {
+
+            "contact": "Contact",
+            "jM": "Dr. Juliane Merckens, MD",
+            "yN": "Your name",
+            "fN": "First name",
+            "lN": "Last name",
+            "yEA": "Your e-mail address",
+            "eA": "E-mail address",
+            "yM": "Your message "
+            
+
+        },
+        "it": {
+
+
+            "contact": "Contatto",
+            "jM": "Dr.ssa Juliane Merckens",
+            "yN": "Il tuo nome",
+            "fN": "Nome",
+            "lN": "Cognome",
+            "yEA": "Il tuo indirizzo e-mail",
+            "eA": "Indirizzo e-mail",
+            "yM": "Il tuo messaggio"
+
+        },
+        "de": {
+
+
+            "contact": "Kontakt",
+            "jM": "Dr. Juliane Merckens",
+            "yN": "Ihr Name",
+            "fN": "Vorname",
+            "lN": "Nachname",
+            "yEA": "Ihre Mailadresse",
+            "eA": "E-Mail",
+            "yM": "Ihre Nachricht"
+            
+        }
+    }
+
+}

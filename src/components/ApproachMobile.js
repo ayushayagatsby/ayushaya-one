@@ -155,15 +155,15 @@ display: flex;
 justify-content: center;
 `
 
-export default function ApproachDesktop() {
+export default function ApproachDesktop({currentLanguage}) {
     return (
         <React.Fragment>
             <HeroOuterWrapper>
                 <Spacer/>
                 <HeroInnerWrapper>
                     <HeroTextbox>
-                        <h3 css={css `margin-bottom: 5%;`}>The science of life</h3>
-                        <p className="p">A scientific and modern approach to a thousand year old tradition.</p>
+                        <h3 css={css `margin-bottom: 5%;`}>{currentLanguage.heroHeader}</h3>
+                        <p className="p">{currentLanguage.heroText}</p>
                     </HeroTextbox>
                     <StaticImage
                         src="../images/ShapeStonesGradient.png"
@@ -179,11 +179,9 @@ export default function ApproachDesktop() {
             </HeroOuterWrapper>
 
             <WhiteWrapper>
-                <h3 css={css `margin:5% 0 5% 0;`}>Insights by the observation of Nature.</h3>
+                <h3 css={css `margin:5% 0 5% 0;`}>{currentLanguage.imgHeader}</h3>
                 <ParagraphWrapper>
-                    <p className="p">Ayurveda is the traditional Indian medicine system which has
-                        developed over several thousands of years. As other traditional systems, it is
-                        based on a philosophical framework and on the observation of Nature.</p>
+                    <p className="p">{currentLanguage.imgText}</p>
                 </ParagraphWrapper>
 
                 <StaticImage
@@ -198,73 +196,62 @@ export default function ApproachDesktop() {
 
             <AboutWrapper>
 
-                <h3 css={css `margin: 15% 0 10% 0;`}>About Ayuverda</h3>
+                <h3 css={css `margin: 15% 0 10% 0;`}>{currentLanguage.midSubheaderOne}</h3>
                 <AboutParagraph>
 
-                    <p className="p">Ayurveda basically holds that the Universe develops out of pure
-                        consciousness which combines with primordial material energy, to form
-                        bioenergetic principles allegorized as 5 Elements: Space (or Ether) represents
-                        the principle of expansion and of providing a recipient to hold the Universe.
-                        Air represents the principle of movement. Fire represents the principle of
-                        transformation. Water represents the principle of nutrition and cohesion. Earth
-                        represents the principle of support and solidity. These principles can be
-                        observed everywhere in the universe, in proportions that vary between a human
-                        being, a bird, a tree or a rock.</p>
+                    <p className="p">{currentLanguage.midTextOne}</p>
                 </AboutParagraph>
 
                 <ElementsWrapper css={css `margin-top: 15%;`}>
                     <SingleElement css={css ``}><IcFire css={css `width: 100%; height: auto; margin-bottom: 7%;`}/>
-                        <ElementName>FIRE</ElementName>
+                        <ElementName>{currentLanguage.FireElement}</ElementName>
                     </SingleElement>
 
                     <SingleElement css={css ``}><IcWater css={css `width: 100%; height: auto; margin-bottom: 7%;`}/>
-                        <ElementName>WATER</ElementName>
+                        <ElementName>{currentLanguage.WaterElement}</ElementName>
                     </SingleElement>
 
                 </ElementsWrapper>
 
                 <ElementsWrapper css={css `margin-top: 10%;`}>
                     <SingleElement><IcEther css={css `width: 100%; height: auto; margin-bottom: 7%;`}/>
-                        <ElementName>ETHER</ElementName>
+                        <ElementName>{currentLanguage.EtherElement}</ElementName>
                     </SingleElement>
 
                     <SingleElement css={css ``}><IcEarth css={css `width: 100%; height: auto; margin-bottom: 7%;`}/>
-                        <ElementName>EARTH</ElementName>
+                        <ElementName>{currentLanguage.EarthElement}</ElementName>
                     </SingleElement>
                 </ElementsWrapper>
 
                 <ElementsWrapper css={css `margin-top: 10%;`}>
 
                     <SingleElement css={css ``}><IcWind css={css `width: 100%; height: auto; margin-bottom: 7%;`}/>
-                        <ElementName>WIND</ElementName>
+                        <ElementName>{currentLanguage.AirElement}</ElementName>
                     </SingleElement>
                 </ElementsWrapper>
 
-                <h3 css={css `margin: 15% 0 20% 0;`}>The five elements
-                    <br/>
-                    combine with the “3 qualities”</h3>
+                <h3 css={css `margin: 15% 0 20% 0;`}>{currentLanguage.midSubheaderTwo}</h3>
 
                 <ThreeQualities css={css `width: 75%; height: auto; margin-bottom: 12%;`}/>
 
-                <p css={css `width: 75%; margin-bottom: 15%;`}>these are described by sanscrit terms which have a whole range of significations</p>
+                <p css={css `width: 75%; margin-bottom: 15%;`}>{currentLanguage.midTextTwo}</p>
 
                 <SingleQuality>
                     <IcSattva css={css `width: 40%; height: auto; margin-bottom: 12%;`}/>
-                    <h3 css={css `margin-bottom: 12%;`}>Sattva</h3>
-                    <p className="p">Describes pure consciousness, daytime, being awake, and a balanced state.</p>
+                    <h3 css={css `margin-bottom: 12%;`}>{currentLanguage.qualities[0].qualityHeader}</h3>
+                    <p className="p">{currentLanguage.qualities[0].qualityText}</p>
                 </SingleQuality>
 
                 <SingleQuality>
                     <IcRajas css={css `width: 40%; height: auto; margin-bottom: 12%;`}/>
-                    <h3 css={css `margin-bottom: 12%;`}>Rajas</h3>
-                    <p className="p">Describes the energy that moves sattva and tamas, but also dusk
-                        and dawn, dreams, and an imbalanced state.</p>
+                    <h3 css={css `margin-bottom: 12%;`}>{currentLanguage.qualities[1].qualityHeader}</h3>
+                    <p className="p">{currentLanguage.qualities[1].qualityText}</p>
                 </SingleQuality>
 
                 <SingleQuality>
                     <IcTamas css={css `width: 40%; height: auto; margin-bottom: 12%;`}/>
-                    <h3 css={css `margin-bottom: 12%;`}>Tamas</h3>
-                    <p className="p">Describes unconsciousness, nighttime, sleep, and inertia.</p>
+                    <h3 css={css `margin-bottom: 12%;`}>{currentLanguage.qualities[2].qualityHeader}</h3>
+                    <p className="p">{currentLanguage.qualities[2].qualityText}</p>
                 </SingleQuality>
 
                 <IcLiveFlower css={css `width: 75%; height: auto; margin: 15% 0 10% 0;`}/>
@@ -273,28 +260,19 @@ export default function ApproachDesktop() {
 
                 <LastAboutParagraph css={css `margin-bottom: 4%;`}>
 
-                    <p className="p">Though all three qualities are important in life, Ayurveda
-                        holds that the human being should develop mainly sattva, as this allows to
-                        evolve spiritually.</p>
+                    <p className="p">{currentLanguage.qualityClosingText}</p>
                 </LastAboutParagraph>
 
             </AboutWrapper>
 
             <QuoteSectionMobile
                 signature={false}
-                quote="In fact, the aim of Ayurveda is to help live a long and healthy
-                life as a basic prerequisite for the best possible spiritual evolution."/>
+                quote={currentLanguage.quote}/>
 
             <TextImageWrapper css={css `margin: 20% 0 20% 0;`}>
                 <TextImageTextbox>
-                    <h4 css={css `margin-bottom: 5%;`}>Ayurveda is known in the Western countries as
-                        an approach to beauty, wellbeing and health for humans.</h4>
-                    <p className="p">However, it has been classically used also for animals. Though
-                        most classical texts are about the human being, there are a few written sources
-                        on horses, cows, and elephants (which were of high value in ancient India).
-                        Besides the written tradition, there is also the practical experience of the
-                        traditional healers in the villages, passed on from one generation to the next,
-                        for many kinds of living beings.</p>
+                    <h4 css={css `margin-bottom: 5%;`}>{currentLanguage.bottomSubheaderOne}</h4>
+                    <p className="p">{currentLanguage.bottomTextOne}</p>
                 </TextImageTextbox>
 
                 <StaticImage
@@ -308,20 +286,19 @@ export default function ApproachDesktop() {
             </TextImageWrapper>
 
             <BottomSection>
-                <h4 css={css `margin-bottom: 10%; text-align: center;`}>One of the classics, the Charaka Samhita, states:</h4>
+                <h4 css={css `margin-bottom: 10%; text-align: center;`}>{currentLanguage.doorTopText}</h4>
                 <DoorContainer>
                     <AbsoluteDoor>
                         <Door width="80%"/>
                     </AbsoluteDoor>
                     <DoorContent>
-                        <h3>“Ogni sé vivente unisce sé stesso alla vita in tutte le specie”</h3>
+                        <h3>{currentLanguage.doorHeader}</h3>
 
                     </DoorContent>
 
                 </DoorContainer>
                 <DoorParagraph>
-                    <p>Ayurvedic concepts are applicable to all living beings (even though some
-                        therapeutical principles might not apply to all of them).</p>
+                    <p>{currentLanguage.doorBottomText}</p>
                 </DoorParagraph>
             </BottomSection>
 
