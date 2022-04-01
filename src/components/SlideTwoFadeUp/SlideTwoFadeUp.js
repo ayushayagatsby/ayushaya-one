@@ -14,7 +14,7 @@ export default function SlideTwoFadeUp(props) {
         <div
             css={css `display: flex; flex-direction: column; justify-content: center; align-items: center; position: absolute; text-align: center; width: 40vw; min-width: 600px; max-width: 900px;`}>
 
-            <h1>Sustaining the body’s innate intelligence to get to health through balance</h1>
+            <h1>{props.currentLanguage.slideTwoHeader}</h1>
 
         </div>
     </CSSTransition>

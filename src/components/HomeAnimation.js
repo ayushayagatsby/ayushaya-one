@@ -57,7 +57,7 @@ const SideWrapper = styled("div")`
   margin-top: -10%;
 `
 
-export default function HomeAnimation() {
+export default function HomeAnimation({currentLanguage}) {
     const [slideOneOn,
         setSlideOneOn] = useState(false);
 
@@ -100,7 +100,7 @@ export default function HomeAnimation() {
             <TransitionGroup>
                 <Wrapper>
 
-                    <SlideOneFadeUpLeft in={fadeOut}/>
+                    <SlideOneFadeUpLeft in={fadeOut} />
 
                     <CentralWrapper css={css `transform: translateY(50px);`}>
 
@@ -116,11 +116,11 @@ export default function HomeAnimation() {
 
                         <SlideTwoFade in={secondFade} scrollDown={animatioHelper}/>
 
-                        <SlideTwoFadeUp in={secondFade}/>
+                        <SlideTwoFadeUp in={secondFade} currentLanguage={currentLanguage}/>
 
                     </CentralWrapper>
 
-                    <SlideOneFadeUpRight in={fadeOut}/>
+                    <SlideOneFadeUpRight in={fadeOut} currentLanguage={currentLanguage}/>
 
                 </Wrapper>
 
@@ -153,8 +153,8 @@ export default function HomeAnimation() {
                         classNames="slide-three-slide-down"
                         mountOnEnter>
                         <CentralWrapper>
-                            <h2 css={css `margin-bottom: 3%;`}>The offer of Ayurveda</h2>
-                            <p css={css `width: 70%; margin-bottom: 5%;`}>a holistic approach to health and wellbeing by caring about the way of living.</p>
+                            <h2 css={css `margin-bottom: 3%;`}>{currentLanguage.slideThreeHeader}</h2>
+                            <p css={css `width: 70%; margin-bottom: 5%; font-size: 20px;`}>{currentLanguage.slideThreeText}</p>
                             <div onClick={() => setLastSlide(false)}>
                                 <DownScrollIcon size={"4vw"}/>
                             </div>
@@ -167,10 +167,11 @@ export default function HomeAnimation() {
             {staticScroll && <React.Fragment>
 
                 <Spacer h="100vh"/>
-                <CtaSection />
+                <h2 css={css `text-align: center; max-width: 500px; width: 50%; margin: 5% auto;`}>{currentLanguage.firstHeaderstatic}</h2>
+                <CtaSection currentLanguage={currentLanguage}/>
                 <Spacer h="20vh"/>
-                <QuoteSection quote="Much can be done by choosing how to nurture body, mind and soul." small="true"/>
-                <AboutSection />
+                <QuoteSection quote={currentLanguage.quote} small="true"/>
+                <AboutSection currentLanguage={currentLanguage}/>
             </React.Fragment>}
         </OuterWrapper>
     )

@@ -128,8 +128,7 @@ export default function DekstopMenu({menuState, menuToggle}) {
     }
 
     let currentLanguage = handleCurrentLanguage(language);
-    const [viewportHeight,
-        setViewportHeight] = useState("100")
+
 
     const metaTypesMapped = metaTypes.map(item => <InternalLink href={item.link} children={item.text}/>);
     const menuTypesMappedDekstop = currentLanguage.map(item => <h1 onClick={menuToggle}><InternalLink href={item.link} children={item.text}/></h1>);

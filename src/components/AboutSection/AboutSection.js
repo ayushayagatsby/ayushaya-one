@@ -1,6 +1,8 @@
 import React from 'react'
 import styled from "@emotion/styled"
 import {StaticImage} from "gatsby-plugin-image"
+import { Link } from "gatsby"
+
 
 import {css, jsx} from '@emotion/react'
 
@@ -38,17 +40,15 @@ justify-content: center;
 align-items: center;
 `
 
-export default function QuoteSection() {
+export default function AboutSectiom({currentLanguage}) {
     return (
         <OuterWrapper>
             <MiddleWrapper>
                 <TextWrapper>
-                    <h4 css={css `margin-bottom: 3%;`}>The best approach to health is prevention</h4>
-                    <h2 css={css `margin-bottom: 6%;`}>Dr. Juliane Merckens, MD</h2>
-                    <p className="p-big" css={css `margin-bottom: 5%;`}> Optimizing lifestyle in areas such as nutrition, living
-                        conditions, daily routine, physical activity, support in specific situations of
-                        unease or old age.</p>
-                    <button>ABOUT</button>
+                    <h4 css={css `margin-bottom: 3%;`}>{currentLanguage.aboutPreHeader}</h4>
+                    <h2 css={css `margin-bottom: 6%;`}>{currentLanguage.aboutHeader}</h2>
+                    <p className="p-big" css={css `margin-bottom: 5%;`}>{currentLanguage.aboutText}</p>
+                    <Link to="/about"><button>{currentLanguage.aboutButton}</button></Link>
                 </TextWrapper>
                 <ImageWrapper>
                     <StaticImage

@@ -12,7 +12,7 @@ const closeMenuHandler = ()=> {
 
     return (
         <div onClick={closeMenuHandler}>
-            <InternalLink href="/demo-home">
+            <InternalLink href="/">
                 <BrandMark css={css ` width: 3vw; max-width: 70px; min-width: 50px;`}/></InternalLink>
         </div>
     )

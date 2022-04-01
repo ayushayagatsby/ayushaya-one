@@ -28,14 +28,16 @@ const content = {
     }
 }
 
-export default function CtaSection() {
+export default function CtaSection({currentLanguage}) {
     return (
         <OuterWrapper>
             <InnerWrapper css={css `position: relative; right: 12%;`}>
                 <TextAndButton
-                    heading={content.humans.heading}
-                    text={content.humans.text}
-                    buttonText={content.humans.buttonText}/>
+                    heading={currentLanguage.ctaHeaderOne}
+                    text={currentLanguage.ctaTextOne}
+                    buttonText={currentLanguage.ctaButtonOne}
+                    to="/humans"
+                    />
                 <StaticImage
                     src="../../images/HumanSide.png"
                     alt="A human face"
@@ -55,9 +57,10 @@ export default function CtaSection() {
                     height={488}
                     css={css `width: 32%; position: relative; bottom: 50px; max-width: 489px; margin-right: 5%;`}/>
                 <TextAndButton
-                    heading={content.animals.heading}
-                    text={content.animals.text}
-                    buttonText={content.animals.buttonText}
+                    heading={currentLanguage.ctaHeaderTwo}
+                    text={currentLanguage.ctaTextTwo}
+                    buttonText={currentLanguage.ctaButtonTwo}
+                    to="/animals"
                     alignSelf={"flex-end"}
                     />
             </InnerWrapper>

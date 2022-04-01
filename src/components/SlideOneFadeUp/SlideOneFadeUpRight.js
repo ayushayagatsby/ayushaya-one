@@ -1,13 +1,14 @@
 import React from 'react'
 import SlideOneFadeUp from './SlideOneFadeUp'
+import {css, jsx} from '@emotion/react'
+
 
 
 export default function SlideOneFadeUpRight(props) {
     return (
         <SlideOneFadeUp in={props.in}>
-            <h3>A path to full life by the art of holistic healthcare.</h3>
-            <p className='p-small'>Professional Ayurvedic consultations for human and their
-                animal friends by Dr. Juliane Merckens, MD.</p>
+            <h3 css={css `margin-bottom: 5%;`}>{props.currentLanguage.slideOneHeader}</h3>
+            <p className='p'>{props.currentLanguage.slideOnesubheader}</p>
         </SlideOneFadeUp>
 
     )

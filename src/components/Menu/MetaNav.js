@@ -82,7 +82,7 @@ export default function MetaNav( {leftLogo, darkMode, menuPos} ) {
             </FooterMetaNav>}
 
             <FooterRight>
-                {/* <LanguageSelect darkMode={darkMode} menuPos={menuPos}/> */}
+                <LanguageSelect darkMode={darkMode} menuPos={menuPos}/>
                 {/* <DebugLS /> */}
             </FooterRight>
 
