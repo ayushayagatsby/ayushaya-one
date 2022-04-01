@@ -30,11 +30,13 @@ const NavBar = styled("nav")`
 const MainDesktop = styled("main")`
 width: 100%;
 padding: 0 10%;
+min-height: 100vh;
 `
 
 const MainMobile = styled("main")`
 width: 100%;
 padding: 0 5%;
+min-height: 100vh;
 `
 
 const Spacer = styled("div")`
@@ -118,13 +120,12 @@ const Layout = ({children}) => {
 
     const handleShowMenu = () => {
         setShowMenu(!showMenu);
-        setShowContent(!showContent)
     }
     return (
         <TransitionGroup>
             <div id="layout-wrapper">
                 <NavBar>
-                    <Logo/>
+                    <Logo menuState={showMenu} toggleMenuState={handleShowMenu}/>
                     <BurgerMenu menuToggle={handleShowMenu} menuState={showMenu}/>
                 </NavBar>
 
