@@ -12,6 +12,7 @@ import IcNutrition from '../assets/IcNutrition.svg'
 import IcUnease from '../assets/IcUnease.svg'
 import IcActivity from '../assets/IcActivity.svg'
 import {StaticImage} from "gatsby-plugin-image"
+import {Link} from "gatsby"
 
 const MainWrapper = styled("div")`
 width: 100%;
@@ -160,14 +161,14 @@ const AboutButton = styled("button")`
 margin: 12% 0;
 width: 90%;`
 
-export default function MobileHome() {
+export default function MobileHome({currentLanguage}) {
     return (
         <MainWrapper>
             <HeroOuterWrapper>
                 <HeroInnerWrapper>
                     <BrandType css={css ` width: 100%; height: auto; margin-bottom: 5%;`}/>
                     <HeroSubHeader>
-                        Ayurvedic coaching for humans and animals
+                        {currentLanguage.slideOneHeader}
                     </HeroSubHeader>
                     <DoorAndButton>
                         <Door width="85%"/>
@@ -176,13 +177,15 @@ export default function MobileHome() {
                 </HeroInnerWrapper>
 
                 <HeroParagraphContainer>
-                    <p className="p-small">A path to full life by the art of holistic healthcare.</p>
+                    <p className="p-small">{currentLanguage.slideOnesubheader}</p>
                 </HeroParagraphContainer>
             </HeroOuterWrapper>
 
+            <h3 css={css `text-align: center; width: 90%; margin: 15% auto;`}>{currentLanguage.firstHeaderstatic}</h3>
+
             <OfferTextbox>
-                <OfferHeader>The offer of Ayurveda</OfferHeader>
-                <p className="p-small">a holistic approach to health and wellbeing by caring about the way of living.</p>
+                <OfferHeader>{currentLanguage.slideThreeHeader}</OfferHeader>
+                <p className="p-small">{currentLanguage.slideThreeText}</p>
             </OfferTextbox>
 
             <LogoIllustrationBig css={css `width: 89%; height: auto;`}/>
@@ -200,44 +203,43 @@ export default function MobileHome() {
 
             </OfferContainer>
 
-            <OfferSecondHeader>Professional consultations by Dr. Juliane Merckens</OfferSecondHeader>
-
             <StaticImage
                 src="../images/HumanSide.png"
                 alt="A human face"
-                layout="constrained"               
+                layout="constrained"
                 width={378}
                 height={511}
                 css={css `width: 52%; margin-top: 30%;`}/>
 
             <CtaTextbox>
-                <CtaHeading>For yourself</CtaHeading>
-                <p className="p-small">Focused on optimizing lifestyle, in areas such as nutrition
-                    and optimizing body weight, daily routine and sleep, tobacco and alcohol use,
-                    and physical activity.</p>
+                <CtaHeading>{currentLanguage.ctaHeaderOne}</CtaHeading>
+                <p className="p-small">{currentLanguage.ctaTextOne}</p>
             </CtaTextbox>
 
-            <CtaButton>HUMAN BEINGS</CtaButton>
+            <Link to="/humans">
+                <CtaButton>{currentLanguage.ctaButtonOne}</CtaButton>
+            </Link>
 
             <StaticImage
                 src="../images/DogSide.png"
                 alt="A dog face"
-                layout="constrained"               
+                layout="constrained"
                 width={489}
                 height={488}
                 css={css `width: 66%; margin-top: 50%;`}/>
 
             <CtaTextbox>
-                <CtaHeading>For your companion</CtaHeading>
-                <p className="p-small">Focused on optimizing lifestyle to support wellbeing and on
-                    helping in specific situations of unease and old age.</p>
+                <CtaHeading>{currentLanguage.ctaHeaderTwo}</CtaHeading>
+                <p className="p-small">{currentLanguage.ctaTextTwo}</p>
             </CtaTextbox>
 
-            <CtaButton>ANIMALS</CtaButton>
+            <Link to='/animals'>
+                <CtaButton>{currentLanguage.ctaButtonTwo}</CtaButton>
+            </Link>
 
             <QuoteOuterWrapper>
                 <QuoteInnerWrapper>
-                    <h4>Much can be done by choosing how to nurture body, mind and soul.</h4>
+                    <h4>{currentLanguage.quote}</h4>
                     <Signature>
                         Juliane Merckens
                     </Signature>
@@ -250,16 +252,16 @@ export default function MobileHome() {
                 <StaticImage
                     src="../images/AboutPicture.png"
                     alt="Dr. Juliane Merckens"
-                    layout="constrained"               
+                    layout="constrained"
                     width={623}
                     height={670}
                     css={css `width: 75%; margin-top: -10%; margin-bottom: 20%;`}/>
-                <AboutSpecialHeader>The best approach to health is prevention</AboutSpecialHeader>
-                <AboutSignature>Dr. Juliane Merckens</AboutSignature>
-                <p className="p-big">Optimizing lifestyle in areas such as nutrition, living
-                    conditions, daily routine, physical activity, support in specific situations of
-                    unease or old age.</p>
-                <AboutButton>ABOUT</AboutButton>
+                <AboutSpecialHeader>{currentLanguage.aboutPreHeader}</AboutSpecialHeader>
+                <AboutSignature>{currentLanguage.aboutHeader}</AboutSignature>
+                <p className="p-big">{currentLanguage.aboutText}</p>
+                <Link to="/about">
+                    <AboutButton>{currentLanguage.aboutText}</AboutButton>
+                </Link>
             </AboutContainer>
         </MainWrapper>
     )

@@ -2,15 +2,15 @@ require("dotenv").config({path: `.env.${process.env.NODE_ENV}`})
 
 module.exports = {
     siteMetadata: {
-        title: `Gatsby Starter Blog`,
+        title: `Ayushaya`,
         author: {
-            name: `Kyle Mathews`,
-            summary: `who lives and works in San Francisco building useful things.`
+            name: `Juliana Merckes`,
+            summary: `Specialist for health and disease prevention`
         },
-        description: `A starter blog demonstrating what Gatsby can do.`,
-        siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
+        description: `Ayurvedic coaching for humans and animals`,
+        siteUrl: `https://www.ayushaya.coach/`,
         social: {
-            twitter: `kylemathews`
+           
         }
     },
     plugins: [
@@ -131,14 +131,14 @@ module.exports = {
         }, {
             resolve: `gatsby-plugin-manifest`,
             options: {
-                name: `Gatsby Starter Blog`,
-                short_name: `GatsbyJS`,
+                name: `Ayushaya`,
+                short_name: `Ayushaya`,
                 start_url: `/`,
                 background_color: `#ffffff`,
                 // This will impact how browsers show your PWA/website
                 // https://css-tricks.com/meta-theme-color-and-trickery/ theme_color: `#663399`,
                 display: `minimal-ui`,
-                icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+                icon: `src/assets/BrandMark.svg`, // This path is relative to the root of the site.
             }
         },
         `gatsby-plugin-react-helmet`,
