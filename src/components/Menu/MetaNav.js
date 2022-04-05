@@ -7,6 +7,7 @@ import LanguageSelect from '../LanguageSelect/LanguageSelect'
 import InternalLink from "../InternalLink"
 import DebugLS from "../LanguageSelect/DebugLS"
 
+
 const FooterMetaNav = styled("nav")`
 width: 34%;
 display: flex;
@@ -49,7 +50,7 @@ align-items: flex-end;
 padding-right: 5%;
 `
 
-export default function MetaNav({leftLogo, darkMode, menuPos, menuToggle}) {
+export default function MetaNav( {leftLogo, darkMode, menuPos, menuToggle} ) {
     const breakpoints = useBreakpoint();
     const metaTypes = [
         {
@@ -58,34 +59,31 @@ export default function MetaNav({leftLogo, darkMode, menuPos, menuToggle}) {
         }, {
             text: "Privacy",
             link: "/privacy"
-        }
+        }, 
     ]
 
     const metaTypesMapped = metaTypes.map(item => <div onClick={menuToggle}><InternalLink href={item.link} children={item.text}/></div>);
-    return ( <> <FooterLeft>
-            {leftLogo && <BrandMark
-                css={css ` width: ${breakpoints.sm
-                ? "14vw"
-                : "4vw"}; height: ${breakpoints.sm
+    return (
+        <>
+            <FooterLeft>
+                {leftLogo && <BrandMark
+                    css={css ` width: ${breakpoints.sm
                     ? "14vw"
-                    : "4vw"}; filter: brightness(0) saturate(100%) invert(94%) sepia(68%) saturate(155%) hue-rotate(296deg) brightness(103%) contrast(95%); transform: translateY(-20%);`}/>}
-        </FooterLeft>
-        {
-        !breakpoints.sm && <FooterMetaNav
-                color={darkMode
-                ? "#6B665B"
-                : "#F9F5F1"}>
+                    : "4vw"}; height: ${breakpoints.sm
+                        ? "14vw"
+                        : "4vw"}; filter: brightness(0) saturate(100%) invert(94%) sepia(68%) saturate(155%) hue-rotate(296deg) brightness(103%) contrast(95%); transform: translateY(-20%);`}/>}
+            </FooterLeft>
+            {!breakpoints.sm && <FooterMetaNav color={darkMode ? "#6B665B" : "#F9F5F1"}>
                 {metaTypesMapped}
 
-            </FooterMetaNav>
-    } < FooterRight > <LanguageSelect darkMode={darkMode} menuPos={menuPos}/>
-        {/* <DebugLS /> */
-    } < /FooterRight>
+            </FooterMetaNav>}
 
-            {breakpoints.sm && <div css={css `flex-basis: 100%; height: 0;`}/ >
-}
-{
-    breakpoints.sm && <FooterMetaNavMobile>{metaTypesMapped}</FooterMetaNavMobile>
-} < />
+            <FooterRight>
+                <LanguageSelect darkMode={darkMode} menuPos={menuPos}/>
+                {/* <DebugLS /> */}
+            </FooterRight>
+
+            {breakpoints.sm && <div css={css `flex-basis: 100%; height: 0;`}/>}
+            {breakpoints.sm && <FooterMetaNavMobile>{metaTypesMapped}</FooterMetaNavMobile>}</>
     )
 }

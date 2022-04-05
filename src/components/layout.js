@@ -50,11 +50,11 @@ background-color: #D4C1BA;
 display: flex;
 padding-top: 7%;
 flex-wrap: wrap;
-justify-content: space-between;
+justify-content: center;
 `
 
 const FooterMetaNav = styled("nav")`
-width: 34%;
+width: ${props => props.w};
 display: flex;
 justify-content: space-between;
 font-size: 22px;
@@ -136,7 +136,7 @@ const Layout = ({children}) => {
 
                 <Footer>
 
-                    {/* <MetaNav darkMode={false} menuPos={"bottom"}/> */}
+                    <FooterMetaNav w={breakpoints.sm ? "90%" : "34%"}>{metaTypesMapped}</FooterMetaNav>
 
                 </Footer>
             </div>

@@ -260,7 +260,7 @@ export default function MobileHome({currentLanguage}) {
                 <AboutSignature>{currentLanguage.aboutHeader}</AboutSignature>
                 <p className="p-big">{currentLanguage.aboutText}</p>
                 <Link to="/about">
-                    <AboutButton>{currentLanguage.aboutText}</AboutButton>
+                    <AboutButton>{currentLanguage.aboutButton}</AboutButton>
                 </Link>
             </AboutContainer>
         </MainWrapper>
