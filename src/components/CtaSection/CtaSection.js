@@ -3,6 +3,7 @@ import {StaticImage} from "gatsby-plugin-image"
 import styled from "@emotion/styled"
 import TextAndButton from "./TextAndButton"
 import {css, jsx} from '@emotion/react'
+import {useBreakpoint} from 'gatsby-plugin-breakpoints';
 
 const InnerWrapper = styled("div")`
     display: flex;
@@ -29,13 +30,16 @@ const content = {
 }
 
 export default function CtaSection({currentLanguage}) {
+    const breakpoints = useBreakpoint();
+
     return (
         <OuterWrapper>
-            <InnerWrapper css={css `position: relative; right: 12%;`}>
+            <InnerWrapper css={css `position: relative; right: ${breakpoints.l? "10%" : "5%"};`}>
                 <TextAndButton
                     heading={currentLanguage.ctaHeaderOne}
                     text={currentLanguage.ctaTextOne}
                     buttonText={currentLanguage.ctaButtonOne}
+                    jContent={"flex-end"}
                     to="/humans"
                     />
                 <StaticImage
@@ -48,7 +52,7 @@ export default function CtaSection({currentLanguage}) {
 
             </InnerWrapper>
 
-            <InnerWrapper css={css `position: relative; left: 12%;`}>
+            <InnerWrapper css={css `position: relative; left: 10%;`}>
                 <StaticImage
                     src="../../images/DogSide.png"
                     alt="A dog face"
@@ -62,6 +66,7 @@ export default function CtaSection({currentLanguage}) {
                     buttonText={currentLanguage.ctaButtonTwo}
                     to="/animals"
                     alignSelf={"flex-end"}
+                    jContent={"flex-start"}
                     />
             </InnerWrapper>
         </OuterWrapper>

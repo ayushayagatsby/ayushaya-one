@@ -27,7 +27,7 @@ align-items: center;
 
 const CardContainer = styled("div")`
 width: 80%;
-height: 40vh;
+height: 37vh;
 background-color: #fff;
 border-radius: 10px;
 display: flex;
@@ -36,16 +36,19 @@ justify-content: space-around;
 align-items: center;
 `
 
-const CardHeading = styled("h4")`
+const CardHeading = styled("h3")`
 margin-bottom: 5%;
 padding: 0 10%;
 text-align: center;
+font-size: 30px;
 `
 
 const CardButton = styled("button")`
 background-color: #F5EEE9;
-width: 70%;
-height: 13%;
+width: 80%;
+height: 8vh;;
+text-transform: uppercase;
+margin-bottom: 10%;
 `
 
 export default function AboutCta() {

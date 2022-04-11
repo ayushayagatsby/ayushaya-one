@@ -88,7 +88,8 @@ margin-bottom: 10%;
 width: 100%;
 `
 
-const CtaHeading = styled("h4")`
+const CtaHeading = styled("h3")`
+font-size: 30px;
 margin: 10% 0;
 `
 
@@ -96,6 +97,7 @@ const CtaButton = styled("button")`
 background-color: #F5EEE9;
 height: 8vh;
 width: 100%;
+text-transform: uppercase;
 `
 
 const QuoteOuterWrapper = styled("div")`
@@ -216,7 +218,7 @@ export default function MobileHome({currentLanguage}) {
                 <p className="p-small">{currentLanguage.ctaTextOne}</p>
             </CtaTextbox>
 
-            <Link to="/humans">
+            <Link to="/humans" css={css`width: 100%;`}>
                 <CtaButton>{currentLanguage.ctaButtonOne}</CtaButton>
             </Link>
 
@@ -233,7 +235,7 @@ export default function MobileHome({currentLanguage}) {
                 <p className="p-small">{currentLanguage.ctaTextTwo}</p>
             </CtaTextbox>
 
-            <Link to='/animals'>
+            <Link to='/animals' css={css`width: 100%;`}>
                 <CtaButton>{currentLanguage.ctaButtonTwo}</CtaButton>
             </Link>
 
@@ -259,7 +261,7 @@ export default function MobileHome({currentLanguage}) {
                 <AboutSpecialHeader>{currentLanguage.aboutPreHeader}</AboutSpecialHeader>
                 <AboutSignature>{currentLanguage.aboutHeader}</AboutSignature>
                 <p className="p-big">{currentLanguage.aboutText}</p>
-                <Link to="/about">
+                <Link to="/about" css={css`width: 100%;`}>
                     <AboutButton>{currentLanguage.aboutButton}</AboutButton>
                 </Link>
             </AboutContainer>

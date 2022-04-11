@@ -169,7 +169,6 @@ export default function ApproachDesktop({currentLanguage}) {
                         src="../images/ShapeStonesGradient.png"
                         alt="Some stones in balance"
                         layout="constrained"
-                        
                         width={951}
                         height={1434}
                         css={css `width: 80%; position: absolute; z-index: -1;`}/>
@@ -188,7 +187,6 @@ export default function ApproachDesktop({currentLanguage}) {
                     src="../images/SomeSpices.png"
                     alt="Some spices on a table"
                     layout="constrained"
-                    
                     width={1640}
                     height={1093}
                     css={css `width: 88%; margin-bottom: 10%;`}/>
@@ -202,6 +200,17 @@ export default function ApproachDesktop({currentLanguage}) {
                     <p className="p">{currentLanguage.midTextOne}</p>
                 </AboutParagraph>
 
+                <ElementsWrapper css={css `margin-top: 10%;`}>
+                    <SingleElement><IcEther css={css `width: 100%; height: auto; margin-bottom: 7%;`}/>
+                        <ElementName>{currentLanguage.EtherElement}</ElementName>
+                    </SingleElement>
+
+                    <SingleElement css={css ``}><IcWind css={css `width: 100%; height: auto; margin-bottom: 7%;`}/>
+                        <ElementName>{currentLanguage.AirElement}</ElementName>
+                    </SingleElement>
+
+                </ElementsWrapper>
+
                 <ElementsWrapper css={css `margin-top: 15%;`}>
                     <SingleElement css={css ``}><IcFire css={css `width: 100%; height: auto; margin-bottom: 7%;`}/>
                         <ElementName>{currentLanguage.FireElement}</ElementName>
@@ -214,20 +223,10 @@ export default function ApproachDesktop({currentLanguage}) {
                 </ElementsWrapper>
 
                 <ElementsWrapper css={css `margin-top: 10%;`}>
-                    <SingleElement><IcEther css={css `width: 100%; height: auto; margin-bottom: 7%;`}/>
-                        <ElementName>{currentLanguage.EtherElement}</ElementName>
-                    </SingleElement>
-
                     <SingleElement css={css ``}><IcEarth css={css `width: 100%; height: auto; margin-bottom: 7%;`}/>
                         <ElementName>{currentLanguage.EarthElement}</ElementName>
                     </SingleElement>
-                </ElementsWrapper>
 
-                <ElementsWrapper css={css `margin-top: 10%;`}>
-
-                    <SingleElement css={css ``}><IcWind css={css `width: 100%; height: auto; margin-bottom: 7%;`}/>
-                        <ElementName>{currentLanguage.AirElement}</ElementName>
-                    </SingleElement>
                 </ElementsWrapper>
 
                 <h3 css={css `margin: 15% 0 20% 0;`}>{currentLanguage.midSubheaderTwo}</h3>
@@ -265,9 +264,7 @@ export default function ApproachDesktop({currentLanguage}) {
 
             </AboutWrapper>
 
-            <QuoteSectionMobile
-                signature={false}
-                quote={currentLanguage.quote}/>
+            <QuoteSectionMobile signature={false} quote={currentLanguage.quote}/>
 
             <TextImageWrapper css={css `margin: 20% 0 20% 0;`}>
                 <TextImageTextbox>
@@ -279,7 +276,6 @@ export default function ApproachDesktop({currentLanguage}) {
                     src="../images/DogBeachTwo.png"
                     alt="A dog at the beach"
                     layout="constrained"
-                    
                     width={810}
                     height={672}
                     css={css `width: 100%; margin-top: 10%;`}/>

@@ -3,6 +3,9 @@ import {Link} from "gatsby"
 import Logo from "./Logo"
 import MenuButton from "./MenuButton"
 import IcNaviIcon from "../assets/IcNaviIcon.svg"
+import IcPhone from "../assets/IcPhone.svg"
+import IcDots from "../assets/IcDots.svg"
+import IcMail from "../assets/IcMail.svg"
 import styled from "@emotion/styled";
 import {css, jsx} from '@emotion/react'
 import {useBreakpoint} from 'gatsby-plugin-breakpoints';
@@ -95,6 +98,19 @@ align-items: flex-end;
 padding-right: 5%;
 `
 
+const QuickAccessMenu = styled("div")`
+position: fixed;
+right: 20px;
+top: calc(50vh - 70px);
+max-height: 137px;
+height: 13vh;
+width: 1.3vw;
+max-width: 31px;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+`
+
 const Layout = ({children}) => {
     const breakpoints = useBreakpoint();
     const metaTypes = [
@@ -132,11 +148,20 @@ const Layout = ({children}) => {
                 <DekstopMenu menuState={showMenu} menuToggle={handleShowMenu}/> {breakpoints.sm && <Spacer/>}
 
                 {breakpoints.sm && <MainMobile>{children}</MainMobile>}
-                {!breakpoints.sm && <MainDesktop>{children}</MainDesktop>}
+                {!breakpoints.sm && <MainDesktop>{children}
+                    <QuickAccessMenu>
+                        <a href="mailto:juliane@ayushaya.coach" target="_blank"><IcMail css={css`width: 100%; height: auto;`}/></a>
+                        <Link to=""><IcPhone css={css`width: 100%; height: auto;`}/></Link>
+                        <Link to=""><IcDots css={css`width: 100%; height: auto;`}/></Link>
+                    </QuickAccessMenu>
+                </MainDesktop>}
 
                 <Footer>
 
-                    <FooterMetaNav w={breakpoints.sm ? "90%" : "34%"}>{metaTypesMapped}</FooterMetaNav>
+                    <FooterMetaNav
+                        w={breakpoints.sm
+                        ? "90%"
+                        : "34%"}>{metaTypesMapped}</FooterMetaNav>
 
                 </Footer>
             </div>

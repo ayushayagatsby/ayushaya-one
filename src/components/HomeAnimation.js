@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import MaskGateShape from "../assets/MaskGateShape.svg"
 import BrandType from "../assets/BrandType.svg"
 import LogoIllustrationBig from "../assets/LogoIllustrationBig.svg"
@@ -17,7 +17,7 @@ import AllOffers from './OfferComponent/AllOffers'
 import CtaSection from './CtaSection/CtaSection'
 import QuoteSection from './QuoteSection/QuoteSection'
 import AboutSection from "./AboutSection/AboutSection"
-
+import FirstPlantShadow from "../images/FirstPlantShadow.png"
 const OuterWrapper = styled("div")`
 min-height: 100vh;
 height: auto;
@@ -31,14 +31,36 @@ const Spacer = styled("div")`
 const Wrapper = styled("div")`
   height: 100%;
   overflow-y: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   position: absolute;
   left: 0;
   right: 0;
+  bottom: 0;
   width: 100vw;
 `
+const InnerWrapper = styled("div")`
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  `
+
+const PlantShadow = styled("div")`
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background-image: url(${FirstPlantShadow});
+background-size: contain;
+background-repeat: no-repeat;
+background-position: -50px -100px;
+pointer-events: none;
+opacity: .1;
+filter: blur(12px);
+`
+
 const CentralWrapper = styled("div")`
   display: flex;
   flex-direction: column;
@@ -79,6 +101,26 @@ export default function HomeAnimation({currentLanguage}) {
     const [lastSlide,
         setLastSlide] = useState(false);
 
+    const [footerVisibility,
+        setFooterVisibility] = useState(true);
+
+    useEffect(() => {
+
+        const firstChild = document.getElementById("layout-wrapper");
+
+        if (footerVisibility) {
+            firstChild.style.height = 'auto';
+            firstChild.style.overflow = 'scroll';
+        } else {
+            firstChild.style.height = `100vh `;
+            firstChild.style.overflow = 'hidden';
+        }
+    }, [footerVisibility]);
+
+    useEffect(() => {
+        setFooterVisibility(false)
+    }, []);
+
     const animatioHelper = () => {
         setSlideOneOn(false);
         setSecondFade(false);
@@ -95,71 +137,89 @@ export default function HomeAnimation({currentLanguage}) {
         setLastSlide(true);
     }
 
+    const staticScrollHelper = () => {
+        setStaticScroll(true);
+        setFooterVisibility(true);
+    }
+
     return (
         <OuterWrapper>
             <TransitionGroup>
                 <Wrapper>
+                    <InnerWrapper>
 
-                    <SlideOneFadeUpLeft in={fadeOut} />
+                        <SlideOneFadeUpLeft in={fadeOut}/>
 
-                    <CentralWrapper css={css `transform: translateY(50px);`}>
+                        <CentralWrapper css={css `transform: translateY(50px);`}>
 
-                        <SlideOneScale
-                            in={slideOneOn}
-                            onEnter={setFadeOut}
-                            onExited={animationHelperThree}/>
+                            <SlideOneScale
+                                in={slideOneOn}
+                                onEnter={setFadeOut}
+                                onExited={animationHelperThree}/>
 
-                        <SlideOneFade
+                            <SlideOneFade
+                                in={fadeOut}
+                                scrollDown={setSlideOneOn}
+                                onEnter={animatioHelperTwo}/>
+
+                            <SlideTwoFade in={secondFade} scrollDown={animatioHelper}/>
+
+                            <SlideTwoFadeUp in={secondFade} currentLanguage={currentLanguage}/>
+
+                        </CentralWrapper>
+
+                        <SlideOneFadeUpRight in={fadeOut} currentLanguage={currentLanguage}/>
+
+                        <CSSTransition
+                            timeout={2000}
                             in={fadeOut}
-                            scrollDown={setSlideOneOn}
-                            onEnter={animatioHelperTwo}/>
-
-                        <SlideTwoFade in={secondFade} scrollDown={animatioHelper}/>
-
-                        <SlideTwoFadeUp in={secondFade} currentLanguage={currentLanguage}/>
-
-                    </CentralWrapper>
-
-                    <SlideOneFadeUpRight in={fadeOut} currentLanguage={currentLanguage}/>
+                            classNames="plant-shadow">
+                            <PlantShadow/>
+                        </CSSTransition>
+                    </InnerWrapper>
 
                 </Wrapper>
 
-                {slideThreeOn && <Wrapper
-                    css={css `flex-direction: column; justify-content: flex-start; padding-top: 50px;`}>
-                    <CSSTransition
-                        timeout={2000}
-                        in={lastSlide}
-                        classNames="slide-three-zoom-in"
-                        mountOnEnter>
-                        <CentralWrapper>
-                            <LogoIllustrationBig css={css `width: 30vw; max-width: 600px; height: auto;`}/>
-                            <CSSTransition
-                                timeout={2000}
-                                in={!lastSlide}
-                                classNames="slide-three-fade-in"
-                                mountOnEnter>
-                                <AllOffers/>
-                            </CSSTransition>
-                        </CentralWrapper>
-                    </CSSTransition>
+                {slideThreeOn && <Wrapper>
 
-                    <CSSTransition
-                        timeout={{
-                        enter: 2000,
-                        exit: 500
-                    }}
-                        onExited={() => setStaticScroll(true)}
-                        in={lastSlide}
-                        classNames="slide-three-slide-down"
-                        mountOnEnter>
-                        <CentralWrapper>
-                            <h2 css={css `margin-bottom: 3%;`}>{currentLanguage.slideThreeHeader}</h2>
-                            <p css={css `width: 70%; margin-bottom: 5%; font-size: 20px;`}>{currentLanguage.slideThreeText}</p>
-                            <div onClick={() => setLastSlide(false)}>
-                                <DownScrollIcon size={"4vw"}/>
-                            </div>
-                        </CentralWrapper>
-                    </CSSTransition>
+                    <InnerWrapper
+                        css={css `flex-direction: column; justify-content: flex-start; padding-top: 50px;`}>
+                        <CSSTransition
+                            timeout={2000}
+                            in={lastSlide}
+                            classNames="slide-three-zoom-in"
+                            mountOnEnter>
+                            <CentralWrapper>
+                                <LogoIllustrationBig css={css `width: 30vw; max-width: 600px; height: auto;`}/>
+                                <CSSTransition
+                                    timeout={2000}
+                                    in={!lastSlide}
+                                    classNames="slide-three-fade-in"
+                                    mountOnEnter>
+                                    <AllOffers/>
+                                </CSSTransition>
+                            </CentralWrapper>
+                        </CSSTransition>
+
+                        <CSSTransition
+                            timeout={{
+                            enter: 2000,
+                            exit: 500
+                        }}
+                            onExited={() => staticScrollHelper()}
+                            in={lastSlide}
+                            classNames="slide-three-slide-down"
+                            mountOnEnter>
+                            <CentralWrapper>
+                                <h2 css={css `margin-bottom: 3%;`}>{currentLanguage.slideThreeHeader}</h2>
+                                <p css={css `width: 70%; margin-bottom: 5%;`}>{currentLanguage.slideThreeText}</p>
+                                <div onClick={() => setLastSlide(false)}>
+                                    <DownScrollIcon size={"4vw"}/>
+                                </div>
+                            </CentralWrapper>
+                        </CSSTransition>
+
+                    </InnerWrapper>
 
                 </Wrapper>}
             </TransitionGroup>
@@ -167,7 +227,8 @@ export default function HomeAnimation({currentLanguage}) {
             {staticScroll && <React.Fragment>
 
                 <Spacer h="100vh"/>
-                <h2 css={css `text-align: center; max-width: 500px; width: 50%; margin: 5% auto;`}>{currentLanguage.firstHeaderstatic}</h2>
+                <h2
+                    css={css `text-align: center; max-width: 500px; width: 50%; margin: 5% auto;`}>{currentLanguage.firstHeaderstatic}</h2>
                 <CtaSection currentLanguage={currentLanguage}/>
                 <Spacer h="20vh"/>
                 <QuoteSection quote={currentLanguage.quote} small="true"/>

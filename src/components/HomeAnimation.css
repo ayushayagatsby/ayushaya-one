@@ -179,3 +179,34 @@
 .slide-three-fade-in-enter-done {
     opacity: 1;
 }
+
+
+
+
+
+
+
+.plant-shadow-enter {
+    transform: translateY(0);
+    opacity: 1;
+}
+.plant-shadow-enter-active {
+    transform: translateY(-100vh);
+    opacity: .5;
+    transition: transform 2s, opacity 2s;
+}
+
+.plant-shadow-enter-done {
+    opacity: .5;
+    transform: translateY(-100vh);
+}
+
+.plant-shadow-exit {
+    opacity: 0;
+}
+.plant-shadow-exit-active {
+    opacity: 0;
+}
+.plant-shadow-done {
+    opacity: 0;
+}
