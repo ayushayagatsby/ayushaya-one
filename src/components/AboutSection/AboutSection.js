@@ -40,6 +40,11 @@ justify-content: center;
 align-items: center;
 `
 
+const Button = styled("button")`
+height: 6vh;
+text-transform: uppercase;
+`
+
 export default function AboutSectiom({currentLanguage}) {
     return (
         <OuterWrapper>
@@ -48,7 +53,7 @@ export default function AboutSectiom({currentLanguage}) {
                     <h4 css={css `margin-bottom: 3%;`}>{currentLanguage.aboutPreHeader}</h4>
                     <h2 css={css `margin-bottom: 6%;`}>{currentLanguage.aboutHeader}</h2>
                     <p className="p-big" css={css `margin-bottom: 5%;`}>{currentLanguage.aboutText}</p>
-                    <Link to="/about"><button>{currentLanguage.aboutButton}</button></Link>
+                    <Link to="/about"><Button>{currentLanguage.aboutButton}</Button></Link>
                 </TextWrapper>
                 <ImageWrapper>
                     <StaticImage

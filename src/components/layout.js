@@ -150,9 +150,9 @@ const Layout = ({children}) => {
                 {breakpoints.sm && <MainMobile>{children}</MainMobile>}
                 {!breakpoints.sm && <MainDesktop>{children}
                     <QuickAccessMenu>
-                        <a href="mailto:juliane@ayushaya.coach" target="_blank"><IcMail css={css`width: 100%; height: auto;`}/></a>
-                        <Link to=""><IcPhone css={css`width: 100%; height: auto;`}/></Link>
-                        <Link to=""><IcDots css={css`width: 100%; height: auto;`}/></Link>
+                        <a href='mailto:juliane@ayushaya.coach' target="_blank"><IcMail css={css`width: 100%; height: auto;`}/></a>
+                        <a href="tel:+393457233090"><IcPhone css={css`width: 100%; height: auto;`}/></a>
+                        <Link to="/contact"><IcDots css={css`width: 100%; height: auto;`}/></Link>
                     </QuickAccessMenu>
                 </MainDesktop>}
 
