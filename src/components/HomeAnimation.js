@@ -17,7 +17,9 @@ import AllOffers from './OfferComponent/AllOffers'
 import CtaSection from './CtaSection/CtaSection'
 import QuoteSection from './QuoteSection/QuoteSection'
 import AboutSection from "./AboutSection/AboutSection"
-import FirstPlantShadow from "../images/FirstPlantShadow.png"
+import FirstPlantShadow from "../images/FirstPlantShadow.svg"
+
+
 const OuterWrapper = styled("div")`
 min-height: 100vh;
 height: auto;
@@ -231,7 +233,7 @@ export default function HomeAnimation({currentLanguage}) {
                     css={css `text-align: center; max-width: 500px; width: 50%; margin: 5% auto;`}>{currentLanguage.firstHeaderstatic}</h2>
                 <CtaSection currentLanguage={currentLanguage}/>
                 <Spacer h="20vh"/>
-                <QuoteSection quote={currentLanguage.quote} small="true"/>
+                <QuoteSection quote={currentLanguage.quote} small="true" shadow="true" />
                 <AboutSection currentLanguage={currentLanguage}/>
             </React.Fragment>}
         </OuterWrapper>

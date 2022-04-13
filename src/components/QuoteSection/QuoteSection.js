@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from "@emotion/styled"
 import {css, jsx} from '@emotion/react'
+import SecondPlantShadow from './SecondPlantShadow.svg'
 
 const OuterWrapper = styled("div")`
 width: 100%;
@@ -8,6 +9,7 @@ height: 100vh;
 display: flex;
 justify-content: center;
 align-items: center;
+position: relative;
 `
 
 const MiddleWrapper = styled("div")`
@@ -41,10 +43,27 @@ font-size: 1.875rem;
 color: #D4C1BA;
 `
 
+const PlantShadow = styled("div")`
+position: absolute;
+top: -40%;
+left: 0;
+right: -40%;
+bottom: 0;
+background-image: url(${SecondPlantShadow});
+background-size: contain;
+background-repeat: no-repeat;
+pointer-events: none;
+opacity: .03;
+transform: rotate(30deg);
+filter: blur(12px);
+
+`
+
 export default function QuoteSection({
     small,
     quote,
-    signature = true
+    signature = true,
+    shadow = false
 }) {
     return (
         <OuterWrapper>
@@ -64,6 +83,7 @@ export default function QuoteSection({
                         : ""}
                 </InnerWrapper>
             </MiddleWrapper>
+            {shadow && <PlantShadow/>}
         </OuterWrapper>
     )
 }
