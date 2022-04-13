@@ -107,11 +107,12 @@ width: 90%;
 
 const OfferColumnParagraphContainer = styled("div")`
 width: 75%;
+margin-bottom: 10%;
 `
 
 const PriceBox = styled("div")`
 margin-top: 10%;
-margin-bottom: 8%;
+margin-bottom: 15%;
 width: 80%;
 background-color: rgba(209, 194, 187, .1);
 display: flex;
@@ -135,7 +136,7 @@ border: 1px solid #D1C2BB;
 color: #D1C2BB;
 width: 85%;
 height: 6vh;
-margin-bottom: 5%;
+margin-bottom: 10%;
 `
 
 const ContactButton = styled("button")`
@@ -185,7 +186,7 @@ export default function HumansMobile({currentLanguage}) {
 
             <WhiteWrapper>
                 <h3 css={css `margin: 5% 0 5% 0;`}>{currentLanguage.imgHeader}</h3>
-                <h4 css={css `margin: 5% 0 7% 0; padding: 0 5%;`}>Step by step towards your goals with the wisdom of Ayurveda.</h4>
+                <h4 css={css `margin: 5% 0 7% 0; padding: 0 5%;`}>{currentLanguage.imgSubheader}</h4>
                 <ParagraphWrapper>
                     <p className="p">{currentLanguage.imgText}</p>
                 </ParagraphWrapper>
@@ -247,7 +248,7 @@ export default function HumansMobile({currentLanguage}) {
                     css={css `width: 50%; margin-top: -30%; margin-bottom: 4%;`}/>
 
                 <h3 css={css `margin: 10% 0 5% 0; padding: 0 3%;`}>{currentLanguage.offerMainHeader}</h3>
-                <h4 css={css `margin-bottom: 10%;`}>{currentLanguage.offerSubHeader}</h4>
+                <h4 css={css `margin-bottom: 20%;`}>{currentLanguage.offerSubHeader}</h4>
                 <OfferColumns>
                     <IcConsultations css={css `margin-bottom: 10%; width: 40%; height: auto;`}/>
                     <OfferColumnParagraphContainer>
@@ -265,7 +266,7 @@ export default function HumansMobile({currentLanguage}) {
                 <OfferColumns>
                     <IcConsent css={css `margin: 8% 0 10% 0; width: 40%; height: auto;`}/>
                     <OfferColumnParagraphContainer>
-                        <p className="p">{currentLanguage.offerList[1].offerText}</p>
+                        <p className="p">{currentLanguage.offerList[2].offerText}</p>
                     </OfferColumnParagraphContainer>
                 </OfferColumns>
 
@@ -274,7 +275,7 @@ export default function HumansMobile({currentLanguage}) {
                 </PriceBox>
 
                 <DisclaimerBox>
-                    <p className="p-small">{currentLanguage.offerList[2].offerText}</p>
+                    <p className="p-small">{currentLanguage.disclaimerText}</p>
                 </DisclaimerBox>
 
                 <OutlineButton>{currentLanguage.csButton}</OutlineButton>

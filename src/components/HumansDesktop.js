@@ -171,7 +171,7 @@ export default function HumansDesktop({currentLanguage}) {
             <WhiteWrapper>
                 <h2 css={css `margin:5% 0 10% 0;`}>{currentLanguage.imgHeader}</h2>
                 <TwoColumnTextbox>
-                    <ShiftedHeader>Step by step towards your goals with the wisdom of Ayurveda.</ShiftedHeader>
+                    <ShiftedHeader>{currentLanguage.imgSubheader}</ShiftedHeader>
                     <ParagraphWrapper>
                         <p className="p-big">{currentLanguage.imgText}</p>
                     </ParagraphWrapper>

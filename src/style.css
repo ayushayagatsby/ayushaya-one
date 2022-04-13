@@ -396,6 +396,16 @@ button:focus {
         list-style-position: inside;
     }
 }
+@media screen and  (max-width: 460px) {
+    h3 {
+        font-size: 30px;
+    }
+
+    h4 {
+        font-size: 25px;
+    }
+}
+
 @media screen and (min-width: 960px) and (max-width: 1600px) {
     html {
         font-size: 9px;

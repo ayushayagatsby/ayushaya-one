@@ -95,6 +95,7 @@ margin-bottom: 5%;
 `
 const OfferTitleBox = styled("div")`
 width: 80%;
+margin-bottom: 5%;
 `
 
 const OfferDescriptionBox = styled("div")`
@@ -106,14 +107,14 @@ width: 75%;
 `
 
 const PriceBox = styled("div")`
-margin-top: 2%;
-margin-bottom: 3%;
+margin-top: 5%;
+margin-bottom: 8%;
 width: 80%;
 background-color: rgba(209, 194, 187, .1);
 display: flex;
 justify-content: center;
 align-items: center;
-height: 10vh;
+height: 12vh;
 border-radius: 10px;
 `
 
@@ -122,7 +123,7 @@ color: #6C665A;
 opacity: 50%;
 width: 90%;
 text-align: center;
-margin-bottom: 5%;
+margin-bottom: 10%;
 `
 
 const OutlineButton = styled("button")`
@@ -131,7 +132,7 @@ border: 1px solid #D1C2BB;
 color: #D1C2BB;
 width: 85%;
 height: 6vh;
-margin-bottom: 3%;
+margin-bottom: 5%;
 `
 
 const ContactButton = styled("button")`
@@ -150,7 +151,7 @@ margin-bottom: 5%;
 const ObersvationParagraph = styled("div")`
 width: 90%;
 text-align: center;
-margin-bottom: 5%;
+margin-bottom: 10%;
 `
 
 export default function AnimalsMobile({currentLanguage}) {
@@ -179,7 +180,7 @@ export default function AnimalsMobile({currentLanguage}) {
             </HeroOuterWrapper>
 
             <WhiteWrapper>
-                <h3 css={css `margin: 5% 0 5% 0;`}>{currentLanguage.imgHeader}</h3>
+                <h3 css={css `margin: 5% 0 5% 0; width: 90%;`}>{currentLanguage.imgHeader}</h3>
                 <ParagraphWrapper>
                     <p className="p">{currentLanguage.imgText}</p>
                 </ParagraphWrapper>
@@ -230,7 +231,7 @@ export default function AnimalsMobile({currentLanguage}) {
                     css={css `width: 50%; margin-top: -30%; margin-bottom: 4%;`}/>
 
                 <h3 css={css `margin: 10% 0 5% 0; padding: 0 3%;`}>{currentLanguage.offerMainHeader}</h3>
-                <h4 css={css `margin-bottom: 10%;`}>{currentLanguage.offerSubHeader}</h4>
+                <h4 css={css `margin-bottom: 10%; width: 90%;`}>{currentLanguage.offerSubHeader}</h4>
                 <CtaParagraph>
                     <p className="p">{currentLanguage.offerMainHeaderText}</p>
                 </CtaParagraph>
@@ -241,24 +242,18 @@ export default function AnimalsMobile({currentLanguage}) {
                     .offerList
                     .map(offer => (
                         <OfferColumns>
-                    <OfferTitleBox>
-                        <h4 css={css `margin-bottom: 2%;`}>{offer.offerHeader}</h4>
-                        <p className="p">{offer.offerSubheader}</p>
-                    </OfferTitleBox>
-                    <OfferDescriptionBox>
-                        <p className="p-small">{offer.offerText}</p>
-                    </OfferDescriptionBox>
-                    <PriceBox>
-                        <h3>{offer.offerPrice}</h3>
-                    </PriceBox>
-                </OfferColumns>
+                            <OfferTitleBox>
+                                <h4 css={css `margin-bottom: 2%;`}>{offer.offerHeader}</h4>
+                                <p className="p">{offer.offerSubheader}</p>
+                            </OfferTitleBox>
+                            <OfferDescriptionBox>
+                                <p className="p-small">{offer.offerText}</p>
+                            </OfferDescriptionBox>
+                            <PriceBox>
+                                <h3 css={css`font-size: 30px;`}>{offer.offerPrice}</h3>
+                            </PriceBox>
+                        </OfferColumns>
                     ))}
-
-                                   <PriceBox>
-                        <h3>individual</h3>
-                    </PriceBox>
-
-
 
                 <DisclaimerBox>
                     <p className="p-small">{currentLanguage.disclaimerText}</p>

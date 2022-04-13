@@ -52,12 +52,12 @@ z-index: -1;
 
 const HeroParagraphContainer = styled("div")`
 width: 66%;
-margin-top: 55%;
+margin-top: 65%;
 text-align: center;
 `
 
 const OfferHeader = styled("h4")`
-margin-bottom: 5%;
+margin-bottom: 10%;
 `
 
 const OfferTextbox = styled("div")`
@@ -148,15 +148,12 @@ text-align: center;
 margin-top: 20%;
 `
 
-const AboutSpecialHeader = styled('span')`
-font-family:"Open Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-font-size: 30px;
-font-weight: 400;
+const AboutSpecialHeader = styled('h4')`
 margin-bottom: 12%;
 `
 
-const AboutSignature = styled("h4")`
-margin-bottom: 12%;
+const AboutSignature = styled("h3")`
+margin-bottom: 8%;
 `
 
 const AboutButton = styled("button")`
@@ -211,7 +208,7 @@ export default function MobileHome({currentLanguage}) {
                 layout="constrained"
                 width={378}
                 height={511}
-                css={css `width: 52%; margin-top: 30%;`}/>
+                css={css `width: 52%; margin-top: 15%;`}/>
 
             <CtaTextbox>
                 <CtaHeading>{currentLanguage.ctaHeaderOne}</CtaHeading>
@@ -260,7 +257,7 @@ export default function MobileHome({currentLanguage}) {
                     css={css `width: 75%; margin-top: -10%; margin-bottom: 20%;`}/>
                 <AboutSpecialHeader>{currentLanguage.aboutPreHeader}</AboutSpecialHeader>
                 <AboutSignature>{currentLanguage.aboutHeader}</AboutSignature>
-                <p className="p-big">{currentLanguage.aboutText}</p>
+                <p>{currentLanguage.aboutText}</p>
                 <Link to="/about" css={css`width: 100%;`}>
                     <AboutButton>{currentLanguage.aboutButton}</AboutButton>
                 </Link>

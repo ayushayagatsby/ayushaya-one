@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from "gatsby"
 import {StaticImage} from "gatsby-plugin-image"
 import styled from "@emotion/styled"
 import {css, jsx} from '@emotion/react'
@@ -69,7 +70,7 @@ align-items: center;
 `
 
 const TextImageTextbox = styled("div")`
-width: 43%;
+width: 35%;
 `
 
 const TextImageHeader = styled("h3")`
@@ -124,6 +125,7 @@ justify-content: center;
 align-items: center;
 height: 10vh;
 border-radius: 10px;
+text-align: center;
 `
 
 const DisclaimerBox = styled("div")`
@@ -144,7 +146,7 @@ margin-bottom: 3%;
 `
 
 const ContactButton = styled("button")`
-width: 23%;
+width: 100%;
 height: 6vh;
 background-color: #F5EEE9;
 margin-bottom: 10%;
@@ -244,7 +246,7 @@ export default function AnimalsDesktop({currentLanguage}) {
                     css={css `width: 32%; margin-top: -20%; margin-bottom: 4%;`}/>
 
                 <h2 css={css `margin-bottom: 3%;`}>{currentLanguage.offerMainHeader}</h2>
-                <h3 css={css `margin-bottom: 4%;`}>{currentLanguage.offerSubHeader}</h3>
+                <h3 css={css `margin-bottom: 4%; width: 60%; text-align: center;`}>{currentLanguage.offerSubHeader}</h3>
                 <CtaParagraph>
                     <p className="p-big">{currentLanguage.offerMainHeaderText}</p>
                 </CtaParagraph>
@@ -280,7 +282,9 @@ export default function AnimalsDesktop({currentLanguage}) {
 
                 <OutlineButton>{currentLanguage.csButton}</OutlineButton>
 
-                <ContactButton>{currentLanguage.gicButton}</ContactButton>
+                <Link to="/contact" css={css `width: 23%;`}>
+                    <ContactButton>{currentLanguage.gicButton}</ContactButton>
+                </Link>
 
             </WhiteWrapper>
 

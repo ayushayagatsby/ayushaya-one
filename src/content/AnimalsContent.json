@@ -16,10 +16,10 @@
             "prices": "Prices: ",
             "offerList" : [
                 {
-                    "offerHeader": "(for general health issues)",
-                    "offerSubheader" : "Please note that the informed consent needs to be filled in and sent back before the first encounter.",
-                    "offerText": "Includes sending you a treatment plan, 2 follow-up calls within 2 months, and keeping in touch by text messages on how the health issue is evolving. ",
-                    "offerPrice": "80 € (+2 € “marca da bollo”)"
+                    "offerHeader": "For general health issues",
+                    "offerSubheader" : "(please note that the informed consent needs to be filled in and sent back before the first encounter)",
+                    "offerText": "Includes sending you a treatment plan, 2 follow-up calls within 2 months, and keeping in touch by text messages on how the health issue is evolving.",
+                    "offerPrice": "80 €"
                 }, {
                     "offerHeader": "Additional animal" ,
                     "offerSubheader" : "(in the same first encounter)",
@@ -34,11 +34,11 @@
                     "offerHeader": "Specific treatments",
                     "offerSubheader" : "(massage or other manual treatments)",
                     "offerText": "Includes evaluation of the specific needs of the animal, followed by several treatment sessions (usually between 3 and 6 sessions). Price excludes materials, for example ayurvedic oils and bandages. ",
-                    "offerPrice": "30 € per hour"
+                    "offerPrice": "30 € / hour"
                 }, {
                     "offerHeader": "Meeting in person at your place of residence. ",
                     "offerText": "Travel costs for the province of Varese prices as calculated by Via Michelin.",
-                    "offerPrice": "For travels outside of Varese, prices are up for negotiation. "
+                    "offerPrice": "Up for negotiation"
                 }
             ],
             "disclaimerText" : "For every bill exceeding 77,47 €) a single supplementary tax (“marca da bollo”) of 2€ has to be charged, as required by Italian law. ",
@@ -67,10 +67,10 @@
             "prices": "Prezzi: ",
             "offerList" : [
                 {
-                    "offerHeader": "(per problemi di salute generale)",
-                    "offerSubheader" : "Si prega di prendere atto che il consenso informato deve essere compilato e rispedito prima del colloquio iniziale. ",
+                    "offerHeader": "Per problemi di salute generale",
+                    "offerSubheader" : "(si prega di prendere atto che il consenso informato deve essere compilato e rispedito prima del colloquio iniziale)",
                     "offerText": "Include l’invio di un piano di trattamenti, 2 chiamate di follow-up nei 2 mesi successivi, e mantenere il contatto via messaggi riguardo all’evoluzione del problema di salute.",
-                    "offerPrice": "80 € (+2 € di marca da bollo)"
+                    "offerPrice": "80 €"
                 }, {
                     "offerHeader": "Animali supplementari", 
                     "offerSubheader" : "(nello stesso colloquio iniziale)",
@@ -90,7 +90,7 @@
                     "offerHeader": "Incontri di persona nel tuo luogo di residenza", 
                     "offerSubheader" : "",
                     "offerText": "Costi di viaggio nella provincia di Varese come indicati da Via Michelin.",
-                    "offerPrice": "Per viaggi al di fuori dalla provincia di Varese secondo accordi presi individualmente"
+                    "offerPrice": "Previa negoziazione"
                 }
             ],
             "disclaimerText" : "Ad ogni fattura superiore a 77, 47 € si aggiunge una marca da bollo di 2 €, conformemente alla legge italiana ",
@@ -119,10 +119,10 @@
             "prices": "Preise: ",
             "offerList" : [
                 {
-                    "offerHeader": "(für allgemeine Gesundheitsprobleme)", 
-                    "offerSubheader" : "Bitte beachten Sie, dass die Einverständniserklärung vor dem ersten Gespräch ausgefüllt und zurückgeschickt werden muss. ",
+                    "offerHeader": "Für allgemeine Gesundheitsprobleme", 
+                    "offerSubheader" : "(bitte beachten Sie, dass die Einverständniserklärung vor dem ersten Gespräch ausgefüllt und zurückgeschickt werden muss)",
                     "offerText": "Schließt folgendes ein: Sie erhalten einen Behandlungsplan, 2 weiterführende Gespräche innerhalb der folgenden 2 Monate und schriftlichen Kontakt, um die Entwicklung des Gesundheitsproblems zu verfolgen.",
-                    "offerPrice": "80 € (+ 2 € “marca da bollo”)"
+                    "offerPrice": "80 €"
                 }, {
                     "offerHeader": "Zusätzliche Tiere", 
                     "offerSubheader" : "(im selben Erstgespräch)",
@@ -142,7 +142,7 @@
                     "offerHeader": "Persönliches Treffen an Ihrem Wohnort", 
                     "offerSubheader" : "",
                     "offerText": "Reisekosten für die Provinz von Varese: gemäß der Berechnung durch Via Michelin.",
-                    "offerPrice": "Für Reisen außerhalb der Provinz Varese werden die Kosten persönlich vereinbart."
+                    "offerPrice": "Nach persönlicher Vereinbarung"
                 }
             ],
             "disclaimerText" : "Für jede Rechnung, die 77,47 € übersteigt, wird gemäß italienischem Gesetz eine Standard-Zusatzsteuer von 2 € verrechnet.",
