@@ -42,7 +42,7 @@ export default function QuoteSectionMobile({quote, signature = true}) {
   return (
     <QuoteOuterWrapper>
                 <QuoteInnerWrapper>
-                    <h4>Much can be done by choosing how to nurture body, mind and soul.</h4>
+                    <h3>Much can be done by choosing how to nurture body, mind and soul.</h3>
                     {signature && <Signature>
                         Juliane Merckens
                     </Signature>}

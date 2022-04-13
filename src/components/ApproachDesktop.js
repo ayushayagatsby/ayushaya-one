@@ -195,7 +195,7 @@ export default function ApproachDesktop({currentLanguage}) {
 
             <AboutWrapper>
 
-                <h2 css={css `margin-bottom: 3%;`}>{currentLanguage.midSubheaderOne}</h2>
+                <h3 css={css `margin-bottom: 3%;`}>{currentLanguage.midSubheaderOne}</h3>
                 <AboutParagraph>
 
                     <p className="p-big">{currentLanguage.midTextOne}</p>
@@ -223,11 +223,11 @@ export default function ApproachDesktop({currentLanguage}) {
                     </SingleElement>
                 </ElementsWrapper>
 
-                <h3 css={css `margin-bottom: 3%;`}>{currentLanguage.midSubheaderTwo}</h3>
+                <h3 css={css `margin-bottom: 3%; width: 50%;`}>{currentLanguage.midSubheaderTwo}</h3>
 
                 <ThreeQualities css={css `width: 27%; height: auto; margin-bottom: 4%;`}/>
 
-                <p css={css `width: 35%; height: 8vh;`}>{currentLanguage.midTextTwo}</p>
+                <p css={css `width: 35%; height: 8vh; margin-bottom: 5%;`}>{currentLanguage.midTextTwo}</p>
 
                 <QualityWrapper css={css `margin-top: -8vh; margin-bottom: 4%;`}>
                     <SingleQuality>
@@ -299,7 +299,7 @@ export default function ApproachDesktop({currentLanguage}) {
 
             </BottomSection>
 
-            <AboutCta />
+            <AboutCta currentLanguage={currentLanguage}/>
 
         </React.Fragment>
     )

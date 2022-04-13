@@ -92,7 +92,7 @@ display: inline-flex;
 flex-direction: column;
 align-items: center;
 width: 80%;
-margin-bottom: 10%;
+margin-bottom: 12%;
 `
 
 const VerticalLine = styled("div")`
@@ -237,19 +237,19 @@ export default function ApproachDesktop({currentLanguage}) {
 
                 <SingleQuality>
                     <IcSattva css={css `width: 40%; height: auto; margin-bottom: 12%;`}/>
-                    <h3 css={css `margin-bottom: 12%;`}>{currentLanguage.qualities[0].qualityHeader}</h3>
+                    <h3 css={css `margin-bottom: 8%;`}>{currentLanguage.qualities[0].qualityHeader}</h3>
                     <p className="p">{currentLanguage.qualities[0].qualityText}</p>
                 </SingleQuality>
 
                 <SingleQuality>
                     <IcRajas css={css `width: 40%; height: auto; margin-bottom: 12%;`}/>
-                    <h3 css={css `margin-bottom: 12%;`}>{currentLanguage.qualities[1].qualityHeader}</h3>
+                    <h3 css={css `margin-bottom: 8%;`}>{currentLanguage.qualities[1].qualityHeader}</h3>
                     <p className="p">{currentLanguage.qualities[1].qualityText}</p>
                 </SingleQuality>
 
                 <SingleQuality>
                     <IcTamas css={css `width: 40%; height: auto; margin-bottom: 12%;`}/>
-                    <h3 css={css `margin-bottom: 12%;`}>{currentLanguage.qualities[2].qualityHeader}</h3>
+                    <h3 css={css `margin-bottom: 8%;`}>{currentLanguage.qualities[2].qualityHeader}</h3>
                     <p className="p">{currentLanguage.qualities[2].qualityText}</p>
                 </SingleQuality>
 
@@ -298,7 +298,7 @@ export default function ApproachDesktop({currentLanguage}) {
                 </DoorParagraph>
             </BottomSection>
 
-            <AboutCtaMobile/>
+            <AboutCtaMobile currentLanguage={currentLanguage}/>
 
         </React.Fragment>
     )
