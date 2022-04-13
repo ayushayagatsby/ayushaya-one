@@ -45,7 +45,7 @@ text-align: center;
 
 const Hr = styled("div")`
 width: 3vw;
-height: 4px;
+height: 2px;
 background-color: #D1C2BB;
 border-radius: 30px;
 transform: translateY(10px);

@@ -10,6 +10,7 @@ import WorkingSection from './AboutPage/WorkingSection'
 import LogoIllustrationBig from "../assets/LogoIllustrationBig.svg"
 import WorkingSectionMobile from './AboutPage/WorkingSectionMobile'
 import AboutCtaMobile from './AboutPage/AboutCtaMobile'
+import {Link} from "gatsby"
 
 const HeroOuterWrapper = styled("div")`
 display: flex;
@@ -74,7 +75,7 @@ const TextImageHeader = styled("h3")`
 margin-bottom: 5%;
 `
 
-const TextImageParagraphBox = styled("h2")`
+const TextImageParagraphBox = styled("div")`
 padding-right: 5%;
 text-align: center;
 `
@@ -83,7 +84,7 @@ const TextImageCtaTextbox = styled("div")`
 width: 34%;
 `
 
-const TextImageCtaParagraphBox = styled("h2")`
+const TextImageCtaParagraphBox = styled("div")`
 padding-right: 20%;
 `
 
@@ -211,7 +212,7 @@ margin-top: 5% ;
 `
 
 const ValueProposition = styled("h3")`
-margin: 7% auto;
+margin: 14% auto;
 text-align: center;
 width: 100%;
 `
@@ -271,7 +272,7 @@ export default function AboutMobile({currentLanguage}) {
                 </TextImageTextbox>
 
                 <StaticImage
-                    src="../images/CityImageTwo.png"
+                    src="../images/CityImageOne.png"
                     alt="Another facade of a Church"
                     layout="constrained"               
                     width={950}
@@ -305,7 +306,7 @@ export default function AboutMobile({currentLanguage}) {
                 </TextImageTextbox>
 
                 <LogoIllustrationBig css={css `width: 100%; height:auto; margin: 10% 0;`}/>
-                <h4 css={css `text-align: center; margin-bottom: 5%;`}>{currentLanguage.complementarySubheader}
+                <h4 css={css `text-align: center; margin-bottom: 5%;`}>{currentLanguage.complementarySubHeader}
                 </h4>
                 <TextImageParagraphBox>
                     <p className="p">{currentLanguage.complementaryTextOne}</p>
@@ -338,7 +339,7 @@ export default function AboutMobile({currentLanguage}) {
                 </BottomText>
             </TextImageWrapper>
 
-           <AboutCtaMobile />
+           <AboutCtaMobile currentLanguage={currentLanguage} />
 
         </React.Fragment>
     )

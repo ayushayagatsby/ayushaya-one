@@ -71,11 +71,16 @@
             "quoteSignature": "Juliane Merckens",
             "agHeader": "After graduation",
             "agText": "I started working in the Italian-speaking part of Switzerland. My initial idea was to work in palliative medicine. But working in the field, I started doubting about this choice. Experiences in different fields led me eventually to become a family doctor and help people change their habits of smoking tobacco.",
-            "complementarySubheader": "Complementary approaches",
+            "complementarySubHeader": "Complementary approaches",
             "complementaryTextOne": "Alongside, my interest in complementary approaches grew and led me to learn about possible ways to connect emotions and disease (Metamedicina) and to start training in Ayurveda. I was always curious to learn new things, so I decided to spend a year learning about nutrition for health and disease prevention (ETH Zürich), and then started to train in naturopathy, focusing on animal well-being.",
             "complementaryTextTwo": "Thanks to the naturopathic training, I rediscovered my passion for animals. As time went by, I realized that I am much more interested in sustaining health than treating diseases. So, while preparing the final thesis, I started to think seriously about changing the profession. The final decision came when I discovered an institute in Germany which offers training to become an Ayurvedic therapist for animals.",
             "valueProp": "I want to help optimize lifestyle - theirs or for their animal friends- to maintain health. ",
-            "bottomText": "Presently, I live in a small place in northern Italy with my husband, two old cats, and two dogs. I enjoy nature, reading books on various topics, and writing. "
+            "bottomText": "Presently, I live in a small place in northern Italy with my husband, two old cats, and two dogs. I enjoy nature, reading books on various topics, and writing.",
+            "CtaHeader": "Holistic healthcare",
+            "CtaHumansText": "Holistic healthcare",
+            "CtaHumansButton": "Human beings",
+            "CtaAnimalsText": "My offer for your companion",
+            "CtaAnimalsButton": "Animals"
 
         },
 
@@ -123,7 +128,7 @@
             "workingHeader": "Esperienze lavorative",
             "workingItems": [
                 {
-                    "year": "Since 2019",
+                    "year": "Dal 2019",
                     "description": "Docenza e coordinazione di una formazione in “medicina accademica” per futuri terapisti ayurvedici"
                 }, {
                     "year": "2011 - 2021",
@@ -153,7 +158,12 @@
             "complementaryTextOne": "Parallelamente è cresciuto il mio interesse per gli approcci complementari, che mi ha portato ad approfondire i possibili modi per mettere in relazione emozioni e malattie (Metamedicina) e ad iniziare una formazione in Ayurveda. Sono sempre stata curiosa di imparare nuove cose, così ho deciso di passare un anno ad approfondire aspetti della nutrizione per il sostegno della salute e la prevenzione delle malattie (ETH di Zurigo), poi ho iniziato la formazione in naturopatia ad indirizzo animale.",
             "complementaryTextTwo": "Grazie alla formazione in naturopatia ho riscoperto la mia passione per gli animali. Col passare del tempo ho realizzato che trovo molto più interessante sostenere la salute invece di trattare le malattie. Così, mentre stavo preparando la mia tesi di diploma, ho iniziato a pensare seriamente di cambiare professione. La decisione finale è arrivata nel momento in cui ho scoperto che un’isituto di formazione in Germania offre un percorso formativo per diventare terapista ayurvedico per animali. ",
             "valueProp": "Voglio aiutare a migliorare lo stile di vita - degli umani o dei loro amici animali - allo scopo di mantenere la salute.",
-            "bottomText": "Attualmente vivo in un piccolo paese nel nord d’Italia, con mio marito, due gatti anziani e due cani. Amo la natura, leggere libri su vari temi e scrivere."
+            "bottomText": "Attualmente vivo in un piccolo paese nel nord d’Italia, con mio marito, due gatti anziani e due cani. Amo la natura, leggere libri su vari temi e scrivere.",
+            "CtaHeader": "Cura olistica della salute ",
+            "CtaHumansText": "La mia offerta per te",
+            "CtaHumansButton": "Esseri umani",
+            "CtaAnimalsText": "La mia offerta per il tuo amico a quattro zampe",
+            "CtaAnimalsButton": "Animali"
         },
 
         "de": {
@@ -200,7 +210,7 @@
             "workingHeader": "Arbeitserfahrungen",
             "workingItems": [
                 {
-                    "year": "Since 2019",
+                    "year": "Seit 2019",
                     "description": "Lehrtätigkeit und Koordination einer Ausbildung in “akademischer Medizin” für zukünftige Ayurveda -TherapeutInnen"
                 }, {
                     "year": "2011 - 2021",
@@ -230,7 +240,12 @@
             "complementaryTextOne": "Daneben wuchs mein Interesse für komplementäre Ansätzen, was mich dazu brachte, mehr über mögliche Zusammenhänge zwischen Emotionen und Krankheit zu lernen (Metamedizin) und eine Ausbildung in Ayurveda zu beginnen. Ich bin immer schon neugierig gewesen, Neues zu lernen, und so beschloss ich, ein Jahr lang Aspekte der Ernährung zur Vorbeugung von Krankheit und Unterstützung von Gesundheit zu vertiefen. Danach habe eine Ausbildung in Naturheilkunde mit Fokus auf Tiergesundheit begonnen. ",
             "complementaryTextTwo": "Dank der Ausbildung in Naturheilkunde habe ich meine Leidenschaft für Tiere wieder entdeckt. Mit der Zeit habe ich festgestellt, dass mich die Unterstützung der Gesundheit mehr interessiert als das Behandeln von Krankheiten. Deshalb habe ich beim Vorbereiten meiner Abschlussarbeit angefangen, ernsthaft darüber nachzudenken, mich beruflich neu zu orientieren. Die endgültige Entscheidung kam mit der Entdeckung, dass eine deutsche Ausbildungseinrichtung einen Lehrgang zum Ayurveda-Therapeuten für Tiere anbietet. ",
             "valueProp": "Ich möchte durch Verbesserung des Lebensstiles - der Menschen oder ihrer Vierbeiner - zu einer besseren Gesundheit beitragen.",
-            "bottomText": "Heute lebe ich in einem kleinen Ort in Nord-Italien mit meinem Mann, zwei alten Katzen und zwei Hunden. Ich bin gerne in der Natur, lese gerne Bücher über unterschiedliche Themen und schreibe gerne. "
+            "bottomText": "Heute lebe ich in einem kleinen Ort in Nord-Italien mit meinem Mann, zwei alten Katzen und zwei Hunden. Ich bin gerne in der Natur, lese gerne Bücher über unterschiedliche Themen und schreibe gerne. ",
+            "CtaHeader": "Ganzheitliche Unterstützung der Gesundheit",
+            "CtaHumansText": "Mein Angebot für Sie",
+            "CtaHumansButton": "Menschen",
+            "CtaAnimalsText": "Mein Angebot für Ihren Freund, das Tier",
+            "CtaAnimalsButton": "Tiere"
         }
     }
 }

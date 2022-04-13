@@ -31,6 +31,8 @@ justify-content: center;
 
 const FirstInnerWrapperTextbox = styled("div")`
 width: 28%;
+margin-right: 5%;
+margin-top: -10%;
 `
 
 const SecondInnerWrapper = styled("div")`
@@ -63,7 +65,7 @@ export default function BottomSection({currentLanguage}) {
 
             <FirstInnerWrapper>
                 <FirstInnerWrapperTextbox>
-                    <h3 children={currentLanguage.complementarySubheader} css={css ` margin-bottom: 5%;`}/>
+                    <h3 css={css ` margin-bottom: 5%;`}>{currentLanguage.complementarySubHeader}</h3>
                     <p>{currentLanguage.complementaryTextOne}</p>
                 </FirstInnerWrapperTextbox>
 
@@ -78,7 +80,7 @@ export default function BottomSection({currentLanguage}) {
                     width={950}
                     height={711}
                     css={css `width: 48%; margin-right: 5%;`}/>
-                <p css={css `width: 21%;`}>{currentLanguage.complementaryTextTwo}</p>
+                <p css={css `width: 21%; margin-top: 5%;`}>{currentLanguage.complementaryTextTwo}</p>
 
             </SecondInnerWrapper>
 

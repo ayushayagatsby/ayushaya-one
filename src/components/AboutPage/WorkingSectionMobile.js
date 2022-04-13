@@ -55,23 +55,26 @@ const Year = styled("div")`
 display: flex;
 justify-content: center;
 text-align: left;
-padding-right: 5%;
+margin-bottom: 3%;
 `
 
 const Description = styled("div")`
 text-align: left;
-padding-right: 5%;
-width: 70%;`
+margin-bottom: 6%;
+`
 
 const ListItemWrapper = styled("div")`
 display: flex;
+flex-direction: column;
 margin-bottom: 8%;
-align-items: flex-start;`
+align-items: flex-start;
+padding: 0 50px;
+`
 
 export default function WorkingSectionMobile({currentLanguage}) {
     const workingItems = currentLanguage.workingItems.map(item => <ListItemWrapper>
         <Year>
-            <h2 css={css `font-size: 15px; margin-top: 6px; margin-left: 10px;`}>{item.year}</h2>
+            <h3>{item.year}</h3>
         </Year>
         <Description>
             <p className="p-small">{item.description}</p>

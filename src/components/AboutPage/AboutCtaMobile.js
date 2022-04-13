@@ -2,6 +2,8 @@ import React from 'react'
 import styled from "@emotion/styled"
 import {css, jsx} from '@emotion/react'
 import {StaticImage} from "gatsby-plugin-image"
+import {Link} from "gatsby"
+
 
 const Wrapper = styled("div")`
 width: 100%;
@@ -45,16 +47,17 @@ font-size: 30px;
 
 const CardButton = styled("button")`
 background-color: #F5EEE9;
-width: 80%;
+width: 100%;
 height: 8vh;;
 text-transform: uppercase;
 margin-bottom: 10%;
+text-transform: uppercase;
 `
 
-export default function AboutCta() {
+export default function AboutCta({currentLanguage}) {
     return (
         <Wrapper>
-            <SectionHeading>Holistic healthcare</SectionHeading>
+            <SectionHeading>{currentLanguage.CtaHeader}</SectionHeading>
             <InnerWrapper>
                 <CardContainer css={css `margin-bottom: 50%;`}>
                     <StaticImage
@@ -64,8 +67,10 @@ export default function AboutCta() {
                         width={378}
                         height={511}
                         css={css `width: 50%; margin-top: -50%;`}/>
-                    <CardHeading>My offer for yourself</CardHeading>
-                    <CardButton>HUMAN BEINGS</CardButton>
+                    <CardHeading>{currentLanguage.CtaHumansText}</CardHeading>
+                    <Link to="/humans" css={css`width: 80%;`}>
+                        <CardButton>{currentLanguage.CtaHumansButton}</CardButton>
+                    </Link>
                 </CardContainer>
 
                 <CardContainer>
@@ -76,8 +81,10 @@ export default function AboutCta() {
                         width={489}
                         height={488}
                         css={css `width: 65%; margin-top: -50%;`}/>
-                    <CardHeading>My offer for your companion</CardHeading>
-                    <CardButton>ANIMALS</CardButton>
+                    <CardHeading>{currentLanguage.CtaAnimalsText}</CardHeading>
+                    <Link to="/animals" css={css `width: 80%;`}>
+                        <CardButton>{currentLanguage.CtaAnimalsButton}</CardButton>
+                    </Link>
                 </CardContainer>
             </InnerWrapper>
         </Wrapper>
