@@ -10,7 +10,7 @@ import "./SlideOneFadeUp.css"
 export default function SlideOneFadeUp(props) {
     return (
         <CSSTransition timeout={1000} in={props.in} classNames="slide-one-fade-up">
-            <SideWrapperComponent>
+            <SideWrapperComponent p = {props.p}>
                 {props.children}
             </SideWrapperComponent>
         </CSSTransition>

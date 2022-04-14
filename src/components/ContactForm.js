@@ -27,8 +27,16 @@ margin-bottom: 10%;
   outline: none;
 }
 
+&:focus {
+  outline: none;
+}
+
 &:focus::placeholder {
   visibility: hidden;
+}
+
+&::placeholder {
+    padding-left: 10px;
 }
 `
 
@@ -43,8 +51,16 @@ padding: 7px;
   outline: none;
 }
 
+&:focus {
+  outline: none;
+}
+
 &:focus::placeholder {
   visibility: hidden;
+}
+
+&::placeholder {
+    padding-left: 10px;
 }
 `
 
@@ -211,7 +227,7 @@ function FormControl(props) {
         case ('First Name'):
             return (
                 <CustomFormControl {...rest} id={id} w={breakpoints.sm? "40vw" : "23vw"}>
-                    <CustomLabel visibility={vis}>{currentLanguage.yN}</CustomLabel>
+                    <CustomLabel>{currentLanguage.yN}</CustomLabel>
                     {children}
 
                 </CustomFormControl>
@@ -219,7 +235,7 @@ function FormControl(props) {
             case ('Last Name'):
             return (
                 <CustomFormControl {...rest} id={id} w={breakpoints.sm? "40vw" : "23vw"}>
-                    <CustomLabel visibility={vis}>{currentLanguage.lN}</CustomLabel>
+                    <CustomLabel>{currentLanguage.lN}</CustomLabel>
                     {children}
 
                 </CustomFormControl>
@@ -228,7 +244,7 @@ function FormControl(props) {
         case ('E-Mail Address'):
             return (
               <CustomFormControl {...rest} id={id} w={breakpoints.sm? "90vw" : "50vw"}>
-                    <CustomLabel visibility={vis}>{currentLanguage.eA}</CustomLabel>
+                    <CustomLabel>{currentLanguage.eA}</CustomLabel>
                     {children}
 
                 </CustomFormControl>
@@ -236,7 +252,7 @@ function FormControl(props) {
         case ("Your Message"):
             return (
               <CustomFormControl {...rest} id={id} w={breakpoints.sm? "90vw" : "50vw"}>
-                    <CustomLabel visibility={vis}>{currentLanguage.yM}</CustomLabel>
+                    <CustomLabel>{currentLanguage.yM}</CustomLabel>
                     {children}
 
                 </CustomFormControl>

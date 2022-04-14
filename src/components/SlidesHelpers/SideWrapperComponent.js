@@ -5,12 +5,11 @@ const SideWrapper = styled("div")`
   display: flex;
   flex-direction: column;
   width: 40%;
-  margin-top: -10%;
-  padding: 5%;
+  padding: ${props => props.p};
 `
-export default function SideWrapperComponet({children}) {
+export default function SideWrapperComponet({children, p}) {
 
     return (
-        <SideWrapper>{children}</SideWrapper>
+        <SideWrapper p={p}>{children}</SideWrapper>
     )
 }

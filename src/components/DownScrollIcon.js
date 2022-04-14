@@ -19,6 +19,7 @@ const Wrapper = styled("div")`
   &:hover {
     transform: scale(90%);
     box-shadow: 0px 2px 10px #D1C2BB4D;
+    cursor: pointer;
   }
 
 `

@@ -257,6 +257,8 @@ export default function AnimalsMobile({currentLanguage}) {
 
                 <DisclaimerBox>
                     <p className="p-small">{currentLanguage.disclaimerText}</p>
+                    <br/>
+                    <p className="p-small">{currentLanguage.legal}</p>
                 </DisclaimerBox>
 
                 <ObersvationParagraph>

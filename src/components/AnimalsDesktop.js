@@ -272,6 +272,9 @@ export default function AnimalsDesktop({currentLanguage}) {
 
                 <DisclaimerBox>
                     <p className="p-small">{currentLanguage.disclaimerText}</p>
+                    <br/>
+                    <p className="p-small">{currentLanguage.legal}</p>
+
                 </DisclaimerBox>
 
                 <ObersvationParagraph>

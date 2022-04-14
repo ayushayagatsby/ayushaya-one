@@ -42,6 +42,7 @@
                 }
             ],
             "disclaimerText" : "For every bill exceeding 77,47 €) a single supplementary tax (“marca da bollo”) of 2€ has to be charged, as required by Italian law. ",
+            "legal" : "Regardless of the buyer's origin, the services offered and promoted on this website are subject to Italian law.",
             "consentText" : "Please help me by filling in and sending the general observation form. ",
             "goButton" : "General observation ",
             "csButton" : "Consent sheet",
@@ -94,6 +95,7 @@
                 }
             ],
             "disclaimerText" : "Ad ogni fattura superiore a 77, 47 € si aggiunge una marca da bollo di 2 €, conformemente alla legge italiana ",
+            "legal" : "Indipendentemente dall'origine dell'acquirente, i servizi offerti e promossi su questo sito sono soggetti alla legge italiana.",
             "consentText" : "Ti prego di aiutarmi compilando e inviandomi il modulo “osservazione generale”",
             "goButton" : "Osservazione generale",
             "csButton" : "Consenso informato",
@@ -146,6 +148,7 @@
                 }
             ],
             "disclaimerText" : "Für jede Rechnung, die 77,47 € übersteigt, wird gemäß italienischem Gesetz eine Standard-Zusatzsteuer von 2 € verrechnet.",
+            "legal" : "Unabhängig von der Herkunft des Käufers unterliegen die auf dieser Website angebotenen und beworbenen Dienstleistungen dem italienischen Recht.",
             "consentText" : "Das Ausfüllen und Zurückschicken des Formulars “Allgemeine Beobachtung” ist mir eine große Hilfe.",
             "goButton" : "Allgemeine Beobachtung",
             "csButton" : "Einverständniserklärung",

@@ -49,6 +49,7 @@ height: 20vh;
 
 const Footer = styled("footer")`
 height: 50vh;
+width: 100%;
 background-color: #D4C1BA;
 display: flex;
 padding-top: 7%;
@@ -103,8 +104,8 @@ position: fixed;
 right: 20px;
 top: calc(50vh - 70px);
 max-height: 137px;
-height: 13vh;
-width: 1.3vw;
+height: 95px;
+width: 17px;
 max-width: 31px;
 display: flex;
 flex-direction: column;
