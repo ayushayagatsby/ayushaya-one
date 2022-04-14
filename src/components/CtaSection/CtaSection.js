@@ -14,20 +14,7 @@ const OuterWrapper = styled("div")`
 width: 100%;
 `
 
-const content = {
-    humans: {
-        heading: "For yourself",
-        text: "Focused on optimizing lifestyle, in areas such as nutrition and optimizing body " +
-                "weight, daily routine and sleep, tobacco and alcohol use, and physical activity.",
-        buttonText: "HUMAN BEINGS"
-    },
-    animals: {
-        heading: "For your companion",
-        text: "Focused on optimizing lifestyle to support wellbeing and on helping in specific " +
-                "situations of unease and old age.",
-        buttonText: "ANIMALS"
-    }
-}
+
 
 export default function CtaSection({currentLanguage}) {
     const breakpoints = useBreakpoint();
@@ -48,7 +35,7 @@ export default function CtaSection({currentLanguage}) {
                     layout="constrained"               
                     width={378}
                     height={511}
-                    css={css `width: 25%; position: relative; top: 50px; max-width: 378px; margin-left: 5%; `}/>
+                    css={css `width: 30%; position: relative; top: 50px; max-width: 378px; margin-left: 5%; `}/>
 
             </InnerWrapper>
 
@@ -59,7 +46,7 @@ export default function CtaSection({currentLanguage}) {
                     layout="constrained"               
                     width={489}
                     height={488}
-                    css={css `width: 32%; position: relative; bottom: 50px; max-width: 489px; margin-right: 5%;`}/>
+                    css={css `width: 37%; position: relative; bottom: 50px; max-width: 489px; margin-right: 5%;`}/>
                 <TextAndButton
                     heading={currentLanguage.ctaHeaderTwo}
                     text={currentLanguage.ctaTextTwo}

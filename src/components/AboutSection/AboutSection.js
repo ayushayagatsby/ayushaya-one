@@ -50,9 +50,9 @@ export default function AboutSectiom({currentLanguage}) {
         <OuterWrapper>
             <MiddleWrapper>
                 <TextWrapper>
-                    <h4 css={css `margin-bottom: 3%;`}>{currentLanguage.aboutPreHeader}</h4>
+                    <h4 css={css `margin-bottom: 5%;`}>{currentLanguage.aboutPreHeader}</h4>
                     <h2 css={css `margin-bottom: 6%;`}>{currentLanguage.aboutHeader}</h2>
-                    <p className="p-big" css={css `margin-bottom: 5%;`}>{currentLanguage.aboutText}</p>
+                    <p className="p-big" css={css `margin-bottom: 10%;`}>{currentLanguage.aboutText}</p>
                     <Link to="/about"><Button>{currentLanguage.aboutButton}</Button></Link>
                 </TextWrapper>
                 <ImageWrapper>

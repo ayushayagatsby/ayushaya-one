@@ -5,7 +5,7 @@ import LanguageContext from '../../context/LanguageContext';
 const options = [
     {
         value: 'it',
-        label: 'Italian'
+        label: 'Italiano'
     }, {
         value: 'en',
         label: 'English'

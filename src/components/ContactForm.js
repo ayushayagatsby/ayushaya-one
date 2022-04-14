@@ -99,17 +99,7 @@ function ElementsWrapper(props) {
 }
 
 
-// function SubmitButton(props) {
 
-
-
-//     return (
-//       <div {...props}>
-//         <SendButton>
-//             {props.children}
-//         </SendButton></div>
-//     )
-// }
 
 function FieldWrapper(props) {
 
@@ -123,12 +113,41 @@ function FieldWrapper(props) {
 function Textarea(props) {
 
   const breakpoints = useBreakpoint();
-  const placeholder = "Your message"
+
+  const {language} = useContext(LanguageContext)
+
+    const englishContent = ContactContent.content.en;
+    const italianContent = ContactContent.content.it;
+    const germanContent = ContactContent.content.de;
+
+    let handleCurrentLanguage = (language) => {
+        switch (language) {
+            case 'it':
+                return italianContent
+                break;
+            case 'en':
+                return englishContent
+                break;
+
+            case 'de':
+                return germanContent
+                break;
+
+            default:
+                break;
+        }
+    }
+
+    let currentLanguage = handleCurrentLanguage(language);
+  const {
+    placeholder,
+    ...rest
+} = props
 
   
 
     return (
-        <CustomTextArea placeholder={placeholder} {...props} h={breakpoints.sm? "50vh" : "20vh"}>
+        <CustomTextArea placeholder={currentLanguage.yM} {...rest} h={breakpoints.sm? "50vh" : "20vh"}>
             {props.children}
         </CustomTextArea>
     )
@@ -184,7 +203,6 @@ function FormControl(props) {
         : "visible";
 
 
-        console.log(props)
 
         
 

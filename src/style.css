@@ -381,8 +381,8 @@ button:focus {
 }
 
 .form-container form h1 {
-    text-align: center;
-    margin-bottom: 10%;
+    position: absolute;
+    display: none;
 }
 
 /* Media queries */
@@ -408,13 +408,13 @@ button:focus {
 
 @media screen and (min-width: 960px) and (max-width: 1600px) {
     html {
-        font-size: 12px;
+        font-size: 11px;
     }
 }
 
 @media screen and  (min-width: 1600px) {
     html {
-        font-size: 16px;
+        font-size: 13px;
     }
 }
 

@@ -30,11 +30,11 @@ export default function TextAndButton({heading, text, buttonText, alignSelf, to,
         <Wrapper css={css ` justify-content: ${jContent};`}>
 
             <InnerWrapper>
-                <h3 css={css `margin-bottom: 7%;`}>
+                <h3 css={css `margin-bottom: 5%;`}>
                     {heading}
                 </h3>
                 <ParagraphWrapper>
-                    <p className="p-small">{text}</p>
+                    <p>{text}</p>
                 </ParagraphWrapper>
                 <Link to={to}>
                     <Button>{buttonText}</Button>

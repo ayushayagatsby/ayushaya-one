@@ -68,7 +68,7 @@ const CentralWrapper = styled("div")`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 30%;
+  width: 40%;
   height: 100%;
   text-align: center;
 `
