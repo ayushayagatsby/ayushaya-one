@@ -19,7 +19,7 @@ export default function ContactInfo({currentLanguage}) {
     return (
         <Wrapper>
             <StaticImage
-                src="../../images/AboutPicture.png"
+                src="../images/AboutPicture.png"
                 alt="Dr. Juliane Merckens"
                 layout="constrained"
                 width={623}
