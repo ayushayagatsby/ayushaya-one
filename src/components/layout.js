@@ -112,6 +112,11 @@ flex-direction: column;
 justify-content: space-between;
 `
 
+const LanguageSelectContainer = styled("div")`
+position: absolute;
+right: 5%;
+`
+
 const Layout = ({children}) => {
     const breakpoints = useBreakpoint();
     const metaTypes = [
@@ -151,9 +156,9 @@ const Layout = ({children}) => {
                 {breakpoints.sm && <MainMobile>{children}</MainMobile>}
                 {!breakpoints.sm && <MainDesktop>{children}
                     <QuickAccessMenu>
-                        <a href='mailto:juliane@ayushaya.coach' target="_blank"><IcMail css={css`width: 100%; height: auto;`}/></a>
-                        <a href="tel:+393457233090"><IcPhone css={css`width: 100%; height: auto;`}/></a>
-                        <Link to="/contact"><IcDots css={css`width: 100%; height: auto;`}/></Link>
+                        <a href='mailto:juliane@ayushaya.coach' target="_blank"><IcMail css={css `width: 100%; height: auto;`}/></a>
+                        <a href="tel:+393457233090"><IcPhone css={css `width: 100%; height: auto;`}/></a>
+                        <Link to="/contact"><IcDots css={css `width: 100%; height: auto;`}/></Link>
                     </QuickAccessMenu>
                 </MainDesktop>}
 
@@ -163,6 +168,10 @@ const Layout = ({children}) => {
                         w={breakpoints.sm
                         ? "90%"
                         : "34%"}>{metaTypesMapped}</FooterMetaNav>
+
+                    {breakpoints.md
+                        ? <LanguageSelect darkMode={true} menuPos="top"/>
+                        : <LanguageSelectContainer><LanguageSelect darkMode={true} menuPos="top"/></LanguageSelectContainer>}
 
                 </Footer>
             </div>
