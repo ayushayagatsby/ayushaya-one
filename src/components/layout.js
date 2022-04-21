@@ -169,9 +169,9 @@ const Layout = ({children}) => {
                         ? "90%"
                         : "34%"}>{metaTypesMapped}</FooterMetaNav>
 
-                    {breakpoints.md
+                    {/* {breakpoints.md
                         ? <LanguageSelect darkMode={true} menuPos="top"/>
-                        : <LanguageSelectContainer><LanguageSelect darkMode={true} menuPos="top"/></LanguageSelectContainer>}
+                        : <LanguageSelectContainer><LanguageSelect darkMode={true} menuPos="top"/></LanguageSelectContainer>} */}
 
                 </Footer>
             </div>
