@@ -5,6 +5,7 @@ import {css, jsx} from '@emotion/react'
 import ContactContent from '../content/ContactContent.json';
 import ContactInfo from '../components/ContactInfo';
 import LanguageContext from '../context/LanguageContext';
+import LanguageSelect from '../components/LanguageSelect/LanguageSelect';
 
 
 const Spacer = styled("div")`
@@ -40,6 +41,7 @@ export default function Contact() {
   return (
       <>
           <Spacer />
+          <LanguageSelect darkMode={true} menuPos="top"/>
           <ContactInfo currentLanguage={currentLanguage}/>
         <ContactForm />
       </>
