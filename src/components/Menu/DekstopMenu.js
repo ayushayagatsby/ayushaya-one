@@ -147,14 +147,14 @@ export default function DekstopMenu({menuState, menuToggle}) {
             <OuterWrapper>
                 <InnerWrapper>
                     <MenuContainer>{menuTypesMapped}</MenuContainer>
-                    <MetaContainer>
+                    {/* <MetaContainer>
                         {!breakpoints.sm && <MetaNav menuToggle={menuToggle} leftLogo={false} darkMode={true} menuPos="top"/>}
                     </MetaContainer>
 
                     {breakpoints.sm && <MetaMobile>
                         <LanguageSelect darkMode={true} menuPos={"top"}/>
                         <MobileMenuMeta>{metaTypesMapped}</MobileMenuMeta>
-                    </MetaMobile>}
+                    </MetaMobile>} */}
                 </InnerWrapper>
             </OuterWrapper>
         </CSSTransition>
