@@ -46,7 +46,7 @@ export default function Contact() {
   return (
       <>
           <Spacer />
-          {isBrowser && <LanguageSelect darkMode={true}/>}
+          
           <ContactInfo currentLanguage={currentLanguage}/>
         <ContactForm />
       </>

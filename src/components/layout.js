@@ -143,6 +143,8 @@ const Layout = ({children}) => {
     const handleShowMenu = () => {
         setShowMenu(!showMenu);
     }
+
+    const isBrowser = typeof window !== "undefined"
     return (
         <TransitionGroup>
             <div id="layout-wrapper">
@@ -169,9 +171,8 @@ const Layout = ({children}) => {
                         ? "90%"
                         : "34%"}>{metaTypesMapped}</FooterMetaNav>
 
-                    {/* {breakpoints.md
-                        ? <LanguageSelect darkMode={true} menuPos="top"/>
-                        : <LanguageSelectContainer><LanguageSelect darkMode={true} menuPos="top"/></LanguageSelectContainer>} */}
+                    {(breakpoints.md && isBrowser) && <LanguageSelect darkMode={true} menuPos="top"/>}
+                    {(!breakpoints.md && isBrowser) && <LanguageSelectContainer><LanguageSelect darkMode={true} menuPos="top"/></LanguageSelectContainer>}
 
                 </Footer>
             </div>
