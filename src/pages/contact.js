@@ -1,4 +1,4 @@
-import React, {useContext} from 'react'
+import React, {useContext, useEffect} from 'react'
 import ContactForm from "../components/ContactForm"
 import styled from "@emotion/styled"
 import {css, jsx} from '@emotion/react'
@@ -12,6 +12,8 @@ const Spacer = styled("div")`
 height: 20vh;
 `
 export default function Contact() {
+
+
   
   const {language} = useContext(LanguageContext)
 
@@ -37,11 +39,14 @@ export default function Contact() {
       }
   }
 
+
+  const isBrowser = typeof window !== "undefined"
+
   let currentLanguage = handleCurrentLanguage(language);
   return (
       <>
           <Spacer />
-          <LanguageSelect darkMode={true} menuPos="top"/>
+          {isBrowser && <LanguageSelect darkMode={true}/>}
           <ContactInfo currentLanguage={currentLanguage}/>
         <ContactForm />
       </>
