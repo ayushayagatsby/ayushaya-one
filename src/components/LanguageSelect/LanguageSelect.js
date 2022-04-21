@@ -54,13 +54,12 @@ const customStyles = {
     })
 }
 
-export default function LanguageSelect( {darkMode, menuPos} ) {
+export default function LanguageSelect({darkMode, menuPos}) {
     const [selectedOption,
         setSelectedOption] = useState(options[0]);
 
     const [newSelect,
         setNewSelect] = useState(options.filter(option => option.value === language)[0]);
-        
 
     const handleSelection = () => {
         const newSelection = options.filter(option => option.value === language)[0];
@@ -86,15 +85,25 @@ export default function LanguageSelect( {darkMode, menuPos} ) {
         }
     };
 
-    return (<Select
-        styles={customStyles}
-        width='14vw'
-        menuColor={darkMode ? "#6B665B" : '#FAF5F1'}
-        bg={darkMode? "#F5EEEB" : "#DAC9C3"}
-        singleBg={darkMode? "#F5EEEB" : "#DAC9C3"}
-        menuPlacement={menuPos ?? "bottom"}
-        value={options.filter(option => option.value === language)[0]}
-        onChange={onChangeSelect}
-        options={options}
-        isSearchable={false}/>);
+    const isBrowser = typeof window !== "undefined"
+
+    return (
+        <div>{isBrowser && <Select
+                styles={customStyles}
+                width='14vw'
+                menuColor={darkMode
+                ? "#6B665B"
+                : '#FAF5F1'}
+                bg={darkMode
+                ? "#F5EEEB"
+                : "#DAC9C3"}
+                singleBg={darkMode
+                ? "#F5EEEB"
+                : "#DAC9C3"}
+                menuPlacement={menuPos ?? "bottom"}
+                value={options.filter(option => option.value === language)[0]}
+                onChange={onChangeSelect}
+                options={options}
+                isSearchable={false}/>}</div>
+    );
 }
