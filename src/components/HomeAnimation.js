@@ -19,7 +19,6 @@ import QuoteSection from './QuoteSection/QuoteSection'
 import AboutSection from "./AboutSection/AboutSection"
 import FirstPlantShadow from "../images/FirstPlantShadow.svg"
 
-
 const OuterWrapper = styled("div")`
 min-height: 100vh;
 height: auto;
@@ -109,13 +108,17 @@ export default function HomeAnimation({currentLanguage}) {
     useEffect(() => {
 
         const firstChild = document.getElementById("layout-wrapper");
+        const ft = document.getElementById("prova");
 
         if (footerVisibility) {
             firstChild.style.height = 'auto';
             firstChild.style.overflow = 'scroll';
+            ft.style.display = 'flex';
+            
         } else {
             firstChild.style.height = `100vh `;
             firstChild.style.overflow = 'hidden';
+            ft.style.display = 'none';
         }
     }, [footerVisibility]);
 
@@ -144,6 +147,54 @@ export default function HomeAnimation({currentLanguage}) {
         setFooterVisibility(true);
     }
 
+    const animationHelperFour = () => {
+        setLastSlide(false)
+    }
+
+    const animationHelperFive = () => {
+        setSlideOneOn(true);
+
+        setTimeout(() => {
+            setSlideTwo(true);
+        }, "3000");
+
+    }
+
+    const handleWhichSlide = () => {}
+
+    const [slideOne,
+        setSlideOne] = useState(true)
+    const [slideTwo,
+        setSlideTwo] = useState(false)
+    const [slideThree,
+        setSlideThree] = useState(false)
+
+    useEffect(() => {
+        const handleScroll = (event) => {
+            let delta = event.deltaY;
+            if (delta > 0) {
+                if (slideOne && !slideTwo && !slideThree) {
+                    animationHelperFive();
+                } else if (slideOne && slideTwo && !slideThree) {
+                    animatioHelper();
+                } else {
+                    animationHelperFour();
+                }
+
+            }
+        };
+
+        window.addEventListener("wheel", handleScroll);
+
+        return () => window.removeEventListener("wheel", handleScroll);
+    }, [slideOne, slideTwo, slideThree]);
+
+    const handleSlideOne = () => {
+        setSlideOne(true);
+    }
+
+    console.log(footerVisibility)
+
     return (
         <OuterWrapper>
             <TransitionGroup>
@@ -161,7 +212,7 @@ export default function HomeAnimation({currentLanguage}) {
 
                             <SlideOneFade
                                 in={fadeOut}
-                                scrollDown={setSlideOneOn}
+                                scrollDown={animationHelperFive}
                                 onEnter={animatioHelperTwo}/>
 
                             <SlideTwoFade in={secondFade} scrollDown={animatioHelper}/>
@@ -172,10 +223,7 @@ export default function HomeAnimation({currentLanguage}) {
 
                         <SlideOneFadeUpRight in={fadeOut} currentLanguage={currentLanguage}/>
 
-                        <CSSTransition
-                            timeout={2000}
-                            in={fadeOut}
-                            classNames="plant-shadow">
+                        <CSSTransition timeout={2000} in={fadeOut} classNames="plant-shadow">
                             <PlantShadow/>
                         </CSSTransition>
                     </InnerWrapper>
@@ -209,15 +257,20 @@ export default function HomeAnimation({currentLanguage}) {
                             exit: 500
                         }}
                             onExited={() => staticScrollHelper()}
+                            onEntered
+                            ={() => setSlideThree(true)}
                             in={lastSlide}
                             classNames="slide-three-slide-down"
                             mountOnEnter>
                             <CentralWrapper>
                                 <h2 css={css `margin-bottom: 3%;`}>{currentLanguage.slideThreeHeader}</h2>
                                 <p css={css `width: 70%; margin-bottom: 5%;`}>{currentLanguage.slideThreeText}</p>
-                                <div onClick={() => setLastSlide(false)}>
-                                    <DownScrollIcon size={"4vw"}/>
-                                </div>
+
+                                <DownScrollIcon
+                                    click={animationHelperFour}
+                                    size={"4vw"}
+                                    staticScroll={staticScroll}/>
+
                             </CentralWrapper>
                         </CSSTransition>
 
@@ -233,7 +286,7 @@ export default function HomeAnimation({currentLanguage}) {
                     css={css `text-align: center; max-width: 500px; width: 50%; margin: 5% auto;`}>{currentLanguage.firstHeaderstatic}</h2>
                 <CtaSection currentLanguage={currentLanguage}/>
                 <Spacer h="20vh"/>
-                <QuoteSection quote={currentLanguage.quote} small="true" shadow="true" />
+                <QuoteSection quote={currentLanguage.quote} small="true" shadow="true"/>
                 <AboutSection currentLanguage={currentLanguage}/>
             </React.Fragment>}
         </OuterWrapper>

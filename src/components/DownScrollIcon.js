@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState, useEffect, useRef} from 'react';
 import IcArrowDown from "../assets/IcArrowDown.svg";
 import styled from "@emotion/styled";
 import {css, jsx} from '@emotion/react'
@@ -26,7 +26,43 @@ const Wrapper = styled("div")`
 
 export default function DownScrollIcon(props) {
 
-    return (
-        <Wrapper onClick={props.click} size={props.size} mt={props.mt}><IcArrowDown css={css ` width: 22%; height:auto; transform: translateY(5%);`}/></Wrapper>
-    )
+    const prevScrollY = useRef(0);
+
+    const [goingDown,
+        setGoingDown] = useState(true);
+
+    // useEffect(() => {     const handleScroll = () => {         const
+    // currentScrollY = window.scrollY;         if (prevScrollY.current >
+    // currentScrollY && goingDown) {             setGoingDown(false);         } if
+    // (prevScrollY.current < currentScrollY && !goingDown) { setGoingDown(true);
+    //      }         prevScrollY.current = currentScrollY; console.log(goingDown,
+    // currentScrollY);     }; window.addEventListener("scroll", handleScroll,
+    // {passive: true});     return () => window.removeEventListener("scroll",
+    // handleScroll); }, [goingDown]);
+
+    // useEffect(() => {
+    //     const handleScroll = (event) => {
+    //         let delta = event.deltaY;
+    //         if (delta > 0) {
+    //             console.log(delta)
+    //             handleScrollDown();
+
+    //         }
+    //     };
+
+    //     window.addEventListener("wheel", handleScroll);
+
+    //     return () => window.removeEventListener("wheel", handleScroll);
+    // }, []);
+
+    const handleScrollDown = () => {
+
+        props.click();
+
+    }
+
+
+return (
+    <Wrapper onClick={handleScrollDown} size={props.size} mt={props.mt}><IcArrowDown css={css ` width: 22%; height:auto; transform: translateY(5%);`}/></Wrapper>
+)
 }

@@ -4,19 +4,16 @@ import DownScrollIcon from '../DownScrollIcon'
 import "./SlideTwoFade.css"
 
 export default function SlideTwoFade(props) {
-    
-    return (
 
-        
+    return (
 
         <CSSTransition
             timeout={3000}
-            in={props.in}
+            in={props. in}
             classNames="slide-two-fade"
             mountOnEnter>
-            <div onClick={() => props.scrollDown()}>
-                <DownScrollIcon size={"4vw"}/>
-            </div>
+            <DownScrollIcon click={props.scrollDown} size={"4vw"}/>
+
         </CSSTransition>
     )
 }
