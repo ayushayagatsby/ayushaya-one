@@ -6,12 +6,18 @@ import ContactContent from '../content/ContactContent.json';
 import ContactInfo from '../components/ContactInfo';
 import LanguageContext from '../context/LanguageContext';
 import LanguageSelect from '../components/LanguageSelect/LanguageSelect';
+import {useBreakpoint} from 'gatsby-plugin-breakpoints';
+import ContactInfoMobile from '../components/ContactInfoMobile';
+
 
 
 const Spacer = styled("div")`
 height: 20vh;
 `
 export default function Contact() {
+
+    const breakpoints = useBreakpoint();
+
 
 
   
@@ -39,15 +45,13 @@ export default function Contact() {
       }
   }
 
-
-  const isBrowser = typeof window !== "undefined"
-
   let currentLanguage = handleCurrentLanguage(language);
   return (
       <>
-          <Spacer />
           
-          <ContactInfo currentLanguage={currentLanguage}/>
+          {!breakpoints.md && <Spacer />}
+          {breakpoints.md && <ContactInfoMobile currentLanguage={currentLanguage}/>}
+          {!breakpoints.md && <ContactInfo currentLanguage={currentLanguage}/>}
         <ContactForm />
       </>
   )
