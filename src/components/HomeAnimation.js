@@ -68,7 +68,6 @@ const CentralWrapper = styled("div")`
   justify-content: center;
   align-items: center;
   width: 40%;
-  height: 100%;
   text-align: center;
 `
 
@@ -156,7 +155,7 @@ export default function HomeAnimation({currentLanguage}) {
 
         setTimeout(() => {
             setSlideTwo(true);
-        }, "3000");
+        }, "1000");
 
     }
 

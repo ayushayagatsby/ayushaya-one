@@ -3,6 +3,7 @@ import {StaticImage} from "gatsby-plugin-image"
 import styled from "@emotion/styled"
 import {css, jsx} from '@emotion/react'
 import DownScrollIcon from './DownScrollIcon'
+import InternalLink from './InternalLink'
 
 const HeroOuterWrapper = styled("div")`
 display: flex;
@@ -136,7 +137,7 @@ margin-bottom: 5%;
 `
 
 const ContactButton = styled("button")`
-width: 85%;
+width: 100%;
 height: 6vh;
 background-color: #F5EEE9;
 margin-bottom: 10%;
@@ -250,7 +251,7 @@ export default function AnimalsMobile({currentLanguage}) {
                                 <p className="p-small">{offer.offerText}</p>
                             </OfferDescriptionBox>
                             <PriceBox>
-                                <h3 css={css`font-size: 30px;`}>{offer.offerPrice}</h3>
+                                <h3 css={css `font-size: 30px;`}>{offer.offerPrice}</h3>
                             </PriceBox>
                         </OfferColumns>
                     ))}
@@ -269,7 +270,9 @@ export default function AnimalsMobile({currentLanguage}) {
 
                 <OutlineButton>{currentLanguage.csButton}</OutlineButton>
 
-                <ContactButton>{currentLanguage.gicButton}</ContactButton>
+                <InternalLink href="/contact" w="85%">
+                    <ContactButton>{currentLanguage.gicButton}</ContactButton>
+                </InternalLink>
 
             </WhiteWrapper>
 

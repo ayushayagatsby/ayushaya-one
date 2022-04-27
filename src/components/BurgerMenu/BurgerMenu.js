@@ -19,7 +19,7 @@ export default function BurgerMenu({menuToggle, menuState}) {
             firstChild.style.height = `${vh}px `;
             firstChild.style.overflow = 'hidden';
         } else {
-            firstChild.style.height = 'auto';
+            firstChild.style.height = '100vh';
             firstChild.style.overflow = 'scroll';
         }
     }, [burgerState]);

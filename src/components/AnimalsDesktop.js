@@ -4,6 +4,7 @@ import {StaticImage} from "gatsby-plugin-image"
 import styled from "@emotion/styled"
 import {css, jsx} from '@emotion/react'
 import DownScrollIcon from './DownScrollIcon'
+import InternalLink from './InternalLink'
 
 const HeroOuterWrapper = styled("div")`
 display: flex;
@@ -285,9 +286,9 @@ export default function AnimalsDesktop({currentLanguage}) {
 
                 <OutlineButton>{currentLanguage.csButton}</OutlineButton>
 
-                <Link to="/contact" css={css `width: 23%;`}>
+                <InternalLink href="/contact" w="23%">
                     <ContactButton>{currentLanguage.gicButton}</ContactButton>
-                </Link>
+                </InternalLink>
 
             </WhiteWrapper>
 

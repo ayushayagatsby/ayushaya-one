@@ -72,7 +72,7 @@ export default function ContactInfo({currentLanguage}) {
                     <h3 css={css `margin-bottom: 15%;`}>Castelveccana VA
                         <br/>
                         21010 Italy</h3>
-                    <IconWrapper><IcLocation css={css `width: 40%; height: auto;`}/></IconWrapper>
+                    <IconWrapper><IcLocation css={css `width: 30%; height: auto;`}/></IconWrapper>
 
                 </MapContent>
             </MapWrapper>

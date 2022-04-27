@@ -1,4 +1,4 @@
-import React, {useState} from "react"
+import React, {useState, useEffect} from "react"
 import {Link} from "gatsby"
 import Logo from "./Logo"
 import MenuButton from "./MenuButton"
@@ -17,6 +17,9 @@ import InternalLink from "./InternalLink"
 import MetaNav from "./Menu/MetaNav"
 import DekstopMenu from "./Menu/DekstopMenu"
 import {TransitionGroup} from 'react-transition-group'
+
+const LayoutWrapper = styled("div")`
+position: relative;`
 
 const NavBar = styled("nav")`
   width: 100%;
@@ -118,6 +121,8 @@ right: 5%;
 `
 
 const Layout = ({children}) => {
+
+
     const breakpoints = useBreakpoint();
     const metaTypes = [
         {
@@ -147,7 +152,7 @@ const Layout = ({children}) => {
     const isBrowser = typeof window !== "undefined"
     return (
         <TransitionGroup>
-            <div id="layout-wrapper">
+            <LayoutWrapper id="layout-wrapper">
                 <NavBar>
                     <Logo menuState={showMenu} toggleMenuState={handleShowMenu}/>
                     <BurgerMenu menuToggle={handleShowMenu} menuState={showMenu}/>
@@ -175,7 +180,7 @@ const Layout = ({children}) => {
                     {(!breakpoints.md && isBrowser) && <LanguageSelectContainer><LanguageSelect darkMode={true} menuPos="top"/></LanguageSelectContainer>}
 
                 </Footer>
-            </div>
+            </LayoutWrapper>
         </TransitionGroup>
     )
 }

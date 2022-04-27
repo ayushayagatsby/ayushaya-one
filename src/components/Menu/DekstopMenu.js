@@ -16,7 +16,7 @@ width: 100%;
 height: 100%;
 overflow: hidden;
 background-color: #FAF5F1;
-position: absolute;
+position: fixed;
 top: 0;
 z-index: 3;
 
@@ -131,11 +131,12 @@ export default function DekstopMenu({menuState, menuToggle}) {
 
 
     const metaTypesMapped = metaTypes.map(item => <InternalLink href={item.link} children={item.text}/>);
-    const menuTypesMappedDekstop = currentLanguage.map(item => <h1 onClick={menuToggle}><InternalLink href={item.link} children={item.text}/></h1>);
-    const menuTypesMappedMobile = currentLanguage.map(item => <h3 onClick={menuToggle}><InternalLink href={item.link} children={item.text}/></h3>);
+    const menuTypesMappedDekstop = currentLanguage.map(item => <h1 onClick={menuToggle}><InternalLink href={item.link} children={item.text} menuItem={true}/></h1>);
+    const menuTypesMappedMobile = currentLanguage.map(item => <h3 onClick={menuToggle}><InternalLink href={item.link} children={item.text} menuItem={true}/></h3>);
     const menuTypesMapped = breakpoints.sm
         ? menuTypesMappedMobile
         : menuTypesMappedDekstop;
+
 
     return (
         <CSSTransition
