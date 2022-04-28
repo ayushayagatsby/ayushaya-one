@@ -20,7 +20,12 @@
             "aboutPreHeader": "The best approach to health is prevention",
             "aboutButton": "About",
             "aboutText": "Optimizing lifestyle through nutrition, daily routine, physical activity, support in specific situations of unease or old age.",
-            "aboutHeader": "Dr. Juliane Merckens, MD"
+            "aboutHeader": "Juliane Merckens",
+            "routine": "Routine",
+            "lifestyle": "Lifestyle",
+            "nutrition": "Nutrition",
+            "unease": "Unease",
+            "activity": "Activity"
 
         },
         "it": {
@@ -41,8 +46,13 @@
             "signature": "Juliane Merckens",
             "aboutPreHeader": "L’approccio migliore alla salute è la prevenzione",
             "aboutButton": "Chi sono",
-            "aboutText": "Ottimizzare lo stile di vita riguardo alla nutrizione, alle condizioni di vita, alla routine giornaliera, all’attività fisica, supporto in situazioni specifiche come malesseri o l’anzianità.",
-            "aboutHeader": "Dr.ssa Juliane Merckens"
+            "aboutText": "Ottimizzare lo stile di vita riguardo alla nutrizione, alla routine giornaliera, all’attività fisica, supporto in situazioni specifiche come malesseri o l’anzianità.",
+            "aboutHeader": "Juliane Merckens",
+            "routine": "Routine",
+            "lifestyle": "Stile di vita",
+            "nutrition": "Nutrizione",
+            "unease": "Disagio",
+            "activity": "Attività"
 
         },
         "de": {
@@ -53,18 +63,23 @@
             "slideTwoHeader": "Die körpereigene Intelligenz unterstützen, um durch Balance Gesundheit zu fördern.",
             "slideThreeHeader": "Was Ayurveda bietet",
             "slideThreeText": "Ein ganzheitlicher Ansatz für Gesundheit und Wohlbefinden durch Verbesserung der Lebensweise. ",
-            "ctaHeaderOne": "Für sie selbst",
+            "ctaHeaderOne": "Für Sie selbst",
             "ctaButtonOne": "Menschen",
-            "ctaTextOne": "ausgerichtet auf die Verbesserung des Lebenstils in den Bereichen Ernährung, Optimierung des Körpergewichts, tägliche Routine und schlaf, Tabak- und alkoholkonsum und körperliche Betätigung.",
+            "ctaTextOne": "ausgerichtet auf die Verbesserung des Lebenstils in den Bereichen Ernährung, Optimierung des Körpergewichts, tägliche Routine und Schlaf, Tabak- und alkoholkonsum und körperliche Betätigung.",
             "ctaHeaderTwo": "Für Ihren Buddy",
             "ctaButtonTwo": "Tiere",
-            "ctaTextTwo": "ausgerichtet auf Verbesserung des Lebenstils zur Unterstützung des Wohlbefindens und auf Hilfe in bestimmten situationen wie Unwohlsein und alter.",
+            "ctaTextTwo": "ausgerichtet auf Verbesserung des Lebenstils zur Unterstützung des Wohlbefindens und auf Hilfe in bestimmten Situationen wie Unwohlsein und Alter.",
             "quote": "Viel kann erreicht durch die Wahl werden, wie man Körper, Geist und seele nährt",
             "signature": "Dr. Juliane Merckens",
             "aboutPreHeader": "Der beste Ansatz für Gesundheit ist Vorbeugen",
             "aboutButton": "Zur Person",
-            "aboutText": "Optimierung des Lebensstils in den Bereichen Ernährung, Lebensbedingungen, tägliche Routine, körperliche Betätigung, Unterstützung in bestimmten situationen wie Unwohlsein oder alter.",
-            "aboutHeader": "Zur Person Dr Juliane Merckens"
+            "aboutText": "Optimierung des Lebensstils in den Bereichen Ernährung, tägliche Routine, körperliche Betätigung, Unterstützung in bestimmten Situationen wie Unwohlsein oder Alter.",
+            "aboutHeader": "Zur Person Juliane Merckens",
+            "routine": "Routine",
+            "lifestyle": "Lebensstil",
+            "nutrition": "Ernährung",
+            "unease": "Unwohlsein",
+            "activity": "Aktivität"
 
         }
     }

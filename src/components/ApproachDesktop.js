@@ -202,24 +202,24 @@ export default function ApproachDesktop({currentLanguage}) {
                 </AboutParagraph>
 
                 <ElementsWrapper css={css `margin-top: 3%;`}>
-                    <SingleElement css={css `margin-top: 10%;`}><IcFire css={css `width: 100%; height: auto; margin-bottom: 7%;`}/>
-                        <ElementName>{currentLanguage.FireElement}</ElementName>
-                    </SingleElement>
-
-                    <SingleElement css={css `margin-top: 4%; margin-right: 3%;`}><IcWater css={css `width: 100%; height: auto; margin-bottom: 7%;`}/>
-                        <ElementName>{currentLanguage.WaterElement}</ElementName>
-                    </SingleElement>
-
-                    <SingleElement><IcEther css={css `width: 100%; height: auto; margin-bottom: 7%;`}/>
+                    <SingleElement css={css `margin-top: 10%;`}><IcEther css={css `width: 100%; height: auto; margin-bottom: 7%;`}/>
                         <ElementName>{currentLanguage.EtherElement}</ElementName>
                     </SingleElement>
 
-                    <SingleElement css={css `margin-top: 4%; margin-left: 3%;`}><IcEarth css={css `width: 100%; height: auto; margin-bottom: 7%;`}/>
-                        <ElementName>{currentLanguage.EarthElement}</ElementName>
+                    <SingleElement css={css `margin-top: 4%; margin-right: 3%;`}><IcWind css={css `width: 100%; height: auto; margin-bottom: 7%;`}/>
+                        <ElementName>{currentLanguage.AirElement}</ElementName>
                     </SingleElement>
 
-                    <SingleElement css={css `margin-top: 10%;`}><IcWind css={css `width: 100%; height: auto; margin-bottom: 7%;`}/>
-                        <ElementName>{currentLanguage.AirElement}</ElementName>
+                    <SingleElement><IcFire css={css `width: 100%; height: auto; margin-bottom: 7%;`}/>
+                        <ElementName>{currentLanguage.FireElement}</ElementName>
+                    </SingleElement>
+
+                    <SingleElement css={css `margin-top: 4%; margin-left: 3%;`}><IcWater css={css `width: 100%; height: auto; margin-bottom: 7%;`}/>
+                        <ElementName>{currentLanguage.WaterElement}</ElementName>
+                    </SingleElement>
+
+                    <SingleElement css={css `margin-top: 10%;`}><IcEarth css={css `width: 100%; height: auto; margin-bottom: 7%;`}/>
+                        <ElementName>{currentLanguage.EarthElement}</ElementName>
                     </SingleElement>
                 </ElementsWrapper>
 

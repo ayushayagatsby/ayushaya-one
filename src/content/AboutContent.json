@@ -2,9 +2,9 @@
     "title": "About Page",
     "content": {
         "en": {
-            "heroHeader": "Dr. Juliane Merckens, MD",
+            "heroHeader": "Juliane Merckens",
             "heroSubHeader": "Specialist for health and disease prevention",
-            "heroText": "With the Experience of almost 20 years as a medical doctor, I have an in-depth comprehension of health and disease.",
+            "heroText": "With the experience of almost 20 years as a medical doctor, I have an in-depth comprehension of health and disease.",
             "imgHeader": "About myself",
             "imgText": "Born in Berlin, I grew up in different parts of Germany, but mainly in Düren, halfway between Köln and Aachen. As a child, I dreamed of working with animals. ",
             "cvHeader": "Curriculum Vitae",
@@ -72,7 +72,7 @@
             "agHeader": "After graduation",
             "agText": "I started working in the Italian-speaking part of Switzerland. My initial idea was to work in palliative medicine. But working in the field, I started doubting about this choice. Experiences in different fields led me eventually to become a family doctor and help people change their habits of smoking tobacco.",
             "complementarySubHeader": "Complementary approaches",
-            "complementaryTextOne": "Alongside, my interest in complementary approaches grew and led me to learn about possible ways to connect emotions and disease (Metamedicina) and to start training in Ayurveda. I was always curious to learn new things, so I decided to spend a year learning about nutrition for health and disease prevention (ETH Zürich), and then started to train in naturopathy, focusing on animal well-being.",
+            "complementaryTextOne": "Alongside, my interest in complementary approaches grew and led me to learn about possible ways to connect emotions and disease (Metamedicina®) and to start training in Ayurveda. I was always curious to learn new things, so I decided to spend a year learning about nutrition for health and disease prevention (ETH Zürich), and then started to train in naturopathy, focusing on animal well-being.",
             "complementaryTextTwo": "Thanks to the naturopathic training, I rediscovered my passion for animals. As time went by, I realized that I am much more interested in sustaining health than treating diseases. So, while preparing the final thesis, I started to think seriously about changing the profession. The final decision came when I discovered an institute in Germany which offers training to become an Ayurvedic therapist for animals.",
             "valueProp": "I want to help optimize lifestyle - theirs or for their animal friends- to maintain health. ",
             "bottomText": "Presently, I live in a small place in northern Italy with my husband, two old cats, and two dogs. I enjoy nature, reading books on various topics, and writing.",
@@ -85,7 +85,7 @@
         },
 
         "it": {
-            "heroHeader": "Dr.ssa Juliane Merckens",
+            "heroHeader": "Juliane Merckens",
             "heroSubHeader": "Specialista per la salute e la prevenzione delle malattie",
             "heroText": "Con quasi 20 anni di esperienza come medico, ho una profonda comprensione di salute e malattia",
             "imgHeader": "Chi sono",
@@ -110,7 +110,7 @@
                     "description": "Conclusione di una percorso formativo biennale quale operatrice ayurvedica presso Swiss Ayurvedic Institute e Associazione Aum Shanti Milano"
                 }, {
                     "year": "2015",
-                    "description": "Conclusione del percorso formativo quale consulente in Metamedicina (Italia)"
+                    "description": "Conclusione del percorso formativo quale consulente in Metamedicina® (Italia)"
                 }, {
                     "year": "2013",
                     "description": "Formazione in tabaccologia organizzata dalla Lega Polmonare Ticinese e da AT-Schweiz (Svizzera)"
@@ -141,7 +141,7 @@
                     "description": "Docenza a contratto in una scuola cantonale"
                 }, {
                     "year": "2013 - 2017",
-                    "description": "Varie esperienze da insegnante per le materie di anatomia, fisiologia, patologia e metamedicina per futuri terapisti complementari"
+                    "description": "Varie esperienze da insegnante per le materie di anatomia, fisiologia, patologia e Metamedicina® per futuri terapisti complementari"
                 }, {
                     "year": "2002 - 2011",
                     "description": "Varie esperienze lavorative in ospedale nei campi della medicina interna, riabilitazione cardiovascolare, geriatria, medicina palliativa e oncologia, psichiatria"
@@ -167,7 +167,7 @@
         },
 
         "de": {
-            "heroHeader": "Zur Person Dr Juliane Merckens",
+            "heroHeader": "Zur Person Juliane Merckens",
             "heroSubHeader": "Spezialistin für Gesundheit und Vorbeugung von Krankheiten",
             "heroText": "Mit einer fast 20-jährigen Erfahrung als Ärztin habe ich ein tiefgründiges Verständnis von Gesundheit und Krankheit.",
             "imgHeader": "Über mich",
@@ -192,7 +192,7 @@
                     "description": "Abschluss einer zweijährigen Ausbildung als “operatrice ayurvedica” am Swiss Ayurvedic Institute und der Associazione Aum Shanti Mailand"
                 }, {
                     "year": "2015",
-                    "description": "Abschluss der Ausbildung als Beraterin der Metamedizin nach Claudia Rainville (Italien)"
+                    "description": "Abschluss der Ausbildung als Beraterin der Metamedizin® nach Claudia Rainville (Italien)"
                 }, {
                     "year": "2013",
                     "description": "Ausbildung in Tabakologie, organisiert durch die Tessiner Lungenliga und AT-Schweiz"
@@ -223,7 +223,7 @@
                     "description": "Teilzeitlehrstelle in einer Kantonsschule"
                 }, {
                     "year": "2013 - 2017",
-                    "description": "Verschiedene Lehraufträge in den Fächern Anatomie, Physiologie, Pathologie und Metamedizin im Rahmen der Komplementär-Therapien"
+                    "description": "Verschiedene Lehraufträge in den Fächern Anatomie, Physiologie, Pathologie und Metamedizin® im Rahmen der Komplementär-Therapien"
                 }, {
                     "year": "2002 - 2011",
                     "description": "Verschiedene Arbeitserfahrungen in Krankenhäusern in den Bereichen Innere Medizin, Herz-Kreislauf-Reha, Geriatrie, Palliativmedizin und Onkologie, Psychiatrie"
@@ -237,7 +237,7 @@
             "agHeader": "Nach Studienabschluss",
             "agText": "Ich habe im italienisch-sprachigen Teil der Schweiz zu arbeiten begonnen. Meine ursprüngliche Vorstellung war es, in Richtung Palliativmedizin zu gehen. Doch während ich dort arbeitete, kamen mir Zweifel. Nach Arbeitserfahrungen in verschiedenen Bereichen wandte ich mich schließlich der Tätigkeit als Hausärztin und der Rauchstopberatung zu.",
             "complementarySubHeader": "Komplementäre Ansätze",
-            "complementaryTextOne": "Daneben wuchs mein Interesse für komplementäre Ansätzen, was mich dazu brachte, mehr über mögliche Zusammenhänge zwischen Emotionen und Krankheit zu lernen (Metamedizin) und eine Ausbildung in Ayurveda zu beginnen. Ich bin immer schon neugierig gewesen, Neues zu lernen, und so beschloss ich, ein Jahr lang Aspekte der Ernährung zur Vorbeugung von Krankheit und Unterstützung von Gesundheit zu vertiefen. Danach habe eine Ausbildung in Naturheilkunde mit Fokus auf Tiergesundheit begonnen. ",
+            "complementaryTextOne": "Daneben wuchs mein Interesse für komplementäre Ansätzen, was mich dazu brachte, mehr über mögliche Zusammenhänge zwischen Emotionen und Krankheit zu lernen (Metamedizin®) und eine Ausbildung in Ayurveda zu beginnen. Ich bin immer schon neugierig gewesen, Neues zu lernen, und so beschloss ich, ein Jahr lang Aspekte der Ernährung zur Vorbeugung von Krankheit und Unterstützung von Gesundheit zu vertiefen. Danach habe eine Ausbildung in Naturheilkunde mit Fokus auf Tiergesundheit begonnen. ",
             "complementaryTextTwo": "Dank der Ausbildung in Naturheilkunde habe ich meine Leidenschaft für Tiere wieder entdeckt. Mit der Zeit habe ich festgestellt, dass mich die Unterstützung der Gesundheit mehr interessiert als das Behandeln von Krankheiten. Deshalb habe ich beim Vorbereiten meiner Abschlussarbeit angefangen, ernsthaft darüber nachzudenken, mich beruflich neu zu orientieren. Die endgültige Entscheidung kam mit der Entdeckung, dass eine deutsche Ausbildungseinrichtung einen Lehrgang zum Ayurveda-Therapeuten für Tiere anbietet. ",
             "valueProp": "Ich möchte durch Verbesserung des Lebensstiles - der Menschen oder ihrer Vierbeiner - zu einer besseren Gesundheit beitragen.",
             "bottomText": "Heute lebe ich in einem kleinen Ort in Nord-Italien mit meinem Mann, zwei alten Katzen und zwei Hunden. Ich bin gerne in der Natur, lese gerne Bücher über unterschiedliche Themen und schreibe gerne. ",

@@ -245,7 +245,7 @@ export default function HomeAnimation({currentLanguage}) {
                                     in={!lastSlide}
                                     classNames="slide-three-fade-in"
                                     mountOnEnter>
-                                    <AllOffers/>
+                                    <AllOffers currentLanguage={currentLanguage}/>
                                 </CSSTransition>
                             </CentralWrapper>
                         </CSSTransition>

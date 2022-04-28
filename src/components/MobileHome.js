@@ -73,6 +73,19 @@ bottom: 70px;
 
 const OfferRow = styled("div")`
 display: flex;
+justify-content: center;
+
+& > * {
+    width: 40vw;
+
+    & > h5 {
+        width: 200%;
+        text-align: center;
+    }
+    
+}
+
+
 `
 
 const OfferSecondHeader = styled("h4")`
@@ -191,14 +204,14 @@ export default function MobileHome({currentLanguage}) {
 
             <OfferContainer>
                 <OfferRow>
-                    <SingleOffer text="routine" scale=".7" spacing="5%"><IcRoutine css={css `width: 130px; height: auto;`}/></SingleOffer>
-                    <SingleOffer text="lifestyle" scale=".7" spacing="5%"><IcLifestyle css={css `width: 130px; height: auto;`}/></SingleOffer>
+                    <SingleOffer text={currentLanguage.routine} scale=".7" spacing="5%"><IcRoutine css={css `width: 130px; height: auto;`}/></SingleOffer>
+                    <SingleOffer text={currentLanguage.lifestyle} scale=".7" spacing="5%"><IcLifestyle css={css `width: 130px; height: auto;`}/></SingleOffer>
                 </OfferRow>
                 <OfferRow>
-                    <SingleOffer text="nutrition" scale=".7" spacing="5%"><IcNutrition css={css `width: 130px; height: auto;`}/></SingleOffer>
-                    <SingleOffer text="unease" scale=".7" spacing="5%"><IcUnease css={css `width: 130px; height: auto;`}/></SingleOffer>
+                    <SingleOffer text={currentLanguage.nutrition} scale=".7" spacing="5%"><IcNutrition css={css `width: 130px; height: auto;`}/></SingleOffer>
+                    <SingleOffer text={currentLanguage.unease} scale=".7" spacing="5%"><IcUnease css={css `width: 130px; height: auto;`}/></SingleOffer>
                 </OfferRow>
-                <SingleOffer text="activity" scale=".7" spacing="5%"><IcActivity css={css `width: 130px; height: auto;`}/></SingleOffer>
+                <SingleOffer text={currentLanguage.activity} scale=".7" spacing="5%"><IcActivity css={css `width: 130px; height: auto;`}/></SingleOffer>
 
             </OfferContainer>
 

@@ -119,12 +119,12 @@ width: 75%;
 const PriceBox = styled("div")`
 margin-top: 2%;
 margin-bottom: 3%;
-width: 22%;
+width: 26%;
 background-color: rgba(209, 194, 187, .1);
 display: flex;
 justify-content: center;
 align-items: center;
-height: 10vh;
+height: 12vh;
 border-radius: 10px;
 text-align: center;
 `
@@ -259,11 +259,11 @@ export default function AnimalsDesktop({currentLanguage}) {
                     .map(offer => (
                         <OfferColumns>
                             <OfferTitleBox>
-                                <h4 css={css `margin-bottom: 2%;`}>{offer.offerHeader}</h4>
-                                <p className="p-big">{offer.offerSubheader}</p>
+                                <h4 css={css `margin-bottom: 4%;`}>{offer.offerHeader}</h4>
+                                <p className="p-small">{offer.offerSubheader}</p>
                             </OfferTitleBox>
                             <OfferDescriptionBox>
-                                <p className="p-small">{offer.offerText}</p>
+                                <p className="p">{offer.offerText}</p>
                             </OfferDescriptionBox>
                             <PriceBox>
                                 <h3>{offer.offerPrice}</h3>
