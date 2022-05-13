@@ -79,7 +79,7 @@ export default function QuoteSection({
                             ? "30px"
                             : "0"}; text-align: center;`}>{quote}</h2>}
                     {signature
-                        ? <Signature>DR. Juliane Merckens</Signature>
+                        ? <Signature>Juliane Merckens</Signature>
                         : ""}
                 </InnerWrapper>
             </MiddleWrapper>

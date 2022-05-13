@@ -19,7 +19,10 @@ import DekstopMenu from "./Menu/DekstopMenu"
 import {TransitionGroup} from 'react-transition-group'
 
 const LayoutWrapper = styled("div")`
-position: relative;`
+width: 100vw;
+overflow-x: hidden;
+position: relative;
+`
 
 const NavBar = styled("nav")`
   width: 100%;
