@@ -13,7 +13,7 @@ export default function AllOffers({currentLanguage}) {
 
             <SingleOffer text={currentLanguage.routine}><IcRoutine css={css`width: 6vw; max-width: 160px; height: auto;`}/></SingleOffer>
             <SingleOffer margin="10% 0 0 0" text={currentLanguage.lifestyle}><IcLifestyle css={css`width: 6vw; max-width: 160px; height: auto;`}/></SingleOffer>
-            <SingleOffer margin="15% 4% 4%" text={currentLanguage.nutrition}><IcNutrition css={css`width: 6vw; max-width: 160px; height: auto;`}/></SingleOffer>
+            <SingleOffer margin="15% 5% 2% 5%" text={currentLanguage.nutrition}><IcNutrition css={css`width: 6vw; max-width: 160px; height: auto;`}/></SingleOffer>
             <SingleOffer margin="10% 0 0 0" text={currentLanguage.unease}><IcUnease css={css`width: 6vw; max-width: 160px; height: auto;`}/></SingleOffer>
             <SingleOffer text={currentLanguage.activity}><IcActivity css={css`width: 6vw; max-width: 160px; height: auto;`}/></SingleOffer>
 

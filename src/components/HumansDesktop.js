@@ -45,6 +45,7 @@ display: flex;
 flex-direction: column;
 align-items: center;
 margin:10% 0;
+padding-bottom: 5%;
 `
 
 const TwoColumnTextbox = styled("div")`
@@ -210,7 +211,7 @@ export default function HumansDesktop({currentLanguage}) {
                     width={948}
                     height={948}
                     css={css `width: 61%; z-index: 0;`}/>
-                <TextImageCtaTextbox>
+                <TextImageCtaTextbox css={css`margin-left: 7%;`}>
                     <TextImageHeader>
                         {currentLanguage.bottomSubheaderTwo}
                     </TextImageHeader>

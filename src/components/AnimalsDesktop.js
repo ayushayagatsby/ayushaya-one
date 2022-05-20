@@ -1,5 +1,4 @@
 import React from 'react'
-import {Link} from "gatsby"
 import {StaticImage} from "gatsby-plugin-image"
 import styled from "@emotion/styled"
 import {css, jsx} from '@emotion/react'
@@ -44,6 +43,7 @@ display: flex;
 flex-direction: column;
 align-items: center;
 margin:10% 0;
+padding-bottom: 5%;
 `
 
 const TwoColumnTextbox = styled("div")`
@@ -286,7 +286,7 @@ export default function AnimalsDesktop({currentLanguage}) {
 
                 <OutlineButton>{currentLanguage.csButton}</OutlineButton>
 
-                <InternalLink href="/contact" w="23%">
+                <InternalLink href="/contact" w="23%"> 
                     <ContactButton>{currentLanguage.gicButton}</ContactButton>
                 </InternalLink>
 

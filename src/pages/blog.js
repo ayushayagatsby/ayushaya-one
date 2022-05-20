@@ -1,6 +1,4 @@
 import React, {useContext, useEffect, useState} from 'react'
-import ApproachDesktop from '../components/ApproachDesktop'
-import Layout from '../components/layout'
 import {useBreakpoint} from 'gatsby-plugin-breakpoints';
 import Seo from '../components/seo'
 import {StaticImage} from "gatsby-plugin-image"
@@ -77,14 +75,11 @@ export default function Blog() {
         switch (language) {
             case 'it':
                 return italianContent
-                break;
             case 'en':
                 return englishContent
-                break;
 
             case 'de':
                 return germanContent
-                break;
 
             default:
                 break;

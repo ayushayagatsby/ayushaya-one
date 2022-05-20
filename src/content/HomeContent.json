@@ -3,7 +3,7 @@
     "content": {
         "en": {
 
-            "slideOneHeader": "Ayurvedic coaching for humans and animals",
+            "slideOneHeader": "(The art of) Holistic healthcare",
             "firstHeaderstatic": "Professional consultations by Dr. Juliane Merckens ",
             "slideOnesubheader": "A path to a whole life by the art of holistic healthcare",
             "slideTwoHeader": "Sustaining the body’s innate intelligence to achieve health through balance.",
@@ -24,13 +24,13 @@
             "routine": "Routine",
             "lifestyle": "Lifestyle",
             "nutrition": "Nutrition",
-            "unease": "Unease",
+            "unease": "Well-being"  ,
             "activity": "Activity"
 
         },
         "it": {
 
-            "slideOneHeader": "Coaching ayurvedico per umani e animali",
+            "slideOneHeader": "Sostegno olistico alla salute",
             "firstHeaderstatic": "Consulenze professionali della Dr.ssa Juliane Merckens",
             "slideOnesubheader": "Il cammino verso una vita piena grazie all’approccio olistico nella cura della salute",
             "slideTwoHeader": "Sostenere l’innata intelligenza del corpo alla salute attraverso l’equilibrio.",
@@ -51,13 +51,13 @@
             "routine": "Routine",
             "lifestyle": "Stile di vita",
             "nutrition": "Nutrizione",
-            "unease": "Disagio",
+            "unease": "Benessere",
             "activity": "Attività"
 
         },
         "de": {
 
-            "slideOneHeader": "Ayurvedisches Coaching für Mensch und Tier",
+            "slideOneHeader": "Ganzheitliche Unterstützung der Gesundheit",
             "firstHeaderstatic": "Professionelle Beratung von Dr Juliane Merckens",
             "slideOnesubheader": "Ein Pfad zu einem gesunden und erfüllten Leben durch einen holistischen Ansatz",
             "slideTwoHeader": "Die körpereigene Intelligenz unterstützen, um durch Balance Gesundheit zu fördern.",
@@ -65,10 +65,10 @@
             "slideThreeText": "Ein ganzheitlicher Ansatz für Gesundheit und Wohlbefinden durch Verbesserung der Lebensweise. ",
             "ctaHeaderOne": "Für Sie selbst",
             "ctaButtonOne": "Menschen",
-            "ctaTextOne": "ausgerichtet auf die Verbesserung des Lebenstils in den Bereichen Ernährung, Optimierung des Körpergewichts, tägliche Routine und Schlaf, Tabak- und alkoholkonsum und körperliche Betätigung.",
+            "ctaTextOne": "Ausgerichtet auf die Verbesserung des Lebenstils in den Bereichen Ernährung, Optimierung des Körpergewichts, tägliche Routine und Schlaf, Tabak- und alkoholkonsum und körperliche Betätigung.",
             "ctaHeaderTwo": "Für Ihren Buddy",
             "ctaButtonTwo": "Tiere",
-            "ctaTextTwo": "ausgerichtet auf Verbesserung des Lebenstils zur Unterstützung des Wohlbefindens und auf Hilfe in bestimmten Situationen wie Unwohlsein und Alter.",
+            "ctaTextTwo": "Ausgerichtet auf Verbesserung des Lebenstils zur Unterstützung des Wohlbefindens und auf Hilfe in bestimmten Situationen wie Unwohlsein und Alter.",
             "quote": "Viel kann erreicht durch die Wahl werden, wie man Körper, Geist und seele nährt",
             "signature": "Juliane Merckens",
             "aboutPreHeader": "Der beste Ansatz für Gesundheit ist Vorbeugen",
@@ -78,7 +78,7 @@
             "routine": "Routine",
             "lifestyle": "Lebensstil",
             "nutrition": "Ernährung",
-            "unease": "Unwohlsein",
+            "unease": "Wohlsein",
             "activity": "Aktivität"
 
         }

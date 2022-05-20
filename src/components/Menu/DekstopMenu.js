@@ -1,6 +1,5 @@
 import React, {useState, useEffect, useContext} from 'react'
 import styled from "@emotion/styled"
-import {css, jsx} from '@emotion/react'
 import InternalLink from '../InternalLink'
 import MetaNav from './MetaNav'
 import {CSSTransition} from 'react-transition-group'
@@ -113,14 +112,11 @@ export default function DekstopMenu({menuState, menuToggle}) {
         switch (language) {
             case 'it':
                 return italianContent
-                break;
             case 'en':
                 return englishContent
-                break;
 
             case 'de':
                 return germanContent
-                break;
 
             default:
                 break;

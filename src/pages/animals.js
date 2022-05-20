@@ -20,14 +20,11 @@ export default function Animals() {
         switch (language) {
             case 'it':
                 return italianContent
-                break;
             case 'en':
                 return englishContent
-                break;
 
             case 'de':
                 return germanContent
-                break;
 
             default:
                 break;

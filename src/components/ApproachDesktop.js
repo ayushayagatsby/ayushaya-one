@@ -125,6 +125,7 @@ const DoorContainer = styled("div")`
 height: 85vh;
 width: 45%;
 position: relative;
+margin-bottom: 10%;
 `
 
 const DoorContent = styled("div")`
@@ -289,7 +290,7 @@ export default function ApproachDesktop({currentLanguage}) {
                     </AbsoluteDoor>
                     <DoorContent>
                         <h4>{currentLanguage.doorTopText}</h4>
-                        <h1>{currentLanguage.doorHeader}</h1>
+                        <h1 css={css`width: 130%;`}>{currentLanguage.doorHeader}</h1>
                         <DoorParagraph>
                             <p className="p-big">{currentLanguage.doorBottomText}</p>
                         </DoorParagraph>

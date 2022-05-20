@@ -27,6 +27,11 @@
                 "text": "Contact",
                 "link": "/contact"
 
+            }, {
+
+                "text": "Publications",
+                "link": "/publications"
+
             }
 
         ],
@@ -56,6 +61,11 @@
                 "text": "Contatti",
                 "link": "/contact"
 
+            }, {
+
+                "text": "Pubblicazioni",
+                "link": "/publications"
+
             }
         ],
         "de": [
@@ -83,6 +93,11 @@
 
                 "text": "Contact",
                 "link": "/contact"
+
+            }, {
+
+                "text": "Publikationen",
+                "link": "/publications"
 
             }
         ]

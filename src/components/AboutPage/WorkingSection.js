@@ -48,7 +48,6 @@ width: 3vw;
 height: 2px;
 background-color: #D1C2BB;
 border-radius: 30px;
-transform: translateY(10px);
 `
 
 const Year = styled("div")`
@@ -66,15 +65,24 @@ display: flex;
 margin-bottom: 8%;
 align-items: flex-start;`
 
+
+const DateBlock = styled("div")`
+display: flex;
+align-items: center;`
+
 export default function WorkingSection({currentLanguage}) {
-    const workingItems = currentLanguage.workingItems.map(item => <ListItemWrapper>
-        <Year>
-            <h3>{item.year}</h3>
-        </Year><Hr/>
-        <Description>
-            <p className="p-big">{item.description}</p>
-        </Description>
-    </ListItemWrapper>);
+    const workingItems = currentLanguage
+        .workingItems
+        .map(item => <ListItemWrapper>
+            <DateBlock>
+                <Year>
+                    <h3>{item.year}</h3>
+                </Year><Hr/></DateBlock>
+
+            <Description>
+                <p className="p-big">{item.description}</p>
+            </Description>
+        </ListItemWrapper>);
 
     return (
         <Wrapper>

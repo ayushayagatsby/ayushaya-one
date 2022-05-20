@@ -12,7 +12,7 @@ display: flex;
 flex-direction: column;
 align-items: center;
 width: 100%;
-margin-top: 15%;
+margin-top: 10%;
 margin-bottom: 5%;
 `
 const SecodInnerWrapper = styled("div")`

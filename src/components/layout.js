@@ -1,20 +1,15 @@
 import React, {useState, useEffect} from "react"
 import {Link} from "gatsby"
 import Logo from "./Logo"
-import MenuButton from "./MenuButton"
-import IcNaviIcon from "../assets/IcNaviIcon.svg"
 import IcPhone from "../assets/IcPhone.svg"
 import IcDots from "../assets/IcDots.svg"
 import IcMail from "../assets/IcMail.svg"
 import styled from "@emotion/styled";
 import {css, jsx} from '@emotion/react'
 import {useBreakpoint} from 'gatsby-plugin-breakpoints';
-import LanguageStore from '../context/LanguageStore'
-import BrandMark from '../assets/BrandMark.svg'
 import LanguageSelect from './LanguageSelect/LanguageSelect'
 import BurgerMenu from "./BurgerMenu/BurgerMenu"
 import InternalLink from "./InternalLink"
-import MetaNav from "./Menu/MetaNav"
 import DekstopMenu from "./Menu/DekstopMenu"
 import {TransitionGroup} from 'react-transition-group'
 
@@ -125,7 +120,6 @@ right: 5%;
 
 const Layout = ({children}) => {
 
-
     const breakpoints = useBreakpoint();
     const metaTypes = [
         {
@@ -157,8 +151,10 @@ const Layout = ({children}) => {
         <TransitionGroup>
             <LayoutWrapper id="layout-wrapper">
                 <NavBar>
-                    <Logo menuState={showMenu} toggleMenuState={handleShowMenu}/>
+                   <Logo menuState={showMenu} toggleMenuState={handleShowMenu}/>
+             
                     <BurgerMenu menuToggle={handleShowMenu} menuState={showMenu}/>
+
                 </NavBar>
 
                 <DekstopMenu menuState={showMenu} menuToggle={handleShowMenu}/> {breakpoints.sm && <Spacer/>}

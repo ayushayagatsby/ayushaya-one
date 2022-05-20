@@ -1,5 +1,4 @@
 import React, {useState, useContext} from "react"
-import ContactForm from "../components/ContactForm"
 import LanguageContext from '../context/LanguageContext';
 import ContactContent from '../content/ContactContent.json';
 import {StaticQuery, graphql} from "gatsby"
@@ -7,11 +6,7 @@ import {FormiumForm, defaultComponents} from '@formium/react';
 import {formium} from '../lib/formium';
 import {useBreakpoint} from 'gatsby-plugin-breakpoints';
 import SubmitButton from './SubmitButton'
-
-
-
 import styled from "@emotion/styled"
-import {css, jsx} from '@emotion/react'
 
 
 const CustomTextInput = styled("input")`

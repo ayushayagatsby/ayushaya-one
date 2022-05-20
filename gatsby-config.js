@@ -9,9 +9,7 @@ module.exports = {
         },
         description: `Ayurvedic coaching for humans and animals`,
         siteUrl: `https://www.ayushaya.coach/`,
-        social: {
-           
-        }
+        social: {}
     },
     plugins: [
         {
@@ -20,8 +18,9 @@ module.exports = {
                 // Get your projectId from https://dashboard.formium.io
                 projectId: process.env.GATSBY_FORMIUM_PROJECTID,
                 // Generate a personal access token by going to
-                // https://dashboard.formium.io/account#tokens and put it into a .env file (learn
-                // more about Gatsby environment variables here: https://gatsby.dev/env-vars).
+                // https://dashboard.formium.io/account#tokens and put it into a .env file
+                // (learn more about Gatsby environment variables here:
+                // https://gatsby.dev/env-vars).
                 accessToken: process.env.FORMIUM_ACCESS_TOKEN
             }
         }, {
@@ -62,10 +61,13 @@ module.exports = {
             }
         },
         `gatsby-transformer-sharp`,
-        `gatsby-plugin-sharp`,
-        // {   resolve: `gatsby-plugin-google-analytics`,   options: {     trackingId:
-        // `ADD YOUR TRACKING ID HERE`,   }, },
-        {
+        `gatsby-plugin-sharp`, {
+            resolve: 'gatsby-source-contentful',
+            options: {
+                spaceId: process.env.GATSBY_CONTENTFUL_SPACEID,
+                accessToken: process.env.GATSBY_CONTENTFUL_ACCESSTOKEN
+            }
+        }, {
             resolve: `gatsby-plugin-feed`,
             options: {
                 query: `

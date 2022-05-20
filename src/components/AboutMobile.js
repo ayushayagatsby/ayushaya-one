@@ -5,12 +5,9 @@ import {css, jsx} from '@emotion/react'
 import DownScrollIcon from './DownScrollIcon'
 import bgGradient from "./AboutPage/bgGradient.jpeg"
 import CurriculumTimelineMobile from './AboutPage/CurriculumTimelineMobile'
-import EducationSection from './AboutPage/EducationSection'
-import WorkingSection from './AboutPage/WorkingSection'
 import LogoIllustrationBig from "../assets/LogoIllustrationBig.svg"
 import WorkingSectionMobile from './AboutPage/WorkingSectionMobile'
 import AboutCtaMobile from './AboutPage/AboutCtaMobile'
-import {Link} from "gatsby"
 
 const HeroOuterWrapper = styled("div")`
 display: flex;

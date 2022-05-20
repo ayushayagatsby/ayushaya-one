@@ -1,4 +1,4 @@
-import React, {useState, useEffect, useRef} from 'react';
+import React, {useState, useRef, useEffect} from 'react';
 import IcArrowDown from "../assets/IcArrowDown.svg";
 import styled from "@emotion/styled";
 import {css, jsx} from '@emotion/react'
@@ -31,38 +31,43 @@ export default function DownScrollIcon(props) {
     const [goingDown,
         setGoingDown] = useState(true);
 
+    const [scrollDown,
+        setScrollDown] = useState(false)
+
     // useEffect(() => {     const handleScroll = () => {         const
     // currentScrollY = window.scrollY;         if (prevScrollY.current >
     // currentScrollY && goingDown) {             setGoingDown(false);         } if
     // (prevScrollY.current < currentScrollY && !goingDown) { setGoingDown(true);
-    //      }         prevScrollY.current = currentScrollY; console.log(goingDown,
+    // }         prevScrollY.current = currentScrollY; console.log(goingDown,
     // currentScrollY);     }; window.addEventListener("scroll", handleScroll,
     // {passive: true});     return () => window.removeEventListener("scroll",
-    // handleScroll); }, [goingDown]);
+    // handleScroll); }, [goingDown]); useEffect(() => {     const handleScroll =
+    // (event) => {         let delta = event.deltaY;         if (delta > 0) {
+    // console.log(delta)             handleScrollDown();         }     };
+    // window.addEventListener("wheel", handleScroll);     return () =>
+    // window.removeEventListener("wheel", handleScroll); }, []);
 
-    // useEffect(() => {
-    //     const handleScroll = (event) => {
-    //         let delta = event.deltaY;
-    //         if (delta > 0) {
-    //             console.log(delta)
-    //             handleScrollDown();
-
-    //         }
-    //     };
-
-    //     window.addEventListener("wheel", handleScroll);
-
-    //     return () => window.removeEventListener("wheel", handleScroll);
-    // }, []);
+    useEffect(() => {
+        let viewportHeight = window.innerHeight;
+        console.log(viewportHeight)
+        if (scrollDown) {
+            document
+                .getElementById('layout-wrapper')
+                .scrollBy(0, viewportHeight);
+        }
+    }, [scrollDown])
 
     const handleScrollDown = () => {
 
-        props.click();
+        if (props.click) {
+            props.click();
+        } else {
+            setScrollDown(true)
+        }
 
     }
 
-
-return (
-    <Wrapper onClick={handleScrollDown} size={props.size} mt={props.mt}><IcArrowDown css={css ` width: 22%; height:auto; transform: translateY(5%);`}/></Wrapper>
-)
+    return (
+        <Wrapper onClick={handleScrollDown} size={props.size} mt={props.mt}><IcArrowDown css={css ` width: 22%; height:auto; transform: translateY(5%);`}/></Wrapper>
+    )
 }

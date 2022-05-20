@@ -1,6 +1,4 @@
 import React, {useState, useEffect} from 'react'
-import MaskGateShape from "../assets/MaskGateShape.svg"
-import BrandType from "../assets/BrandType.svg"
 import LogoIllustrationBig from "../assets/LogoIllustrationBig.svg"
 import DownScrollIcon from "./DownScrollIcon.js"
 import styled from "@emotion/styled"

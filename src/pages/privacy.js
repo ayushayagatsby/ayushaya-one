@@ -1,37 +1,28 @@
 import React, {useContext} from 'react';
-import Seo from "../components/seo"
 import styled from "@emotion/styled";
 import {css, jsx} from '@emotion/react'
 import LanguageContext from "../context/LanguageContext"
 import {useBreakpoint} from 'gatsby-plugin-breakpoints';
-import ContactContent from '../content/ContactContent.json'
 
 export default function Privacy() {
     const breakpoints = useBreakpoint();
 
     const {language} = useContext(LanguageContext)
 
-
-
     let handleCurrentLanguage = (language) => {
         switch (language) {
             case 'it':
                 return italianContent
-                break;
             case 'en':
                 return englishContent
-                break;
 
             case 'de':
                 return germanContent
-                break;
 
             default:
                 break;
         }
     }
-
-    
 
     let italianContent = `Politica sulla privacy
     1. la protezione dei dati in sintesi
@@ -622,20 +613,27 @@ export default function Privacy() {
     ask you to revoke your consent to storage or the purpose for data storage no longer applies
     (e.g. after your request has been processed). Mandatory legal provisions –
     in particular statutory retention periods - remain unaffected.`
-    
 
     let currentLanguage = handleCurrentLanguage(language);
 
+    let textIntoArray = currentLanguage
+        .replace(/\n/g, " œ\n")
+        .split(" œ");
 
-    let textIntoArray = currentLanguage.replace(/\n/g, " œ\n").split(" œ");
-
-    const toRender = textIntoArray.map(line => (
-        <p>{line} <br /></p>
-    ))
+    const toRender = textIntoArray
+        .slice(1, -1)
+        .map(line => (
+            <p>{line}
+                <br/></p>
+        ))
 
     console.log(currentLanguage)
 
     return (
-        <div css={css `margin-top: ${breakpoints.sm ? "" : "20vh"}`}>{toRender}</div>
+        <div
+            css={css `margin-top: ${breakpoints.sm
+            ? ""
+            : "20vh"}`}>
+            <h1 css={css `margin-bottom: 70px;`}>{textIntoArray[0]}</h1>{toRender}</div>
     )
 }

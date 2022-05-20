@@ -55,18 +55,18 @@ const customStyles = {
 }
 
 export default function LanguageSelect( {darkMode, menuPos} ) {
-    const [selectedOption,
-        setSelectedOption] = useState(options[0]);
+    // const [selectedOption,
+    //     setSelectedOption] = useState(options[0]);
 
-    const [newSelect,
-        setNewSelect] = useState(options.filter(option => option.value === language)[0]);
+    // const [newSelect,
+    //     setNewSelect] = useState(options.filter(option => option.value === language)[0]);
         
 
-    const handleSelection = () => {
-        const newSelection = options.filter(option => option.value === language)[0];
-        setNewSelect(newSelection);
-        console.log(newSelect)
-    }
+    // const handleSelection = () => {
+    //     const newSelection = options.filter(option => option.value === language)[0];
+    //     setNewSelect(newSelection);
+    //     console.log(newSelect)
+    // }
 
     const {language, onChangeToEn, onChangeToIt, onChangeToDe} = useContext(LanguageContext)
 
