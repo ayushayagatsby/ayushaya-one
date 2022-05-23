@@ -195,8 +195,8 @@ export default function BlogPostTemplate({data}) {
             </ProgressBarContainer>
 
             {currentLanguage && <div css={css `padding: 0 5%;`}>{renderRichText(currentLanguage, options)}</div>}
-            {data.contentfulBlogPost.mixedReferences && <div css={css `padding: 0 5%;`}>{renderRichText(data.contentfulBlogPost.mixedReferences, options)}</div>}
+            {data.contentfulBlogPost.mixedReferences && <div
+                css={css `padding: 0 5%; width: 100%; overflow-wrap: break-word; border-top: 2px dashed #D4C1BA; margin-top: 40px; padding-top: 30px;`}>{renderRichText(data.contentfulBlogPost.mixedReferences, options)}</div>}
         </Wrapper>
     )
 }
-

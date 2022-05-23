@@ -96,13 +96,13 @@ const options = {
             return <GatsbyImage image={getImage(gatsbyImageData)} css={css `margin: 5% 0;`}/>
         },
         [INLINES.HYPERLINK]: (node, children) => {
-            const { uri } = node.data
+            const {uri} = node.data
             return (
-              <a href={uri} className="underline">
-                {children}
-              </a>
+                <a href={uri} className="underline">
+                    {children}
+                </a>
             )
-          },
+        }
     }
 }
 
@@ -205,13 +205,13 @@ export default function BlogPostTemplate({data}) {
                     </Link>
                     <h5 css={css `color: #D4C1BA; font-size: 18px;`}>{`${wordSum} WORDS`}</h5>
                     <LanguageSelect w={"30vw"} minW={"50px"} superSmall={true}/>
-                    
 
                 </div>
             </ProgressBarContainer>
 
             {currentLanguage && <div css={css ``}>{renderRichText(currentLanguage, options)}</div>}
-            {data.contentfulBlogPost.mixedReferences && <div css={css ``}>{renderRichText(data.contentfulBlogPost.mixedReferences, options)}</div>}
+            {data.contentfulBlogPost.mixedReferences && <div
+                css={css `width: 100%; overflow-wrap: break-word; border-top: 2px dashed #D4C1BA; margin-top: 40px; padding-top: 30px; `}>{renderRichText(data.contentfulBlogPost.mixedReferences, options)}</div>}
         </Wrapper>
     )
 }
