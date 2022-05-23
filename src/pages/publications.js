@@ -1,4 +1,4 @@
-import React, {useContext} from 'react'
+import React, {useContext, useState, useEffect} from 'react'
 import {graphql, Link} from "gatsby"
 import {BLOCKS, MARKS} from "@contentful/rich-text-types"
 import styled from "@emotion/styled"
@@ -128,13 +128,24 @@ export default function TestBlog({data}) {
 
     const breakpoints = useBreakpoint();
 
+    const [openArticle,
+        setOpenArticle] = useState(false);
+
+    useEffect(() => {
+
+        let layoutWrapper = document.getElementById("layout-wrapper")
+        if (openArticle) {
+            layoutWrapper.scrollTo({top: 0, behavior: 'smooth'});
+        }
+    }, [openArticle])
+
     const articlesMapped = data
         .allContentfulBlogPost
         .edges
         .map((_) => {
 
             return (
-                <ArticleWrapper key={_.node.id}>
+                <ArticleWrapper key={_.node.id} onClick={() => setOpenArticle(true)}>
                     <Link to={`/publications/${_.node.id}`} css={css `text-decoration: none;`}>
                         <div><GatsbyImage image={_.node.headerImage.gatsbyImageData}/>
                         </div>
@@ -155,7 +166,7 @@ export default function TestBlog({data}) {
         .map((_) => {
 
             return (
-                <ArticleWrapperMobile key={_.node.id}>
+                <ArticleWrapperMobile key={_.node.id} onClick={() => setOpenArticle(true)}>
                     <Link to={`/publications/${_.node.id}`} css={css `text-decoration: none;`}>
                         <div><GatsbyImage image={_.node.headerImage.gatsbyImageData}/>
                         </div>

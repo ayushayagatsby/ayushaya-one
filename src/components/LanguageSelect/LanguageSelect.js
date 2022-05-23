@@ -20,15 +20,15 @@ const customStyles = {
         ...provided,
         backgroundColor: state.selectProps.bg,
         width: state.selectProps.width,
-        minWidth: "200px",
+        
         color: state.selectProps.menuColor,
-        padding: 20
+        padding: state.selectProps.p
     }),
     control: (provided, state) => ({
         ...provided,
         backgroundColor: state.selectProps.bg,
         width: state.selectProps.width,
-        minWidth: "200px",
+        minWidth: state.selectProps.minWidth,
         borderColor: state.selectProps.bg,
         boxShadow: "none",
         "&:hover": {
@@ -54,7 +54,7 @@ const customStyles = {
     })
 }
 
-export default function LanguageSelect( {darkMode, menuPos} ) {
+export default function LanguageSelect( {darkMode, menuPos, w, minW, superSmall} ) {
     // const [selectedOption,
     //     setSelectedOption] = useState(options[0]);
 
@@ -88,8 +88,10 @@ export default function LanguageSelect( {darkMode, menuPos} ) {
 
     return (<Select
         styles={customStyles}
-        width='14vw'
+        width={w? w : '14vw'}
+        minWidth={minW ? minW : "200px"}
         menuColor={darkMode ? "#6B665B" : '#FAF5F1'}
+        p={superSmall ? "0" : "20"}
         bg={darkMode? "#F5EEEB" : "#DAC9C3"}
         singleBg={darkMode? "#F5EEEB" : "#DAC9C3"}
         menuPlacement={menuPos ?? "bottom"}

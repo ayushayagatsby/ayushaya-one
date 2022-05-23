@@ -8,16 +8,22 @@ import styled from "@emotion/styled"
 import Seo from './seo'
 import LanguageContext from '../context/LanguageContext';
 import IcArrowDown from '../assets/IcArrowDown.svg'
+import LanguageSelect from './LanguageSelect/LanguageSelect'
 
 const Bold = ({children}) => <span className="bold">{children}</span>
 const Text = ({children}) => <p className="p-small">{children}</p>
 
 const Wrapper = styled("div")`
 min-height: 100vh;
-width: 80%;
+width: 100%;
 margin: 0 auto;
-margin-top: -20vh;
 padding: 0 20px;
+background-color: #FAF5F1;
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+z-index: 5;
 `
 
 const ProgressBarContainer = styled("div")`
@@ -28,7 +34,7 @@ height: 9.5vh;
 align-self: flex-start;
 border-bottom-left-radius: 20px;
 border-bottom-right-radius: 20px;
-z-index: 3;
+z-index: 5;
 display: flex;
 align-items: center;
 `
@@ -198,6 +204,8 @@ export default function BlogPostTemplate({data}) {
                         </div>
                     </Link>
                     <h5 css={css `color: #D4C1BA; font-size: 18px;`}>{`${wordSum} WORDS`}</h5>
+                    <LanguageSelect w={"30vw"} minW={"50px"} superSmall={true}/>
+                    
 
                 </div>
             </ProgressBarContainer>
