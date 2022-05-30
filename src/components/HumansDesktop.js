@@ -7,6 +7,7 @@ import IcCalendar from '../assets/IcCalendar.svg'
 import IcConsultations from '../assets/IcConsultations.svg'
 import IcConsent from '../assets/IcConsent.svg'
 import InternalLink from "./InternalLink"
+import DownloadImage from './DownloadImage'
 
 const HeroOuterWrapper = styled("div")`
 display: flex;
@@ -211,7 +212,7 @@ export default function HumansDesktop({currentLanguage}) {
                     width={948}
                     height={948}
                     css={css `width: 61%; z-index: 0;`}/>
-                <TextImageCtaTextbox css={css`margin-left: 7%;`}>
+                <TextImageCtaTextbox css={css `margin-left: 7%;`}>
                     <TextImageHeader>
                         {currentLanguage.bottomSubheaderTwo}
                     </TextImageHeader>
@@ -265,7 +266,13 @@ export default function HumansDesktop({currentLanguage}) {
                     <p className="p-small">{currentLanguage.legal}</p>
                 </DisclaimerBox>
 
-                <OutlineButton>{currentLanguage.csButton}</OutlineButton>
+                <OutlineButton>
+                    <DownloadImage
+                        linkText={currentLanguage.csButton}
+                        title={currentLanguage.csButton}
+                        image={false}
+                        url={currentLanguage.consensoUmani}></DownloadImage>
+                </OutlineButton>
 
                 <InternalLink href="/contact" w="23%">
 

@@ -8,6 +8,10 @@ import {useBreakpoint} from 'gatsby-plugin-breakpoints';
 import SubmitButton from './SubmitButton'
 import styled from "@emotion/styled"
 
+const SuccessWrapper = styled("div")`
+width: 100%;
+display: flex;
+justify-content: center;`
 
 const CustomTextInput = styled("input")`
 height: ${props => props.h};
@@ -93,24 +97,23 @@ const myComponents = {
     FieldWrapper,
     Textarea,
     SubmitButton
-    
+
 }
 
 function ElementsWrapper(props) {
 
-  const breakpoints = useBreakpoint();
-
-    
+    const breakpoints = useBreakpoint();
 
     return (
-        <CustomElementsWrapper {...props} w={breakpoints.sm? "90vw" : "50vw"}>
+        <CustomElementsWrapper
+            {...props}
+            w={breakpoints.sm
+            ? "90vw"
+            : "50vw"}>
             {props.children}
         </CustomElementsWrapper>
     )
 }
-
-
-
 
 function FieldWrapper(props) {
 
@@ -123,9 +126,9 @@ function FieldWrapper(props) {
 
 function Textarea(props) {
 
-  const breakpoints = useBreakpoint();
+    const breakpoints = useBreakpoint();
 
-  const {language} = useContext(LanguageContext)
+    const {language} = useContext(LanguageContext)
 
     const englishContent = ContactContent.content.en;
     const italianContent = ContactContent.content.it;
@@ -150,15 +153,18 @@ function Textarea(props) {
     }
 
     let currentLanguage = handleCurrentLanguage(language);
-  const {
-    placeholder,
-    ...rest
-} = props
-
-  
+    const {
+        placeholder,
+        ...rest
+    } = props
 
     return (
-        <CustomTextArea placeholder={currentLanguage.yM} {...rest} h={breakpoints.sm? "50vh" : "20vh"}>
+        <CustomTextArea
+            placeholder={currentLanguage.yM}
+            {...rest}
+            h={breakpoints.sm
+            ? "50vh"
+            : "20vh"}>
             {props.children}
         </CustomTextArea>
     )
@@ -166,7 +172,7 @@ function Textarea(props) {
 
 function FormControl(props) {
 
-  const {language} = useContext(LanguageContext)
+    const {language} = useContext(LanguageContext)
 
     const englishContent = ContactContent.content.en;
     const italianContent = ContactContent.content.it;
@@ -192,7 +198,7 @@ function FormControl(props) {
 
     let currentLanguage = handleCurrentLanguage(language);
 
-  const breakpoints = useBreakpoint();
+    const breakpoints = useBreakpoint();
     const {
         id,
         label,
@@ -213,40 +219,56 @@ function FormControl(props) {
         ? "visible"
         : "visible";
 
-
-
-        
-
     switch (label) {
             // Short Answer
-        case ('First Name'):
+        case('First Name'):
             return (
-                <CustomFormControl {...rest} id={id} w={breakpoints.sm? "40vw" : "23vw"}>
+                <CustomFormControl
+                    {...rest}
+                    id={id}
+                    w={breakpoints.sm
+                    ? "40vw"
+                    : "23vw"}>
                     <CustomLabel>{currentLanguage.yN}</CustomLabel>
                     {children}
 
                 </CustomFormControl>
             )
-            case ('Last Name'):
+        case('Last Name'):
             return (
-                <CustomFormControl {...rest} id={id} w={breakpoints.sm? "40vw" : "23vw"}>
+                <CustomFormControl
+                    {...rest}
+                    id={id}
+                    w={breakpoints.sm
+                    ? "40vw"
+                    : "23vw"}>
                     <CustomLabel>{currentLanguage.lN}</CustomLabel>
                     {children}
 
                 </CustomFormControl>
             )
             // Email
-        case ('E-Mail Address'):
+        case('E-Mail Address'):
             return (
-              <CustomFormControl {...rest} id={id} w={breakpoints.sm? "90vw" : "50vw"}>
+                <CustomFormControl
+                    {...rest}
+                    id={id}
+                    w={breakpoints.sm
+                    ? "90vw"
+                    : "50vw"}>
                     <CustomLabel>{currentLanguage.eA}</CustomLabel>
                     {children}
 
                 </CustomFormControl>
             )
-        case ("Your Message"):
+        case("Your Message"):
             return (
-              <CustomFormControl {...rest} id={id} w={breakpoints.sm? "90vw" : "50vw"}>
+                <CustomFormControl
+                    {...rest}
+                    id={id}
+                    w={breakpoints.sm
+                    ? "90vw"
+                    : "50vw"}>
                     <CustomLabel>{currentLanguage.yM}</CustomLabel>
                     {children}
 
@@ -256,13 +278,12 @@ function FormControl(props) {
         default:
             return <div></div>;
     }
-   
+
 }
 
 function TextInput(props) {
 
-
-  const {language} = useContext(LanguageContext)
+    const {language} = useContext(LanguageContext)
 
     const englishContent = ContactContent.content.en;
     const italianContent = ContactContent.content.it;
@@ -287,8 +308,6 @@ function TextInput(props) {
     }
 
     let currentLanguage = handleCurrentLanguage(language);
-
-    
 
     const definePlaceholder = (name) => {
         switch (name) {
@@ -319,38 +338,33 @@ function TextInput(props) {
 
     return (<CustomTextInput
         {...props}
-        placeholder={placeholder} h={breakpoints.sm? "8vh" : "6vh"}/>)
+        placeholder={placeholder}
+        h={breakpoints.sm
+        ? "8vh"
+        : "6vh"}/>)
 }
 
-export default function ContacForm() {
+export default function ContacForm({currentLanguage}) {
+    const [success,
+        setSuccess] = React.useState(false);
+    if (success) {
+        return <SuccessWrapper>
+            <h3>{currentLanguage.success}</h3>
+        </SuccessWrapper>;
+    }
     return (
 
-    <StaticQuery
-    query={graphql`
-      query FormQuery {
-          formiumForm(slug: { eq: "contact-form" }) {
-      id
-      createAt
-      name
-      projectId
-      schema
-      slug
-      updateAt
-      version
-    }
-      }
-    `}
-    render={data => (
-      <div className="form-container">
-      <FormiumForm
-      data={data.formiumForm}
-      components={myComponents}
-      onSubmit={async (values) => {
-        await formium.submitForm('contact-form', values);
-        alert('Success');
-      }}
-    /></div>
-    )}
-  />
+        <StaticQuery
+            query={graphql ` query FormQuery { formiumForm(slug: { eq: "contact-form" }) { id createAt name projectId schema slug updateAt version } } `}
+            render={data => (
+            <div className="form-container">
+                <FormiumForm
+                    data={data.formiumForm}
+                    components={myComponents}
+                    onSubmit={async(values) => {
+                    await formium.submitForm('contact-form', values);
+                    setSuccess(true);
+                }}/></div>
+        )}/>
     )
 }

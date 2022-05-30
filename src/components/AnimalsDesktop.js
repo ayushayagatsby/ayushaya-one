@@ -4,6 +4,7 @@ import styled from "@emotion/styled"
 import {css, jsx} from '@emotion/react'
 import DownScrollIcon from './DownScrollIcon'
 import InternalLink from './InternalLink'
+import DownloadImage from './DownloadImage'
 
 const HeroOuterWrapper = styled("div")`
 display: flex;
@@ -282,11 +283,23 @@ export default function AnimalsDesktop({currentLanguage}) {
                     <p className="p-big">{currentLanguage.consentText}</p>
                 </ObersvationParagraph>
 
-                <OutlineButton>{currentLanguage.goButton}</OutlineButton>
+                <OutlineButton>
+                    <DownloadImage
+                        linkText={currentLanguage.goButton}
+                        title={currentLanguage.goButton}
+                        image={false}
+                        url={currentLanguage.observations}></DownloadImage>
+                </OutlineButton>
 
-                <OutlineButton>{currentLanguage.csButton}</OutlineButton>
+                <OutlineButton>
+                    <DownloadImage
+                        linkText={currentLanguage.csButton}
+                        title={currentLanguage.csButton}
+                        image={false}
+                        url={currentLanguage.observations}></DownloadImage>
+                </OutlineButton>
 
-                <InternalLink href="/contact" w="23%"> 
+                <InternalLink href="/contact" w="23%">
                     <ContactButton>{currentLanguage.gicButton}</ContactButton>
                 </InternalLink>
 

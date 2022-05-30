@@ -47,7 +47,7 @@ export default function Contact() {
           {!breakpoints.md && <Spacer />}
           {breakpoints.md && <ContactInfoMobile currentLanguage={currentLanguage}/>}
           {!breakpoints.md && <ContactInfo currentLanguage={currentLanguage}/>}
-        <ContactForm />
+        <ContactForm currentLanguage={currentLanguage}/>
       </>
   )
 }

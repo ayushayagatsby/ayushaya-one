@@ -46,7 +46,10 @@
             "consentText" : "Please help me by filling in and sending the general observation form. ",
             "goButton" : "General observation ",
             "csButton" : "Consent sheet",
-            "gicButton" : "Get in contact"
+            "gicButton" : "Get in contact",
+            "consensoUmani": "https://drive.google.com/uc?export=download&id=1i7gEtnXo0JCPZANaUSXSPLBENI9rMIch",
+            "consonseAnimali": "https://drive.google.com/uc?export=download&id=16p0LuIaQiBv7sP6jftYUNYNR0pP6Kafc",
+            "observations": "https://drive.google.com/file/d/1j_Z1uPx9LvuEo4yE6mGjJOCsJScLjpjF/view?usp=sharing"
         },
 
 
@@ -99,7 +102,10 @@
             "consentText" : "Ti prego di aiutarmi compilando e inviandomi il modulo “osservazione generale”",
             "goButton" : "Osservazione generale",
             "csButton" : "Consenso informato",
-            "gicButton" : "Prendere contatto"
+            "gicButton" : "Prendere contatto",
+            "consensoUmani": "https://drive.google.com/uc?export=download&id=1i7gEtnXo0JCPZANaUSXSPLBENI9rMIch",
+            "consonseAnimali": "https://drive.google.com/uc?export=download&id=16p0LuIaQiBv7sP6jftYUNYNR0pP6Kafc",
+            "observations": "https://drive.google.com/uc?export=download&id=1tolcqWKUp7AbSp3erHsrdPFM5pdKwsQA"
         },
 
         
@@ -152,7 +158,10 @@
             "consentText" : "Das Ausfüllen und Zurückschicken des Formulars “Allgemeine Beobachtung” ist mir eine große Hilfe.",
             "goButton" : "Allgemeine Beobachtung",
             "csButton" : "Einverständniserklärung",
-            "gicButton" : "Kontakt aufnehmen"
+            "gicButton" : "Kontakt aufnehmen",
+            "consensoUmani": "https://drive.google.com/uc?export=download&id=1i7gEtnXo0JCPZANaUSXSPLBENI9rMIch",
+            "consonseAnimali": "https://drive.google.com/uc?export=download&id=16p0LuIaQiBv7sP6jftYUNYNR0pP6Kafc",
+            "observations": "https://drive.google.com/file/d/1j_Z1uPx9LvuEo4yE6mGjJOCsJScLjpjF/view?usp=sharing"
         }
     }
 

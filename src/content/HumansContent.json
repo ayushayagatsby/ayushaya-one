@@ -25,9 +25,12 @@
             ],
             "offerPrice": "Price: 60 € per hour",
             "disclaimerText": "For every bill exceeding 77, 47€) a single supplementary tax (“marca da bollo”) of 2€ has to be charged, as required by Italian law. ",
-            "legal" : "Regardless of the buyer's origin, the services offered and promoted on this website are subject to Italian law.",
+            "legal": "Regardless of the buyer's origin, the services offered and promoted on this website are subject to Italian law.",
             "csButton": "Consent sheet",
-            "gicButton": "Get in contact"
+            "gicButton": "Get in contact",
+            "consensoUmani": "https://drive.google.com/uc?export=download&id=1i7gEtnXo0JCPZANaUSXSPLBENI9rMIch",
+            "consonseAnimali": "https://drive.google.com/uc?export=download&id=16p0LuIaQiBv7sP6jftYUNYNR0pP6Kafc",
+            "observations": "https://drive.google.com/file/d/1j_Z1uPx9LvuEo4yE6mGjJOCsJScLjpjF/view?usp=sharing"
         },
 
         "it": {
@@ -54,9 +57,12 @@
             ],
             "offerPrice": "Prezzo: 60 € all’ora",
             "disclaimerText": "Ad ogni fattura superiore a 77, 47€ si aggiunge una marca da bollo di 2€, conformemente alla legge italiana",
-            "legal" : "Indipendentemente dall'origine dell'acquirente, i servizi offerti e promossi su questo sito sono soggetti alla legge italiana.",
+            "legal": "Indipendentemente dall'origine dell'acquirente, i servizi offerti e promossi su questo sito sono soggetti alla legge italiana.",
             "csButton": "Consenso informato",
-            "gicButton": "Prendere contatto"
+            "gicButton": "Prendere contatto",
+            "consensoUmani": "https://drive.google.com/uc?export=download&id=1i7gEtnXo0JCPZANaUSXSPLBENI9rMIch",
+            "consonseAnimali": "https://drive.google.com/uc?export=download&id=16p0LuIaQiBv7sP6jftYUNYNR0pP6Kafc",
+            "observations": "https://drive.google.com/uc?export=download&id=1tolcqWKUp7AbSp3erHsrdPFM5pdKwsQA"
         },
 
         "de": {
@@ -83,9 +89,12 @@
             ],
             "offerPrice": "Preis: 60 € pro Stunde",
             "disclaimerText": "Für jede Rechnung, die höher als 77,47 € ist, kommt eine Standard-Zusatztsteuer (“marca da bollo”) von 2 € dazu, wie vom italienischen Gesetz verlangt.",
-            "legal" : "Unabhängig von der Herkunft des Käufers unterliegen die auf dieser Website angebotenen und beworbenen Dienstleistungen dem italienischen Recht.",
+            "legal": "Unabhängig von der Herkunft des Käufers unterliegen die auf dieser Website angebotenen und beworbenen Dienstleistungen dem italienischen Recht.",
             "csButton": "Einverständniserklärung",
-            "gicButton": "Kontakt aufnehmen"
+            "gicButton": "Kontakt aufnehmen",
+            "consensoUmani": "https://drive.google.com/uc?export=download&id=1i7gEtnXo0JCPZANaUSXSPLBENI9rMIch",
+            "consonseAnimali": "https://drive.google.com/uc?export=download&id=16p0LuIaQiBv7sP6jftYUNYNR0pP6Kafc",
+            "observations": "https://drive.google.com/file/d/1j_Z1uPx9LvuEo4yE6mGjJOCsJScLjpjF/view?usp=sharing"
         }
     }
 

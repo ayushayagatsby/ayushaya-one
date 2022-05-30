@@ -10,7 +10,8 @@
             "lN": "Last name",
             "yEA": "Your e-mail address",
             "eA": "E-mail address",
-            "yM": "Your message "
+            "yM": "Your message ",
+            "success" : "Thank you! I'll get back to you soon."
             
 
         },
@@ -24,7 +25,8 @@
             "lN": "Cognome",
             "yEA": "Il tuo indirizzo e-mail",
             "eA": "Indirizzo e-mail",
-            "yM": "Il tuo messaggio"
+            "yM": "Il tuo messaggio",
+            "success" : "Grazie! Riceverai una risposta a breve."
 
         },
         "de": {
@@ -37,7 +39,8 @@
             "lN": "Nachname",
             "yEA": "Ihre Mailadresse",
             "eA": "E-Mail",
-            "yM": "Ihre Nachricht"
+            "yM": "Ihre Nachricht",
+            "success": "Ich danke Ihnen! Ich melde mich bald wieder bei Ihnen."
             
         }
     }

@@ -8,6 +8,7 @@ import styled from "@emotion/styled"
 import Seo from './seo'
 import LanguageContext from '../context/LanguageContext';
 import IcArrowDown from '../assets/IcArrowDown.svg'
+import LanguageSelect from './LanguageSelect/LanguageSelect'
 
 const Bold = ({children}) => <span className="bold">{children}</span>
 const Text = ({children}) => <p className="p-big">{children}</p>
@@ -180,17 +181,21 @@ export default function BlogPostTemplate({data}) {
             <ProgressBarContainer id="blog-bar">
                 <ProgressBar id="progress-bar"/>
 
-                <div css={css `display: flex; align-items: center; &>*{margin-right: 20px;}`}>
-                    <Link to="/publications">
-                        <div
-                            css={css `display: flex; justify-content: center; align-items: center; width: 3vw; height: 3vw; background-color: #F9F5F1; border-radius: 50%; margin-left: 10px;`}>
-                            <IcArrowDown css={css ` width: 22%; height:auto; transform: rotate(90deg);`}/>
-                        </div>
-                    </Link>
+                <div css={css `display: flex; justify-content: space-between; align-items: center; width: 100%; padding-right: 30px;`}>
 
-                    <h5 css={css `color: #D4C1BA;`}>{formattedDate}</h5>
-                    <h5 css={css `color: #D4C1BA;`}>{`${wordSum} WORDS`}</h5>
+                    <div css={css `display: flex; align-items: center; &>*{margin-right: 20px;}`}>
+                        <Link to="/publications">
+                            <div
+                                css={css `display: flex; justify-content: center; align-items: center; width: 3vw; height: 3vw; background-color: #F9F5F1; border-radius: 50%; margin-left: 10px;`}>
+                                <IcArrowDown css={css ` width: 22%; height:auto; transform: rotate(90deg);`}/>
+                            </div>
+                        </Link>
 
+                        <h5 css={css `color: #D4C1BA;`}>{formattedDate}</h5>
+                        <h5 css={css `color: #D4C1BA;`}>{`${wordSum} WORDS`}</h5>
+
+                    </div>
+                    <LanguageSelect w={"20vw"} minW={"200px"}/>
                 </div>
             </ProgressBarContainer>
 
