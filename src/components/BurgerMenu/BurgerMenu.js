@@ -18,7 +18,7 @@ export default function BurgerMenu({menuToggle, menuState}) {
 
         if (burgerState) {
             firstChild.style.height = `${vh}px `;
-            firstChild.style.overflow = 'hidden';
+            firstChild.style.overflowY = 'hidden';
 
             if (blogBar) {
                 blogBar.style.visibility = "hidden"
@@ -26,7 +26,7 @@ export default function BurgerMenu({menuToggle, menuState}) {
 
         } else {
             firstChild.style.height = '100vh';
-            firstChild.style.overflow = 'scroll';
+            firstChild.style.overflowY = 'scroll';
             if (blogBar) {
                 blogBar.style.visibility = "visible"
             }

@@ -15,7 +15,7 @@ import {TransitionGroup} from 'react-transition-group'
 
 const LayoutWrapper = styled("div")`
 width: 100vw;
-overflow-x: hidden;
+overflow-x: hidden !important;
 position: relative;
 `
 
@@ -56,6 +56,8 @@ display: flex;
 padding-top: 7%;
 flex-wrap: wrap;
 justify-content: center;
+position: relative;
+z-index: 12;
 `
 
 const FooterMetaNav = styled("nav")`
