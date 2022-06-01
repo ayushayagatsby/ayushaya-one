@@ -42,7 +42,7 @@ export default function Animals() {
           
 
 
-            {!breakpoints.sm && <AnimalsDesktop currentLanguage={currentLanguage}/>}
+            {!breakpoints.md && <AnimalsDesktop currentLanguage={currentLanguage}/>}
 
         </>
     )

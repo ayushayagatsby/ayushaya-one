@@ -43,7 +43,7 @@ export default function Humans() {
 
            
 
-            {!breakpoints.sm  && <HumansDesktop currentLanguage={currentLanguage}/>}
+            {!breakpoints.md  && <HumansDesktop currentLanguage={currentLanguage}/>}
 
         </>
 

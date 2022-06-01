@@ -47,7 +47,7 @@ const Home = () => {
 
 
 
-            {(!breakpoints.sm) && <HomeAnimation currentLanguage={currentLanguage}/>}
+            {(!breakpoints.md) && <HomeAnimation currentLanguage={currentLanguage}/>}
         
 
         </>

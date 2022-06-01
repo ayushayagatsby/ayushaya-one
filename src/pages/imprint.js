@@ -11,7 +11,7 @@ export default function Imprint({data}) {
     return (
         <React.Fragment>
             {breakpoints.sm && <MetaPageMobile data={data}/>}
-            {(!breakpoints.md && breakpoints.l) && <MetaPageDesktop data={data}/>}
+            {!breakpoints.md && <MetaPageDesktop data={data}/>}
         </React.Fragment>
     )
 }

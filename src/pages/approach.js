@@ -42,7 +42,7 @@ export default function Approach() {
             
 
 
-            {!breakpoints.sm && <ApproachDesktop currentLanguage={currentLanguage}/>}
+            {!breakpoints.md && <ApproachDesktop currentLanguage={currentLanguage}/>}
 
         </>
     )

@@ -183,7 +183,7 @@ export default function TestBlog({data}) {
 
     return (
         <div >
-            {(!breakpoints.md && breakpoints.l) && <div
+            {!breakpoints.md && <div
                 css={css `display: flex; flex-direction: column; align-items: center; margin: 100px 0 80px;`}>
                 <StaticImage
                     src="../images/AboutPicture.png"
