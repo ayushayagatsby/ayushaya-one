@@ -28,7 +28,7 @@ const NavBar = styled("nav")`
   align-items: center;
   position: fixed;
   background-color: transparent;
-  z-index: 4;
+  z-index: 11;
 `
 
 const MainDesktop = styled("main")`
@@ -57,7 +57,7 @@ padding-top: 7%;
 flex-wrap: wrap;
 justify-content: center;
 position: relative;
-z-index: 12;
+z-index: 10;
 `
 
 const FooterMetaNav = styled("nav")`
@@ -113,6 +113,7 @@ max-width: 31px;
 display: flex;
 flex-direction: column;
 justify-content: space-between;
+z-index: 12;
 `
 
 const LanguageSelectContainer = styled("div")`

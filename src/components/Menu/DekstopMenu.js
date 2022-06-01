@@ -17,7 +17,7 @@ overflow: hidden;
 background-color: #FAF5F1;
 position: fixed;
 top: 0;
-z-index: 999;
+z-index: 10;
 
 `
 
