@@ -215,7 +215,7 @@ export default function TestBlog({data}) {
 
             <div>
                 {breakpoints.sm && <ArticlesGridMobile>{articlesMappedMobile}</ArticlesGridMobile>}
-                {(!breakpoints.md && breakpoints.l) && <ArticlesGrid>{articlesMapped}</ArticlesGrid>}</div>
+                {!breakpoints.md && <ArticlesGrid>{articlesMapped}</ArticlesGrid>}</div>
         </div>
     )
 }
