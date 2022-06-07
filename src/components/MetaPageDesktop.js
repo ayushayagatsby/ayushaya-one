@@ -10,13 +10,17 @@ import LanguageContext from '../context/LanguageContext';
 import IcArrowDown from '../assets/IcArrowDown.svg'
 import LanguageSelect from './LanguageSelect/LanguageSelect'
 
-const Bold = ({children}) => <span className="bold">{children}</span>
+// const Bold = ({children}) => <span className="bold">{children}</span>
 const Text = ({children}) => <p className="p-big">{children}</p>
 
 const Wrapper = styled("div")`
 min-height: 100vh;
 width: 80%;
 margin: 0 auto;
+`
+
+const Bold = styled("span")`
+font-weight: 900;
 `
 
 const ProgressBarContainer = styled("div")`
