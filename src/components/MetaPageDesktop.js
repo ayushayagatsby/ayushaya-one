@@ -64,14 +64,21 @@ const options = {
                 )
         },
         [BLOCKS.HEADING_1]: (node, children) => {
-            return (
-                <h1 css={css `margin: 5% 0 3% 0;`}>{children}</h1>
-            )
+            if (node.content[0].value === "") {
+                return (<br/>)
+            } else 
+                return (
+                    <h1 css={css `margin: 5% 0 3% 0;`}>{children}</h1>
+                )
+
         },
         [BLOCKS.HEADING_2]: (node, children) => {
-            return (
-                <h2 css={css `margin-bottom: 3%;`}>{children}</h2>
-            )
+            if (node.content[0].value === "") {
+                return (<br/>)
+            } else 
+                return (
+                    <h2 css={css `margin-bottom: 3%;`}>{children}</h2>
+                )
         },
 
         [BLOCKS.EMBEDDED_ASSET]: node => {
@@ -121,12 +128,11 @@ export default function MetaPageDesktop({data}) {
     let currentLanguage = handleCurrentLanguage(language);
 
     let title = data.contentfulMetaPage.englishTitle;
-
+    console.log(currentLanguage.raw)
     return (
 
         <Wrapper>
-            <Seo title={title}/> 
-            {currentLanguage && <div css={css `padding: 10% 5%;`}>{renderRichText(currentLanguage, options)}</div>}
+            <Seo title={title}/> {currentLanguage && <div css={css `padding: 10% 5%;`}>{renderRichText(currentLanguage, options)}</div>}
         </Wrapper>
     )
 }
