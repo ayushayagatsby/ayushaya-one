@@ -1,4 +1,4 @@
-import React, {useContext} from "react"
+import React, {useContext, useEffect} from "react"
 import HomeContent from '../content/HomeContent.json';
 import LanguageContext from '../context/LanguageContext';
 import Seo from "../components/seo"
@@ -12,6 +12,10 @@ import MobileHome from "../components/MobileHome"
 
 
 const Home = () => {
+    useEffect(() => {
+        const layout = document.getElementById("layout-wrapper");
+        layout.scrollTo(0, 0)
+    }, [])
     const breakpoints = useBreakpoint();
     const {language} = useContext(LanguageContext)
 

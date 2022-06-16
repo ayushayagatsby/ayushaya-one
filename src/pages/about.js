@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useEffect } from 'react';
 import Seo from "../components/seo"
 import LanguageContext from "../context/LanguageContext"
 import AboutDesktop from '../components/AboutDesktop';
@@ -9,6 +9,11 @@ import AboutContent from '../content/AboutContent.json'
 
 const About = () => {
     const breakpoints = useBreakpoint();
+
+    useEffect(() => {
+        const layout = document.getElementById("layout-wrapper");
+        layout.scrollTo(0, 0)
+    }, [])
 
     const {language} = useContext(LanguageContext)
 

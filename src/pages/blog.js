@@ -63,6 +63,11 @@ export default function Blog() {
 
     });
 
+    useEffect(() => {
+        const layout = document.getElementById("layout-wrapper");
+        layout.scrollTo(0, 0)
+    }, [])
+
     const breakpoints = useBreakpoint();
 
     const {language} = useContext(LanguageContext)

@@ -1,4 +1,4 @@
-import React, {useContext} from 'react'
+import React, {useContext, useEffect} from 'react'
 import HumansDesktop from '../components/HumansDesktop'
 import HumansMobile from '../components/HumansMobile'
 import {useBreakpoint} from 'gatsby-plugin-breakpoints';

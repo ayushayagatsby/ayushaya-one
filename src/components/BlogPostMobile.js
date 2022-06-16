@@ -23,7 +23,7 @@ position: absolute;
 top: 0;
 left: 0;
 right: 0;
-z-index: 5;
+z-index: 15;
 `
 
 const ProgressBarContainer = styled("div")`
@@ -209,8 +209,8 @@ export default function BlogPostTemplate({data}) {
                 </div>
             </ProgressBarContainer>
 
-            {currentLanguage && <div css={css ``}>{renderRichText(currentLanguage, options)}</div>}
-            {data.contentfulBlogPost.mixedReferences && <div
+            {currentLanguage && <div id="mobile-blog-post-body" css={css ``}>{renderRichText(currentLanguage, options)}</div>}
+            {data.contentfulBlogPost.mixedReferences && <div id="mobile-blog-post-footer"
                 css={css `width: 100%; overflow-wrap: break-word; border-top: 2px dashed #D4C1BA; margin-top: 40px; padding-top: 30px; `}>{renderRichText(data.contentfulBlogPost.mixedReferences, options)}</div>}
         </Wrapper>
     )

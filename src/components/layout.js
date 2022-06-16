@@ -28,7 +28,7 @@ const NavBar = styled("nav")`
   align-items: center;
   position: fixed;
   background-color: transparent;
-  z-index: 11;
+  z-index: 12;
 `
 
 const MainDesktop = styled("main")`
@@ -40,7 +40,7 @@ min-height: 100vh;
 const MainMobile = styled("main")`
 width: 100%;
 padding: 0 5%;
-min-height: 100vh;
+min-height: ${props => props.mh};
 `
 
 const Spacer = styled("div")`
@@ -150,19 +150,34 @@ const Layout = ({children}) => {
     }
 
     const isBrowser = typeof window !== "undefined"
+
+    const [computedBlogLength,
+        setComputedBlogLength] = useState(0)
+
+    useEffect(() => {
+        const mainMobile = document.getElementById("main-mobile");
+        const mobileBlogPostBody = document.getElementById("mobile-blog-post-body");
+        const mobileBlogPostFooter = document.getElementById("mobile-blog-post-footer");
+
+        if (mobileBlogPostBody && mobileBlogPostFooter) {
+            setComputedBlogLength(`${mobileBlogPostBody.clientHeight + mobileBlogPostFooter.clientHeight + 150}px`)
+
+        }
+
+    })
     return (
         <TransitionGroup>
             <LayoutWrapper id="layout-wrapper">
                 <NavBar>
-                   <Logo menuState={showMenu} toggleMenuState={handleShowMenu}/>
-             
+                    <Logo menuState={showMenu} toggleMenuState={handleShowMenu}/>
+
                     <BurgerMenu menuToggle={handleShowMenu} menuState={showMenu}/>
 
                 </NavBar>
 
                 <DekstopMenu menuState={showMenu} menuToggle={handleShowMenu}/> {breakpoints.sm && <Spacer/>}
 
-                {breakpoints.sm && <MainMobile>{children}</MainMobile>}
+                {breakpoints.sm && <MainMobile id="main-mobile" mh={computedBlogLength}>{children}</MainMobile>}
                 {!breakpoints.sm && <MainDesktop>{children}
                     <QuickAccessMenu>
                         <a href='mailto:juliane@ayushaya.coach' target="_blank"><IcMail css={css `width: 100%; height: auto;`}/></a>

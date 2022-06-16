@@ -1,4 +1,4 @@
-import React, {useContext} from 'react';
+import React, {useContext, useEffect} from 'react';
 import {css, jsx} from '@emotion/react';
 import {graphql} from 'gatsby';
 import MetaPageDesktop from '../components/MetaPageDesktop';
@@ -7,6 +7,11 @@ import MetaPageMobile from '../components/MetaPageMobile';
 
 export default function Imprint({data}) {
     const breakpoints = useBreakpoint();
+
+    useEffect(() => {
+      const layout = document.getElementById("layout-wrapper");
+      layout.scrollTo(0, 0)
+  }, [])
 
     return (
         <React.Fragment>

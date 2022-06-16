@@ -8,6 +8,7 @@ import IcConsultations from '../assets/IcConsultations.svg'
 import IcConsent from '../assets/IcConsent.svg'
 import InternalLink from './InternalLink'
 import DownloadImage from './DownloadImage'
+import { Link } from "gatsby"
 
 const HeroOuterWrapper = styled("div")`
 display: flex;
@@ -84,8 +85,8 @@ padding-right: 20%;
 `
 
 const TextImageCtaButton = styled("button")`
-width: 80%;
-height: 7vh;
+width: 85%;
+height: 10vh;
 align-self: center;
 margin-top: 10%;
 
@@ -137,13 +138,13 @@ background-color: transparent;
 border: 1px solid #D1C2BB;
 color: #D1C2BB;
 width: 85%;
-height: 6vh;
+height: 10vh;
 margin-bottom: 10%;
 `
 
 const ContactButton = styled("button")`
 width: 100%;
-height: 6vh;
+height: 10vh;
 background-color: #F5EEE9;
 margin-bottom: 10%;
 `
@@ -233,7 +234,7 @@ export default function HumansMobile({currentLanguage}) {
                     </TextImageParagraphBox>
                 </TextImageTextbox>
 
-                <TextImageCtaButton>{currentLanguage.bottomCta}</TextImageCtaButton>
+                <TextImageCtaButton><Link to="/contact" css={css`text-decoration: none !important;`}>{currentLanguage.bottomCta}</Link></TextImageCtaButton>
 
             </TextImageWrapper>
 

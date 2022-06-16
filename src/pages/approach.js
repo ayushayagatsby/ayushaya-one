@@ -1,4 +1,4 @@
-import React, {useContext} from 'react'
+import React, {useContext, useEffect} from 'react'
 import ApproachDesktop from '../components/ApproachDesktop'
 import {useBreakpoint} from 'gatsby-plugin-breakpoints';
 import Seo from '../components/seo'
@@ -8,6 +8,11 @@ import ApproachContent from '../content/ApproachContent.json';
 
 
 export default function Approach() {
+
+    useEffect(() => {
+        const layout = document.getElementById("layout-wrapper");
+        layout.scrollTo(0, 0)
+    }, [])
 
     const breakpoints = useBreakpoint();
 

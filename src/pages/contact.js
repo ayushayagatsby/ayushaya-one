@@ -7,47 +7,50 @@ import LanguageContext from '../context/LanguageContext';
 import {useBreakpoint} from 'gatsby-plugin-breakpoints';
 import ContactInfoMobile from '../components/ContactInfoMobile';
 
-
-
 const Spacer = styled("div")`
 height: 20vh;
 `
 export default function Contact() {
 
+    useEffect(() => {
+        const layout = document.getElementById("layout-wrapper");
+        layout.scrollTo(0, 0)
+    }, [])
+
     const breakpoints = useBreakpoint();
 
+    const {language} = useContext(LanguageContext)
 
+    const englishContent = ContactContent.content.en;
+    const italianContent = ContactContent.content.it;
+    const germanContent = ContactContent.content.de;
 
-  
-  const {language} = useContext(LanguageContext)
+    let handleCurrentLanguage = (language) => {
+        switch (language) {
+            case 'it':
+                return italianContent
+            case 'en':
+                return englishContent
 
-  const englishContent = ContactContent.content.en;
-  const italianContent = ContactContent.content.it;
-  const germanContent = ContactContent.content.de;
+            case 'de':
+                return germanContent
 
-  let handleCurrentLanguage = (language) => {
-      switch (language) {
-          case 'it':
-              return italianContent
-          case 'en':
-              return englishContent
+            default:
+                break;
+        }
+    }
 
-          case 'de':
-              return germanContent
-
-          default:
-              break;
-      }
-  }
-
-  let currentLanguage = handleCurrentLanguage(language);
-  return (
-      <>
-          
-          {!breakpoints.md && <Spacer />}
-          {breakpoints.md && <ContactInfoMobile currentLanguage={currentLanguage}/>}
-          {!breakpoints.md && <ContactInfo currentLanguage={currentLanguage}/>}
-        <ContactForm currentLanguage={currentLanguage}/>
-      </>
-  )
+    let currentLanguage = handleCurrentLanguage(language);
+    return (
+    <> {
+        !breakpoints.md && <Spacer/>
+    }
+    {
+        breakpoints.md && <ContactInfoMobile currentLanguage={currentLanguage}/>
+    }
+    {
+        !breakpoints.md && <ContactInfo currentLanguage={currentLanguage}/>
+    } < ContactForm currentLanguage = {
+        currentLanguage
+    } /> </>)
 }

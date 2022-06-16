@@ -72,20 +72,7 @@ const TextImageParagraphBox = styled("h2")`
 padding-right: 5%;
 `
 
-const TextImageCtaTextbox = styled("div")`
-width: 34%;
-`
 
-const TextImageCtaParagraphBox = styled("h2")`
-padding-right: 20%;
-`
-
-const TextImageCtaButton = styled("button")`
-width: 66%;
-height: 5vh;
-align-self: flex-start;
-margin-top: 10%;
-`
 
 const OfferColumns = styled("div")`
 display: flex;
@@ -118,6 +105,7 @@ justify-content: center;
 align-items: center;
 height: 12vh;
 border-radius: 10px;
+padding: 50px;
 `
 
 const DisclaimerBox = styled("div")`
@@ -133,13 +121,13 @@ background-color: transparent;
 border: 1px solid #D1C2BB;
 color: #D1C2BB;
 width: 85%;
-height: 6vh;
+height: 10vh;
 margin-bottom: 5%;
 `
 
 const ContactButton = styled("button")`
 width: 100%;
-height: 6vh;
+height: 10vh;
 background-color: #F5EEE9;
 margin-bottom: 10%;
 `

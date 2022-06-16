@@ -8,6 +8,7 @@ import {GatsbyImage, getImage} from 'gatsby-plugin-image';
 import {renderRichText} from "gatsby-source-contentful/rich-text";
 import {useBreakpoint} from 'gatsby-plugin-breakpoints';
 import {StaticImage} from "gatsby-plugin-image"
+import PublicationsHeader from '../components/PublicationsHeader'
 
 const ArticleWrapper = styled("div")`
 background-color: white;
@@ -54,6 +55,11 @@ flex-direction: column;
 `
 
 export default function TestBlog({data}) {
+
+    useEffect(() => {
+        const layout = document.getElementById("layout-wrapper");
+        layout.scrollTo(0, 0)
+    }, [])
 
     const Bold = ({children}) => <span className="bold">{children}</span>
     const Text = ({children}) => <p css={css `margin-top: -2%;`}>{children}</p>
@@ -183,35 +189,7 @@ export default function TestBlog({data}) {
 
     return (
         <div >
-            {!breakpoints.md && <div
-                css={css `display: flex; flex-direction: column; align-items: center; margin: 100px 0 80px;`}>
-                <StaticImage
-                    src="../images/AboutPicture.png"
-                    alt="Dr. Juliane Merckens"
-                    layout="constrained"
-                    width={623}
-                    height={670}
-                    css={css `width: 30%; margin: 0 auto;`}/>
-
-                <h1 css={css `margin: 50px 0;`}>Publications</h1>
-
-                <p class="p-big">Posts and articles of Dr. Juliane Merckens, ND</p>
-            </div>}
-
-            {breakpoints.sm && <div
-                css={css `display: flex; flex-direction: column; align-items: center; margin: 30px 0 50px;`}>
-                <StaticImage
-                    src="../images/AboutPicture.png"
-                    alt="Dr. Juliane Merckens"
-                    layout="constrained"
-                    width={623}
-                    height={670}
-                    css={css `width: 60%; margin: 0 auto;`}/>
-
-                <h3 css={css `margin: 30px 0;`}>Publications</h3>
-
-                <p css={css `text-align: center;`}>Posts and articles of Dr. Juliane Merckens, ND</p>
-            </div>}
+            <PublicationsHeader/>
 
             <div>
                 {breakpoints.sm && <ArticlesGridMobile>{articlesMappedMobile}</ArticlesGridMobile>}

@@ -8,6 +8,8 @@ import IcConsultations from '../assets/IcConsultations.svg'
 import IcConsent from '../assets/IcConsent.svg'
 import InternalLink from "./InternalLink"
 import DownloadImage from './DownloadImage'
+import { Link } from "gatsby"
+
 
 const HeroOuterWrapper = styled("div")`
 display: flex;
@@ -94,9 +96,10 @@ padding-right: 20%;
 
 const TextImageCtaButton = styled("button")`
 width: 66%;
-height: 5vh;
+height: 7vh;
 align-self: flex-start;
 margin-top: 10%;
+
 `
 
 const OfferColumns = styled("div")`
@@ -136,13 +139,13 @@ background-color: transparent;
 border: 1px solid #D1C2BB;
 color: #D1C2BB;
 width: 23%;
-height: 6vh;
+height: 7vh;
 margin-bottom: 3%;
 `
 
 const ContactButton = styled("button")`
 width: 100%;
-height: 6vh;
+height: 7vh;
 background-color: #F5EEE9;
 margin-bottom: 10%;
 `
@@ -219,7 +222,7 @@ export default function HumansDesktop({currentLanguage}) {
                     <TextImageCtaParagraphBox>
                         <p className="p-big">{currentLanguage.bottomTextTwo}</p>
                     </TextImageCtaParagraphBox>
-                    <TextImageCtaButton>{currentLanguage.bottomCta}</TextImageCtaButton>
+                    <TextImageCtaButton><Link to="/contact" css={css`text-decoration: none !important;`}>{currentLanguage.bottomCta}</Link></TextImageCtaButton>
                 </TextImageCtaTextbox>
 
             </TextImageWrapper>

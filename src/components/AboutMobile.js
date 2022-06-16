@@ -81,16 +81,7 @@ const TextImageCtaTextbox = styled("div")`
 width: 34%;
 `
 
-const TextImageCtaParagraphBox = styled("div")`
-padding-right: 20%;
-`
 
-const TextImageCtaButton = styled("button")`
-width: 66%;
-height: 5vh;
-align-self: flex-start;
-margin-top: 10%;
-`
 
 const OfferColumns = styled("div")`
 display: flex;

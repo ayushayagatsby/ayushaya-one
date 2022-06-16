@@ -19,6 +19,7 @@ width: 100%;
 display: flex;
 flex-direction: column;
 align-items: center;
+margin-bottom: 50px;
 `
 
 const HeroOuterWrapper = styled("div")`
@@ -69,6 +70,7 @@ margin-bottom: 5%;
 const OfferContainer = styled("div")`
 position: relative;
 bottom: 70px;
+width: 100%;
 `
 
 const OfferRow = styled("div")`
@@ -215,39 +217,43 @@ export default function MobileHome({currentLanguage}) {
 
             </OfferContainer>
 
-            <StaticImage
-                src="../images/HumanSide.png"
-                alt="A human face"
-                layout="constrained"
-                width={378}
-                height={511}
-                css={css `width: 52%; margin-top: 15%;`}/>
+            <div css={css`display: flex; flex-direction: column; align-items: center;`}>
 
-            <CtaTextbox>
-                <CtaHeading>{currentLanguage.ctaHeaderOne}</CtaHeading>
-                <p className="p-small">{currentLanguage.ctaTextOne}</p>
-            </CtaTextbox>
+                <StaticImage
+                    src="../images/HumanSide.png"
+                    alt="A human face"
+                    layout="constrained"
+                    width={378}
+                    height={511}
+                    css={css `width: 52%; margin-top: 15%;`}/>
 
-            <Link to="/humans" css={css`width: 100%;`}>
-                <CtaButton>{currentLanguage.ctaButtonOne}</CtaButton>
-            </Link>
+                <CtaTextbox>
+                    <CtaHeading>{currentLanguage.ctaHeaderOne}</CtaHeading>
+                    <p className="p-small">{currentLanguage.ctaTextOne}</p>
+                </CtaTextbox>
 
-            <StaticImage
-                src="../images/DogSide.png"
-                alt="A dog face"
-                layout="constrained"
-                width={489}
-                height={488}
-                css={css `width: 66%; margin-top: 50%;`}/>
+                <Link to="/humans" css={css `width: 100%;`}>
+                    <CtaButton>{currentLanguage.ctaButtonOne}</CtaButton>
+                </Link>
 
-            <CtaTextbox>
-                <CtaHeading>{currentLanguage.ctaHeaderTwo}</CtaHeading>
-                <p className="p-small">{currentLanguage.ctaTextTwo}</p>
-            </CtaTextbox>
+                <StaticImage
+                    src="../images/DogSide.png"
+                    alt="A dog face"
+                    layout="constrained"
+                    width={489}
+                    height={488}
+                    css={css `width: 66%; margin-top: 50%;`}/>
 
-            <Link to='/animals' css={css`width: 100%;`}>
-                <CtaButton>{currentLanguage.ctaButtonTwo}</CtaButton>
-            </Link>
+                <CtaTextbox>
+                    <CtaHeading>{currentLanguage.ctaHeaderTwo}</CtaHeading>
+                    <p className="p-small">{currentLanguage.ctaTextTwo}</p>
+                </CtaTextbox>
+
+                <Link to='/animals' css={css `width: 100%;`}>
+                    <CtaButton>{currentLanguage.ctaButtonTwo}</CtaButton>
+                </Link>
+
+            </div>
 
             <QuoteOuterWrapper>
                 <QuoteInnerWrapper>
@@ -271,7 +277,7 @@ export default function MobileHome({currentLanguage}) {
                 <AboutSpecialHeader>{currentLanguage.aboutPreHeader}</AboutSpecialHeader>
                 <AboutSignature>{currentLanguage.aboutHeader}</AboutSignature>
                 <p>{currentLanguage.aboutText}</p>
-                <Link to="/about" css={css`width: 100%;`}>
+                <Link to="/about" css={css `width: 100%;`}>
                     <AboutButton>{currentLanguage.aboutButton}</AboutButton>
                 </Link>
             </AboutContainer>

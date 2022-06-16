@@ -83,21 +83,6 @@ const TextImageParagraphBox = styled("h2")`
 padding-right: 5%;
 `
 
-const TextImageCtaTextbox = styled("div")`
-width: 34%;
-`
-
-const TextImageCtaParagraphBox = styled("h2")`
-padding-right: 20%;
-`
-
-const TextImageCtaButton = styled("button")`
-width: 66%;
-height: 5vh;
-align-self: flex-start;
-margin-top: 10%;
-`
-
 const OfferColumns = styled("div")`
 display: flex;
 align-items: center;
@@ -143,13 +128,13 @@ background-color: transparent;
 border: 1px solid #D1C2BB;
 color: #D1C2BB;
 width: 23%;
-height: 6vh;
+height: 7vh;
 margin-bottom: 3%;
 `
 
 const ContactButton = styled("button")`
 width: 100%;
-height: 6vh;
+height: 7vh;
 background-color: #F5EEE9;
 margin-bottom: 10%;
 `
@@ -296,7 +281,7 @@ export default function AnimalsDesktop({currentLanguage}) {
                         linkText={currentLanguage.csButton}
                         title={currentLanguage.csButton}
                         image={false}
-                        url={currentLanguage.observations}></DownloadImage>
+                        url={currentLanguage.consensoAnimali}></DownloadImage>
                 </OutlineButton>
 
                 <InternalLink href="/contact" w="23%">
