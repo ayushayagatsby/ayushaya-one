@@ -1,7 +1,8 @@
 import React from 'react'
 import styled from "@emotion/styled"
 import {css, jsx} from '@emotion/react'
-import {StaticImage} from "gatsby-plugin-image"
+import {StaticImage
+placeholder:"blurred"} from "gatsby-plugin-image"
 import {Link} from "gatsby"
 
 
@@ -61,6 +62,7 @@ export default function AboutCta({currentLanguage}) {
             <InnerWrapper>
                 <CardContainer css={css `margin-bottom: 50%;`}>
                     <StaticImage
+placeholder:"blurred"
                         src="../../images/HumanSide.png"
                         alt="A human face"
                         layout="constrained"               
@@ -75,6 +77,7 @@ export default function AboutCta({currentLanguage}) {
 
                 <CardContainer>
                     <StaticImage
+placeholder:"blurred"
                         src="../../images/DogSide.png"
                         alt="A dog face"
                         layout="constrained"               

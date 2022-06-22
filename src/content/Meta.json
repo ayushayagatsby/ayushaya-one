@@ -1,0 +1,24 @@
+{
+    "title": "",
+    "content": {
+        "en": {
+            "imprint": "imprint",
+            "privacy": "privacy",
+            "contact": "contact"
+
+        },
+        "it": {
+            "imprint": "imprint",
+            "privacy": "privacy",
+            "contact": "contatti"
+
+        },
+        "de": {
+            "imprint": "impressum",
+            "privacy": "datenschutz",
+            "contact": "kontakt"
+            
+        }
+    }
+
+}

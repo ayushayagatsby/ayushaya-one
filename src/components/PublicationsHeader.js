@@ -4,7 +4,8 @@ import styled from "@emotion/styled"
 import {css, jsx} from '@emotion/react'
 import PublicationsContent from '../content/PublicationsContent.json';
 import {useBreakpoint} from 'gatsby-plugin-breakpoints';
-import {StaticImage} from "gatsby-plugin-image"
+import {StaticImage
+placeholder:"blurred"} from "gatsby-plugin-image"
 
 export default function PublicationsHeader() {
     const breakpoints = useBreakpoint();
@@ -39,6 +40,7 @@ export default function PublicationsHeader() {
         <div>{!breakpoints.md && <div
                 css={css `display: flex; flex-direction: column; align-items: center; margin: 100px 0 80px;`}>
                 <StaticImage
+placeholder:"blurred"
                     src="../images/AboutPicture.png"
                     alt="Dr. Juliane Merckens"
                     layout="constrained"
@@ -52,6 +54,7 @@ export default function PublicationsHeader() {
             </div>} {breakpoints.sm && <div
                 css={css `display: flex; flex-direction: column; align-items: center; margin: 30px 0 50px;`}>
                 <StaticImage
+placeholder:"blurred"
                     src="../images/AboutPicture.png"
                     alt="Dr. Juliane Merckens"
                     layout="constrained"

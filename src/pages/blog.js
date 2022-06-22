@@ -1,7 +1,8 @@
 import React, {useContext, useEffect, useState} from 'react'
 import {useBreakpoint} from 'gatsby-plugin-breakpoints';
 import Seo from '../components/seo'
-import {StaticImage} from "gatsby-plugin-image"
+import {StaticImage
+placeholder:"blurred"} from "gatsby-plugin-image"
 import LanguageContext from '../context/LanguageContext';
 import {css, jsx} from '@emotion/react'
 import styled from "@emotion/styled"
@@ -98,6 +99,7 @@ export default function Blog() {
             <Seo title="Blog Post"/>
 
             <StaticImage
+placeholder:"blurred"
                 src="../images/BlogPostPlaceholder.jpg"
                 alt="placeholderImage"
                 layout="constrained"

@@ -8,7 +8,7 @@ import styled from "@emotion/styled"
 import Seo from './seo'
 import LanguageContext from '../context/LanguageContext';
 
-const Text = ({children}) => <p className="p-small">{children}</p>
+const Text = ({children}) => <p className="p-small" css={css `word-break: break-word;`}>{children}</p>
 
 const Wrapper = styled("div")`
 min-height: 100vh;
@@ -61,12 +61,12 @@ const options = {
         },
         [BLOCKS.HEADING_1]: (node, children) => {
             return (
-                <h2 css={css `margin: 5% 0 3% 0;`}>{children}</h2>
+                <h3 css={css `margin: 5% 0 7% 0; word-break: break-word;`}>{children}</h3>
             )
         },
         [BLOCKS.HEADING_2]: (node, children) => {
             return (
-                <h3 css={css `margin-bottom: 3%;`}>{children}</h3>
+                <h4 css={css `margin-bottom: 5%; word-break: break-word;`}>{children}</h4>
             )
         },
 
@@ -121,8 +121,7 @@ export default function MetaPageMobile({data}) {
     return (
 
         <Wrapper>
-            <Seo title={title}/> 
-            {currentLanguage && <div css={css `padding: 10% 5%;`}>{renderRichText(currentLanguage, options)}</div>}
+            <Seo title={title}/> {currentLanguage && <div css={css `padding: 10% 5%;`}>{renderRichText(currentLanguage, options)}</div>}
         </Wrapper>
     )
 }

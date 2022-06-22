@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from "@emotion/styled"
-import {StaticImage} from "gatsby-plugin-image"
+import {StaticImage
+placeholder:"blurred"} from "gatsby-plugin-image"
 import { Link } from "gatsby"
 
 
@@ -59,6 +60,7 @@ export default function AboutSectiom({currentLanguage}) {
                 </TextWrapper>
                 <ImageWrapper>
                     <StaticImage
+placeholder:"blurred"
                         src="../../images/AboutPicture.png"
                         alt="Dr. Juliane Merckens"
                         layout="constrained"               

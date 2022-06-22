@@ -7,7 +7,8 @@ import LanguageContext from '../context/LanguageContext';
 import {GatsbyImage, getImage} from 'gatsby-plugin-image';
 import {renderRichText} from "gatsby-source-contentful/rich-text";
 import {useBreakpoint} from 'gatsby-plugin-breakpoints';
-import {StaticImage} from "gatsby-plugin-image"
+import {StaticImage
+placeholder:"blurred"} from "gatsby-plugin-image"
 import PublicationsHeader from '../components/PublicationsHeader'
 
 const ArticleWrapper = styled("div")`
@@ -34,6 +35,7 @@ position: relative;
 
 const GradientOverlay = styled("div")`
 height: 40%;
+max-height: 80px;
 width: 100%;
 position: absolute;
 display: flex;
@@ -157,7 +159,7 @@ export default function TestBlog({data}) {
                         </div>
                         <div css={css `padding: 0 5%;`}>{renderRichText(_.node[currentLanguage], options)}</div>
                         <GradientOverlay>
-                            <button css={css `margin-bottom: 5%;`}>READ</button>
+                            <button css={css `margin-bottom: 5%; &:hover {opacity: 1; background: #F5EEE9;}`}>READ</button>
                         </GradientOverlay>
 
                     </Link>

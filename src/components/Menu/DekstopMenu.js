@@ -69,9 +69,6 @@ const metaTypes = [
     }, {
         text: "Privacy",
         link: "/privacy"
-    }, {
-        text: "Contact",
-        link: "/contact"
     }
 ]
 
@@ -149,7 +146,7 @@ export default function DekstopMenu({menuState, menuToggle}) {
                     </MetaContainer>
 
                     {breakpoints.sm && <MetaMobile>
-                        <LanguageSelect darkMode={true} menuPos={"top"}/>
+                        <LanguageSelect w="200px" darkMode={true} menuPos={"top"}/>
                         <MobileMenuMeta>{metaTypesMapped}</MobileMenuMeta>
                     </MetaMobile>}
                 </InnerWrapper>

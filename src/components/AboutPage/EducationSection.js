@@ -1,7 +1,8 @@
 import React from 'react'
 import styled from "@emotion/styled"
 import {css, jsx} from '@emotion/react'
-import {StaticImage} from "gatsby-plugin-image"
+import {StaticImage
+placeholder:"blurred"} from "gatsby-plugin-image"
 
 const Wrapper = styled("div")`
 width: 100%;
@@ -43,6 +44,7 @@ export default function EducationSection({currentLanguage}) {
                 </FirstTextbox>
 
                 <StaticImage
+placeholder:"blurred"
                     src="../../images/CityImageOne.png"
                     alt="The facade of a Church"
                     layout="constrained"               
@@ -58,6 +60,7 @@ export default function EducationSection({currentLanguage}) {
                 </SecondTextbox>
 
                 <StaticImage
+placeholder:"blurred"
                     src="../../images/CityImageTwo.png"
                     alt="Another facade of a Church"
                     layout="constrained"               

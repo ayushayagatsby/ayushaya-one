@@ -11,7 +11,8 @@ import IcLifestyle from '../assets/IcLifestyle.svg'
 import IcNutrition from '../assets/IcNutrition.svg'
 import IcUnease from '../assets/IcUnease.svg'
 import IcActivity from '../assets/IcActivity.svg'
-import {StaticImage} from "gatsby-plugin-image"
+import {StaticImage
+placeholder:"blurred"} from "gatsby-plugin-image"
 import {Link} from "gatsby"
 
 const MainWrapper = styled("div")`
@@ -220,6 +221,7 @@ export default function MobileHome({currentLanguage}) {
             <div css={css`display: flex; flex-direction: column; align-items: center;`}>
 
                 <StaticImage
+placeholder:"blurred"
                     src="../images/HumanSide.png"
                     alt="A human face"
                     layout="constrained"
@@ -237,6 +239,7 @@ export default function MobileHome({currentLanguage}) {
                 </Link>
 
                 <StaticImage
+placeholder:"blurred"
                     src="../images/DogSide.png"
                     alt="A dog face"
                     layout="constrained"
@@ -268,6 +271,7 @@ export default function MobileHome({currentLanguage}) {
 
             <AboutContainer>
                 <StaticImage
+placeholder:"blurred"
                     src="../images/AboutPicture.png"
                     alt="Dr. Juliane Merckens"
                     layout="constrained"

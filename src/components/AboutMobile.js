@@ -1,5 +1,6 @@
 import React from 'react'
-import {StaticImage} from "gatsby-plugin-image"
+import {StaticImage
+placeholder:"blurred"} from "gatsby-plugin-image"
 import styled from "@emotion/styled"
 import {css, jsx} from '@emotion/react'
 import DownScrollIcon from './DownScrollIcon'
@@ -238,6 +239,7 @@ export default function AboutMobile({currentLanguage}) {
                 </ParagraphWrapper>
 
                 <StaticImage
+placeholder:"blurred"
                     src="../images/curriculumPicture.png"
                     alt="A dog in the beach"
                     layout="constrained"               
@@ -260,6 +262,7 @@ export default function AboutMobile({currentLanguage}) {
                 </TextImageTextbox>
 
                 <StaticImage
+placeholder:"blurred"
                     src="../images/CityImageOne.png"
                     alt="Another facade of a Church"
                     layout="constrained"               
@@ -301,6 +304,7 @@ export default function AboutMobile({currentLanguage}) {
                 </TextImageParagraphBox>
 
                 <StaticImage
+placeholder:"blurred"
                     src="../images/JulianeAndDog.png"
                     alt="Juliane with a dog"
                     layout="constrained"               
@@ -315,6 +319,7 @@ export default function AboutMobile({currentLanguage}) {
                 <ValueProposition>{currentLanguage.valueProp}</ValueProposition>
 
                 <StaticImage
+placeholder:"blurred"
                     src="../images/JulianeAndTwoDogs.png"
                     alt="Juliane with two dogs"
                     layout="constrained"               

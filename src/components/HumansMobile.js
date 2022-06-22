@@ -1,5 +1,6 @@
 import React from 'react'
-import {StaticImage} from "gatsby-plugin-image"
+import {StaticImage
+placeholder:"blurred"} from "gatsby-plugin-image"
 import styled from "@emotion/styled"
 import {css, jsx} from '@emotion/react'
 import DownScrollIcon from './DownScrollIcon'
@@ -174,6 +175,7 @@ export default function HumansMobile({currentLanguage}) {
                     </HeroTextbox>
 
                     <StaticImage
+placeholder:"blurred"
                         src="../images/ShapeHumanGradient.png"
                         alt="A human face"
                         layout="constrained"
@@ -194,6 +196,7 @@ export default function HumansMobile({currentLanguage}) {
                 </ParagraphWrapper>
 
                 <StaticImage
+placeholder:"blurred"
                     src="../images/JulianeComputer.png"
                     alt="Juliane in front of a computer"
                     layout="constrained"
@@ -211,6 +214,7 @@ export default function HumansMobile({currentLanguage}) {
                 </TextImageTextbox>
 
                 {/* <StaticImage
+placeholder:"blurred"
                     src="../images/JulianeFront.png"
                     alt="A photo of Juliane"
                     layout="constrained"
@@ -218,6 +222,7 @@ export default function HumansMobile({currentLanguage}) {
                     height={674}
                     css={css `width: 100%;`}/> */}
                 <StaticImage
+placeholder:"blurred"
                     src="../images/JulianeBack.png"
                     alt="A photo of Juliane"
                     layout="constrained"
@@ -240,6 +245,7 @@ export default function HumansMobile({currentLanguage}) {
 
             <WhiteWrapper css={css `margin-top: 50%;`}>
                 <StaticImage
+placeholder:"blurred"
                     src="../images/HumanSide.png"
                     alt="A humane face sideways"
                     layout="constrained"

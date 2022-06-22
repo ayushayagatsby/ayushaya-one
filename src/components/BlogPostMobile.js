@@ -15,14 +15,11 @@ const Text = ({children}) => <p className="p-small">{children}</p>
 
 const Wrapper = styled("div")`
 min-height: 100vh;
-width: 100%;
-margin: 0 auto;
+width: calc(100% + 10%);
+margin: 0 -5%;
 padding: 0 20px;
 background-color: #FAF5F1;
-position: absolute;
-top: 0;
-left: 0;
-right: 0;
+position: relative;
 z-index: 15;
 `
 

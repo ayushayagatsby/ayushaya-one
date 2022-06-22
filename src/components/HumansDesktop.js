@@ -1,5 +1,6 @@
 import React from 'react'
-import {StaticImage} from "gatsby-plugin-image"
+import {StaticImage
+placeholder:"blurred"} from "gatsby-plugin-image"
 import styled from "@emotion/styled"
 import {css, jsx} from '@emotion/react'
 import DownScrollIcon from './DownScrollIcon'
@@ -158,6 +159,7 @@ export default function HumansDesktop({currentLanguage}) {
 
                 <HeroInnerWrapper>
                     <StaticImage
+placeholder:"blurred"
                         src="../images/ShapeHumanGradient.png"
                         alt="A human face"
                         layout="constrained"
@@ -183,6 +185,7 @@ export default function HumansDesktop({currentLanguage}) {
                     </ParagraphWrapper>
                 </TwoColumnTextbox>
                 <StaticImage
+placeholder:"blurred"
                     src="../images/JulianeComputer.png"
                     alt="Juliane in front of a computer"
                     layout="constrained"
@@ -199,6 +202,7 @@ export default function HumansDesktop({currentLanguage}) {
                     </TextImageParagraphBox>
                 </TextImageTextbox>
                 <StaticImage
+placeholder:"blurred"
                     src="../images/JulianeFront.png"
                     alt="A photo of Juliane"
                     layout="constrained"
@@ -209,6 +213,7 @@ export default function HumansDesktop({currentLanguage}) {
 
             <TextImageWrapper css={css ` margin-top: 20%;`}>
                 <StaticImage
+placeholder:"blurred"
                     src="../images/JulianeBack.png"
                     alt="A photo of Juliane"
                     layout="constrained"
@@ -229,6 +234,7 @@ export default function HumansDesktop({currentLanguage}) {
 
             <WhiteWrapper css={css `margin-top: 30%;`}>
                 <StaticImage
+placeholder:"blurred"
                     src="../images/HumanSide.png"
                     alt="A humane face sideways"
                     layout="constrained"

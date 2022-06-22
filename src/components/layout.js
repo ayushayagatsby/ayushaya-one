@@ -193,7 +193,7 @@ const Layout = ({children}) => {
                         ? "90%"
                         : "34%"}>{metaTypesMapped}</FooterMetaNav>
 
-                    {(breakpoints.md && isBrowser) && <LanguageSelect darkMode={true} menuPos="top"/>}
+                    {(breakpoints.md && isBrowser) && <LanguageSelect w="200px" darkMode={true} menuPos="top"/>}
                     {(!breakpoints.md && isBrowser) && <LanguageSelectContainer><LanguageSelect darkMode={true} menuPos="top"/></LanguageSelectContainer>}
 
                 </Footer>
