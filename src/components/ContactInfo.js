@@ -1,7 +1,6 @@
 import React from 'react'
 import styled from "@emotion/styled"
-import {StaticImage
-placeholder:"blurred"} from "gatsby-plugin-image"
+import {StaticImage} from "gatsby-plugin-image"
 import {css, jsx} from '@emotion/react'
 import IcLocation from '../assets/IcLocation.svg'
 
@@ -47,7 +46,6 @@ export default function ContactInfo({currentLanguage}) {
     return (
         <Wrapper>
             <StaticImage
-placeholder:"blurred"
                 src="../images/AboutPicture.png"
                 alt="Dr. Juliane Merckens"
                 layout="constrained"
@@ -63,7 +61,6 @@ placeholder:"blurred"
 
             <MapWrapper>
                 <StaticImage
-placeholder:"blurred"
                     src="../images/MapBg.png"
                     alt="An aerial photograph"
                     layout="constrained"

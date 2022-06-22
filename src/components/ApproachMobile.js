@@ -1,6 +1,5 @@
 import React from 'react'
-import {StaticImage
-placeholder:"blurred"} from "gatsby-plugin-image"
+import {StaticImage} from "gatsby-plugin-image"
 import styled from "@emotion/styled"
 import {css, jsx} from '@emotion/react'
 import DownScrollIcon from './DownScrollIcon'
@@ -167,7 +166,6 @@ export default function ApproachDesktop({currentLanguage}) {
                         <p className="p">{currentLanguage.heroText}</p>
                     </HeroTextbox>
                     <StaticImage
-placeholder:"blurred"
                         src="../images/ShapeStonesGradient.png"
                         alt="Some stones in balance"
                         layout="constrained"
@@ -186,7 +184,6 @@ placeholder:"blurred"
                 </ParagraphWrapper>
 
                 <StaticImage
-placeholder:"blurred"
                     src="../images/SomeSpices.png"
                     alt="Some spices on a table"
                     layout="constrained"
@@ -276,7 +273,6 @@ placeholder:"blurred"
                 </TextImageTextbox>
 
                 <StaticImage
-placeholder:"blurred"
                     src="../images/DogBeachTwo.png"
                     alt="A dog at the beach"
                     layout="constrained"

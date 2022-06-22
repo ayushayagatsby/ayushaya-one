@@ -2,8 +2,7 @@ import React from 'react'
 import styled from "@emotion/styled"
 import {css, jsx} from '@emotion/react'
 import LogoIllustrationBig from "../../assets/LogoIllustrationBig.svg"
-import {StaticImage
-placeholder:"blurred"} from "gatsby-plugin-image"
+import {StaticImage} from "gatsby-plugin-image"
 
 const OuterWrapper = styled("div")`
 width: 100%;
@@ -75,7 +74,6 @@ export default function BottomSection({currentLanguage}) {
 
             <SecondInnerWrapper>
                 <StaticImage
-placeholder:"blurred"
                     src="../../images/JulianeAndDog.png"
                     alt="Juliane with a dog"
                     layout="constrained"               
@@ -89,7 +87,6 @@ placeholder:"blurred"
             <ValueProposition>{currentLanguage.valueProp}</ValueProposition>
 
             <StaticImage
-placeholder:"blurred"
                 src="../../images/JulianeAndTwoDogs.png"
                 alt="Juliane with two dogs"
                 layout="constrained"               

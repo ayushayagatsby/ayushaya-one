@@ -7,8 +7,7 @@ import LanguageContext from '../context/LanguageContext';
 import {GatsbyImage, getImage} from 'gatsby-plugin-image';
 import {renderRichText} from "gatsby-source-contentful/rich-text";
 import {useBreakpoint} from 'gatsby-plugin-breakpoints';
-import {StaticImage
-placeholder:"blurred"} from "gatsby-plugin-image"
+import {StaticImage} from "gatsby-plugin-image"
 import PublicationsHeader from '../components/PublicationsHeader'
 
 const ArticleWrapper = styled("div")`

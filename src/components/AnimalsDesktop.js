@@ -1,6 +1,5 @@
 import React from 'react'
-import {StaticImage
-placeholder:"blurred"} from "gatsby-plugin-image"
+import {StaticImage} from "gatsby-plugin-image"
 import styled from "@emotion/styled"
 import {css, jsx} from '@emotion/react'
 import DownScrollIcon from './DownScrollIcon'
@@ -165,7 +164,6 @@ export default function AnimalsDesktop({currentLanguage}) {
                     </HeroTextbox>
 
                     <StaticImage
-placeholder:"blurred"
                         src="../images/ShapeDogGradient.png"
                         alt="A dog face"
                         layout="constrained"
@@ -185,7 +183,6 @@ placeholder:"blurred"
                 </ParagraphWrapper>
 
                 <StaticImage
-placeholder:"blurred"
                     src="../images/DogBeach.png"
                     alt="A dog in the beach"
                     layout="constrained"
@@ -196,7 +193,6 @@ placeholder:"blurred"
 
             <TextImageWrapper>
                 <StaticImage
-placeholder:"blurred"
                     src="../images/DogSitting.png"
                     alt="A dog sitting"
                     layout="constrained"
@@ -219,7 +215,6 @@ placeholder:"blurred"
                     </TextImageParagraphBox>
                 </TextImageTextbox>
                 <StaticImage
-placeholder:"blurred"
                     src="../images/JulianeCat.png"
                     alt="Juliane with a cat"
                     layout="constrained"
@@ -230,7 +225,6 @@ placeholder:"blurred"
 
             <WhiteWrapper css={css `margin-top: 30%;`}>
                 <StaticImage
-placeholder:"blurred"
                     src="../images/DogSide.png"
                     alt="A humane face sideways"
                     layout="constrained"

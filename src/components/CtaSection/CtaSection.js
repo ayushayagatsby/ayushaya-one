@@ -1,6 +1,5 @@
 import React from 'react'
-import {StaticImage
-placeholder:"blurred"} from "gatsby-plugin-image"
+import {StaticImage} from "gatsby-plugin-image"
 import styled from "@emotion/styled"
 import TextAndButton from "./TextAndButton"
 import {css, jsx} from '@emotion/react'
@@ -31,7 +30,6 @@ export default function CtaSection({currentLanguage}) {
                     to="/humans"
                     />
                 <StaticImage
-placeholder:"blurred"
                     src="../../images/HumanSide.png"
                     alt="A human face"
                     layout="constrained"               
@@ -43,7 +41,6 @@ placeholder:"blurred"
 
             <InnerWrapper css={css `position: relative; left: 10%;`}>
                 <StaticImage
-placeholder:"blurred"
                     src="../../images/DogSide.png"
                     alt="A dog face"
                     layout="constrained"               
