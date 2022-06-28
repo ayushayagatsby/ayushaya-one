@@ -37,8 +37,8 @@ export default function DownScrollIcon(props) {
     // useEffect(() => {     const handleScroll = () => {         const
     // currentScrollY = window.scrollY;         if (prevScrollY.current >
     // currentScrollY && goingDown) {             setGoingDown(false);         } if
-    // (prevScrollY.current < currentScrollY && !goingDown) { setGoingDown(true);
-    // }         prevScrollY.current = currentScrollY; console.log(goingDown,
+    // (prevScrollY.current < currentScrollY && !goingDown) { setGoingDown(true); }
+    //        prevScrollY.current = currentScrollY; console.log(goingDown,
     // currentScrollY);     }; window.addEventListener("scroll", handleScroll,
     // {passive: true});     return () => window.removeEventListener("scroll",
     // handleScroll); }, [goingDown]); useEffect(() => {     const handleScroll =
@@ -53,7 +53,7 @@ export default function DownScrollIcon(props) {
         if (scrollDown) {
             document
                 .getElementById('layout-wrapper')
-                .scrollBy(0, viewportHeight);
+                .scrollBy({top: viewportHeight, left: 0, behavior: 'smooth'});
         }
     }, [scrollDown])
 

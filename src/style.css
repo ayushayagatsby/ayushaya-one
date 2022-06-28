@@ -76,7 +76,6 @@ html {
     width: 100vw;
     scroll-behavior: smooth;
 
-    
 }
 
 body {
@@ -84,7 +83,7 @@ body {
     color: var(--color-text);
     background-color: var(--color-primary);
     width: 100%;
-    
+
 }
 
 footer {
@@ -108,7 +107,7 @@ h3 {
     line-height: var(--lineHeight-tight);
     letter-spacing: -0.025em;
     font-weight: 400;
-} 
+}
 
 h2,
 h3,
@@ -173,7 +172,7 @@ p {
     line-height: var(--lineHeight-relaxed);
     --baseline-multiplier: 0.179;
     --x-height-multiplier: 0.35;
-    margin: var(--spacing-0) var(--spacing-0) var(--spacing-0);
+    margin: var(--spacing-0);
     padding: var(--spacing-0);
 }
 
@@ -302,6 +301,10 @@ a:hover {
     font-size: var(--fontSize-2);
 }
 
+.layout-wrapper {
+    scroll-behavior: smooth !important;
+}
+
 .bio {
     display: flex;
     margin-bottom: var(--spacing-16);
@@ -346,7 +349,6 @@ a:hover {
     background: #6E665A;
 }
 
-
 button {
     display: inline-block;
     border: none;
@@ -366,9 +368,8 @@ button {
     text-align: center;
     text-transform: uppercase;
 }
-
-button:hover,
-button:focus {
+button:focus,
+button:hover {
     background: linear-gradient(rgba(212, 193, 186, 0.2), rgba(212, 193, 186, 0.2));
 }
 
@@ -392,8 +393,6 @@ label {
     margin-bottom: 1rem;
 }
 
-
-
 /* Media queries */
 @media (max-width: 42rem) {
     blockquote {
@@ -405,7 +404,7 @@ label {
         list-style-position: inside;
     }
 }
-@media screen and  (max-width: 460px) {
+@media screen and (max-width: 460px) {
     h3 {
         font-size: 30px;
     }
@@ -414,17 +413,13 @@ label {
         font-size: 25px;
     }
 }
-
 @media screen and (min-width: 960px) and (max-width: 1600px) {
     html {
         font-size: 11px;
     }
 }
-
-@media screen and  (min-width: 1600px) {
+@media screen and (min-width: 1600px) {
     html {
         font-size: 13px;
     }
 }
-
-
