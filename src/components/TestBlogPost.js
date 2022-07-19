@@ -14,8 +14,8 @@ export default function TestBlogPost({location, data}) {
 
     return (
         <React.Fragment>
-            {breakpoints.sm && <BlogPostMobile data={data}/>}
-            {(!breakpoints.md && breakpoints.l) && <BlogPostDesktop data={data}/>}
+            {breakpoints.sm && <BlogPostMobile data={data} shareUrl={canonicalUrl}/>}
+            {(!breakpoints.md && breakpoints.l) && <BlogPostDesktop data={data} shareUrl={canonicalUrl}/>}
         </React.Fragment>
     )
 }

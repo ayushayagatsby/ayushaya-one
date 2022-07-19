@@ -393,6 +393,19 @@ label {
     margin-bottom: 1rem;
 }
 
+.facebook-share {
+    width: auto;
+}
+.facebook-share:active,
+.facebook-share:focus,
+.facebook-share:hover {
+    background: transparent;
+}
+
+.facebook-share > svg > circle {
+    fill: #DAC9C3;
+}
+
 /* Media queries */
 @media (max-width: 42rem) {
     blockquote {

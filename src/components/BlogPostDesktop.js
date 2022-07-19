@@ -8,7 +8,9 @@ import styled from "@emotion/styled"
 import Seo from './seo'
 import LanguageContext from '../context/LanguageContext';
 import IcArrowDown from '../assets/IcArrowDown.svg'
-import LanguageSelect from './LanguageSelect/LanguageSelect'
+import LanguageSelect from './LanguageSelect/LanguageSelect';
+import {FacebookShareButton, TwitterShareButton} from "react-share";
+import {FacebookIcon, TwitterIcon} from "react-share";
 
 const Bold = ({children}) => <span className="bold">{children}</span>
 const Text = ({children}) => <p className="p-big">{children}</p>
@@ -91,7 +93,7 @@ const options = {
     }
 }
 
-export default function BlogPostTemplate({data}) {
+export default function BlogPostTemplate({data, shareUrl}) {
 
     const {language} = useContext(LanguageContext)
 
@@ -181,7 +183,8 @@ export default function BlogPostTemplate({data}) {
             <ProgressBarContainer id="blog-bar">
                 <ProgressBar id="progress-bar"/>
 
-                <div css={css `display: flex; justify-content: space-between; align-items: center; width: 100%; padding-right: 30px;`}>
+                <div
+                    css={css `display: flex; justify-content: space-between; align-items: center; width: 100%; padding-right: 30px;`}>
 
                     <div css={css `display: flex; align-items: center; &>*{margin-right: 20px;}`}>
                         <Link to="/publications">
@@ -195,6 +198,8 @@ export default function BlogPostTemplate({data}) {
                         <h5 css={css `color: #D4C1BA;`}>{`${wordSum} WORDS`}</h5>
 
                     </div>
+                    <FacebookShareButton url={shareUrl} className="facebook-share"><FacebookIcon size={32} round iconFillColor={"#FAF5F1"}/></FacebookShareButton>
+                    <TwitterShareButton url={shareUrl} className="facebook-share"><TwitterIcon size={32} round iconFillColor={"#FAF5F1"}/></TwitterShareButton>
                     <LanguageSelect w={"20vw"} minW={"200px"}/>
                 </div>
             </ProgressBarContainer>

@@ -9,6 +9,8 @@ import Seo from './seo'
 import LanguageContext from '../context/LanguageContext';
 import IcArrowDown from '../assets/IcArrowDown.svg'
 import LanguageSelect from './LanguageSelect/LanguageSelect'
+import {FacebookShareButton, TwitterShareButton} from "react-share";
+import {FacebookIcon, TwitterIcon} from "react-share";
 
 const Bold = ({children}) => <span className="bold">{children}</span>
 const Text = ({children}) => <p className="p-small">{children}</p>
@@ -103,7 +105,7 @@ const options = {
     }
 }
 
-export default function BlogPostTemplate({data}) {
+export default function BlogPostTemplate({data, shareUrl}) {
 
     const {language} = useContext(LanguageContext)
 
@@ -200,14 +202,17 @@ export default function BlogPostTemplate({data}) {
                             <IcArrowDown css={css ` width: 22%; height:auto; transform: rotate(90deg);`}/>
                         </div>
                     </Link>
-                    <h5 css={css `color: #D4C1BA; font-size: 18px;`}>{`${wordSum} WORDS`}</h5>
+                    <FacebookShareButton url={shareUrl} className="facebook-share"><FacebookIcon size={32} round iconFillColor={"#FAF5F1"}/></FacebookShareButton>
+                    <TwitterShareButton url={shareUrl} className="facebook-share"><TwitterIcon size={32} round iconFillColor={"#FAF5F1"}/></TwitterShareButton>
+                    {/* <h5 css={css `color: #D4C1BA; font-size: 18px;`}>{`${wordSum} WORDS`}</h5> */}
                     <LanguageSelect w={"30vw"} minW={"50px"} superSmall={true}/>
 
                 </div>
             </ProgressBarContainer>
 
             {currentLanguage && <div id="mobile-blog-post-body" css={css ``}>{renderRichText(currentLanguage, options)}</div>}
-            {data.contentfulBlogPost.mixedReferences && <div id="mobile-blog-post-footer"
+            {data.contentfulBlogPost.mixedReferences && <div
+                id="mobile-blog-post-footer"
                 css={css `width: 100%; overflow-wrap: break-word; border-top: 2px dashed #D4C1BA; margin-top: 40px; padding-top: 30px; `}>{renderRichText(data.contentfulBlogPost.mixedReferences, options)}</div>}
         </Wrapper>
     )
