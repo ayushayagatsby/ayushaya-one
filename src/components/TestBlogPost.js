@@ -4,10 +4,13 @@ import BlogPostDesktop from './BlogPostDesktop';
 import {graphql, Link} from "gatsby"
 import BlogPostMobile from "./BlogPostMobile"
 
-
-export default function TestBlogPost({data}) {
+export default function TestBlogPost({location, data}) {
 
     const breakpoints = useBreakpoint();
+
+    const canonicalUrl = "https://www.ayushaya.coach/" + location.pathname
+
+    console.log(canonicalUrl)
 
     return (
         <React.Fragment>
@@ -62,4 +65,3 @@ export const pageQuery = graphql `
       }
   }
 `
-
