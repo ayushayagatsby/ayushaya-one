@@ -9,8 +9,8 @@ import Seo from './seo'
 import LanguageContext from '../context/LanguageContext';
 import IcArrowDown from '../assets/IcArrowDown.svg'
 import LanguageSelect from './LanguageSelect/LanguageSelect'
-import {FacebookShareButton, TwitterShareButton} from "react-share";
-import {FacebookIcon, TwitterIcon} from "react-share";
+import {FacebookShareButton, TwitterShareButton, WhatsappShareButton} from "react-share";
+import {FacebookIcon, TwitterIcon, WhatsappIcon} from "react-share";
 
 const Bold = ({children}) => <span className="bold">{children}</span>
 const Text = ({children}) => <p className="p-small">{children}</p>
@@ -204,8 +204,9 @@ export default function BlogPostTemplate({data, shareUrl}) {
                     </Link>
                     <FacebookShareButton url={shareUrl} className="facebook-share"><FacebookIcon size={32} round iconFillColor={"#FAF5F1"}/></FacebookShareButton>
                     <TwitterShareButton url={shareUrl} className="facebook-share"><TwitterIcon size={32} round iconFillColor={"#FAF5F1"}/></TwitterShareButton>
+                    <WhatsappShareButton url={shareUrl} className="facebook-share"><WhatsappIcon size={32} round iconFillColor={"#FAF5F1"}/></WhatsappShareButton>
                     {/* <h5 css={css `color: #D4C1BA; font-size: 18px;`}>{`${wordSum} WORDS`}</h5> */}
-                    <LanguageSelect w={"30vw"} minW={"50px"} superSmall={true}/>
+                    <LanguageSelect w={"25vw"} minW={"50px"} superSmall={true}/>
 
                 </div>
             </ProgressBarContainer>
