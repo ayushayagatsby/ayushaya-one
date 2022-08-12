@@ -16,12 +16,12 @@ module.exports = {
             resolve: `gatsby-source-formium`,
             options: {
                 // Get your projectId from https://dashboard.formium.io
-                projectId: process.env.GATSBY_FORMIUM_PROJECTID,
+                projectId: "6245f8c70a00c500016f28ec",
                 // Generate a personal access token by going to
                 // https://dashboard.formium.io/account#tokens and put it into a .env file
                 // (learn more about Gatsby environment variables here:
                 // https://gatsby.dev/env-vars).
-                accessToken: process.env.FORMIUM_ACCESS_TOKEN
+                accessToken: "SXfgU3ZmSUblFkj5CcVJTx49fevm9HReklJ4PPfLF57xCBa26bgHPXfIb1pMGYiE"
             }
         }, {
             resolve: "gatsby-plugin-react-svg",
@@ -64,8 +64,8 @@ module.exports = {
         `gatsby-plugin-sharp`, {
             resolve: 'gatsby-source-contentful',
             options: {
-                spaceId: process.env.GATSBY_CONTENTFUL_SPACEID,
-                accessToken: process.env.GATSBY_CONTENTFUL_ACCESSTOKEN
+                spaceId: "w7gregob2bmw",
+                accessToken: "2wzxdFuJr0c0vDb1RWkVOQbF2yIHLrqoAGVAmz07WtM"
             }
         }, {
             resolve: `gatsby-plugin-feed`,
