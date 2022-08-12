@@ -200,7 +200,7 @@ export default function BlogPostTemplate({data, shareUrl}) {
     return (
 
         <Wrapper id="blogWrapper">
-            <Seo title={currentLanguageTitle}/>
+            <Seo title={currentLanguageTitle} image={data.contentfulBlogPost.headerImage.url}/>
             <GatsbyImage
                 image={data.contentfulBlogPost.headerImage.gatsbyImageData}
                 css={css `display: flex; justify-content: center;`}/>

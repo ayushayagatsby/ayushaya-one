@@ -27,6 +27,9 @@ export const pageQuery = graphql `
     contentfulBlogPost(id: {eq: $id}) {
         createdAt
             id
+            headerImage {
+              url
+            }
             englishBody {
               raw
               references {
