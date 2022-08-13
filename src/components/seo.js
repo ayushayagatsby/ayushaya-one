@@ -27,9 +27,9 @@ const Seo = ({ description, lang, meta, title, image, width, height }) => {
     `
   )
 
-  const metaImage = image ? image : null;
-  const imageWidth = width || null
-  const imageHeight = height || null
+  const metaImage = image || "https://i.ibb.co/0Q1HTcs/image.png";
+  const imageWidth = width || 1920
+  const imageHeight = height || 1080
 
   const metaDescription = description || site.siteMetadata.description
   const defaultTitle = site.siteMetadata?.title
