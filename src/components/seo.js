@@ -27,7 +27,7 @@ const Seo = ({ description, lang, meta, title, image, width, height }) => {
     `
   )
 
-  const metaImage = image || "https://i.ibb.co/0Q1HTcs/image.png";
+  const metaImage = image || `https://i.ibb.co/0Q1HTcs/image.png`;
   const imageWidth = width || 1920
   const imageHeight = height || 1080
 
@@ -83,7 +83,7 @@ const Seo = ({ description, lang, meta, title, image, width, height }) => {
           ? [
             {
               property: "og:image",
-              content: image,
+              content: metaImage,
             },
             {
               property: "og:image:width",
