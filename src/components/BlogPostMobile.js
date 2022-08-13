@@ -112,23 +112,49 @@ export default function BlogPostTemplate({data, shareUrl}) {
     const englishContent = data.contentfulBlogPost.englishBody;
     const italianContent = data.contentfulBlogPost.italianBody;
     const germanContent = data.contentfulBlogPost.germanBody;
+    const englishTitle = data.contentfulBlogPost.englishTitle;
+    const italianTitle = data.contentfulBlogPost.italianTitle;
+    const germanTitle = data.contentfulBlogPost.germanTitle;
 
-    let handleCurrentLanguage = (language) => {
-        switch (language) {
-            case 'it':
-                return italianContent
-            case 'en':
-                return englishContent
+    let handleCurrentLanguage = (language, type) => {
 
-            case 'de':
-                return germanContent
+        switch (type) {
+            case "body":
+                switch (language) {
+                    case 'it':
+                        return italianContent
+                    case 'en':
+                        return englishContent
 
-            default:
+                    case 'de':
+                        return germanContent
+
+                    default:
+                        break;
+                }
+                break;
+
+            case "title":
+                switch (language) {
+                    case 'it':
+                        return italianTitle
+                    case 'en':
+                        return englishTitle
+
+                    case 'de':
+                        return germanTitle
+
+                    default:
+                        break;
+                }
                 break;
         }
+
     }
 
-    let currentLanguage = handleCurrentLanguage(language);
+    let currentLanguage = handleCurrentLanguage(language, "body");
+    let currentLanguageTitle = handleCurrentLanguage(language, "title");
+
 
     const [scrollPosition,
         setScrollPosition] = useState(0);
@@ -187,7 +213,7 @@ export default function BlogPostTemplate({data, shareUrl}) {
     return (
 
         <Wrapper id="blogWrapper">
-            <Seo title="Blog Post"/>
+            <Seo title={currentLanguageTitle} image={data.contentfulBlogPost.headerImage.url}/>
             <GatsbyImage
                 image={data.contentfulBlogPost.headerImage.gatsbyImageData}
                 css={css `display: flex; justify-content: center;`}/>
