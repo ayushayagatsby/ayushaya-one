@@ -185,10 +185,7 @@ export default function BlogPostTemplate({ data, shareUrl }) {
 
   Object.keys(wordToCount).map(_ => {
     if (wordToCount[_]) {
-      if (
-        wordToCount[_].props.children &&
-        typeof wordToCount[_].props.children[0] === "string"
-      ) {
+      if (wordToCount[_].props.children) {
         lengthArray.push(wordToCount[_].props.children[0].split(" ").length)
       }
     }
