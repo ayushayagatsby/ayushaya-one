@@ -173,10 +173,6 @@ export default function BlogPostTemplate({ data, shareUrl }) {
   let currentLanguage = handleCurrentLanguage(language, "body")
   let currentLanguageTitle = handleCurrentLanguage(language, "title")
 
-  console.log(currentLanguageTitle)
-
-  const [scrollPosition, setScrollPosition] = useState(0)
-
   useEffect(() => {
     const wrapper = document.getElementById("layout-wrapper")
     const blogWrapper = document.getElementById("blogWrapper")
